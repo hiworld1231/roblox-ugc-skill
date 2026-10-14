@@ -127,5 +127,14 @@
     "render_comparison": "Original checker/gradient fixture with newUV; source/target renderMAE0.01116",
     "arbitrary_materials_and_Roblox_acceptance": "NOT_CHECKED"
   },
-  "host_install_evidence": "host-install-v0.2.0.json"
+  "host_install_evidence": "host-install-v0.2.0.json",
+  "independent_rebake_forward_test": {
+    "status": "PASS",
+    "artifact": "independent-rebake.json",
+    "actual_mcp_transport": true,
+    "material_inspected": true,
+    "source_preserved": true,
+    "render_before_after_inspected": true,
+    "fixture_Roblox_preflight": "FAIL: intentionally planar texture-transfer fixture, not a rigidUGC item"
+  }
 }

@@ -1,0 +1,196 @@
+{
+  "checked_at": "2026-10-14",
+  "scope": "Independent source-material inspection, rebake and identical-view preview comparison on an original transparent planar fixture; not a finished UGC asset.",
+  "request": "I have original /tmp/ugc-rebake-example/valid.blend. Inspect unfamiliar texture/material, transfer Low source or actual appropriate names to a new UV while preserve original appearance; use Blender MCP launcher in isolated scratch runtime if practical, report files and limitations.",
+  "actual_source": {
+    "path": "/tmp/ugc-rebake-example/valid.blend",
+    "sha256_before": "32b1696b04326c0fe83e0c12b9b1de8fd3f789f8f383604a7e7eb5508ec493f3",
+    "sha256_after": "32b1696b04326c0fe83e0c12b9b1de8fd3f789f8f383604a7e7eb5508ec493f3",
+    "unchanged": true
+  },
+  "discovery": {
+    "route": "Actual MCP stdio initialize/list_tools/get_scene_info/execute_blender_code; then portable CLI shader inspector",
+    "runtime": "/tmp/ugc-blender-mcp-final-runtime",
+    "port": 19878,
+    "virtual_display": true,
+    "tools_observed": [
+      "get_scene_info",
+      "execute_blender_code",
+      "look"
+    ],
+    "tools_called": [
+      "get_scene_info",
+      "execute_blender_code"
+    ],
+    "source_object": "Source",
+    "source_uv": "OldUV",
+    "target_object": "Target",
+    "target_uv": "NewUV",
+    "source_image": "UnfamiliarFilename_notAnAlbedoGuess",
+    "source_image_role_observed": "Connected Principled Base Color and Alpha",
+    "source_image_color_space": "Non-Color",
+    "source_image_packed": true,
+    "roughness": 0.37,
+    "metallic": 0.61
+  },
+  "rebake_command": "python scripts/rebake.py rebake --input /tmp/ugc-rebake-example/valid.blend --source Source --source-uv OldUV --target Target --target-uv NewUV --uv keep --ray-distance 0.02 --maps base-color alpha roughness metallic normal --size 256 --margin 8 --alpha-policy preserve --output /tmp/ugc-independent-rebake/transferred",
+  "render": {
+    "engine": "Blender 5.2.2 LTS Cycles CPU",
+    "samples": 16,
+    "resolution": [
+      512,
+      512
+    ],
+    "camera": "Same orthographic +Z, scale2.4, position0,0,4",
+    "lighting": "Same area120W size5 plus world0.7",
+    "color_management": "Standard, lookNone, exposure0,gamma1",
+    "source_preview": "/tmp/ugc-independent-rebake/previews/source.png",
+    "target_preview": "/tmp/ugc-independent-rebake/previews/target.png",
+    "measurements": {
+      "shared_surface_pixels": 183218,
+      "mean_absolute_rgba_error": 0.014791551219708484,
+      "mean_absolute_rgb_error": 0.01561855276228318,
+      "mean_absolute_alpha_error": 0.01231054659198439,
+      "p99_rgba_error": 0.04705882352941182,
+      "max_rgba_error": 0.2784313725490196,
+      "same_alpha_presence_mask": true
+    },
+    "visual_review": "Both actual images were viewed. Checker colors/gradient, surface placement and alpha outline remain aligned. Minor local boundary/filtering/render-noise differences visible; no exact-pixel identity or universal preservation claim."
+  },
+  "checks": [
+    {
+      "check": "mcp-connection-and-discovery",
+      "status": "PASS",
+      "evidence": "Real stdio MCP initialization/tool enumeration and2read-only calls completed against launcher-owned virtual GUI."
+    },
+    {
+      "check": "source-shader-inspection",
+      "status": "PASS",
+      "evidence": "Connected shader/image roles, UV names and packed decoded image hash observed before interpreting the unfamiliar image."
+    },
+    {
+      "check": "rebake-output-and-sampled-projection",
+      "status": "PASS",
+      "evidence": {
+        "completed": true,
+        "blocking_failures": 0,
+        "project": "/tmp/ugc-independent-rebake/transferred/result.blend",
+        "coverage": {
+          "triangle_interior_samples": 8,
+          "missing": 0,
+          "source_projection_distance": 0.02,
+          "cage": null,
+          "cage_extrusion": 0.0,
+          "note": "Finite probes do not prove every texel; inspect seams and thin parts."
+        }
+      }
+    },
+    {
+      "check": "source-preservation",
+      "status": "PASS",
+      "evidence": {
+        "path": "/tmp/ugc-rebake-example/valid.blend",
+        "sha256_before": "32b1696b04326c0fe83e0c12b9b1de8fd3f789f8f383604a7e7eb5508ec493f3",
+        "sha256_after": "32b1696b04326c0fe83e0c12b9b1de8fd3f789f8f383604a7e7eb5508ec493f3",
+        "unchanged": true
+      }
+    },
+    {
+      "check": "appearance-comparison",
+      "status": "PASS",
+      "evidence": "Identical-view source/target renders visually inspected and measured for this planar fixture only."
+    },
+    {
+      "check": "rigid-ugc-preflight",
+      "status": "FAIL",
+      "evidence": "Target has4boundaryedges and nonopaque sourcealpha; this intentionally transparent plane is not a finished rigidUGC accessory. Preflight reports watertightFAIL; noassetapprovalclaim."
+    },
+    {
+      "check": "owned-blender-cleanup",
+      "status": "PASS",
+      "evidence": "blender_mcp.py stop verified ownershiptoken, scheduledquit and confirmed localhost19878 endpoint closed."
+    },
+    {
+      "check": "roblox-studio-validation",
+      "status": "NOT_CHECKED",
+      "evidence": "No import/play/API call made; user game untouched."
+    },
+    {
+      "check": "moderation-and-marketplace",
+      "status": "NOT_CHECKED",
+      "evidence": "No upload/moderation/sale attempted."
+    }
+  ],
+  "files": {
+    "/tmp/ugc-independent-rebake/material-inspection.json": {
+      "sha256": "a506f59f4113e15f9b69d2bf262613f14386ffffdcfd3ba376b4d2ad74e1d221",
+      "bytes": 4490
+    },
+    "/tmp/ugc-independent-rebake/mcp-scene.json": {
+      "sha256": "e18188b38c4ee8d5ed782000d1b47849b97f70e1eb189fd60a623cd13c94da08",
+      "bytes": 1011
+    },
+    "/tmp/ugc-independent-rebake/object-uv.json": {
+      "sha256": "c06cb55e3e187cceedd5a476efeefa946cbd46a945793b748fe3a949fa7c35bf",
+      "bytes": 1141
+    },
+    "/tmp/ugc-independent-rebake/rigid-preflight.json": {
+      "sha256": "37bc6e10791411843ea28b88c2c7f8b29f9ab547f8c5849203dbeffe646d01a2",
+      "bytes": 6181
+    },
+    "/tmp/ugc-independent-rebake/preview-comparison.json": {
+      "sha256": "2e0f499d31aaa4b5957309099aa18f104b08ae750a57625dc76039356affd4e6",
+      "bytes": 309
+    },
+    "/tmp/ugc-independent-rebake/render_compare.py": {
+      "sha256": "28b01b9230d24a7be06478cab55091b4b863e6f55626b6cce47b287656a1a8fd",
+      "bytes": 1940
+    },
+    "/tmp/ugc-independent-rebake/transferred/alpha.png": {
+      "sha256": "bee0f484893a81701c31bb4cd82a194a48a4717d0d50ca52f662b1068c6598c0",
+      "bytes": 4483
+    },
+    "/tmp/ugc-independent-rebake/transferred/base-color.png": {
+      "sha256": "06958a86613bcf0af1db1577da83f26ca215da0746be6e4d2ef52672ac718f7e",
+      "bytes": 7221
+    },
+    "/tmp/ugc-independent-rebake/transferred/coverage.png": {
+      "sha256": "8954d827497ec598c3f089b63dafd161fcc33652c731087fb923caa976828548",
+      "bytes": 3599
+    },
+    "/tmp/ugc-independent-rebake/transferred/metallic.png": {
+      "sha256": "597649217cc8e977bcb7044e06c5133e3dfbce4e1c4535275dc4ee8e9e8fb98e",
+      "bytes": 3398
+    },
+    "/tmp/ugc-independent-rebake/transferred/normal.png": {
+      "sha256": "68dfc9ca9565afc8d9e5086a03ba1c1b86c0d2d1bcc3c74031a32b43213947c2",
+      "bytes": 3302
+    },
+    "/tmp/ugc-independent-rebake/transferred/report.json": {
+      "sha256": "51004d21a0690c08629ecb62d14b8a3f401a234ab551f43243adfa7f8ca25511",
+      "bytes": 11300
+    },
+    "/tmp/ugc-independent-rebake/transferred/result.blend": {
+      "sha256": "3e3b200849ab4ff9a58099f2041eb0a69defa03e266152466a1e4fe652ac80e1",
+      "bytes": 107962
+    },
+    "/tmp/ugc-independent-rebake/transferred/roughness.png": {
+      "sha256": "c0c592c28073d07518d01a39c72876ab4158f43670eeec25c48767dfb80aff7d",
+      "bytes": 3549
+    },
+    "/tmp/ugc-independent-rebake/previews/source.png": {
+      "sha256": "f3c67ca30868fee67774304e965001f100bb985159197b89f22e16c8882179de",
+      "bytes": 450482
+    },
+    "/tmp/ugc-independent-rebake/previews/target.png": {
+      "sha256": "ef3bb43ec5eff04f1d2173ff7f0e5b262ad52b5da200b6f23511d71992a81028",
+      "bytes": 465157
+    }
+  },
+  "limits": [
+    "Planar fixture has no curves, cage, rig, FACS, layeredfit or normaldetail; these were not validated.",
+    "Five transferredmaps preserve their requested materialchannels on thisfixture; other shader effects are outside helper scope.",
+    "MCPlook tool was discovered but previews were rendered via BlenderCLI and viewed separately.",
+    "No Codex/Claude GUI MCP client operation or Windows/macOS launcher verified by this independentrun."
+  ]
+}
