@@ -31,14 +31,14 @@
       "version": "0.2.0"
     },
     "helper_smoke": "PASS: installed corpus audit and helper discovery",
-    "v0.2.0_install": "PASS: isolated local checkout install and installed corpus audit",
+    "v0.2.0_install": "PASS: fresh isolated GitHub installation and installed corpus audit",
     "isolation": "Temporary CODEX_HOME; no global configuration changed"
   },
   "claude_code": {
     "version": "2.1.299",
     "marketplace_validation": "PASS",
     "plugin_validation": "PASS",
-    "installation": "PASS: isolated local checkout v0.2.0 install and discovery",
+    "installation": "PASS: fresh isolated GitHub one-command install, enabled v0.2.0 discovery and installed corpus audit",
     "isolation": "Temporary CLAUDE_CONFIG_DIR; removed after testing"
   },
   "studio_harness": {
@@ -136,5 +136,6 @@
     "source_preserved": true,
     "render_before_after_inspected": true,
     "fixture_Roblox_preflight": "FAIL: intentionally planar texture-transfer fixture, not a rigidUGC item"
-  }
+  },
+  "github_install_evidence": "github-install-v0.2.0.json"
 }

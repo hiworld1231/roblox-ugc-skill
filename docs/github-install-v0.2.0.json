@@ -1,0 +1,31 @@
+{
+  "codex_marketplace": {
+    "exit_code": 0,
+    "stdout": "Added marketplace `roblox-ugc-skill` from https://github.com/hiworld1231/roblox-ugc-skill.git.\nInstalled marketplace root: /tmp/ugc-remote-install-3mxpnc3q/codex/.tmp/marketplaces/roblox-ugc-skill\n",
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/ugc-remote-install-3mxpnc3q/codex\"))\n"
+  },
+  "codex_install": {
+    "exit_code": 0,
+    "stdout": "{\n  \"pluginId\": \"roblox-ugc@roblox-ugc-skill\",\n  \"name\": \"roblox-ugc\",\n  \"marketplaceName\": \"roblox-ugc-skill\",\n  \"version\": \"0.2.0\",\n  \"installedPath\": \"/tmp/ugc-remote-install-3mxpnc3q/codex/plugins/cache/roblox-ugc-skill/roblox-ugc/0.2.0\",\n  \"authPolicy\": \"ON_USE\"\n}\n",
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"/tmp\" (codex_home: AbsolutePathBuf(\"/tmp/ugc-remote-install-3mxpnc3q/codex\"))\n"
+  },
+  "claude_install": {
+    "exit_code": 0,
+    "stdout": "Adding marketplace\u2026\nSSH not configured, cloning via HTTPS: https://github.com/hiworld1231/roblox-ugc-skill.git\nRefreshing marketplace cache (timeout: 120s)\u2026\nCloning repository (timeout: 120s): https://github.com/hiworld1231/roblox-ugc-skill.git\nClone complete, validating marketplace\u2026\n\u2714 Successfully added marketplace: roblox-ugc-skill (declared in user settings)\nInstalling plugin \"roblox-ugc@roblox-ugc-skill\"...\u2714 Successfully installed plugin: roblox-ugc@roblox-ugc-skill (scope: user)\n",
+    "stderr": ""
+  },
+  "claude_list": {
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"id\": \"roblox-ugc@roblox-ugc-skill\",\n    \"version\": \"0.2.0\",\n    \"scope\": \"user\",\n    \"enabled\": true,\n    \"installPath\": \"/tmp/ugc-remote-install-3mxpnc3q/claude/plugins/cache/roblox-ugc-skill/roblox-ugc/0.2.0\",\n    \"installedAt\": \"2026-10-14T08:16:25.110Z\",\n    \"lastUpdated\": \"2026-10-14T08:16:25.110Z\",\n    \"projectEnabled\": false\n  }\n]\n",
+    "stderr": ""
+  },
+  "codex_installed_audit": {
+    "exit_code": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"problems\": [],\n  \"sources\": 2332,\n  \"included\": 361,\n  \"revision\": \"784c5e217446c65958d5d84f5c5f1d127951a8d7\",\n  \"retrieved_at\": \"2026-10-14T07:30:32.363057+00:00\",\n  \"videos\": {\n    \"indexed\": 32,\n    \"transcripts_reviewed\": 21,\n    \"visuals_reviewed\": 0\n  },\n  \"source_defects\": 6\n}\n"
+  },
+  "claude_installed_audit": {
+    "exit_code": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"problems\": [],\n  \"sources\": 2332,\n  \"included\": 361,\n  \"revision\": \"784c5e217446c65958d5d84f5c5f1d127951a8d7\",\n  \"retrieved_at\": \"2026-10-14T07:30:32.363057+00:00\",\n  \"videos\": {\n    \"indexed\": 32,\n    \"transcripts_reviewed\": 21,\n    \"visuals_reviewed\": 0\n  },\n  \"source_defects\": 6\n}\n"
+  },
+  "scope": "Fresh isolated profiles installed from GitHub URL; no global configs changed. Temporary directories removed after test."
+}
