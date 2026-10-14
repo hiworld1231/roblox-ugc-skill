@@ -49,6 +49,51 @@ def search(query, topic=None, limit=10):
         matches.append({"id": record["id"], "title": record["title"], "score": score,
             "path": str(contained(record["local_path"])), "url": record["canonical_url"],
             "retrieved_at": record["retrieved_at"], "topics": record["topics"], "snippets": snippets})
+    for filename, prefix in (("videos.json", "video/"), ("community-videos.json", "community-video/"), ("retired-videos.json", "retired-video/")):
+        video_file = CORPUS / filename
+        if not video_file.exists():
+            continue
+        for video in json.loads(video_file.read_text()):
+            if video.get("scope") == "excluded" or not video.get("review_notes"):
+                continue
+            if topic and topic not in video.get("topics", []):
+                continue
+            notes = video["review_notes"]
+            title = video.get("title", video["id"])
+            lower = (title + " " + " ".join(notes)).lower()
+            matched = sum(t in lower for t in terms)
+            if matched:
+                matches.append({"id": prefix + video["id"], "title": title,
+                    "score": matched * 10 + sum(title.lower().count(t) * 8 for t in terms),
+                    "path": str(video_file), "url": video["url"],
+                    "retrieved_at": video.get("reviewed_at"), "topics": video.get("topics", []),
+                    "transcript_status": video["transcript_status"], "visual_status": video["visual_status"],
+                    "source_status": "retired" if filename == "retired-videos.json" else "current",
+                    "snippets": [(i + 1, note) for i, note in enumerate(notes)
+                                 if any(t in note.lower() for t in terms)][:3]})
+    reference_topics = {
+        "rigid": ["rigid"], "layered": ["layered"], "bodies-heads": ["body", "head"],
+        "classic-makeup": ["classic", "makeup"], "animations": ["animation"],
+        "publishing": ["publishing"], "studio-api": ["studio"], "studio-control": ["studio"],
+        "authoring": ["pipeline", "authoring"], "blender-mcp": ["pipeline", "authoring"],
+        "rbx-toolbox": ["pipeline", "authoring"], "remesh-rebake": ["pipeline", "authoring"],
+        "community": ["pipeline"], "sources": ["pipeline"], "troubleshooting": ["pipeline"],
+    }
+    for path in (SKILL / "references").glob("*.md"):
+        tags = reference_topics.get(path.stem, ["pipeline"])
+        if topic and topic not in tags:
+            continue
+        lines = path.read_text().splitlines()
+        title = lines[0].removeprefix("# ") if lines else path.stem
+        lower = "\n".join(lines).lower()
+        matched = sum(t in lower for t in terms)
+        if matched:
+            matches.append({"id": "guide/" + path.stem, "title": title,
+                "score": matched * 10 + sum(title.lower().count(t) * 8 + min(lower.count(t), 15) for t in terms),
+                "path": str(path), "url": "https://github.com/hiworld1231/roblox-ugc-skill/blob/main/plugins/roblox-ugc/skills/roblox-ugc/references/" + path.name,
+                "source_type": "authored_reference", "retrieved_at": "See cited source snapshot and integration records", "topics": tags,
+                "snippets": [(i + 1, line.strip()[:260]) for i, line in enumerate(lines)
+                             if any(t in line.lower() for t in terms)][:3]})
     return sorted(matches, key=lambda r: (-r["score"], r["id"]))[:limit]
 
 
@@ -81,6 +126,31 @@ def audit(root=CORPUS, live=False):
     included = sum(r["status"] == "included" for r in recs)
     if coverage["counts"]["included"] != included:
         problems.append("Coverage count mismatch")
+    for filename in ("videos.json", "community-videos.json", "retired-videos.json"):
+        video_file = root / filename
+        if not video_file.exists():
+            if filename == "videos.json" and coverage["videos_indexed"]:
+                problems.append("Missing official video inventory")
+            continue
+        videos = json.loads(video_file.read_text())
+        if len({v["id"] for v in videos}) != len(videos):
+            problems.append("Duplicate video id: " + filename)
+        if filename == "videos.json":
+            for field, count_field in ((None, "videos_indexed"), ("transcript_status", "videos_transcripts_reviewed"), ("visual_status", "videos_visuals_reviewed")):
+                actual = len(videos) if field is None else sum(v.get(field) == "reviewed" for v in videos)
+                if coverage[count_field] != actual:
+                    problems.append("Video coverage count mismatch: " + count_field)
+            if "videos_visuals_sampled" in coverage and coverage["videos_visuals_sampled"] != sum(v.get("visual_status") == "sampled" for v in videos):
+                problems.append("Video coverage count mismatch: videos_visuals_sampled")
+        for video in videos:
+            if video.get("transcript_status") == "reviewed" and (not all(video.get(k) for k in ("review_notes", "reviewed_at", "transcript_sha256")) or not re.fullmatch(r"[0-9a-f]{64}", video.get("transcript_sha256", ""))):
+                problems.append("Missing transcript review provenance: " + video["id"])
+            if video.get("visual_status") == "reviewed" and not video.get("full_visual_review_evidence"):
+                problems.append("Missing full visual review evidence: " + video["id"])
+            if video.get("visual_status") == "sampled":
+                times = video.get("visual_sample_times")
+                if not video.get("visual_method") or not isinstance(times, list) or not times or not all(type(t) in (int, float) and t >= 0 for t in times):
+                    problems.append("Missing sampled visual provenance: " + video["id"])
     result = {"ok": not problems, "problems": problems, "sources": len(recs), "included": included,
               "revision": coverage["revision"], "retrieved_at": coverage["retrieved_at"],
               "videos": {"indexed": coverage["videos_indexed"], "transcripts_reviewed": coverage["videos_transcripts_reviewed"],
@@ -127,6 +197,27 @@ def main():
                     print(f"  L{number}: {line}")
         return 0
     if args.command == "show":
+        if args.source_id.startswith("guide/"):
+            path = contained("references/" + args.source_id.removeprefix("guide/") + ".md")
+            if not path.is_file():
+                print("Unknown guide id", file=sys.stderr)
+                return 1
+            lines = path.read_text().splitlines()
+            for i, line in enumerate(lines, 1):
+                if args.start_line <= i < args.start_line + args.lines:
+                    print(f"{i}: {line}")
+            return 0
+        if args.source_id.startswith(("video/", "community-video/", "retired-video/")):
+            prefix, video_id = args.source_id.split("/", 1)
+            filename = {"video": "videos.json", "community-video": "community-videos.json", "retired-video": "retired-videos.json"}[prefix]
+            path = CORPUS / filename
+            video = next((v for v in json.loads(path.read_text())
+                          if v["id"] == video_id), None)
+            if video is None:
+                print("Unknown video id", file=sys.stderr)
+                return 1
+            print(json.dumps(video, indent=2, ensure_ascii=False))
+            return 0
         rec = next((r for r in records() if r["id"] == args.source_id), None)
         if not rec or not rec.get("local_path"):
             parser.error("No local included source with that id; use search first")

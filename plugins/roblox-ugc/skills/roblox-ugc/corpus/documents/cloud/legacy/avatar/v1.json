@@ -1,7 +1,7 @@
 {
   "url": "https://create.roblox.com/docs/cloud/legacy/avatar/v1",
-  "retrieved_at": "2026-10-13T21:08:36.767836+00:00",
-  "remote_sha256": "12b359978126ffcb8a7cfae974f7052d792562c180b1c5ecdda58ea39167fca9",
+  "retrieved_at": "2026-10-14T07:30:32.363057+00:00",
+  "remote_sha256": "ca46d8c6bc5acb5971fe10d173e515ebac855866c63ec65d3a35acf02c0ccfc1",
   "section_index": [
     "Avatar Api v1",
     "Endpoints",

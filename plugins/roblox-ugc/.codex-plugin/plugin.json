@@ -1,8 +1,10 @@
 {
   "name": "roblox-ugc",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Source-backed Roblox Marketplace UGC creation, validation and publishing.",
-  "author": {"name": "hiworld1231"},
+  "author": {
+    "name": "hiworld1231"
+  },
   "repository": "https://github.com/hiworld1231/roblox-ugc-skill",
   "license": "MIT",
   "skills": "./skills/",

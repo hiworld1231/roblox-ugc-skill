@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import concurrent.futures
+import copy
 import hashlib
 import json
 import posixpath
@@ -20,7 +21,7 @@ DOCS = "https://create.roblox.com"
 REPO = "https://api.github.com/repos/Roblox/creator-docs"
 EXPLICIT = {
     "monetize-avatar", "studio/importer", "studio/avatar-settings",
-    "studio/testing-modes", "studio/rig-builder", "studio/animation-editor",
+    "studio/testing-modes", "studio/rig-builder", "studio/animation-editor", "studio/mcp",
     "players/avatar-editor", "players/avatar-inspect-menu", "players/avatar-context-menu",
     "characters/appearance", "characters/emotes", "characters/adaptive-animation",
     "characters/r6-to-r15-adapter", "projects/assets", "projects/assets/manager",
@@ -108,6 +109,41 @@ def topics(key: str) -> list[str]:
         if any(word in key.lower() for word in words):
             result.append(tag)
     return result or ["pipeline"]
+
+
+def preserve_video_reviews(current: dict, prior: dict, retired: dict) -> tuple[dict, dict, dict]:
+    """Keep analysis when links change; archived records are outside current coverage.
+
+    Inputs and outputs are dictionaries keyed by video ID. Current source URLs and
+    backlinks win; reviewed fields come from the last active or archived record.
+    A restored record leaves the archive, so each video has one current disposition.
+    """
+    merged = copy.deepcopy(current)
+    archived = copy.deepcopy(retired)
+    generated_fields = {"id", "url", "backlinks", "linked_by_official_docs",
+                        "current_link_status", "retired_at", "retirement_reason",
+                        "retired_from_revision", "previously_linked_by_official_docs"}
+    for video_id, video in merged.items():
+        previous = prior.get(video_id, archived.get(video_id, {}))
+        for field, value in previous.items():
+            if field not in generated_fields:
+                video[field] = copy.deepcopy(value)
+        video["current_link_status"] = "current"
+        archived.pop(video_id, None)
+    removed = sorted(set(prior) - set(current))
+    for video_id in removed:
+        video = copy.deepcopy(prior[video_id])
+        video.update(
+            current_link_status="retired",
+            linked_by_official_docs=False,
+            previously_linked_by_official_docs=bool(video.get("linked_by_official_docs")),
+            retired_at=datetime.now(timezone.utc).isoformat(),
+            retirement_reason="No longer linked by the current scoped official source snapshot; retained analysis is historical, not current inventory coverage.",
+        )
+        if video.get("last_linked_revision"):
+            video["retired_from_revision"] = video["last_linked_revision"]
+        archived[video_id] = video
+    return merged, archived, {"video_added": sorted(set(current) - set(prior)), "video_removed": removed}
 
 
 def main() -> int:
@@ -284,15 +320,23 @@ def main() -> int:
     affected = changes["added"] + changes["changed"]
     changes["review_topics"] = sorted({topic for key in affected for topic in records[key].get("topics", [])})
     changes["notice"] = "Review authored category references, assets/rules.json and template hashes for changed topics. Machine indexing does not establish that curated instructions are current."
-    (out / "changes.json").write_text(json.dumps(changes, indent=2) + "\n")
+    prior_videos = {}
     if (out / "videos.json").exists():
         prior_videos = {v["id"]: v for v in json.loads((out / "videos.json").read_text())}
-        for video_id, video in videos.items():
-            prior = prior_videos.get(video_id, {})
-            for field in ("title", "channel", "channel_verified", "transcript_status", "visual_status", "reason", "review_notes", "reviewed_at"):
-                if field in prior:
-                    video[field] = prior[field]
-    for filename, obj in (("videos.json", list(videos.values())), ("resources.json", list(resources.values())), ("external-links.json", list(external.values()))):
+        if (out / "coverage.json").exists():
+            old_revision = json.loads((out / "coverage.json").read_text()).get("revision")
+            for video in prior_videos.values():
+                if old_revision:
+                    video.setdefault("last_linked_revision", old_revision)
+    retired_videos = {}
+    if (out / "retired-videos.json").exists():
+        retired_videos = {v["id"]: v for v in json.loads((out / "retired-videos.json").read_text())}
+    videos, retired_videos, video_changes = preserve_video_reviews(videos, prior_videos, retired_videos)
+    for video in videos.values():
+        video["last_linked_revision"] = revision
+    changes.update(video_changes)
+    (out / "changes.json").write_text(json.dumps(changes, indent=2) + "\n")
+    for filename, obj in (("videos.json", list(videos.values())), ("retired-videos.json", list(retired_videos.values())), ("resources.json", list(resources.values())), ("external-links.json", list(external.values()))):
         (out / filename).write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n")
     for name in ("LICENSE", "LICENSE-CODE"):
         dest = SKILL / "licenses" / ("ROBLOX-" + name)
@@ -305,6 +349,10 @@ def main() -> int:
         "fetch_failures": errors, "unresolved_api_identifiers": defects,
         "unresolved_links": [e for e in edges if e["status"] == "unresolved"],
         "videos_indexed": len(videos), "videos_transcripts_reviewed": sum(v["transcript_status"] == "reviewed" for v in videos.values()), "videos_visuals_reviewed": sum(v["visual_status"] == "reviewed" for v in videos.values()),
+        "videos_visuals_sampled": sum(v["visual_status"] == "sampled" for v in videos.values()),
+        "videos_retired": len(retired_videos),
+        "video_scope_counts": {s: sum(v.get("scope", "unclassified") == s for v in videos.values()) for s in sorted({v.get("scope", "unclassified") for v in videos.values()})},
+        "video_transcript_status_counts": {s: sum(v["transcript_status"] == s for v in videos.values()) for s in sorted({v["transcript_status"] for v in videos.values()})},
         "resource_links": len(resources), "external_links": len(external),
         "inventory_discrepancies": [{"id": r["id"], "inventories": r["inventories"],
             "reason": "Live-only: section metadata links to current original; no full-text redistribution assumed." if not r.get("source_path")

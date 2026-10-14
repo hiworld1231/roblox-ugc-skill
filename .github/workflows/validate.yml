@@ -13,9 +13,10 @@ jobs:
           node-version: '22'
       - run: python -m pip install jsonschema
       - run: python tools/validate_package.py --schema
-      - run: python -m unittest discover -s tests -p test_tools.py -v
-      - run: npm exec --yes --package=@anthropic-ai/claude-code -- claude plugin validate .
-      - run: npm exec --yes --package=@anthropic-ai/claude-code -- claude plugin validate ./plugins/roblox-ugc
+      - run: python -m unittest discover -s tests -v
+      - run: npm install --no-audit --no-fund --prefix "$RUNNER_TEMP/ugc-claude" @anthropic-ai/claude-code-linux-x64@2.1.299
+      - run: '"$RUNNER_TEMP/ugc-claude/node_modules/@anthropic-ai/claude-code-linux-x64/claude" plugin validate .'
+      - run: '"$RUNNER_TEMP/ugc-claude/node_modules/@anthropic-ai/claude-code-linux-x64/claude" plugin validate ./plugins/roblox-ugc'
       - run: python tools/build_release.py
       - uses: actions/upload-artifact@v4
         with:

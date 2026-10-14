@@ -2237,6 +2237,14 @@
     ]
   },
   {
+    "url": "https://modelcontextprotocol.io/docs/getting-started/intro",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "studio/mcp"
+    ]
+  },
+  {
     "url": "https://www.khronos.org/openxr/",
     "status": "linked",
     "reason": "Reference resource; download/review is separate from prose coverage.",

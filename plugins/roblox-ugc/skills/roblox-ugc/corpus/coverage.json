@@ -1,14 +1,14 @@
 {
   "scope": "English Roblox Marketplace avatar creation, validation, publishing and related APIs",
   "revision": "784c5e217446c65958d5d84f5c5f1d127951a8d7",
-  "retrieved_at": "2026-10-13T21:08:36.767836+00:00",
-  "inventory_sha256": "63940fad5ba12409b2eaa20ac8b51d8c15fdcdef459fe2353822f1efcb1e623e",
+  "retrieved_at": "2026-10-14T07:30:32.363057+00:00",
+  "inventory_sha256": "a4fc8dd1842df68ab01063bcea0e49afa69aaab8217368f926bd368221b828e4",
   "upstream_tree_truncated": false,
   "counts": {
-    "included": 360,
-    "excluded": 1972
+    "included": 361,
+    "excluded": 1971
   },
-  "included_retrieved": 360,
+  "included_retrieved": 361,
   "unprocessed_candidates": 0,
   "fetch_failures": [],
   "unresolved_api_identifiers": [
@@ -42,10 +42,23 @@
     }
   ],
   "videos_indexed": 32,
-  "videos_transcripts_reviewed": 0,
+  "videos_transcripts_reviewed": 21,
   "videos_visuals_reviewed": 0,
+  "videos_visuals_sampled": 7,
+  "video_scope_counts": {
+    "excluded": 3,
+    "included": 27,
+    "supplemental": 2
+  },
+  "video_transcript_status_counts": {
+    "insufficient": 2,
+    "retrieved_not_reviewed": 2,
+    "reviewed": 21,
+    "unavailable": 6,
+    "unreliable": 1
+  },
   "resource_links": 2337,
-  "external_links": 298,
+  "external_links": 299,
   "inventory_discrepancies": [
     {
       "id": "monetize-avatar",
@@ -103,5 +116,7 @@
     "all_internet_tutorials_reviewed": false,
     "moderation_or_marketplace_approval": false
   },
-  "maintenance": "Source inventory is complete for this snapshot; authored workflows and machine rules require review after sync."
+  "maintenance": "Source inventory is complete for this snapshot; authored workflows and machine rules require review after sync.",
+  "video_review_updated_at": "2026-10-14T07:37:13.029460+00:00",
+  "videos_retired": 0
 }

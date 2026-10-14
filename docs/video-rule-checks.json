@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://create.roblox.com/docs/en-us/avatar/dynamic-heads/specifications.md",
+    "retrieved_at": "2026-10-14T07:37:13.029460+00:00",
+    "sha256": "0c0e0cf7d06e2decd4b6e8427cbd198fe0830d44fbad59f4630768eecfd890a7",
+    "status": "read",
+    "purpose": "Cross-check tutorial claims against live FACS/caging/Setup input specifications. Full page not redistributed."
+  },
+  {
+    "url": "https://create.roblox.com/docs/en-us/avatar/layered-accessories/caging-best-practices.md",
+    "retrieved_at": "2026-10-14T07:37:13.029460+00:00",
+    "sha256": "ab29d70bd1968edadc751302dd2cd46780f6306d1ea3827e7d145667fbf8577b",
+    "status": "read",
+    "purpose": "Cross-check tutorial claims against live FACS/caging/Setup input specifications. Full page not redistributed."
+  },
+  {
+    "url": "https://create.roblox.com/docs/en-us/avatar-setup/auto-setup-requirements.md",
+    "retrieved_at": "2026-10-14T07:37:13.029460+00:00",
+    "sha256": "409a2047451859133a0287f286e8c529129032f9d3d03b16812e59ec69d48b09",
+    "status": "read",
+    "purpose": "Cross-check tutorial claims against live FACS/caging/Setup input specifications. Full page not redistributed."
+  }
+]

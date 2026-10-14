@@ -14,6 +14,10 @@ Read only the relevant guide, then use the corpus for exact specifications and t
 | Request | Read |
 | --- | --- |
 | Tool setup, design brief, deliverables, units | [Authoring and tools](references/authoring.md) |
+| Connect or launch Blender MCP; inspect/edit a Blender scene | [Blender MCP](references/blender-mcp.md) |
+| Operate Studio, select a session, inspect/import/validate UGC | [Studio control](references/studio-control.md) |
+| RBX Toolbox add-on, UGC export/FACS/attachments | [RBX Toolbox](references/rbx-toolbox.md) |
+| Remesh, retopology, new UV, transfer an unfamiliar texture | [Remesh and rebake](references/remesh-rebake.md) |
 | Hats, hair, face/neck/shoulder/front/back/waist accessories | [Rigid accessories](references/rigid.md) |
 | Layered garments, shoes, cages, automatic skinning | [Layered accessories](references/layered.md) |
 | Bodies, dynamic heads, FACS, rigging, face accessories | [Bodies and heads](references/bodies-heads.md) |
@@ -54,3 +58,4 @@ Full command usage, supported formats and validation limits are in [Authoring an
 - Use `PASS`, `FAIL`, `WARN` and `NOT_CHECKED` precisely. Missing tools, unknown scale, unavailable baseline or untested deformation never count as passed checks.
 - Consult [UGC validation system](https://create.roblox.com/docs/marketplace/validation-system) for Roblox error meanings. Keep offline checks, Studio technical validation, visual tests, moderation and Marketplace publication as separate evidence.
 - Review tutorial techniques against current category rules. Do not copy old admission criteria, generic mesh limits or unsupported publishing shortcuts into the answer. See [known conflicts](references/troubleshooting.md).
+- Re-UV the render mesh on a copy and rebake its appearance; preserve the original shader/images for projection. Do not remesh Roblox cages or discard rig/FACS data to solve a texture issue. Material, projection, visual similarity and Roblox acceptance require separate evidence.

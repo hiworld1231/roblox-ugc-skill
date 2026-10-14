@@ -38,11 +38,20 @@ def main():
         extracted = Path(temp) / "roblox-ugc"
         subprocess.run([sys.executable, str(extracted / "scripts/corpus.py"), "audit", "--json"], check=True, capture_output=True)
         subprocess.run([sys.executable, str(extracted / "scripts/asset.py"), "templates"], check=True, capture_output=True)
+        for helper in ("blender_mcp.py", "rebake.py"):
+            subprocess.run([sys.executable, str(extracted / "scripts" / helper), "--help"], check=True, capture_output=True)
+        if not (extracted / "scripts/blender_mcp_requirements.lock").is_file():
+            raise ValueError("Standalone Blender MCP dependency lock missing")
         if not (extracted / "SKILL.md").is_file():
             raise ValueError("Standalone skill entrypoint missing")
     shutil.copyfile(SKILL / "corpus/coverage.json", dist / "coverage.json")
     shutil.copyfile(ROOT / "docs/validation.json", dist / "validation.json")
     files = [plugin, skill, dist / "coverage.json", dist / "validation.json"]
+    for name in ("video-analysis.md", "blender-mcp-validation.json", "rbx-toolbox-audit.json", "studio-control-validation.json", "remesh-rebake-validation.json"):
+        source = ROOT / "docs" / name
+        if source.is_file():
+            shutil.copyfile(source, dist / name)
+            files.append(dist / name)
     sums = "".join(hashlib.sha256(path.read_bytes()).hexdigest() + "  " + path.name + "\n" for path in files)
     (dist / "SHA256SUMS").write_text(sums)
     print(json.dumps({"files": [{"name": p.name, "bytes": p.stat().st_size} for p in files], "standalone_extract_smoke": "PASS"}, indent=2))

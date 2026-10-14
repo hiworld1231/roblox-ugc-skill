@@ -1,0 +1,25 @@
+[
+  {
+    "id": "apZsJqsKdw4",
+    "url": "https://www.youtube.com/watch?v=apZsJqsKdw4",
+    "title": "FULL ROBLOX Dynamic Head Guide Tutorial | Blender + Roblox Studio",
+    "topics": [
+      "head"
+    ],
+    "type": "community",
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "transcript_status": "reviewed",
+    "visual_status": "NOT_CHECKED",
+    "license": "No redistribution permission established; original analysis only.",
+    "review_notes": [
+      "Full 18-minute caption text reviewed. Useful: edge-slide with UV correction, eye socket pockets, aligned lash/eyelid loops, clear facial bone names, empty groups and manual weights, full blink tests, neutral rest geometry, custom property export and landmark-aware cage repair.",
+      "The tutorial-specific 25 mandatory/50 maximum FACS claim is not the official minimum. Current head specification requires 17 named poses; do not tie price to a pose count. The 0.1 scale and scene hierarchy are template-specific.",
+      "A closed-mouth expression or displaced iris is not guaranteed to meet required jaw/mouth motion. Do not cross-wire independent FACS poses to imitate expressions: combined controls can double deformation. Never repair validation merely by adding names.",
+      "Third-party Discord/MediaFire templates need license/provenance and source inspection; preserve the official cage UV/topology. Deleting all existing bones/custom properties is only relevant to that disposable starting template and can destroy a working rig. No reproduced head or full visual review claimed."
+    ],
+    "transcript_sha256": "5f30b3c32c7fce166c82ac13171aa5649468a5095bd595e9df4f493ea4090c1d",
+    "caption_type": "auto-generated",
+    "transcript_language": "en",
+    "transcript_redistributed": false
+  }
+]

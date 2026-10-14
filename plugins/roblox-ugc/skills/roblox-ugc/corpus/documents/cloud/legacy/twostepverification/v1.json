@@ -1,7 +1,7 @@
 {
   "url": "https://create.roblox.com/docs/cloud/legacy/twostepverification/v1",
-  "retrieved_at": "2026-10-13T21:08:36.767836+00:00",
-  "remote_sha256": "4beb56a1bcdf6aa25c14c6ef0cfa0191cf2da32d272b8597809281df5d6a41a9",
+  "retrieved_at": "2026-10-14T07:30:32.363057+00:00",
+  "remote_sha256": "21573b060ae0703dfc9d0fbc571808f3e0ce3da1f0dc8d9980f2e082eae0650c",
   "section_index": [
     "TwoStepVerification Api v1",
     "Endpoints",

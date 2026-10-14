@@ -6,6 +6,8 @@ Sources: [body specifications](https://create.roblox.com/docs/avatar/character-b
 
 Traditional authoring supplies geometry, rig, skinning, attachments, cages and facial animation. Avatar Setup generates essential avatar components from suitable inputs; its output still needs artistic inspection, edits and validation. Follow [Setup input requirements](https://create.roblox.com/docs/avatar-setup/auto-setup-requirements), including their front direction. Do not apply the traditional +Z front requirement to the Setup -Z input workflow.
 
+The official [Auto Setup video](https://www.youtube.com/watch?v=Hp9pr2FpZa8) explicitly demonstrates a technically processed example that still has policy-invalid baked clothes/shoes. Its historical claim that output download is not available is superseded by current glTF download/edit support. Keep input requirements and output acceptance separate.
+
 ## Traditional body
 
 Use the complete official character-template tutorial, including head cleanup, retopology/UV, texturing, rigging, caging, export and Blender/Studio tests. A standard body has 15 separate watertight render meshes: Head, Upper/LowerTorso, Upper/LowerArm plus Hand on each side, and Upper/LowerLeg plus Foot on each side. The DCC naming convention uses `_Geo`.

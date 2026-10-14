@@ -1,0 +1,672 @@
+{
+  "checked_at": "2026-10-14",
+  "scope": "Read-only Studio environment diagnosis and negative-input runtime tests; no UGC asset import or API validation",
+  "studio": {
+    "name": "CS:S Zombie Survival [Beta]",
+    "studio_id": "6d2fe9e1-87f9-47c8-9e8e-f6cdd4e6de9d",
+    "place_id": 83440863421402,
+    "datamodel": "Edit"
+  },
+  "source_sha256": {
+    "plugins/roblox-ugc/skills/roblox-ugc/scripts/studio_doctor.luau": "a187e9118a4885d4eb4d04fd3ed26fcc268395b8c3df6b466e93efb646d9eb41",
+    "tests/studio_doctor_cases.luau": "924c444c45daffd88f2f51f6ccee563e892e1c7bd9d236c9f2b9973205a07c9c"
+  },
+  "mutation_policy": {
+    "instances_created": 0,
+    "scripts_written": 0,
+    "play_started": false,
+    "upload_attempted": false
+  },
+  "runtime_result": {
+    "status": "PASS",
+    "runtime_assertions": 34,
+    "cases": {
+      "wrongTarget": {
+        "marketplace_approved": false,
+        "environment": {
+          "running": false,
+          "engine_version": "0.742.0.7421053",
+          "place_id": 83440863421402,
+          "studio": true,
+          "client": true,
+          "server": false
+        },
+        "checks": [
+          {
+            "check": "studio-runtime",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": {
+              "running": false,
+              "engine_version": "0.742.0.7421053",
+              "place_id": 83440863421402,
+              "studio": true,
+              "client": true,
+              "server": false
+            },
+            "status": "PASS"
+          },
+          {
+            "check": "target-place",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": {
+              "actual": 83440863421402,
+              "expected": -1
+            },
+            "status": "FAIL"
+          },
+          {
+            "check": "avatar-creation-service",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Service exists; no validation method was invoked.",
+            "status": "PASS"
+          },
+          {
+            "check": "ValidateUGCAccessoryAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "ValidateUGCBodyPartAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "ValidateUGCFullBodyAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "validation-play-prerequisites",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": {
+              "running": false,
+              "studio": true,
+              "player_count": 1,
+              "explanation": "This checks prerequisites only. Run studio_validate.luau on the actual imported asset in an appropriate play context for API results."
+            },
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "asset-reference",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "No imported asset supplied. Environment readiness does not establish asset readiness.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:list_roblox_studios",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:get_studio_state",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:search_game_tree",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:inspect_instance",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:execute_luau",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:screen_capture",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:start_stop_play",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "native-import-and-avatar-ui",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Doctor cannot operate native File > Import, AFT, Avatar Setup, file dialogs or publishing menus. Verify a separate authorized desktop-control integration, or provide the manual handoff.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "marketplace-publish",
+            "source": "https://create.roblox.com/docs/marketplace/publish-to-marketplace",
+            "evidence": "No upload, payment, moderation or sale operation has been attempted.",
+            "status": "NOT_CHECKED"
+          }
+        ],
+        "official_validation_executed": false,
+        "asset_checked": false,
+        "stage": "studio-environment-readiness",
+        "visual_fit_checked": false
+      },
+      "invalidOptions": {
+        "marketplace_approved": false,
+        "checks": [
+          {
+            "check": "options",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Supply a table of options or omit it.",
+            "status": "FAIL"
+          }
+        ],
+        "official_validation_executed": false,
+        "asset_checked": false,
+        "stage": "studio-environment-readiness",
+        "visual_fit_checked": false
+      },
+      "wrongRoot": {
+        "marketplace_approved": false,
+        "environment": {
+          "running": false,
+          "engine_version": "0.742.0.7421053",
+          "place_id": 83440863421402,
+          "studio": true,
+          "client": true,
+          "server": false
+        },
+        "checks": [
+          {
+            "check": "studio-runtime",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": {
+              "running": false,
+              "engine_version": "0.742.0.7421053",
+              "place_id": 83440863421402,
+              "studio": true,
+              "client": true,
+              "server": false
+            },
+            "status": "PASS"
+          },
+          {
+            "check": "target-place",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Caller must identify the intended Studio window/file before mutation; an unsaved place can have PlaceId 0.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "avatar-creation-service",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Service exists; no validation method was invoked.",
+            "status": "PASS"
+          },
+          {
+            "check": "ValidateUGCAccessoryAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "ValidateUGCBodyPartAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "ValidateUGCFullBodyAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "validation-play-prerequisites",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": {
+              "running": false,
+              "studio": true,
+              "player_count": 1,
+              "explanation": "This checks prerequisites only. Run studio_validate.luau on the actual imported asset in an appropriate play context for API results."
+            },
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "asset-reference",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "options.root must be the actual imported Instance, not a path string or invented ID.",
+            "status": "FAIL"
+          },
+          {
+            "check": "mcp-tool:list_roblox_studios",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:get_studio_state",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:search_game_tree",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:inspect_instance",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:execute_luau",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:screen_capture",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:start_stop_play",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "native-import-and-avatar-ui",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Doctor cannot operate native File > Import, AFT, Avatar Setup, file dialogs or publishing menus. Verify a separate authorized desktop-control integration, or provide the manual handoff.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "marketplace-publish",
+            "source": "https://create.roblox.com/docs/marketplace/publish-to-marketplace",
+            "evidence": "No upload, payment, moderation or sale operation has been attempted.",
+            "status": "NOT_CHECKED"
+          }
+        ],
+        "official_validation_executed": false,
+        "asset_checked": false,
+        "stage": "studio-environment-readiness",
+        "visual_fit_checked": false
+      },
+      "omitted": {
+        "marketplace_approved": false,
+        "environment": {
+          "running": false,
+          "engine_version": "0.742.0.7421053",
+          "place_id": 83440863421402,
+          "studio": true,
+          "client": true,
+          "server": false
+        },
+        "checks": [
+          {
+            "check": "studio-runtime",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": {
+              "running": false,
+              "engine_version": "0.742.0.7421053",
+              "place_id": 83440863421402,
+              "studio": true,
+              "client": true,
+              "server": false
+            },
+            "status": "PASS"
+          },
+          {
+            "check": "target-place",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Caller must identify the intended Studio window/file before mutation; an unsaved place can have PlaceId 0.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "avatar-creation-service",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Service exists; no validation method was invoked.",
+            "status": "PASS"
+          },
+          {
+            "check": "ValidateUGCAccessoryAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "ValidateUGCBodyPartAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "ValidateUGCFullBodyAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "validation-play-prerequisites",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": {
+              "running": false,
+              "studio": true,
+              "player_count": 1,
+              "explanation": "This checks prerequisites only. Run studio_validate.luau on the actual imported asset in an appropriate play context for API results."
+            },
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "asset-reference",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "No imported asset supplied. Environment readiness does not establish asset readiness.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:list_roblox_studios",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:get_studio_state",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:search_game_tree",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:inspect_instance",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:execute_luau",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:screen_capture",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:start_stop_play",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Tool was not reported by the client. Discover its current tools before choosing an integration.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "native-import-and-avatar-ui",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Doctor cannot operate native File > Import, AFT, Avatar Setup, file dialogs or publishing menus. Verify a separate authorized desktop-control integration, or provide the manual handoff.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "marketplace-publish",
+            "source": "https://create.roblox.com/docs/marketplace/publish-to-marketplace",
+            "evidence": "No upload, payment, moderation or sale operation has been attempted.",
+            "status": "NOT_CHECKED"
+          }
+        ],
+        "official_validation_executed": false,
+        "asset_checked": false,
+        "stage": "studio-environment-readiness",
+        "visual_fit_checked": false
+      },
+      "actualInventory": {
+        "marketplace_approved": false,
+        "environment": {
+          "running": false,
+          "engine_version": "0.742.0.7421053",
+          "place_id": 83440863421402,
+          "studio": true,
+          "client": true,
+          "server": false
+        },
+        "checks": [
+          {
+            "check": "studio-runtime",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": {
+              "running": false,
+              "engine_version": "0.742.0.7421053",
+              "place_id": 83440863421402,
+              "studio": true,
+              "client": true,
+              "server": false
+            },
+            "status": "PASS"
+          },
+          {
+            "check": "target-place",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": {
+              "actual": 83440863421402,
+              "expected": 83440863421402
+            },
+            "status": "PASS"
+          },
+          {
+            "check": "avatar-creation-service",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Service exists; no validation method was invoked.",
+            "status": "PASS"
+          },
+          {
+            "check": "ValidateUGCAccessoryAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "ValidateUGCBodyPartAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "ValidateUGCFullBodyAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "validation-play-prerequisites",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": {
+              "running": false,
+              "studio": true,
+              "player_count": 1,
+              "explanation": "This checks prerequisites only. Run studio_validate.luau on the actual imported asset in an appropriate play context for API results."
+            },
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "asset-reference",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "No imported asset supplied. Environment readiness does not establish asset readiness.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool:list_roblox_studios",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Client reports this tool is exposed; individual operations are not tested by this script.",
+            "status": "PASS"
+          },
+          {
+            "check": "mcp-tool:get_studio_state",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Client reports this tool is exposed; individual operations are not tested by this script.",
+            "status": "PASS"
+          },
+          {
+            "check": "mcp-tool:search_game_tree",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Client reports this tool is exposed; individual operations are not tested by this script.",
+            "status": "PASS"
+          },
+          {
+            "check": "mcp-tool:inspect_instance",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Client reports this tool is exposed; individual operations are not tested by this script.",
+            "status": "PASS"
+          },
+          {
+            "check": "mcp-tool:execute_luau",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Client reports this tool is exposed; individual operations are not tested by this script.",
+            "status": "PASS"
+          },
+          {
+            "check": "mcp-tool:screen_capture",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Client reports this tool is exposed; individual operations are not tested by this script.",
+            "status": "PASS"
+          },
+          {
+            "check": "mcp-tool:start_stop_play",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Client reports this tool is exposed; individual operations are not tested by this script.",
+            "status": "PASS"
+          },
+          {
+            "check": "native-import-and-avatar-ui",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Doctor cannot operate native File > Import, AFT, Avatar Setup, file dialogs or publishing menus. Verify a separate authorized desktop-control integration, or provide the manual handoff.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "marketplace-publish",
+            "source": "https://create.roblox.com/docs/marketplace/publish-to-marketplace",
+            "evidence": "No upload, payment, moderation or sale operation has been attempted.",
+            "status": "NOT_CHECKED"
+          }
+        ],
+        "official_validation_executed": false,
+        "asset_checked": false,
+        "stage": "studio-environment-readiness",
+        "visual_fit_checked": false
+      },
+      "wrongTools": {
+        "marketplace_approved": false,
+        "environment": {
+          "running": false,
+          "engine_version": "0.742.0.7421053",
+          "place_id": 83440863421402,
+          "studio": true,
+          "client": true,
+          "server": false
+        },
+        "checks": [
+          {
+            "check": "studio-runtime",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": {
+              "running": false,
+              "engine_version": "0.742.0.7421053",
+              "place_id": 83440863421402,
+              "studio": true,
+              "client": true,
+              "server": false
+            },
+            "status": "PASS"
+          },
+          {
+            "check": "target-place",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Caller must identify the intended Studio window/file before mutation; an unsaved place can have PlaceId 0.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "avatar-creation-service",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Service exists; no validation method was invoked.",
+            "status": "PASS"
+          },
+          {
+            "check": "ValidateUGCAccessoryAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "ValidateUGCBodyPartAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "ValidateUGCFullBodyAsync:availability",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": "Method is discoverable. Correct category input, permissions and a successful actual call remain untested.",
+            "status": "WARN"
+          },
+          {
+            "check": "validation-play-prerequisites",
+            "source": "https://create.roblox.com/docs/reference/engine/classes/AvatarCreationService",
+            "evidence": {
+              "running": false,
+              "studio": true,
+              "player_count": 1,
+              "explanation": "This checks prerequisites only. Run studio_validate.luau on the actual imported asset in an appropriate play context for API results."
+            },
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "asset-reference",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "No imported asset supplied. Environment readiness does not establish asset readiness.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "mcp-tool-inventory",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "options.tool_names must contain tool names discovered from the current client's actual tool list.",
+            "status": "FAIL"
+          },
+          {
+            "check": "native-import-and-avatar-ui",
+            "source": "https://create.roblox.com/docs/studio/mcp",
+            "evidence": "Doctor cannot operate native File > Import, AFT, Avatar Setup, file dialogs or publishing menus. Verify a separate authorized desktop-control integration, or provide the manual handoff.",
+            "status": "NOT_CHECKED"
+          },
+          {
+            "check": "marketplace-publish",
+            "source": "https://create.roblox.com/docs/marketplace/publish-to-marketplace",
+            "evidence": "No upload, payment, moderation or sale operation has been attempted.",
+            "status": "NOT_CHECKED"
+          }
+        ],
+        "official_validation_executed": false,
+        "asset_checked": false,
+        "stage": "studio-environment-readiness",
+        "visual_fit_checked": false
+      }
+    }
+  },
+  "limitations": [
+    "No local FBX/glTF import, AFT or Avatar Setup UI test.",
+    "No ValidateUGC*Async call on an actual imported UGC asset.",
+    "No visual fit, moderation or Marketplace sale check.",
+    "Remote Desktop Commander exposed filesystem/process tools; no desktop screenshot/click tool found in its current inventory."
+  ]
+}

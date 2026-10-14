@@ -1,0 +1,19 @@
+test_missing_input_fails (test_rebake.LauncherTests.test_missing_input_fails) ... ok
+test_unavailable_blender_is_not_pass (test_rebake.LauncherTests.test_unavailable_blender_is_not_pass) ... ok
+test_bad_target_uv_fails (test_rebake.RebakeTests.test_bad_target_uv_fails) ... ok
+test_duplicate_smart_uv_and_decimate_real_mesh (test_rebake.RebakeTests.test_duplicate_smart_uv_and_decimate_real_mesh) ... ok
+test_duplicate_voxel_remesh_real_mesh (test_rebake.RebakeTests.test_duplicate_voxel_remesh_real_mesh) ... ok
+test_missing_image_fails (test_rebake.RebakeTests.test_missing_image_fails) ... ok
+test_missing_source_uv_fails (test_rebake.RebakeTests.test_missing_source_uv_fails) ... ok
+test_old_to_different_uv_preserves_surface_pattern_and_data (test_rebake.RebakeTests.test_old_to_different_uv_preserves_surface_pattern_and_data) ... ok
+test_opaque_output_padding_and_per_map_dimensions (test_rebake.RebakeTests.test_opaque_output_padding_and_per_map_dimensions) ... ok
+test_opaque_output_refuses_true_source_transparency (test_rebake.RebakeTests.test_opaque_output_refuses_true_source_transparency) ... ok
+test_output_collision_refused (test_rebake.RebakeTests.test_output_collision_refused) ... ok
+test_projection_misses_fail (test_rebake.RebakeTests.test_projection_misses_fail) ... ok
+test_remesh_preserves_rig_data_by_refusing (test_rebake.RebakeTests.test_remesh_preserves_rig_data_by_refusing) ... ok
+test_unknown_shader_is_not_guessed (test_rebake.RebakeTests.test_unknown_shader_is_not_guessed) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 20.065s
+
+OK

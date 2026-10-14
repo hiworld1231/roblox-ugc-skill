@@ -147,6 +147,44 @@ class CorpusTests(unittest.TestCase):
     def test_audio_excluded(self):
         self.assertFalse(sync.classify("art/reaper")[0])
 
+    def test_studio_mcp_is_creation_dependency(self):
+        self.assertTrue(sync.classify("studio/mcp")[0])
+
+    def test_video_review_search_keeps_evidence_boundaries(self):
+        results = corpus.search("cryptic incorrect scale", topic="body", limit=100)
+        videos = [r for r in results if r["id"].startswith("video/")]
+        self.assertTrue(videos)
+        self.assertTrue(all("transcript_status" in r and "visual_status" in r for r in videos))
+
+    def test_reviewed_video_without_provenance_rejected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root, _, _ = self.fixture(Path(temp))
+            coverage = json.loads((root / "coverage.json").read_text())
+            coverage.update(videos_indexed=1, videos_transcripts_reviewed=1)
+            (root / "coverage.json").write_text(json.dumps(coverage))
+            (root / "videos.json").write_text(json.dumps([{"id": "test", "transcript_status": "reviewed", "visual_status": "NOT_CHECKED"}]))
+            self.assertFalse(corpus.audit(root)["ok"])
+
+    def test_video_count_drift_rejected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root, _, _ = self.fixture(Path(temp))
+            (root / "videos.json").write_text(json.dumps([{"id": "test", "transcript_status": "unavailable", "visual_status": "sampled"}]))
+            self.assertFalse(corpus.audit(root)["ok"])
+
+    def test_community_review_without_provenance_rejected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root, _, _ = self.fixture(Path(temp))
+            (root / "community-videos.json").write_text(json.dumps([{"id": "community-test", "transcript_status": "reviewed", "visual_status": "reviewed"}]))
+            result = corpus.audit(root)
+            self.assertFalse(result["ok"])
+            self.assertTrue(any("community-test" in p for p in result["problems"]))
+
+    def test_sampled_frames_require_observation_times(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root, _, _ = self.fixture(Path(temp))
+            (root / "community-videos.json").write_text(json.dumps([{"id": "sample", "transcript_status": "unavailable", "visual_status": "sampled", "visual_method": "Paused screenshots"}]))
+            self.assertFalse(corpus.audit(root)["ok"])
+
 
 if __name__ == "__main__":
     unittest.main()

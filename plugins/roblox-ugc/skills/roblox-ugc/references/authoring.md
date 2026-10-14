@@ -22,6 +22,8 @@ Sources: [rigid export](https://create.roblox.com/docs/avatar/rigid-accessories/
 
 Python 3.10+ is sufficient for the launcher and corpus. Blender is an optional external runtime required for real 3D analysis/export. `--blender` accepts its executable path. In Claude Chat's remote runtime, local Blender/Studio may be inaccessible; Cowork/Code and Codex require their own authorized local tools.
 
+For interactive scene editing and previews, use [Blender MCP setup and operation](blender-mcp.md). For the additional authoring operators, use the audited [RBX Toolbox guide](rbx-toolbox.md). For geometry reduction/new UVs and appearance transfer, use [remesh and rebake](remesh-rebake.md). The skill's ordinary preflight/export remains usable without either add-on. Connect and inspect Studio through [Studio control](studio-control.md).
+
 ```bash
 python scripts/asset.py templates
 python scripts/asset.py prepare --kind layered --template clothing-cages --dest ./jacket-project

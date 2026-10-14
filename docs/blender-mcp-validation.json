@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "MCP initialize and tools/list",
+      "status": "PASS"
+    },
+    {
+      "check": "MCP Python object creation",
+      "status": "PASS",
+      "response": [
+        "Code executed successfully: UGC_MCP_CREATED UGC_MCP_Probe 384 1\n"
+      ]
+    },
+    {
+      "check": "MCP scene observation",
+      "status": "PASS",
+      "response": [
+        "Scene 'Scene' | 1 camera, 1 light, 2 mesh | active UGC_MCP_Probe | selected UGC_MCP_Probe | mode OBJECT\n\nShowing 1 of 1 (name | type | details | materials | topology):\nUGC_MCP_Probe | mesh | 192 faces | mat UGC_MCP_ProbeMaterial | 192 quads, 0 tris, 0 ngons; 0 non-manifold, 0 boundary edges, 0 loose verts, 0 poles"
+      ]
+    },
+    {
+      "check": "MCP look image returned",
+      "status": "PASS",
+      "visual_review": "NOT_CHECKED"
+    },
+    {
+      "check": "MCP scratch project save",
+      "status": "PASS"
+    },
+    {
+      "check": "Safe-mode denied environment access",
+      "status": "PASS"
+    },
+    {
+      "check": "Human/model visual inspection of returned multi-angle image",
+      "status": "PASS",
+      "evidence": "Reviewed PNG: cyan torus visible edge-on, top and three-quarter; no blank or corrupted image",
+      "sha256": "a36a1901bbb554b17a64baa60c57dcfdf59aa7a250b3196d7b852833b75e9d72"
+    },
+    {
+      "check": "Launcher tests",
+      "status": "PASS",
+      "tests": 13,
+      "command": "python -m unittest discover -s tests -p test_blender_mcp.py -v"
+    },
+    {
+      "check": "Owned Blender quit and local endpoint closed",
+      "status": "PASS",
+      "evidence": "stop command verified addon endpoint closed on port19877"
+    }
+  ],
+  "files": {
+    "mcp-preview.png": {
+      "sha256": "a36a1901bbb554b17a64baa60c57dcfdf59aa7a250b3196d7b852833b75e9d72",
+      "bytes": 141433
+    },
+    "mcp-probe.blend": {
+      "sha256": "23f4e99d17c890c2e1843955038b124693ed2b8bef375f754f8ba74c39aca4bd",
+      "bytes": 619455
+    }
+  },
+  "server": {
+    "name": "MCP for Blender",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tools": [
+    "get_addon_status",
+    "disable_telemetry",
+    "get_scene_info",
+    "execute_blender_code",
+    "record_trajectory_feedback",
+    "look",
+    "generate_3d",
+    "search_assets",
+    "import_asset"
+  ],
+  "limits": [
+    "Transport fixture is not a Marketplace asset",
+    "Codex/Claude graphical client connection NOT_CHECKED",
+    "Windows/macOS process launch NOT_CHECKED",
+    "Studio fitting, moderation and Marketplace publication outside this transport test"
+  ],
+  "reviewed_date": "2026-10-14",
+  "environment": {
+    "os": "Linux",
+    "Blender": "5.2.2 LTS",
+    "Python": "3.11.16",
+    "display": "Xvfb GUI; not background Blender",
+    "package": "mcp-for-blender 2.1.9",
+    "mcp_sdk": "1.30.0"
+  },
+  "upstream": {
+    "repository": "https://github.com/ahujasid/blender-mcp",
+    "revision": "7a0373ec9199183cb460068c4f96aed9c579fb4f",
+    "license": "MIT",
+    "wheel_sha256": "a5cbc6cf316fa7433566eb505a0c26ca22e28c10083bd1b09a23d9e357821ccc",
+    "dependency_lock_sha256": "7001225c44fab1945cf8ea941e0e29c82d299d0b7f65796e2a282499ff743849"
+  },
+  "global_client_config_changed": false,
+  "global_blender_addon_installed": false,
+  "installed_dependencies": {
+    "cryptography": "50.0.2",
+    "starlette": "1.8.0",
+    "httpx": "0.28.1",
+    "pydantic": "2.14.1",
+    "h11": "0.16.0",
+    "PyJWT": "2.15.1",
+    "charset-normalizer": "3.5.2",
+    "attrs": "26.1.0",
+    "certifi": "2026.7.22",
+    "referencing": "0.37.0",
+    "mcp-for-blender": "2.1.9",
+    "jsonschema": "4.26.0",
+    "rpds-py": "2026.9.1",
+    "httpcore": "1.0.9",
+    "mcp": "1.30.0",
+    "pydantic-settings": "2.15.0",
+    "urllib3": "2.8.0",
+    "uvicorn": "0.54.0",
+    "anyio": "4.15.1",
+    "python-multipart": "0.0.32",
+    "pydantic_core": "2.50.1",
+    "cffi": "2.1.1",
+    "python-dotenv": "1.2.4",
+    "typing_extensions": "4.16.0",
+    "click": "8.5.0",
+    "requests": "2.34.2",
+    "pycparser": "3.11",
+    "idna": "3.20",
+    "jsonschema-specifications": "2025.9.1",
+    "typing-inspection": "0.4.4",
+    "sse-starlette": "3.5.0",
+    "annotated-types": "0.8.0",
+    "httpx-sse": "0.4.3"
+  },
+  "helper_sha256": "c0a7b6fd16b99765cf4684cb41162c2f9f45f4271d66cd77cf56b2b0dbcae535",
+  "source_artifact_path": "/tmp/ugc-blender-mcp-pinned-evidence/mcp-probe.blend"
+}

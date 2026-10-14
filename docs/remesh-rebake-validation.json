@@ -1,0 +1,124 @@
+{
+  "checked_date": "2026-10-14",
+  "stage": "offline-original-fixture",
+  "blender_version": "5.2.2 LTS",
+  "python_version": "3.14.7",
+  "tests": {
+    "command": "python -m unittest discover -s tests -p test_rebake.py -v",
+    "passed": 14,
+    "skipped": 0,
+    "duration_seconds": 18.123
+  },
+  "transfer": {
+    "completed": true,
+    "source_unchanged": true,
+    "source_sha256": "32b1696b04326c0fe83e0c12b9b1de8fd3f789f8f383604a7e7eb5508ec493f3",
+    "old_uv": "OldUV",
+    "new_uv": "NewUV",
+    "geometry": "same planar mesh, rotated/inset target UV",
+    "maps": {
+      "coverage": [
+        256,
+        256
+      ],
+      "base-color": [
+        256,
+        256
+      ],
+      "alpha": [
+        256,
+        256
+      ],
+      "roughness": [
+        64,
+        64
+      ],
+      "metallic": [
+        64,
+        64
+      ],
+      "normal": [
+        64,
+        64
+      ]
+    },
+    "coverage_probes": {
+      "triangle_interior_samples": 8,
+      "missing": 0,
+      "source_projection_distance": 0.1,
+      "cage": null,
+      "cage_extrusion": 0,
+      "note": "Finite probes do not prove every texel; inspect seams and thin parts."
+    }
+  },
+  "appearance_comparison": {
+    "channels": 262144,
+    "mean_absolute_error": 0.011159949894715027,
+    "over_0_1": 5.340576171875e-05,
+    "scope": "base color and alpha on identical geometry/camera, stored Standard sRGB pixels",
+    "status": "PASS",
+    "visual_review": "Both original before/after renders inspected; on-mesh gradient/checker layout and alpha are retained. Some filtered boundary texels differ.",
+    "scope_limit": "Original color/alpha fixture and scalar/normal samples; not every arbitrary shader or Roblox acceptance."
+  },
+  "tested_failures": [
+    "missing source image",
+    "missing source UV",
+    "degenerate target UV",
+    "source projection misses",
+    "unsupported surface shader",
+    "rig weight remesh refusal",
+    "existing output refusal",
+    "opaque request with actual source transparency"
+  ],
+  "remesh": {
+    "decimate": "PASS: 320 source faces -> 160 target faces; texture transfer completed",
+    "voxel": "PASS: explicit size 0.3, inflated bake cage 0.3 and projection distance 0.5; texture transfer completed",
+    "scope_limit": "Static unbound original mesh; automatic remesh is not production deformation retopology."
+  },
+  "artifacts_local_root": "Release example-rebake-v0.2.0.zip and repository docs/rebake-example for preview copies",
+  "artifacts": {
+    "valid.blend": {
+      "sha256": "32b1696b04326c0fe83e0c12b9b1de8fd3f789f8f383604a7e7eb5508ec493f3",
+      "bytes": 97067
+    },
+    "transfer/result.blend": {
+      "sha256": "c8b2fd92ef9581d3510fdb6a27ed1ae9c2637cbe73067f05c25331a7cb10d3ad",
+      "bytes": 106903
+    },
+    "transfer/before.png": {
+      "sha256": "0e67421149e279d36403de9bf20dfe67de5980403b58e1364cde72af67354d17",
+      "bytes": 116511
+    },
+    "transfer/after.png": {
+      "sha256": "2825c3a7a0a8e8280866f5563d66a40747f2c44f64dcc78020bcfbbd0d8ce4a1",
+      "bytes": 117720
+    },
+    "transfer/alpha.png": {
+      "sha256": "62eb55aa2c94edb7edbf24e32a2fa725872eea3e27abd6032178934fc099f2ec",
+      "bytes": 3954
+    },
+    "transfer/base-color.png": {
+      "sha256": "cb3d0d788248a851aef18b23a3b613f6d37a3162ff84cc9ec2a433439bd8832e",
+      "bytes": 6281
+    },
+    "transfer/coverage.png": {
+      "sha256": "c6731d44617d3d66757daa3cf46af89f7066d6ab2cb21b9bb630558db59a16c3",
+      "bytes": 3541
+    },
+    "transfer/metallic.png": {
+      "sha256": "807309318a33fd15348778e712dccb8be6dcd54142265afc1137edf3dfcd7833",
+      "bytes": 629
+    },
+    "transfer/normal.png": {
+      "sha256": "23f77188cc1a69e1030ea355c9c56c12967413bedea4335900103998f6ee80fe",
+      "bytes": 496
+    },
+    "transfer/roughness.png": {
+      "sha256": "bd1ce0b32f2c944b85a321a626d401d4a9cad7db5ba789ba68dfcc93625f187d",
+      "bytes": 1797
+    }
+  },
+  "roblox_technical_validation": "NOT_CHECKED",
+  "marketplace_moderation": "NOT_CHECKED",
+  "rights": "Original generated test geometry and patterns; project MIT license. No third-party art."
+}

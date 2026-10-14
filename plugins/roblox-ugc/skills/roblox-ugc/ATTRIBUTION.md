@@ -9,3 +9,7 @@ Vendored Markdown/YAML are preserved without substantive edits. Directory index 
 Live-only Creator Hub pages are indexed with factual metadata and links, not copied as full unlicensed text. Help Center, DevForum, YouTube/Vimeo and third-party content retain their own rights; this package stores links, metadata and original brief review notes rather than redistributing their full text/video. Official asset templates are downloaded on demand from pinned URLs and are not bundled; consult their linked terms before redistribution.
 
 Original project code/instructions use the project's MIT license; that license does not replace Roblox's documentation license or license external assets. Installation does not grant ownership of Roblox branding, other creators' work or reference template designs.
+
+## Optional tool integrations
+
+RBX Toolbox is a separate GPL-3.0 repository/add-on with additional embedded notices. MCP for Blender is a separate MIT runtime. This package contains original guides, a launcher and audit metadata; it does not bundle their upstream add-on code or catalog assets. Runtime downloads retain the upstream license. See `corpus/tool-integrations.json` and the respective tool guides for exact pins/hashes and inspected scope. Blender manual links support the original rebake guide; the manual text is not reproduced.

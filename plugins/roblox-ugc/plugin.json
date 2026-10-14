@@ -1,9 +1,11 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "roblox-ugc",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Create, validate, troubleshoot and publish Roblox Marketplace avatar items with a source-backed corpus and Blender/Studio helpers.",
-  "author": {"name": "hiworld1231"},
+  "author": {
+    "name": "hiworld1231"
+  },
   "repository": "https://github.com/hiworld1231/roblox-ugc-skill",
   "license": "MIT",
   "extensions": {

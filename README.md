@@ -2,7 +2,7 @@
 
 [Русский](README.ru.md)
 
-Create, validate and troubleshoot Roblox Marketplace avatar items: accessories, hair, layered/classic clothing, shoes, bodies, dynamic heads, makeup, emotes and animation packs. Includes official documentation, practical workflows, Blender helpers and optional Studio validation. The agent replies in your language.
+Create, validate and troubleshoot Roblox Marketplace avatar items: accessories, hair, layered/classic clothing, shoes, bodies, dynamic heads, makeup, emotes and animation packs. Includes official documentation, RBX Toolbox guidance, an optional Blender MCP launcher, remesh/re-UV texture transfer and Studio helpers. The agent replies in your language.
 
 ## Install
 
@@ -28,6 +28,7 @@ Older versions: `claude plugin marketplace add hiworld1231/roblox-ugc-skill`, th
 - “Create an original low-poly Roblox hat. Deliver the Blender project, textures, FBX and preview.”
 - “Fix this jacket's cages and explain which validation checks remain.”
 - “Prepare my dynamic head / makeup / animation pack for Marketplace publication.”
+- “Connect Blender MCP, inspect this unfamiliar material, make a new UV and rebake its textures while preserving the appearance.”
 
 Codex: `$roblox-ugc`. Claude Code: `/roblox-ugc:roblox-ugc`. Automatic discovery is enabled.
 
@@ -35,7 +36,9 @@ Knowledge works without Blender or an MCP server. Helpers need **Python 3.10+**;
 
 ## Coverage & verification
 
-Pinned official corpus: **360 included documents/APIs**, **1,972 excluded candidates with reasons**, plus image/template/video and external-source inventories. Fees, policies and eligibility are rechecked live when needed. Video links are tracked separately; this release does **not** claim every video or internet tutorial was reviewed.
+Pinned official corpus: **361 included documents/APIs**, **1,971 excluded candidates with reasons**, plus image/template/video and external-source inventories. Full captions from **21** linked videos and one community head tutorial were analyzed; visual samples have separate status. Fees, policies and eligibility are rechecked live when needed.
+
+To use local tools, ask the agent to set up [Blender MCP](plugins/roblox-ugc/skills/roblox-ugc/references/blender-mcp.md) and connect [Studio MCP](plugins/roblox-ugc/skills/roblox-ugc/references/studio-control.md). Runtime connections are separate from skill installation. [RBX Toolbox](plugins/roblox-ugc/skills/roblox-ugc/references/rbx-toolbox.md) and [remesh/rebake](plugins/roblox-ugc/skills/roblox-ugc/references/remesh-rebake.md) have practical guides and recorded tests.
 
 [Coverage and limitations](docs/coverage.md) · [Validation evidence](docs/validation.json) · [Tools and workflows](plugins/roblox-ugc/skills/roblox-ugc/references/authoring.md) · [Releases](https://github.com/hiworld1231/roblox-ugc-skill/releases)
 

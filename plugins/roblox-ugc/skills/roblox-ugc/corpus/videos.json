@@ -4,12 +4,29 @@
     "url": "https://www.youtube.com/watch?v=VgMUCph3bOI",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "animation/graph-editor"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "745f78d4150a66eeceeab3c57ba34766b08c5dcc10ba9296b4ec9643ce2ac039",
+    "transcript_bytes": 8111,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "Animation Graph Beta Quickstart",
+    "topics": [
+      "animation"
+    ],
+    "review_notes": [
+      "0:00-7:40: Clip nodes feed poses; Blend1D combines walk/run with a style parameter, separately from playback speed. Select switches locomotion states; random idle and tool overlays demonstrate graph composition.",
+      "Use this as an experience animation dependency. Playing existing Roblox animations in a graph does not establish rights to submit an original Marketplace animation pack. Beta UI/API behavior needs live verification."
     ]
   },
   {
@@ -17,30 +34,66 @@
     "url": "https://www.youtube.com/watch?v=Eed29gV0hLA",
     "linked_by_official_docs": true,
     "channel_verified": true,
-    "status": "indexed",
-    "transcript_status": "unavailable",
-    "visual_status": "unavailable",
-    "reason": "Actual in-app YouTube page required sign-in to confirm not a bot; transcript export returned No transcript is available. No bypass or video review claimed.",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
+    "visual_status": "NOT_CHECKED",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "art/accessories/creating-rigid",
       "avatar/rigid-accessories"
     ],
     "title": "How to create and sell a rigid Roblox accessory in 12 minutes",
-    "channel": "Roblox Learn"
+    "channel": "Roblox Learn",
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "755d40de1e6d6cd4e95497e39bf85ef5471240550115c075d5ffa71365db0264",
+    "transcript_bytes": 14669,
+    "transcript_language": "en",
+    "caption_type": "authored or unspecified",
+    "transcript_redistributed": false,
+    "topics": [
+      "rigid",
+      "publishing"
+    ],
+    "review_notes": [
+      "1:26-8:20: Block out and bevel a backpack, merge nearby vertices, prepare UV islands, paint and save the image before FBX export. Paint panel identifiers first to locate the 2D islands.",
+      "8:30: The demonstrated .01 export scale compensates for that scene; it is not a universal value. Inspect imported dimensions against a reference avatar.",
+      "9:13-10:45: AFT bounds and an equipped rig expose size/attachment issues; test movement. Upload and Creator Dashboard sale configuration are separate stages.",
+      "0:45 and 11:20 onward: Premium, moderation duration, price floor and publishing advance examples are historical. Refresh current eligibility, fees and actual moderation status."
+    ]
   },
   {
     "id": "swQW2VS9ZMA",
     "url": "https://www.youtube.com/watch?v=swQW2VS9ZMA",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "art/accessories/creating-rigid/publishing",
       "art/accessories/from-existing",
       "marketplace/publish-to-marketplace"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "e910619480935ecf41323716624be22ceea3cdba37bd416408a9565e9a5bb9af",
+    "transcript_bytes": 4550,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "Publishing Avatar Items to the Marketplace",
+    "topics": [
+      "publishing"
+    ],
+    "review_notes": [
+      "0:00-3:22: After upload, configure metadata, limited quantity/per-user limit, pricing and sale locations in Creator Dashboard. A free Limited and resale earnings still have separate policies/costs.",
+      "The example price floor, Premium/group requirements and sale UI are dated. Live policy and displayed values control the transaction; uploading an asset does not automatically place it on sale."
     ]
   },
   {
@@ -48,15 +101,34 @@
     "url": "https://www.youtube.com/watch?v=C-DwGRBHvmE",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "art/accessories/creating",
       "art/modeling/cage-meshes/apply-deformation",
       "avatar/layered-accessories",
       "avatar/layered-accessories/specifications"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "01ccace8ac2ec2600eeab0411b0b98a05e74a2314acdf6e95b97db1b68908a6a",
+    "transcript_bytes": 18533,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "How to create and sell your first layered clothing item on Roblox",
+    "topics": [
+      "layered"
+    ],
+    "review_notes": [
+      "1:09-6:50: Duplicate a provided cage as render geometry, clear its parent, remove render-only color data, trim/subdivide/sculpt cloth, mark seams and unwrap. Save the painted image. Preserve both original cages and their UVs.",
+      "6:50-12:16: Append the reference armature, orient it for this scene, parent with automatic weights and test bending. Fit the outer cage over the garment; untangle armpits and close garment openings. Do not delete cage topology.",
+      "12:41: A tutorial remark about ignoring a cage vertex warning is not a general exemption. Identify the exact warning and compare current cage correspondence requirements; repair actual defects.",
+      "13:15 onward: Test animation and both layering orders with bulky garments before publishing. UI, export scale, fees and eligibility examples need workflow-specific verification."
     ]
   },
   {
@@ -64,25 +136,54 @@
     "url": "https://www.youtube.com/watch?v=-gIL6VZ-bkE",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "unreliable",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "English rigging video exported Spanish auto-generated gibberish on two attempts. Rejected as evidence; original speech/visual review remains required.",
     "backlinks": [
       "art/characters/facial-animation/create-basic-heads"
-    ]
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "d318119513bf6064332e2b28dbccee0482b1d8a185b2ab1f47d05c094355ccf7",
+    "transcript_bytes": 840,
+    "transcript_language": "es",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "Rigging Intro - Blender 2.80 Fundamentals",
+    "topics": []
   },
   {
     "id": "fx33sPEAZEk",
     "url": "https://www.youtube.com/watch?v=fx33sPEAZEk",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "art/characters/facial-animation/create-basic-heads"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "c0446674b28f112bbdfc4ae7584087ebf16f19dc320d9700c39bbf974dbc6e0e",
+    "transcript_bytes": 14115,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "Copy Limit Constraint - Blender 2.80 Fundamentals",
+    "topics": [
+      "head",
+      "authoring"
+    ],
+    "review_notes": [
+      "The complete transcript explains copy/limit location and rotation constraints, axis selection, inversion and local/world spaces. Disabling a constraint while keeping its visual transform differs from deleting it.",
+      "9:00 onward: Bones are targets through an armature plus a bone selector; object and bone constraints have separate tabs. Blender constraints are authoring controls: bake supported exported motion and verify it in Studio. Old 2.80 menus are historical."
     ]
   },
   {
@@ -90,13 +191,31 @@
     "url": "https://www.youtube.com/watch?v=OwhkWzSBnf0",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "art/characters/manually-update-catalog-heads",
       "avatar/dynamic-heads/validate"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "490094f23e474a64ec86a3ed3f52a1807bcbc0c0cb3d0fd950e27d02ac1fdfab",
+    "transcript_bytes": 7349,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "How avatar head validation works on Roblox",
+    "topics": [
+      "head"
+    ],
+    "review_notes": [
+      "1:41-5:38: Head cage eye/mouth landmarks project onto the render mesh. Validation tests left/right blink, jaw drop, happy and sad actions from the required FACS data.",
+      "2:49: Projection can miss because a cage is outside the head, holes interrupt the surface, or internal eye/mouth geometry receives a landmark. Successful projection onto a static region still fails movement checks.",
+      "3:43: Repair actual cage placement and pose deformation, especially full blink closure. Expected names alone do not establish moving landmarks or an accepted head."
     ]
   },
   {
@@ -104,13 +223,30 @@
     "url": "https://www.youtube.com/watch?v=EUDSIUmLjxA",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "art",
       "avatar/classic-clothing"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "61f4520429c8d920b90d8f6de26f58660d12616c8e85d7336e9e6e269d93734d",
+    "transcript_bytes": 2915,
+    "transcript_language": "en",
+    "caption_type": "authored or unspecified",
+    "transcript_redistributed": false,
+    "title": "What are Avatar Items on Roblox?",
+    "topics": [
+      "authoring"
+    ],
+    "review_notes": [
+      "0:00-2:26: Introduces classic clothing, accessories and bodies and the DCC, Studio and Marketplace stages. Distinguish asset creation, technical checks and commerce.",
+      "This introductory category list is not exhaustive for the current platform; also route makeup, emotes and animation packs. Rights, moderation, eligibility and fees remain separate checks."
     ]
   },
   {
@@ -118,26 +254,55 @@
     "url": "https://www.youtube.com/watch?v=nwShvDmFHWc",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "retrieved_not_reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Linked by general art overview, but environment design/skyboxes are outside avatar Marketplace authoring. Scope classification uses the observed title; no full transcript analysis claimed.",
     "backlinks": [
       "art"
-    ]
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "excluded",
+    "transcript_sha256": "9b6b4345fda213fea598927ee4fce398c965959335d1cf5f4166ba0a75e9913d",
+    "transcript_bytes": 1672,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "Environmental Art Design",
+    "topics": []
   },
   {
     "id": "tzPn6QvU8Bo",
     "url": "https://www.youtube.com/watch?v=tzPn6QvU8Bo",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "art",
       "avatar/rigid-accessories"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "57da761efce20087597d81ebdc44c0a1f3e4cb728fd63272130515115d1f1354",
+    "transcript_bytes": 3822,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "What are accessories on Roblox?",
+    "topics": [
+      "rigid",
+      "layered"
+    ],
+    "review_notes": [
+      "0:00-2:33: Accessory components include mesh, texture and attachment. Rigid accessories follow one attachment point; layered accessories add deformation components.",
+      "SurfaceAppearance/PBR is part of supported accessory workflows. Do not adopt older community claims that PBR is exclusive to clothing; use the current category texture specifications."
     ]
   },
   {
@@ -145,28 +310,59 @@
     "url": "https://www.youtube.com/watch?v=V-SDTfxcIF8",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "retrieved_not_reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Linked by general art overview, but environment design/skyboxes are outside avatar Marketplace authoring. Scope classification uses the observed title; no full transcript analysis claimed.",
     "backlinks": [
       "art"
-    ]
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "excluded",
+    "transcript_sha256": "80cee32a54c626e1198e369265ef8981db4e33e4653846863b75115f6811a035",
+    "transcript_bytes": 7027,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "Skyboxes in Roblox Studio 101",
+    "topics": []
   },
   {
     "id": "QwZaA9Gc-WQ",
     "url": "https://www.youtube.com/watch?v=QwZaA9Gc-WQ",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "art/modeling/project-files",
       "avatar/layered-accessories/caging-best-practices",
       "avatar/layered-accessories/project-files",
       "avatar/resources"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "484725effb7912b7109307f90b131e9403d33c94d382ed4e93dff2025361143f",
+    "transcript_bytes": 95963,
+    "transcript_language": "ru",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "How to cage Roblox 3D clothing",
+    "topics": [
+      "layered"
+    ],
+    "review_notes": [
+      "0:00-17:00: In Maya, duplicate the inner cage, use a live garment surface to place ordinary vertices, then fit edge loops/joints manually. Relax spacing and inflate only enough to cover the cloth. Untangle armpits; turn symmetry off for asymmetric folds.",
+      "17:00-39:00: Dress caging reshapes the two leg regions into a skirt envelope by moving existing vertices. Keep vertex/UV correspondence and avoid stacked vertices. Inspect multiple views and layer order; pants over a skirt can stretch unexpectedly.",
+      "39:00-49:00: A decorative protrusion can deliberately remain outside the outer cage. Fit against a temporary garment copy with decorations removed; hidden-surface removal is case-dependent, not guaranteed.",
+      "49:00-1:02:26: A full-body suit uses the same close, evenly spaced envelope. An inflated cage can magnify stacked clothing and disrupt gameplay. The presenter repairs an old completed cage rather than treating its existence as proof of quality.",
+      "Auto-generated Russian captions were read in full; exact hotkeys/settings require visual confirmation. No full visual walkthrough or reproduced cage is claimed."
     ]
   },
   {
@@ -174,12 +370,35 @@
     "url": "https://www.youtube.com/watch?v=HVUO3Dl7qT0",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
-    "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "status": "analyzed",
+    "transcript_status": "unavailable",
+    "visual_status": "sampled",
+    "reason": "Observed accessible watch page; native export reports no transcript. The absence of captions does not mean the video itself is blocked. Visual analysis remains open.",
     "backlinks": [
       "art/modeling/reimport"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "title": "Reimport demo",
+    "topics": [
+      "studio",
+      "authoring"
+    ],
+    "visual_method": "Paused fullscreen screenshots; not continuous viewing.",
+    "visual_sample_times": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "review_notes": [
+      "Sampled32-second demo: change Blender geometry and export the same FBX, then reimport the selected Studio model. The edited silhouette updates while its Studio pink color remains.",
+      "A new source object appears in the final hierarchy, but the final frame is still processing; successful final import is not established. Inspect changed object IDs, attachments, material assignments and descendants before replacing a working UGC item."
     ]
   },
   {
@@ -187,12 +406,30 @@
     "url": "https://www.youtube.com/watch?v=f2pTkW-1JkE",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "art/modeling/skin-a-humanoid-model"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "b16e0e3dc8186cf2f430d01a11f964390e66893decb992ccf18868d73642d67f",
+    "transcript_bytes": 8696,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "Character Rigging - Blender 2.80 Fundamentals",
+    "topics": [
+      "body",
+      "authoring"
+    ],
+    "review_notes": [
+      "0:00-7:45: Enable Rigify, fit a human metarig to joints in edit mode, use origin-based scaling and mirrored edits, then parent with automatic weights and test in pose mode. Refine bad weights.",
+      "Generating a Rigify control rig is distinct from binding the metarig. These are generic Blender techniques: do not export a generic Rigify hierarchy as though it met Roblox R15/FACS requirements, or delete required Roblox joints based on this demo."
     ]
   },
   {
@@ -200,12 +437,32 @@
     "url": "https://www.youtube.com/watch?v=dKZrzG5r13g",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available English captions analyzed after a second fully-loaded export attempt.",
     "backlinks": [
       "art/modeling/skin-a-humanoid-model"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "title": "Vertex Groups - Blender 2.80 Fundamentals",
+    "topics": [
+      "body",
+      "head",
+      "layered",
+      "authoring"
+    ],
+    "transcript_sha256": "ddb8abb847c50912b3b4f7d59f04c54953aac23a4ce189bc7b91c4f83a55e389",
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_bytes": 17099,
+    "review_notes": [
+      "0:00-15:35: Vertex groups store named bone influences. Automatic parenting generates weights; inspect deformation and edit each group. Brush weight is the target influence; strength controls how quickly it replaces the current value.",
+      "For vertices hidden behind other geometry, the tutorial disables Front Faces Only and uses 2D Falloff; inspect the entire mesh to avoid painting an unintended side. Edit-mode Assign/Remove is precise for selected vertices. Blur, average and gradient smooth transitions.",
+      "Vertex groups can also control modifiers; those groups are not necessarily deform weights. Apply Roblox influence limits and rig hierarchy requirements to deform bones, and verify export. Blender2.80 UI/hotkeys are historical."
     ]
   },
   {
@@ -213,25 +470,72 @@
     "url": "https://www.youtube.com/watch?v=Hp9pr2FpZa8",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "avatar-setup"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "5235f1a2f0ed52590fdb2604cc98d16c5337a135471f6f5d8d5764bcf8a05425",
+    "transcript_bytes": 11321,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "How to turn ANY model into a Roblox avatar in minutes (Avatar auto setup)",
+    "topics": [
+      "body",
+      "head"
+    ],
+    "review_notes": [
+      "0:56-3:04: Import a permitted model and run Avatar Setup. The author explicitly says the initially demonstrated body has baked clothing/shoes and is not Marketplace-ready despite successful setup.",
+      "3:28-5:40: Separated limbs, A/T pose and good head topology improve generation. Eye/mouth bags and separate internal parts matter. Technical generation, validation and policy remain separate.",
+      "5:42-7:55: Clean the foreign rig, texture assignments and scale in a source copy; improve poor head input and rerun. Adding geometry helped this specific example, not every failed head.",
+      "The video describes output download as future work; current docs allow glTF download/editing. Use current Setup input specifications instead of the historical demo requirements."
     ]
   },
   {
     "id": "fwbuhzq1D0k",
     "url": "https://www.youtube.com/watch?v=fwbuhzq1D0k",
     "linked_by_official_docs": true,
-    "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
-    "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "channel_verified": true,
+    "status": "analyzed",
+    "transcript_status": "unavailable",
+    "visual_status": "sampled",
+    "reason": "Observed accessible watch page; native export reports no transcript. The absence of captions does not mean the video itself is blocked. Visual analysis remains open.",
     "backlinks": [
       "avatar-setup"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "title": "Caging Tool with Annotations",
+    "topics": [
+      "body",
+      "layered",
+      "head",
+      "studio"
+    ],
+    "visual_method": "Paused player screenshots at five-second intervals; not a continuous viewing.",
+    "visual_sample_times": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "channel": "Roblox Documentation",
+    "review_notes": [
+      "0:00-0:35 sampled frames: Avatar Setup cage editing is shown alongside a live clothing/animation preview. The annotation frames selected cage points with F, adjusts an upper-arm area to shorten garment sleeves, and mirrors the adjustment.",
+      "Later frames move head cage points so ears remain outside the hair. Warnings remain visible in the example; the finished demonstration is not proof of passing official validation. Preserve cage correspondence and test several garments."
     ]
   },
   {
@@ -239,12 +543,29 @@
     "url": "https://www.youtube.com/watch?v=2My8jE47clI",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full captions analyzed after full page load; separate visual actions remain unchecked.",
     "backlinks": [
       "avatar/character-bodies"
+    ],
+    "reviewed_at": "2026-10-14T07:37:13.029460+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "title": "What are custom characters on Roblox?",
+    "topics": [
+      "body",
+      "head"
+    ],
+    "transcript_sha256": "cedb32ef4fd5367a4dd8435b66b30042a8e932a39f0b0ded0f0b43998ca2acb1",
+    "transcript_bytes": 4944,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "review_notes": [
+      "0:00-3:21: A traditional character combines15 render body parts and textures with rig, facial data, cages and attachments. Transparency in skin textures can expose customizable part color.",
+      "The sequence models and textures a character, rigs/skins head and body, maps poses, fits official cages, exports and tests in Avatar Setup/test places. Use current traditional or generated-component requirements; the overview is not an acceptance test."
     ]
   },
   {
@@ -252,13 +573,31 @@
     "url": "https://www.youtube.com/watch?v=r_unfGZT5Ps",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "avatar/classic-clothing",
       "avatar"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "13a3a2c2115f6df850ec1fc163b48acd36dbbf2e0e615278c58954fa36e983da",
+    "transcript_bytes": 5923,
+    "transcript_language": "en",
+    "caption_type": "authored or unspecified",
+    "transcript_redistributed": false,
+    "title": "How to create and sell your first classic clothing item on Roblox",
+    "topics": [
+      "classic",
+      "publishing"
+    ],
+    "review_notes": [
+      "0:00-4:50: T-shirts are square torso graphics; shirts/pants use official mapped templates. In GIMP, isolate panels with selections, paint torso/arms, then export PNG/JPEG.",
+      "3:57 onward: Upload through the Classic Clothing dashboard and verify appearance on supported avatars. Keep the 585x559 shirt/pants canvas. An inventory copy and an item being on sale are different states; refresh fees."
     ]
   },
   {
@@ -266,12 +605,29 @@
     "url": "https://www.youtube.com/watch?v=gXXukd6yOSs",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "avatar/layered-accessories"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "5227dc82d5a28c04b61cc6054f3dc1e6621d734deaa5ddb436ca3073581d182b",
+    "transcript_bytes": 9227,
+    "transcript_language": "ru",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "What's layered clothing on Roblox?",
+    "topics": [
+      "layered"
+    ],
+    "review_notes": [
+      "0:00-3:08: Mesh, textures, attachment, rig and inner/outer cages work together. Inner cage describes fit over a body; outer cage describes fit for the next layer.",
+      "Auto-generated Russian captions were reviewed. Manual rig preparation is one workflow; generated/automatic skinning paths still need actual component and deformation checks."
     ]
   },
   {
@@ -279,12 +635,45 @@
     "url": "https://www.youtube.com/watch?v=BezI4tL4E5k",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
-    "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "status": "analyzed",
+    "transcript_status": "insufficient",
+    "visual_status": "sampled",
+    "reason": "Export contains only music/interjection captions and does not describe visual instructions. Caption existence is not tutorial analysis.",
     "backlinks": [
       "avatar/makeup/import"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "8f54eb3beafededd9719adf6bde46bc7eb291391926da21892255485d67c62d9",
+    "transcript_bytes": 91,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "How to create and publish Avatar Makeup",
+    "topics": [
+      "makeup",
+      "publishing"
+    ],
+    "visual_method": "Paused fullscreen screenshots at ten-second intervals; not continuous viewing.",
+    "visual_sample_times": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110
+    ],
+    "review_notes": [
+      "0:00-1:50 sampled frames: import FBX/glTF, assign Lip/Eye/Face categories to separate makeup assets, mix combinations in Avatar Setup, and test example heads and skin tones before export.",
+      "Configure each item as Avatar Item with its category/creator; the demo then shows a submitted item still needing later review/sale management. A makeup Look combines already-published items with its own name/description. Example prices are not current fee requirements."
     ]
   },
   {
@@ -292,12 +681,32 @@
     "url": "https://www.youtube.com/watch?v=0se12PNhVCI",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
-    "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "status": "analyzed",
+    "transcript_status": "unavailable",
+    "visual_status": "sampled",
+    "reason": "Observed accessible watch page; native export reports no transcript. The absence of captions does not mean the video itself is blocked. Visual analysis remains open.",
     "backlinks": [
       "avatar/makeup"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "title": "Export makeup texture images in Photoshop",
+    "topics": [
+      "makeup"
+    ],
+    "visual_method": "Paused player screenshots at selected times; not a continuous viewing.",
+    "visual_sample_times": [
+      0,
+      11,
+      21,
+      31,
+      41,
+      51
+    ],
+    "review_notes": [
+      "Sampled Photoshop frames show an isolated lip layer on a transparent head reference and image-saving workflow. Exact export dialog values were not legible; use the current written makeup guide."
     ]
   },
   {
@@ -305,12 +714,32 @@
     "url": "https://www.youtube.com/watch?v=g79GBh0AcXA",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
-    "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "status": "analyzed",
+    "transcript_status": "unavailable",
+    "visual_status": "sampled",
+    "reason": "Observed accessible watch page; native export reports no transcript. The absence of captions does not mean the video itself is blocked. Visual analysis remains open.",
     "backlinks": [
       "avatar/makeup"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "title": "Export makeup texture images from Substance 3D Painter",
+    "topics": [
+      "makeup"
+    ],
+    "visual_method": "Paused fullscreen screenshots; not continuous viewing.",
+    "visual_sample_times": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "review_notes": [
+      "Sampled45-second demo: isolate FaceDecal material layers, choose the matching texture set, export PBR images, and inspect the isolated decoration rather than the full head skin image.",
+      "The sample shows2048px output and a larger authoring texture set; these are not the final Marketplace makeup limit. Use current category/map limits (the included makeup preflight enforces1024) and preserve intended opacity."
     ]
   },
   {
@@ -318,12 +747,35 @@
     "url": "https://www.youtube.com/watch?v=B0y5fLlwkF0",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
-    "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "status": "analyzed",
+    "transcript_status": "unavailable",
+    "visual_status": "sampled",
+    "reason": "Observed accessible watch page; native export reports no transcript. The absence of captions does not mean the video itself is blocked. Visual analysis remains open.",
     "backlinks": [
       "avatar/makeup/reassign-textures"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "title": "Replace makeup textures in Blender",
+    "topics": [
+      "makeup"
+    ],
+    "visual_method": "Paused player screenshots at selected times; not a continuous viewing.",
+    "visual_sample_times": [
+      2,
+      12,
+      22,
+      32,
+      42,
+      52,
+      62,
+      72,
+      82
+    ],
+    "review_notes": [
+      "Sampled Blender frames show selection of lip makeup geometry, replacement image files in material nodes, and a changed lip preview. Later frames show FBX export; small option labels were not reliably readable. Follow current written export requirements."
     ]
   },
   {
@@ -331,12 +783,31 @@
     "url": "https://www.youtube.com/watch?v=JaX5rcsStvQ",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
-    "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "status": "analyzed",
+    "transcript_status": "unavailable",
+    "visual_status": "sampled",
+    "reason": "Observed accessible watch page; native export reports no transcript. The absence of captions does not mean the video itself is blocked. Visual analysis remains open.",
     "backlinks": [
       "avatar/makeup/reassign-textures"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "title": "Replace makeup textures in Maya",
+    "topics": [
+      "makeup"
+    ],
+    "visual_method": "Paused fullscreen frames0/10/20. Later seek positions buffered on the same image and were not treated as new visual evidence.",
+    "visual_sample_times": [
+      0,
+      10,
+      20
+    ],
+    "visual_remaining": "Buffering prevented remaining visual checks.",
+    "review_notes": [
+      "Sampled Maya Hypershade frames show a lip transfer material connected to image file nodes for albedo, normal, roughness and metalness, then browse to replacement maps.",
+      "Inspect every node and its intended data/colorspace; preserve normal-map interpretation and opacity. Remaining export actions were not inspected because later positions buffered."
     ]
   },
   {
@@ -344,12 +815,29 @@
     "url": "https://www.youtube.com/watch?v=6MPWLQmIKLk",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "marketplace/homestore"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "73011652c33fb9fdd489f98bc2c930b59a079e80b6822289aace177172565e7d",
+    "transcript_bytes": 6458,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "Touring the Roblox UGC Homestore Template with Minty and SCHLEEMPH",
+    "topics": [
+      "publishing"
+    ],
+    "review_notes": [
+      "The full transcript demonstrates mannequin inspection, individual/set try-on, cart purchases and a shop populated from a creator name. Bundle/accessory attributes accept comma-separated IDs; a pose uses a looped animation.",
+      "Creator-fetch settings can select another creator. Treat the homestore as an existing-item sales/preview dependency, not a Marketplace publishing tool. Validate current item ownership, sale locations, purchase APIs and commission rules. General building customization is outside this skill."
     ]
   },
   {
@@ -357,13 +845,30 @@
     "url": "https://www.youtube.com/watch?v=5HcH-9E7USc",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "not_reviewed",
-    "visual_status": "not_reviewed",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
+    "visual_status": "NOT_CHECKED",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "production/promotion/ads-manager",
       "production/promotion/advertise"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "supplemental",
+    "transcript_sha256": "eb8fd1d00ca956cfecadf21a8dbe6c1de1dce5c148235cd7306c59f0743c1987",
+    "transcript_bytes": 4927,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "How to make an ad campaign with Roblox Ads Manager",
+    "topics": [
+      "publishing"
+    ],
+    "review_notes": [
+      "The full transcript explains experience-play campaigns, new/recent/lapsed audiences, budgets, thumbnails, narrow targeting costs and a calibration period.",
+      "Supplemental homestore promotion only: the demonstrated goal maximizes experience plays, not direct UGC item sales. Age/account/payment conditions, budgets and timings are not fixed Marketplace rules; verify live before recommending expenditure."
     ]
   },
   {
@@ -371,25 +876,53 @@
     "url": "https://www.youtube.com/watch?v=-HYByqvW2uc",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "not_reviewed",
-    "visual_status": "not_reviewed",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "status": "analyzed",
+    "transcript_status": "insufficient",
+    "visual_status": "NOT_CHECKED",
+    "reason": "Export contains only music/interjection captions and does not describe visual instructions. Caption existence is not tutorial analysis. Rewarded video ad implementation is general experience development, outside UGC creation/sales.",
     "backlinks": [
       "production/promotion/advertise"
-    ]
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "excluded",
+    "transcript_sha256": "8f45343aa69943c8656c469c00faf1c18544a300c7568d704a8fec82412e2173",
+    "transcript_bytes": 128,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "Rewarded Video is now available to all ads eligible creators",
+    "topics": []
   },
   {
     "id": "AzKZy2BqIh8",
     "url": "https://www.youtube.com/watch?v=AzKZy2BqIh8",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full captions analyzed after full page load; separate visual actions remain unchecked.",
     "backlinks": [
       "projects/assets/packages"
+    ],
+    "reviewed_at": "2026-10-14T07:37:13.029460+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "supplemental",
+    "title": "How to use Roblox Packages for Beginners on Roblox",
+    "topics": [
+      "authoring",
+      "studio"
+    ],
+    "transcript_sha256": "3548551d6e1dbbbf09ec4ca627486c207d931fdba6afad4c876476c12d9f9cbc",
+    "transcript_bytes": 14742,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "review_notes": [
+      "Full captions analyzed: convert a grouped model into a package, choose its owner, edit a placement, publish a version, and update other placements manually or through AutoUpdate. A modified package and the current server version are separate states.",
+      "AutoUpdate affects other placements and potentially other places; do not enable it blindly in an asset workspace. Package publication updates reusable model data, not Marketplace avatar-item on-sale state. This is an optional iteration dependency; general environment workflows stay outside scope."
     ]
   },
   {
@@ -397,12 +930,30 @@
     "url": "https://www.youtube.com/watch?v=ikYZloBgqtE",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "studio/importer"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "1d5fd95de37ada9136427e8e5660c5c055455b5c15990762792cac6d00583c0b",
+    "transcript_bytes": 2098,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "3D Importer: Importing Models",
+    "topics": [
+      "authoring",
+      "studio"
+    ],
+    "review_notes": [
+      "The full transcript explains preview inspection, file hierarchy and per-object import selection. Exported object structure determines the hierarchy seen by the importer.",
+      "Importing a whole scene can bring unintended meshes. Choose the intended asset objects and inspect textures/units. Toolbox or Asset Manager availability does not establish Marketplace publication."
     ]
   },
   {
@@ -410,12 +961,31 @@
     "url": "https://www.youtube.com/watch?v=RCsYZe3LoDM",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "studio/importer"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "7d7a64d26048f0cf2bd18037562223ae0a68edd3611055ef3b09cf9aeaf8da8b",
+    "transcript_bytes": 1982,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "3D Importer: Importing Avatars & Accessories",
+    "topics": [
+      "layered",
+      "body",
+      "studio"
+    ],
+    "review_notes": [
+      "The full transcript shows rigged/skinned/caged imports, inner/outer cages in the hierarchy and conversion through AFT. Preview warnings highlight problem geometry; inspect their exact messages and properties.",
+      "The importer can permit an import with warnings; this is not acceptance for sale. Repair defects and test several bodies/animations. The spoken FBX/OBJ example does not mean OBJ preserves rigs or animation."
     ]
   },
   {
@@ -423,12 +993,30 @@
     "url": "https://www.youtube.com/watch?v=UEHEsmCslBU",
     "linked_by_official_docs": true,
     "channel_verified": false,
-    "status": "indexed",
-    "transcript_status": "NOT_CHECKED",
+    "status": "analyzed",
+    "transcript_status": "reviewed",
     "visual_status": "NOT_CHECKED",
-    "reason": "Linked video; captions and visual settings require a separate review.",
+    "reason": "Full available caption text analyzed; original notes retain techniques and workflow caveats. Visual actions remain a separate check.",
     "backlinks": [
       "studio/importer"
+    ],
+    "reviewed_at": "2026-10-14T07:16:19.704719+00:00",
+    "availability_status": "accessible",
+    "access_method": "Signed-in Codex in-app browser; observed watch page and native transcript export.",
+    "scope": "included",
+    "transcript_sha256": "e3eb7c246cf400ed8ab5cb4c4a2a61f5ddd07db5899c6f8fe1199d1ed19bf494",
+    "transcript_bytes": 1247,
+    "transcript_language": "en",
+    "caption_type": "auto-generated",
+    "transcript_redistributed": false,
+    "title": "3D Importer: Troubleshooting",
+    "topics": [
+      "authoring",
+      "studio"
+    ],
+    "review_notes": [
+      "The full transcript traces a red hierarchy error to a missing diffuse image at the old FBX file path. Browse to the correct local texture and repeat for each broken reference.",
+      "Preserve/export image files with the project and inspect the actual imported material. A repaired preview does not establish PBR map correctness or Marketplace eligibility."
     ]
   }
 ]

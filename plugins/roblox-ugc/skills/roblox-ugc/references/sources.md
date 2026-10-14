@@ -12,6 +12,10 @@ The corpus contains English Roblox Marketplace avatar creation, validation, publ
 
 `corpus/videos.json` separately records videos linked by official docs, their backlinks, channel verification, transcript/visual review state and known blockers. Linked-by-docs does not necessarily mean authored by Roblox. A title, description or thumbnail is not a reviewed video. YouTube can require authentication or withhold captions; the release reports those gaps rather than asserting a complete viewing history.
 
+Reviewed captions have original technique notes, language/type and a content hash. Captions are not redistributed. `sampled` visual status identifies paused screenshots and exact sample times; only `reviewed` counts as a full visual walkthrough. Garbled automatic speech and music-only captions are rejected as instructional evidence. Out-of-scope environment/skybox/advertising clips retain exclusion reasons. Search reviewed notes with `corpus.py search`; inspect their record with `corpus.py show video/VIDEO_ID`.
+
+Community video analysis has its own `corpus/community-videos.json`, so it does not inflate the official-index video counts. Additional tool audits are recorded separately from Roblox requirements; see [RBX Toolbox](rbx-toolbox.md), [Blender MCP](blender-mcp.md) and [Studio control](studio-control.md).
+
 `corpus/external-review.json` records selected Help Center, staff DevForum, tool-repository and community source metadata and access results. Third-party tutorial technique adoption remains conditional on current official requirements and a reproduced output. These sources are not automatically licensed under creator-docs' documentation license.
 
 Useful community discovery areas include original rigid/hair modeling, sculpt/retopology/UV/baking, body bundle setup, automatic avatar setup, MD/CLO garment workflows, head/FACS tutorials and emote publishing. Current Marketplace makeup-authoring and animation-pack information is primarily supplied by the official corpus. Player styling, free-item acquisition and unexplained timelapses do not fill those authoring gaps.
@@ -36,7 +40,7 @@ For live discovery use [Roblox's agent index](https://create.roblox.com/docs/llm
 
 `audit --live` detects changed inventory only; it cannot establish that an existing policy/price page remained unchanged. The specific live page must be rechecked for current advice or publication.
 
-Preserve video review evidence during maintenance and do not substitute machine indexing for human/agent analysis. Source defects remain documented with a disposition and reason. Upstream mistakes such as nonexistent API identifiers must not be converted into invented implementation details.
+Preserve video review evidence during maintenance and do not substitute machine indexing for human/agent analysis. When a video link disappears from the upstream snapshot, `sync` archives its evidence in `corpus/retired-videos.json` and records the change; a returning link recovers those notes. Archived material is searchable as `retired-video/ID` and is marked retired rather than counted as a current link. Source defects remain documented with a disposition and reason. Upstream mistakes such as nonexistent API identifiers must not be converted into invented implementation details.
 
 ## Evidence boundaries
 

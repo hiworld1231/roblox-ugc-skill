@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-14",
+  "integrations": [
+    {
+      "id": "rbx-toolbox",
+      "name": "RBX Toolbox",
+      "url": "https://github.com/Gl2imm/RBX_Toolbox",
+      "source_revision": "83efd4e348537f6e1377ac46d0d677838535507b",
+      "addon_version": "7.11.0",
+      "minimum_blender_version_declared": "4.5.0",
+      "license": {
+        "repository": "GPL-3.0",
+        "addon_header": "GPL-3.0-or-later",
+        "embedded_oauth_notices": "MIT, Roblox Corporation",
+        "redistribution": "No upstream code or bundled third-party assets distributed by this skill; own guide and audit metadata only."
+      },
+      "release": {
+        "tag": "v.7.11",
+        "tag_revision": "3f9358afab45637e865f74b21ca55ab0a3480acc",
+        "tag_source_declared_version": "7.10.0",
+        "url": "https://github.com/Gl2imm/RBX_Toolbox/releases/download/v.7.11/RBX_Toolbox_v7.11.zip",
+        "sha256": "f759a5e719f9263dc541b8c608c25444d92415325579a9fc4325abdc7b24cd0a",
+        "size_bytes": 24895536,
+        "comparison": "Release archive files also tracked at reviewed main commit match after CRLF/LF normalization. Git tag checkout differs and is not equivalent.",
+        "archive_files": 182,
+        "unsafe_relative_paths": 0
+      },
+      "topics": [
+        "Blender addon installation",
+        "accessories",
+        "hair",
+        "chains",
+        "fur",
+        "layered clothing",
+        "cages",
+        "rigging",
+        "attachments",
+        "FACS declarations and preview",
+        "animation preview",
+        "Open Cloud development asset upload"
+      ],
+      "analysis_status": "all_tracked_files_classified_ast_survey_plus_targeted_source_review",
+      "file_count": 187,
+      "guide": "references/rbx-toolbox.md",
+      "evidence_repository_path": "docs/rbx-toolbox-audit.json",
+      "runtime": {
+        "status": "PASS",
+        "scope": "Reviewed modules registered selectively in an isolated factory startup. Full addon installation/OAuth/online imports/update/Studio publish not executed. All HTTP stubbed to fail.",
+        "blender_version": "5.2.2 LTS",
+        "checks_passed": 12,
+        "checks_failed": 0,
+        "measurements": [
+          {
+            "check": "template library readable without autoexec",
+            "status": "PASS",
+            "measurements": {
+              "collections": 105,
+              "objects": 722,
+              "materials": 78,
+              "actions": 20,
+              "particles": 1
+            }
+          },
+          {
+            "check": "append Hat bounds",
+            "status": "PASS",
+            "measurements": {
+              "operator_result": [
+                "FINISHED"
+              ],
+              "objects": [
+                {
+                  "name": "Hat",
+                  "type": "FONT",
+                  "dimensions": [
+                    1.4129999876022339,
+                    0.6910000443458557,
+                    0.0
+                  ]
+                },
+                {
+                  "name": "Hat Accessory",
+                  "type": "MESH",
+                  "dimensions": [
+                    3.0,
+                    3.999999761581421,
+                    2.999988555908203
+                  ]
+                }
+              ],
+              "authority": "Reference templates; NOT current Roblox acceptance bounds"
+            }
+          },
+          {
+            "check": "append default mannequin cages",
+            "status": "PASS",
+            "measurements": {
+              "operator_result": [
+                "FINISHED"
+              ],
+              "meshes": [
+                {
+                  "name": "----YourItemName--_InnerCage.001",
+                  "vertices": 1358,
+                  "uv_layers": 1
+                },
+                {
+                  "name": "----YourItemName--_OuterCage.001",
+                  "vertices": 1358,
+                  "uv_layers": 1
+                }
+              ]
+            }
+          },
+          {
+            "check": "append Chain 1",
+            "status": "PASS",
+            "measurements": {
+              "operator_result": [
+                "FINISHED"
+              ],
+              "meshes": [
+                {
+                  "name": "chain_link",
+                  "vertices": 16,
+                  "modifiers": [
+                    "ARRAY",
+                    "CURVE"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "check": "FACS button only declares properties",
+            "status": "PASS",
+            "measurements": {
+              "operator_result": [
+                "FINISHED"
+              ],
+              "frame_declarations": 112,
+              "RootFaceJoint": "DynamicHead",
+              "shape_keys_before": 0,
+              "shape_keys_after": 0,
+              "bones_created": 0,
+              "deformation_validation": "NOT_CHECKED"
+            }
+          },
+          {
+            "check": "mesh parenting preserves world transform",
+            "status": "PASS",
+            "measurements": {
+              "operator_result": [
+                "FINISHED"
+              ],
+              "world_matrix_max_error": 0.0,
+              "parent": "TargetMesh"
+            }
+          },
+          {
+            "check": "bone weight bind retains extra groups warning",
+            "status": "PASS",
+            "measurements": {
+              "operator_result": [
+                "FINISHED"
+              ],
+              "groups": [
+                "Other",
+                "Bone"
+              ],
+              "world_matrix_max_error": 0.0,
+              "extra_group_retained": true
+            }
+          },
+          {
+            "check": "local OAuth-export helper FBX cleanup (no upload)",
+            "status": "PASS",
+            "measurements": {
+              "bytes": 11772,
+              "sha256": "8d4c78fb19ee557d7040333c0775a4d61686a349f02973f2b5ba26dfdc92d3ae",
+              "temporary_collection_cleaned": true,
+              "source_transform_preserved": true
+            }
+          },
+          {
+            "check": "emote heuristic detects fast scratch bone",
+            "status": "PASS",
+            "measurements": {
+              "violations": [
+                {
+                  "frame": 2,
+                  "time": 0.03333333333333333,
+                  "bone": "Bone",
+                  "speed": 60.0
+                }
+              ],
+              "max_speeds": {
+                "Bone": {
+                  "frame": 2,
+                  "time": 0.03333333333333333,
+                  "speed": 60.0
+                }
+              },
+              "threshold_blender_units_s": 26.0,
+              "display_scale": 1.1538461538461537,
+              "frame_restored": true,
+              "Roblox_validation": "NOT_CHECKED"
+            }
+          },
+          {
+            "check": "advanced animation payload generated without executing Studio",
+            "status": "PASS",
+            "measurements": {
+              "characters": 2528,
+              "replaces_same_named_ServerStorage_child": true,
+              "Studio_execution": "NOT_CHECKED"
+            }
+          },
+          {
+            "check": "fur apply and conversion with five scratch instances",
+            "status": "PASS",
+            "measurements": {
+              "apply_result": [
+                "FINISHED"
+              ],
+              "convert_result": [
+                "FINISHED"
+              ],
+              "new_meshes": [
+                "ScratchFurBase_Fur"
+              ],
+              "particle_count": 5,
+              "particles_removed": true,
+              "Marketplace_geometry": "NOT_CHECKED"
+            }
+          },
+          {
+            "check": "FACS preview applies and removes prior NLA tracks",
+            "status": "PASS",
+            "measurements": {
+              "operator_result": [
+                "FINISHED"
+              ],
+              "action": "FACS_Animation",
+              "nla_tracks_after": 0,
+              "temporary_objects_cleaned": true,
+              "face_bones": 51,
+              "actual_FACS_deformation_and_Roblox_validation": "NOT_CHECKED"
+            }
+          }
+        ]
+      },
+      "limitations": [
+        "Full addon install/startup and visible sidebar",
+        "Authenticated import and OAuth flow",
+        "Remote upload or update of any Roblox asset",
+        "Execution of generated Luau in Studio",
+        "Actual FACS facial deformation acceptance",
+        "Marketplace moderation/publication",
+        "Visual correctness of every bundled texture/template",
+        "Binary parser behavior on every malformed input"
+      ],
+      "safety_findings": [
+        "Historical bounds are not current authority",
+        "FACS declarations do not create rig or movement",
+        "FACS preview replaces NLA tracks",
+        "Weight binding retains other vertex groups",
+        "Some quick exports mutate transforms/origins",
+        "Advanced Luau replaces same-named ServerStorage instance",
+        "Mesh/animation uploads are MODEL/ANIMATION development assets, not Marketplace publication",
+        "Emote speed/bounds checks are heuristics using Blender units",
+        "Updater and developer cleanup remove local addon/cache files"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/__init__.py",
+          "sha256": "43800e26da0de8d326a823f2545f6424e1ac12523f350af6b14c9cdd2c668f42"
+        },
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/info/Credits and Instructions.txt",
+          "sha256": "b188537d218bbe8115ba7dbe1e5f39bd3bea997a20c34fa5f5843e43092946e6"
+        },
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/info/Version_log.txt",
+          "sha256": "51e19ef35317caf49f05998300386d957a2dc6b3a5075911e0583e4a18156f8e"
+        },
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/functions/avatar_buttons.py",
+          "sha256": "fde61c091c1ab932e97026ab32dcbb0829c768396b7e223f5b7824c53619d4a2"
+        },
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/functions/attach_parent.py",
+          "sha256": "51133ae7b9f549f4dceeb8ee4dc9ebdceffb27a25c668bbe8589d0406dd0e2d4"
+        },
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/functions/func_export.py",
+          "sha256": "26c22ffc2f62252ba26d76e9d359963cfe9bf958ae9ba5c25ba5ff2debff515a"
+        },
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/oauth/lib/check_animation_operator.py",
+          "sha256": "107ace5abf7870763677f85b684faa1c7d1f3bf58e733584785ede459e8ac2c3"
+        },
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/oauth/lib/upload_operator.py",
+          "sha256": "e20ba7c98adcbf7d67e5e659128bd149f39e368a1e2dd2a6e7c9c5ab8e0356fb"
+        },
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/oauth/lib/upload_animation_operator.py",
+          "sha256": "169bcfb814072d964ff8e9db48e7624e3d12f76535d70fb9a1a4fa4dde4f4084"
+        },
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/func_import_v2/rbx_build_keyframesequence.py",
+          "sha256": "141d727f84e826400bc6aa9d89e17ccab63e843a46309687b14aaefaa34501c5"
+        },
+        {
+          "url": "https://github.com/Gl2imm/RBX_Toolbox/blob/83efd4e348537f6e1377ac46d0d677838535507b/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ]
+    },
+    {
+      "id": "blender-mcp",
+      "name": "MCP for Blender",
+      "url": "https://github.com/ahujasid/blender-mcp",
+      "source_revision": "7a0373ec9199183cb460068c4f96aed9c579fb4f",
+      "package_version": "mcp-for-blender 2.1.9",
+      "license": "MIT; external runtime downloaded separately, own launcher bundled",
+      "guide": "references/blender-mcp.md",
+      "evidence_repository_path": "docs/blender-mcp-validation.json",
+      "artifact_hashes": {
+        "repository": "https://github.com/ahujasid/blender-mcp",
+        "revision": "7a0373ec9199183cb460068c4f96aed9c579fb4f",
+        "license": "MIT",
+        "wheel_sha256": "a5cbc6cf316fa7433566eb505a0c26ca22e28c10083bd1b09a23d9e357821ccc",
+        "dependency_lock_sha256": "7001225c44fab1945cf8ea941e0e29c82d299d0b7f65796e2a282499ff743849"
+      },
+      "runtime": {
+        "status": "PASS",
+        "environment": {
+          "os": "Linux",
+          "Blender": "5.2.2 LTS",
+          "Python": "3.11.16",
+          "display": "Xvfb GUI; not background Blender",
+          "package": "mcp-for-blender 2.1.9",
+          "mcp_sdk": "1.30.0"
+        },
+        "checks": [
+          {
+            "check": "MCP initialize and tools/list",
+            "status": "PASS"
+          },
+          {
+            "check": "MCP Python object creation",
+            "status": "PASS",
+            "response": [
+              "Code executed successfully: UGC_MCP_CREATED UGC_MCP_Probe 384 1\n"
+            ]
+          },
+          {
+            "check": "MCP scene observation",
+            "status": "PASS",
+            "response": [
+              "Scene 'Scene' | 1 camera, 1 light, 2 mesh | active UGC_MCP_Probe | selected UGC_MCP_Probe | mode OBJECT\n\nShowing 1 of 1 (name | type | details | materials | topology):\nUGC_MCP_Probe | mesh | 192 faces | mat UGC_MCP_ProbeMaterial | 192 quads, 0 tris, 0 ngons; 0 non-manifold, 0 boundary edges, 0 loose verts, 0 poles"
+            ]
+          },
+          {
+            "check": "MCP look image returned",
+            "status": "PASS",
+            "visual_review": "NOT_CHECKED"
+          },
+          {
+            "check": "MCP scratch project save",
+            "status": "PASS"
+          },
+          {
+            "check": "Safe-mode denied environment access",
+            "status": "PASS"
+          },
+          {
+            "check": "Human/model visual inspection of returned multi-angle image",
+            "status": "PASS",
+            "evidence": "Reviewed PNG: cyan torus visible edge-on, top and three-quarter; no blank or corrupted image",
+            "sha256": "a36a1901bbb554b17a64baa60c57dcfdf59aa7a250b3196d7b852833b75e9d72"
+          },
+          {
+            "check": "Launcher tests",
+            "status": "PASS",
+            "tests": 13,
+            "command": "python -m unittest discover -s tests -p test_blender_mcp.py -v"
+          },
+          {
+            "check": "Owned Blender quit and local endpoint closed",
+            "status": "PASS",
+            "evidence": "stop command verified addon endpoint closed on port19877"
+          }
+        ],
+        "global_client_config_changed": false
+      },
+      "limitations": [
+        "Transport fixture is not a Marketplace asset",
+        "Codex/Claude graphical client connection NOT_CHECKED",
+        "Windows/macOS process launch NOT_CHECKED",
+        "Studio fitting, moderation and Marketplace publication outside this transport test"
+      ]
+    },
+    {
+      "id": "studio-mcp",
+      "name": "Official Roblox Studio MCP",
+      "url": "https://create.roblox.com/docs/studio/mcp",
+      "license": "Official live setup instructions linked; included creator-docs source has upstream CC BY4.0 attribution",
+      "guide": "references/studio-control.md",
+      "evidence_repository_path": "docs/studio-control-validation.json",
+      "analysis_status": "Current schemas inspected; read-only Luau diagnostic actually run",
+      "runtime": {
+        "status": "PASS",
+        "scenarios": 6,
+        "assertions": 34,
+        "engine_version": "0.742.0.7421053",
+        "scene_modified": false,
+        "ugc_asset_validated": false
+      },
+      "limitations": [
+        "Native local FBX import/AFT/Avatar Setup GUI not exposed by inspected tools",
+        "Official validation on actual imported UGC not performed",
+        "No Marketplace upload/moderation/on-sale proof"
+      ]
+    }
+  ]
+}

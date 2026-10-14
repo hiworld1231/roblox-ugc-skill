@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-Помогает создавать и проверять UGC для Marketplace: аксессуары, волосы, layered/classic clothing, обувь, тела, dynamic heads, makeup, emotes и animation packs. Внутри — официальная документация, практические инструкции, помощники Blender и проверка в Studio. Агент отвечает на вашем языке.
+Помогает создавать и проверять UGC для Marketplace: аксессуары, волосы, layered/classic clothing, обувь, тела, dynamic heads, makeup, emotes и animation packs. Внутри — документация, RBX Toolbox, запускалка Blender MCP, ремеш/новая UV/перезапекание текстур и помощники Studio. Агент отвечает на вашем языке.
 
 ## Установка
 
@@ -28,6 +28,7 @@ claude plugin install roblox-ugc --marketplace hiworld1231/roblox-ugc-skill
 - «Создай оригинальную low-poly шляпу для Roblox. Нужны Blender-проект, текстуры, FBX и preview».
 - «Исправь cages этой куртки и покажи, что ещё нужно проверить».
 - «Подготовь dynamic head / makeup / animation pack к публикации».
+- «Подключи Blender MCP, разбери непонятный материал, сделай новую UV и перезапеки текстуры с сохранением вида модели».
 
 В Codex: `$roblox-ugc`. В Claude Code: `/roblox-ugc:roblox-ugc`. Автоматическое обнаружение включено.
 
@@ -35,7 +36,9 @@ claude plugin install roblox-ugc --marketplace hiworld1231/roblox-ugc-skill
 
 ## Покрытие и проверки
 
-Зафиксированный официальный корпус: **360 документов/API**, **1 972 исключённых кандидатов с причинами**, отдельные списки изображений, шаблонов, видео и внешних источников. Цены, правила и eligibility перепроверяются перед использованием. Ссылки на видео учитываются отдельно: релиз **не заявляет**, что просмотрены все видео и все туториалы интернета.
+Зафиксированный официальный корпус: **361 документ/API**, **1 971 исключённый кандидат с причинами**. Разобраны полные доступные субтитры **21** видео из индекса и одного community-урока по головам; выборочные кадры отмечены отдельно. Цены, правила и eligibility перепроверяются перед использованием.
+
+После установки попросите агента настроить [Blender MCP](plugins/roblox-ugc/skills/roblox-ugc/references/blender-mcp.md) и подключить [Studio MCP](plugins/roblox-ugc/skills/roblox-ugc/references/studio-control.md). Подключение приложений — отдельный шаг. Для [RBX Toolbox](plugins/roblox-ugc/skills/roblox-ugc/references/rbx-toolbox.md) и [ремеша/перезапекания](plugins/roblox-ugc/skills/roblox-ugc/references/remesh-rebake.md) есть практические инструкции и результаты тестов.
 
 [Покрытие и ограничения](docs/coverage.md) · [Результаты проверок](docs/validation.json) · [Инструменты](plugins/roblox-ugc/skills/roblox-ugc/references/authoring.md) · [Релизы](https://github.com/hiworld1231/roblox-ugc-skill/releases)
 

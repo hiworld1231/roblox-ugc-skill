@@ -1,14 +1,17 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "tested_at": "2026-10-14 Europe/Minsk",
   "source_revision": "784c5e217446c65958d5d84f5c5f1d127951a8d7",
   "unit_and_integration": {
     "status": "PASS",
-    "count": 33,
-    "image_corpus_tests": 22,
+    "count": 73,
+    "image_corpus_tests": 28,
     "blender_tests": 11,
     "blender_version": "5.2.2 LTS",
-    "notes": "Offline geometry, rig/cage/FACS defects, malformed PNG, missing tools, real FBX roundtrip, source integrity and overwrite protection. Corpus integrity was rerun after maintenance completed."
+    "notes": "73 full-suite checks passed locally with Blender5.2.2; 14 reUV/rebake tests compare surface colors, alpha, normal/scalar samples and identical-camera previews.",
+    "launcher_tests": 13,
+    "rebake_tests": 14,
+    "video_sync_tests": 7
   },
   "portable_plugin_schema": {
     "status": "PASS",
@@ -25,15 +28,17 @@
       "id": "roblox-ugc@roblox-ugc-skill",
       "installed": true,
       "enabled": true,
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
-    "helper_smoke": "PASS: installed corpus audit and helper discovery"
+    "helper_smoke": "PASS: installed corpus audit and helper discovery",
+    "v0.2.0_install": "PASS: isolated local checkout install and installed corpus audit",
+    "isolation": "Temporary CODEX_HOME; no global configuration changed"
   },
   "claude_code": {
-    "version": "2.1.296",
+    "version": "2.1.299",
     "marketplace_validation": "PASS",
     "plugin_validation": "PASS",
-    "installation": "PASS",
+    "installation": "PASS: isolated local checkout v0.2.0 install and discovery",
     "isolation": "Temporary CLAUDE_CONFIG_DIR; removed after testing"
   },
   "studio_harness": {
@@ -67,9 +72,11 @@
   },
   "video_review": {
     "indexed": 32,
-    "transcripts_reviewed": 0,
+    "transcripts_reviewed": 21,
+    "community_transcripts_reviewed": 1,
     "visuals_reviewed": 0,
-    "known_blocker": "YouTube rigid tutorial required sign-in; transcript export unavailable."
+    "visuals_sampled": 7,
+    "known_blocker": "Sign-in resolved. Six native caption exports unavailable, two inadequate music/interjection captions, one unreliable ASR; full visual reviews remain open. See video-analysis.md."
   },
   "remaining_limitations": [
     "Corpus snapshot and inventory coverage do not establish all internet/video tutorial analysis.",
@@ -85,6 +92,40 @@
   },
   "release_archive": {
     "standalone_extract_audit": "PASS",
-    "standalone_helper_templates": "PASS"
-  }
+    "standalone_helper_templates": "PASS",
+    "standalone_additional_helpers": "PASS: extracted launcher/rebake --help and dependency lock presence"
+  },
+  "blender_mcp": {
+    "status": "PASS",
+    "artifact": "blender-mcp-validation.json",
+    "transport": "Actual initialize/tools/list, code execution, scene read, image return, separate project save; original preview inspected",
+    "global_client_config_changed": false,
+    "GUI_clients": "NOT_CHECKED",
+    "platforms": "Linux/Xvfb5.2.2 tested; Windows/macOS NOT_CHECKED"
+  },
+  "rbx_toolbox": {
+    "status": "PASS",
+    "artifact": "rbx-toolbox-audit.json",
+    "source_files_classified": 187,
+    "operator_checks": 12,
+    "full_addon_GUI_OAuth": "NOT_CHECKED"
+  },
+  "studio_doctor": {
+    "status": "PASS",
+    "artifact": "studio-control-validation.json",
+    "scenarios": 6,
+    "assertions": 34,
+    "scene_modified": false,
+    "official_asset_validation": "NOT_CHECKED"
+  },
+  "remesh_rebake": {
+    "status": "PASS",
+    "artifact": "remesh-rebake-validation.json",
+    "tests": 14,
+    "source_preserved": true,
+    "maps": "BaseColor/alpha/roughness/metallic/normal; per-map dimensions and opacity policy tested",
+    "render_comparison": "Original checker/gradient fixture with newUV; source/target renderMAE0.01116",
+    "arbitrary_materials_and_Roblox_acceptance": "NOT_CHECKED"
+  },
+  "host_install_evidence": "host-install-v0.2.0.json"
 }

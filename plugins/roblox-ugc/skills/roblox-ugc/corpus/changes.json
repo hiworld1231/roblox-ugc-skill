@@ -1,7 +1,21 @@
 {
   "added": [],
   "removed": [],
-  "changed": [],
-  "review_topics": [],
-  "notice": "Review authored category references, assets/rules.json and template hashes for changed topics. Machine indexing does not establish that curated instructions are current."
+  "changed": [
+    "studio/mcp",
+    "monetize-avatar",
+    "cloud/legacy/avatar/v1",
+    "cloud/legacy/avatar/v2",
+    "cloud/legacy/avatar/v3",
+    "cloud/legacy/avatar/v4",
+    "cloud/legacy/twostepverification/v1",
+    "avatar/avatar-lab-disclaimer"
+  ],
+  "review_topics": [
+    "pipeline",
+    "publishing"
+  ],
+  "notice": "Review authored category references, assets/rules.json and template hashes for changed topics. Machine indexing does not establish that curated instructions are current.",
+  "video_added": [],
+  "video_removed": []
 }
