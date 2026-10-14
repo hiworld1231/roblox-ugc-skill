@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "roblox-ugc",
+  "version": "0.1.0",
+  "description": "Create, validate, troubleshoot and publish Roblox Marketplace avatar items with a source-backed corpus and Blender/Studio helpers.",
+  "author": {"name": "hiworld1231"},
+  "repository": "https://github.com/hiworld1231/roblox-ugc-skill",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Roblox UGC",
+        "shortDescription": "Create and validate Roblox UGC",
+        "longDescription": "Source-backed Roblox avatar Marketplace workflows, offline documentation search, Blender preflight/export and optional Studio validation.",
+        "developerName": "hiworld1231",
+        "category": "Developer Tools",
+        "defaultPrompt": "Help me create a Roblox UGC item and validate it against its current requirements."
+      }
+    }
+  }
+}

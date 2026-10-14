@@ -1,0 +1,4 @@
+# Preserve licensed upstream snapshots byte-for-byte, including original whitespace.
+plugins/roblox-ugc/skills/roblox-ugc/corpus/documents/** -whitespace
+plugins/roblox-ugc/skills/roblox-ugc/corpus/inventory/** -whitespace
+plugins/roblox-ugc/skills/roblox-ugc/licenses/ROBLOX-* -whitespace

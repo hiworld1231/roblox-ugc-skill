@@ -1,0 +1,107 @@
+{
+  "scope": "English Roblox Marketplace avatar creation, validation, publishing and related APIs",
+  "revision": "784c5e217446c65958d5d84f5c5f1d127951a8d7",
+  "retrieved_at": "2026-10-13T21:08:36.767836+00:00",
+  "inventory_sha256": "63940fad5ba12409b2eaa20ac8b51d8c15fdcdef459fe2353822f1efcb1e623e",
+  "upstream_tree_truncated": false,
+  "counts": {
+    "included": 360,
+    "excluded": 1972
+  },
+  "included_retrieved": 360,
+  "unprocessed_candidates": 0,
+  "fetch_failures": [],
+  "unresolved_api_identifiers": [
+    {
+      "id": "reference/engine/classes/AttachmentConstraint",
+      "reason": "Referenced identifier absent from upstream tree; not invented as an API."
+    },
+    {
+      "id": "reference/engine/classes/MeshParts",
+      "reason": "Referenced identifier absent from upstream tree; not invented as an API."
+    },
+    {
+      "id": "reference/engine/enums/AnimationNodePlayMode",
+      "reason": "Referenced identifier absent from upstream tree; not invented as an API."
+    },
+    {
+      "id": "reference/engine/enums/AnimationNodeTransitionWhen",
+      "reason": "Referenced identifier absent from upstream tree; not invented as an API."
+    },
+    {
+      "id": "reference/engine/enums/AnimationNodeWaitFor",
+      "reason": "Referenced identifier absent from upstream tree; not invented as an API."
+    }
+  ],
+  "unresolved_links": [
+    {
+      "from": "reference/engine/classes/DataModel",
+      "to": "cloud/reference/features/universes",
+      "status": "unresolved",
+      "reason": "Unresolved upstream link or index/container; retained as a source defect."
+    }
+  ],
+  "videos_indexed": 32,
+  "videos_transcripts_reviewed": 0,
+  "videos_visuals_reviewed": 0,
+  "resource_links": 2337,
+  "external_links": 298,
+  "inventory_discrepancies": [
+    {
+      "id": "monetize-avatar",
+      "inventories": [
+        "creator-hub"
+      ],
+      "reason": "Live-only: section metadata links to current original; no full-text redistribution assumed."
+    },
+    {
+      "id": "cloud/legacy/avatar/v1",
+      "inventories": [
+        "creator-hub"
+      ],
+      "reason": "Live-only: section metadata links to current original; no full-text redistribution assumed."
+    },
+    {
+      "id": "cloud/legacy/avatar/v2",
+      "inventories": [
+        "creator-hub"
+      ],
+      "reason": "Live-only: section metadata links to current original; no full-text redistribution assumed."
+    },
+    {
+      "id": "cloud/legacy/avatar/v3",
+      "inventories": [
+        "creator-hub"
+      ],
+      "reason": "Live-only: section metadata links to current original; no full-text redistribution assumed."
+    },
+    {
+      "id": "cloud/legacy/avatar/v4",
+      "inventories": [
+        "creator-hub"
+      ],
+      "reason": "Live-only: section metadata links to current original; no full-text redistribution assumed."
+    },
+    {
+      "id": "cloud/legacy/twostepverification/v1",
+      "inventories": [
+        "creator-hub"
+      ],
+      "reason": "Live-only: section metadata links to current original; no full-text redistribution assumed."
+    },
+    {
+      "id": "avatar/avatar-lab-disclaimer",
+      "inventories": [
+        "creator-hub"
+      ],
+      "reason": "Live-only: section metadata links to current original; no full-text redistribution assumed."
+    }
+  ],
+  "claims": {
+    "inventory_classified": true,
+    "all_videos_reviewed": false,
+    "all_internet_tutorials_reviewed": false,
+    "moderation_or_marketplace_approval": false
+  },
+  "maintenance": "Source inventory is complete for this snapshot; authored workflows and machine rules require review after sync."
+}

@@ -1,0 +1,18 @@
+{
+  "snapshot_date": "2026-10-13",
+  "rigid": {"max_triangles": 4000, "render_mesh_count": 1, "watertight": true, "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications"},
+  "layered": {"max_triangles": 4000, "render_mesh_count": 1, "source": "https://create.roblox.com/docs/avatar/layered-accessories/specifications"},
+  "body": {
+    "source": "https://create.roblox.com/docs/avatar/character-bodies/specifications",
+    "parts": ["Head", "UpperTorso", "LowerTorso", "LeftUpperArm", "LeftLowerArm", "LeftHand", "RightUpperArm", "RightLowerArm", "RightHand", "LeftUpperLeg", "LeftLowerLeg", "LeftFoot", "RightUpperLeg", "RightLowerLeg", "RightFoot"],
+    "budgets": {"head": {"parts": ["Head"], "max": 4000}, "torso": {"parts": ["UpperTorso", "LowerTorso"], "max": 1750}, "left-arm": {"parts": ["LeftUpperArm", "LeftLowerArm", "LeftHand"], "max": 1248}, "right-arm": {"parts": ["RightUpperArm", "RightLowerArm", "RightHand"], "max": 1248}, "left-leg": {"parts": ["LeftUpperLeg", "LeftLowerLeg", "LeftFoot"], "max": 1248}, "right-leg": {"parts": ["RightUpperLeg", "RightLowerLeg", "RightFoot"], "max": 1248}},
+    "attachments": ["HatAttachment", "HairAttachment", "FaceFrontAttachment", "FaceCenterAttachment", "BodyFrontAttachment", "BodyBackAttachment", "LeftCollarAttachment", "RightCollarAttachment", "NeckAttachment", "WaistFrontAttachment", "WaistCenterAttachment", "WaistBackAttachment", "LeftShoulderAttachment", "RightShoulderAttachment", "LeftGripAttachment", "RightGripAttachment", "LeftFootAttachment", "RightFootAttachment", "RootAttachment"]
+  },
+  "head": {"max_triangles": 4000, "source": "https://create.roblox.com/docs/avatar/dynamic-heads/specifications", "facs": ["LeftEyeClosed", "RightEyeClosed", "EyesLookDown", "JawDrop", "Pucker", "LeftLipCornerPuller", "RightLipCornerPuller", "ChinRaiser", "ChinRaiserUpperLip", "LeftCheekRaiser", "RightCheekRaiser", "LeftInnerBrowRaiser", "RightInnerBrowRaiser", "LeftLipCornerDown", "RightLipCornerDown", "LeftLowerLipDepressor", "RightLowerLipDepressor"]},
+  "makeup": {"max_texture_dimension": 1024, "source": "https://create.roblox.com/docs/avatar/makeup/specifications"},
+  "classic-shirt": {"dimensions": [585, 559], "source": "https://create.roblox.com/docs/avatar/classic-clothing"},
+  "classic-pants": {"dimensions": [585, 559], "source": "https://create.roblox.com/docs/avatar/classic-clothing"},
+  "classic-tshirt": {"square": true, "source": "https://create.roblox.com/docs/avatar/classic-clothing"},
+  "emote": {"source": "https://create.roblox.com/docs/avatar/emotes/specifications"},
+  "animation-pack": {"source": "https://create.roblox.com/docs/avatar/animation-packs"}
+}

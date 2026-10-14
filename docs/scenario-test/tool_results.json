@@ -1,0 +1,945 @@
+[
+  {
+    "id": "classic-valid",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/classic_shirt_valid.png",
+      "--kind",
+      "classic-shirt",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/classic-valid.json"
+    ],
+    "exit_code": 0,
+    "fixture": "fixtures/classic_shirt_valid.png",
+    "fixture_unchanged": true,
+    "report": "reports/classic-valid.json",
+    "blocking_failures": 0,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "image-container",
+        "status": "PASS",
+        "evidence": {
+          "format": "PNG",
+          "dimensions": [
+            585,
+            559
+          ],
+          "container_checked": true,
+          "pixels_decoded": false
+        }
+      },
+      {
+        "check": "template-dimensions",
+        "status": "PASS",
+        "evidence": {
+          "actual": [
+            585,
+            559
+          ],
+          "required": [
+            585,
+            559
+          ]
+        }
+      },
+      {
+        "check": "visual-panels-and-content",
+        "status": "NOT_CHECKED",
+        "evidence": "Inspect template panel placement, seams, transparency and content on target avatars."
+      }
+    ]
+  },
+  {
+    "id": "classic-wrong",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/classic_shirt_wrong.png",
+      "--kind",
+      "classic-shirt",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/classic-wrong.json"
+    ],
+    "exit_code": 1,
+    "fixture": "fixtures/classic_shirt_wrong.png",
+    "fixture_unchanged": true,
+    "report": "reports/classic-wrong.json",
+    "blocking_failures": 1,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "image-container",
+        "status": "PASS",
+        "evidence": {
+          "format": "PNG",
+          "dimensions": [
+            512,
+            512
+          ],
+          "container_checked": true,
+          "pixels_decoded": false
+        }
+      },
+      {
+        "check": "template-dimensions",
+        "status": "FAIL",
+        "evidence": {
+          "actual": [
+            512,
+            512
+          ],
+          "required": [
+            585,
+            559
+          ]
+        }
+      },
+      {
+        "check": "visual-panels-and-content",
+        "status": "NOT_CHECKED",
+        "evidence": "Inspect template panel placement, seams, transparency and content on target avatars."
+      }
+    ]
+  },
+  {
+    "id": "classic-3d-rejected",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/raw_body.blend",
+      "--kind",
+      "classic-shirt",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/classic-3d-rejected.json"
+    ],
+    "exit_code": 1,
+    "fixture": "fixtures/raw_body.blend",
+    "fixture_unchanged": true,
+    "report": "reports/classic-3d-rejected.json",
+    "blocking_failures": 1,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "asset-format",
+        "status": "FAIL",
+        "evidence": "Classic clothing uses a 2D image workflow"
+      }
+    ]
+  },
+  {
+    "id": "layered-autoskin",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/layered_no_weights.blend",
+      "--kind",
+      "layered",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/layered-autoskin.json"
+    ],
+    "exit_code": 0,
+    "fixture": "fixtures/layered_no_weights.blend",
+    "fixture_unchanged": true,
+    "report": "reports/layered-autoskin.json",
+    "blocking_failures": 0,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "render-geometry-present",
+        "status": "PASS",
+        "evidence": [
+          "Garment"
+        ]
+      },
+      {
+        "check": "render-mesh-count",
+        "status": "PASS",
+        "evidence": {
+          "actual": 1,
+          "required": 1
+        }
+      },
+      {
+        "check": "render-triangles",
+        "status": "PASS",
+        "evidence": {
+          "actual": 12,
+          "max": 4000,
+          "cages_excluded": true
+        }
+      },
+      {
+        "check": "Garment:nonempty-mesh",
+        "status": "PASS",
+        "evidence": 12
+      },
+      {
+        "check": "Garment:degenerate-faces",
+        "status": "PASS",
+        "evidence": 0
+      },
+      {
+        "check": "Garment:uv-present",
+        "status": "PASS",
+        "evidence": 1
+      },
+      {
+        "check": "Garment:skinning",
+        "status": "NOT_CHECKED",
+        "evidence": "No manual deform weights: validate Automatic Skinning Transfer in Studio, if that is the chosen workflow."
+      },
+      {
+        "check": "inner-outer-cage-presence",
+        "status": "PASS",
+        "evidence": {
+          "inner": [
+            "Garment_InnerCage"
+          ],
+          "outer": [
+            "Garment_OuterCage"
+          ]
+        }
+      },
+      {
+        "check": "cage-topology-uv",
+        "status": "NOT_CHECKED",
+        "evidence": "Provide --cage-baseline with the matching pinned official template. Cage names alone cannot verify topology/UV correspondence."
+      },
+      {
+        "check": "cage-fit-and-intersections",
+        "status": "NOT_CHECKED",
+        "evidence": "Test actual fit, overlap, layer order, body shapes and animations in Studio."
+      },
+      {
+        "check": "attachment-relative-bounds",
+        "status": "NOT_CHECKED",
+        "evidence": {
+          "studs_per_unit": null,
+          "dimensions": {
+            "Garment": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "action": "Select body scale and accessory type; measure in the attachment frame in Studio."
+        }
+      },
+      {
+        "check": "normal-map-convention",
+        "status": "NOT_CHECKED",
+        "evidence": "Verify OpenGL tangent-space normal export; pixels alone do not establish the convention."
+      }
+    ]
+  },
+  {
+    "id": "body-traditional",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/raw_body.blend",
+      "--kind",
+      "body",
+      "--workflow",
+      "traditional",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/body-traditional.json"
+    ],
+    "exit_code": 1,
+    "fixture": "fixtures/raw_body.blend",
+    "fixture_unchanged": true,
+    "report": "reports/body-traditional.json",
+    "blocking_failures": 6,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "render-geometry-present",
+        "status": "PASS",
+        "evidence": [
+          "RawInputBody"
+        ]
+      },
+      {
+        "check": "body-part-names",
+        "status": "FAIL",
+        "evidence": {
+          "missing": [
+            "Head",
+            "LeftFoot",
+            "LeftHand",
+            "LeftLowerArm",
+            "LeftLowerLeg",
+            "LeftUpperArm",
+            "LeftUpperLeg",
+            "LowerTorso",
+            "RightFoot",
+            "RightHand",
+            "RightLowerArm",
+            "RightLowerLeg",
+            "RightUpperArm",
+            "RightUpperLeg",
+            "UpperTorso"
+          ],
+          "extra_render_meshes": [
+            "RawInputBody"
+          ]
+        }
+      },
+      {
+        "check": "body-attachment-names",
+        "status": "FAIL",
+        "evidence": {
+          "missing": [
+            "BodyBack",
+            "BodyFront",
+            "FaceCenter",
+            "FaceFront",
+            "Hair",
+            "Hat",
+            "LeftCollar",
+            "LeftFoot",
+            "LeftGrip",
+            "LeftShoulder",
+            "Neck",
+            "RightCollar",
+            "RightFoot",
+            "RightGrip",
+            "RightShoulder",
+            "Root",
+            "WaistBack",
+            "WaistCenter",
+            "WaistFront"
+          ],
+          "positions_not_validated": true
+        }
+      },
+      {
+        "check": "body-outer-cages",
+        "status": "FAIL",
+        "evidence": {
+          "missing": [
+            "Head_OuterCage",
+            "UpperTorso_OuterCage",
+            "LowerTorso_OuterCage",
+            "LeftUpperArm_OuterCage",
+            "LeftLowerArm_OuterCage",
+            "LeftHand_OuterCage",
+            "RightUpperArm_OuterCage",
+            "RightLowerArm_OuterCage",
+            "RightHand_OuterCage",
+            "LeftUpperLeg_OuterCage",
+            "LeftLowerLeg_OuterCage",
+            "LeftFoot_OuterCage",
+            "RightUpperLeg_OuterCage",
+            "RightLowerLeg_OuterCage",
+            "RightFoot_OuterCage"
+          ]
+        }
+      },
+      {
+        "check": "RawInputBody:nonempty-mesh",
+        "status": "PASS",
+        "evidence": 12
+      },
+      {
+        "check": "RawInputBody:degenerate-faces",
+        "status": "PASS",
+        "evidence": 0
+      },
+      {
+        "check": "RawInputBody:watertight",
+        "status": "PASS",
+        "evidence": 0
+      },
+      {
+        "check": "RawInputBody:uv-present",
+        "status": "PASS",
+        "evidence": 1
+      },
+      {
+        "check": "rig-present",
+        "status": "FAIL",
+        "evidence": []
+      },
+      {
+        "check": "RawInputBody:skinning",
+        "status": "FAIL",
+        "evidence": "Traditional body/head render mesh is missing its deform rig binding."
+      },
+      {
+        "check": "facs-pose-declarations",
+        "status": "FAIL",
+        "evidence": {
+          "missing": [
+            "ChinRaiser",
+            "ChinRaiserUpperLip",
+            "EyesLookDown",
+            "JawDrop",
+            "LeftCheekRaiser",
+            "LeftEyeClosed",
+            "LeftInnerBrowRaiser",
+            "LeftLipCornerDown",
+            "LeftLipCornerPuller",
+            "LeftLowerLipDepressor",
+            "Pucker",
+            "RightCheekRaiser",
+            "RightEyeClosed",
+            "RightInnerBrowRaiser",
+            "RightLipCornerDown",
+            "RightLipCornerPuller",
+            "RightLowerLipDepressor"
+          ],
+          "note": "Declarations do not prove working exported facial animation."
+        }
+      },
+      {
+        "check": "facs-deformation-and-landmarks",
+        "status": "NOT_CHECKED",
+        "evidence": "Run Roblox head validation and visually inspect blink, jaw, happy/sad expressions and cage landmarks."
+      },
+      {
+        "check": "attachment-relative-bounds",
+        "status": "NOT_CHECKED",
+        "evidence": {
+          "studs_per_unit": null,
+          "dimensions": {
+            "RawInputBody": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "action": "Select body scale and accessory type; measure in the attachment frame in Studio."
+        }
+      },
+      {
+        "check": "normal-map-convention",
+        "status": "NOT_CHECKED",
+        "evidence": "Verify OpenGL tangent-space normal export; pixels alone do not establish the convention."
+      }
+    ]
+  },
+  {
+    "id": "body-avatar-setup",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/raw_body.blend",
+      "--kind",
+      "body",
+      "--workflow",
+      "avatar-setup",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/body-avatar-setup.json"
+    ],
+    "exit_code": 0,
+    "fixture": "fixtures/raw_body.blend",
+    "fixture_unchanged": true,
+    "report": "reports/body-avatar-setup.json",
+    "blocking_failures": 0,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "render-geometry-present",
+        "status": "PASS",
+        "evidence": [
+          "RawInputBody"
+        ]
+      },
+      {
+        "check": "workflow",
+        "status": "NOT_CHECKED",
+        "evidence": "Avatar Setup input: pre-rig/cage/FACS readiness is deferred to the Studio-generated output. Front -Z differs from traditional body +Z."
+      },
+      {
+        "check": "RawInputBody:nonempty-mesh",
+        "status": "PASS",
+        "evidence": 12
+      },
+      {
+        "check": "RawInputBody:degenerate-faces",
+        "status": "PASS",
+        "evidence": 0
+      },
+      {
+        "check": "RawInputBody:watertight",
+        "status": "PASS",
+        "evidence": 0
+      },
+      {
+        "check": "RawInputBody:uv-present",
+        "status": "PASS",
+        "evidence": 1
+      },
+      {
+        "check": "attachment-relative-bounds",
+        "status": "NOT_CHECKED",
+        "evidence": {
+          "studs_per_unit": null,
+          "dimensions": {
+            "RawInputBody": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "action": "Select body scale and accessory type; measure in the attachment frame in Studio."
+        }
+      },
+      {
+        "check": "normal-map-convention",
+        "status": "NOT_CHECKED",
+        "evidence": "Verify OpenGL tangent-space normal export; pixels alone do not establish the convention."
+      }
+    ]
+  },
+  {
+    "id": "facs-static",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/facs_declarations_only.blend",
+      "--kind",
+      "head",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/facs-static.json"
+    ],
+    "exit_code": 0,
+    "fixture": "fixtures/facs_declarations_only.blend",
+    "fixture_unchanged": true,
+    "report": "reports/facs-static.json",
+    "blocking_failures": 0,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "render-geometry-present",
+        "status": "PASS",
+        "evidence": [
+          "Head_Geo"
+        ]
+      },
+      {
+        "check": "render-triangles",
+        "status": "PASS",
+        "evidence": {
+          "actual": 12,
+          "max": 4000,
+          "cages_excluded": true
+        }
+      },
+      {
+        "check": "Head_Geo:nonempty-mesh",
+        "status": "PASS",
+        "evidence": 12
+      },
+      {
+        "check": "Head_Geo:degenerate-faces",
+        "status": "PASS",
+        "evidence": 0
+      },
+      {
+        "check": "Head_Geo:watertight",
+        "status": "PASS",
+        "evidence": 0
+      },
+      {
+        "check": "Head_Geo:uv-present",
+        "status": "PASS",
+        "evidence": 1
+      },
+      {
+        "check": "rig-present",
+        "status": "PASS",
+        "evidence": [
+          "StaticHeadRig"
+        ]
+      },
+      {
+        "check": "Head_Geo:bone-influences",
+        "status": "PASS",
+        "evidence": {
+          "over_four": 0,
+          "unweighted": 0,
+          "root_weighted": 0
+        }
+      },
+      {
+        "check": "facs-pose-declarations",
+        "status": "PASS",
+        "evidence": {
+          "missing": [],
+          "note": "Declarations do not prove working exported facial animation."
+        }
+      },
+      {
+        "check": "facs-deformation-and-landmarks",
+        "status": "NOT_CHECKED",
+        "evidence": "Run Roblox head validation and visually inspect blink, jaw, happy/sad expressions and cage landmarks."
+      },
+      {
+        "check": "attachment-relative-bounds",
+        "status": "NOT_CHECKED",
+        "evidence": {
+          "studs_per_unit": null,
+          "dimensions": {
+            "Head_Geo": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "action": "Select body scale and accessory type; measure in the attachment frame in Studio."
+        }
+      },
+      {
+        "check": "normal-map-convention",
+        "status": "NOT_CHECKED",
+        "evidence": "Verify OpenGL tangent-space normal export; pixels alone do not establish the convention."
+      }
+    ]
+  },
+  {
+    "id": "makeup-1k",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/makeup_1k.png",
+      "--kind",
+      "makeup",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/makeup-1k.json"
+    ],
+    "exit_code": 0,
+    "fixture": "fixtures/makeup_1k.png",
+    "fixture_unchanged": true,
+    "report": "reports/makeup-1k.json",
+    "blocking_failures": 0,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "image-container",
+        "status": "PASS",
+        "evidence": {
+          "format": "PNG",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "container_checked": true,
+          "pixels_decoded": false
+        }
+      },
+      {
+        "check": "texture-dimensions",
+        "status": "PASS",
+        "evidence": [
+          1024,
+          1024
+        ]
+      },
+      {
+        "check": "visual-panels-and-content",
+        "status": "NOT_CHECKED",
+        "evidence": "Inspect template panel placement, seams, transparency and content on target avatars."
+      }
+    ]
+  },
+  {
+    "id": "makeup-4k",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/makeup_4k.png",
+      "--kind",
+      "makeup",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/makeup-4k.json"
+    ],
+    "exit_code": 1,
+    "fixture": "fixtures/makeup_4k.png",
+    "fixture_unchanged": true,
+    "report": "reports/makeup-4k.json",
+    "blocking_failures": 1,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "image-container",
+        "status": "FAIL",
+        "evidence": "Invalid or excessive PNG compressed data"
+      }
+    ]
+  },
+  {
+    "id": "emote-one-action",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/one_animation_clip.blend",
+      "--kind",
+      "emote",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/emote-one-action.json"
+    ],
+    "exit_code": 0,
+    "fixture": "fixtures/one_animation_clip.blend",
+    "fixture_unchanged": true,
+    "report": "reports/emote-one-action.json",
+    "blocking_failures": 0,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "rig-present",
+        "status": "PASS",
+        "evidence": [
+          "MotionRig"
+        ]
+      },
+      {
+        "check": "attachment-relative-bounds",
+        "status": "NOT_CHECKED",
+        "evidence": {
+          "studs_per_unit": null,
+          "dimensions": {},
+          "action": "Select body scale and accessory type; measure in the attachment frame in Studio."
+        }
+      },
+      {
+        "check": "animation-actions",
+        "status": "PASS",
+        "evidence": [
+          {
+            "name": "Walk_ONLY",
+            "frame_range": [
+              1.0,
+              12.0
+            ]
+          }
+        ]
+      },
+      {
+        "check": "animation-motion-loop-and-publishing-marker",
+        "status": "NOT_CHECKED",
+        "evidence": "Check clip list, duration, looping, bounds, CurveAnimation conversion and Emote marker in Studio."
+      },
+      {
+        "check": "normal-map-convention",
+        "status": "NOT_CHECKED",
+        "evidence": "Verify OpenGL tangent-space normal export; pixels alone do not establish the convention."
+      }
+    ]
+  },
+  {
+    "id": "pack-one-action",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/one_animation_clip.blend",
+      "--kind",
+      "animation-pack",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/pack-one-action.json"
+    ],
+    "exit_code": 0,
+    "fixture": "fixtures/one_animation_clip.blend",
+    "fixture_unchanged": true,
+    "report": "reports/pack-one-action.json",
+    "blocking_failures": 0,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "rig-present",
+        "status": "PASS",
+        "evidence": [
+          "MotionRig"
+        ]
+      },
+      {
+        "check": "attachment-relative-bounds",
+        "status": "NOT_CHECKED",
+        "evidence": {
+          "studs_per_unit": null,
+          "dimensions": {},
+          "action": "Select body scale and accessory type; measure in the attachment frame in Studio."
+        }
+      },
+      {
+        "check": "animation-actions",
+        "status": "PASS",
+        "evidence": [
+          {
+            "name": "Walk_ONLY",
+            "frame_range": [
+              1.0,
+              12.0
+            ]
+          }
+        ]
+      },
+      {
+        "check": "animation-motion-loop-and-publishing-marker",
+        "status": "NOT_CHECKED",
+        "evidence": "Check clip list, duration, looping, bounds, CurveAnimation conversion and Emote marker in Studio."
+      },
+      {
+        "check": "normal-map-convention",
+        "status": "NOT_CHECKED",
+        "evidence": "Verify OpenGL tangent-space normal export; pixels alone do not establish the convention."
+      }
+    ]
+  },
+  {
+    "id": "missing-runtime",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/raw_body.blend",
+      "--kind",
+      "rigid",
+      "--blender",
+      "/definitely-missing-ugc-blender",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/missing-runtime.json"
+    ],
+    "exit_code": 0,
+    "fixture": "fixtures/raw_body.blend",
+    "fixture_unchanged": true,
+    "report": "reports/missing-runtime.json",
+    "blocking_failures": 0,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "blender-runtime",
+        "status": "NOT_CHECKED",
+        "evidence": "[Errno 2] No such file or directory: '/definitely-missing-ugc-blender'"
+      }
+    ]
+  },
+  {
+    "id": "untrusted-autoexec",
+    "command": [
+      "python3",
+      "/home/oae/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/skill/plugins/roblox-ugc/skills/roblox-ugc/scripts/asset.py",
+      "preflight",
+      "/tmp/roblox-ugc-scenario-test/fixtures/untrusted_embedded_script.blend",
+      "--kind",
+      "rigid",
+      "--report",
+      "/tmp/roblox-ugc-scenario-test/reports/untrusted-autoexec.json"
+    ],
+    "exit_code": 0,
+    "fixture": "fixtures/untrusted_embedded_script.blend",
+    "fixture_unchanged": true,
+    "report": "reports/untrusted-autoexec.json",
+    "blocking_failures": 0,
+    "marketplace_approved": false,
+    "requires_studio_validation": true,
+    "checks": [
+      {
+        "check": "render-geometry-present",
+        "status": "PASS",
+        "evidence": [
+          "UntrustedCube"
+        ]
+      },
+      {
+        "check": "render-mesh-count",
+        "status": "PASS",
+        "evidence": {
+          "actual": 1,
+          "required": 1
+        }
+      },
+      {
+        "check": "render-triangles",
+        "status": "PASS",
+        "evidence": {
+          "actual": 12,
+          "max": 4000,
+          "cages_excluded": true
+        }
+      },
+      {
+        "check": "UntrustedCube:nonempty-mesh",
+        "status": "PASS",
+        "evidence": 12
+      },
+      {
+        "check": "UntrustedCube:degenerate-faces",
+        "status": "PASS",
+        "evidence": 0
+      },
+      {
+        "check": "UntrustedCube:watertight",
+        "status": "PASS",
+        "evidence": 0
+      },
+      {
+        "check": "UntrustedCube:uv-present",
+        "status": "PASS",
+        "evidence": 1
+      },
+      {
+        "check": "rigid-no-skinning",
+        "status": "PASS",
+        "evidence": []
+      },
+      {
+        "check": "attachment-relative-bounds",
+        "status": "NOT_CHECKED",
+        "evidence": {
+          "studs_per_unit": null,
+          "dimensions": {
+            "UntrustedCube": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "action": "Select body scale and accessory type; measure in the attachment frame in Studio."
+        }
+      },
+      {
+        "check": "normal-map-convention",
+        "status": "NOT_CHECKED",
+        "evidence": "Verify OpenGL tangent-space normal export; pixels alone do not establish the convention."
+      }
+    ]
+  },
+  {
+    "id": "missing-runtime-export",
+    "exit_code": 2,
+    "artifact_exists": false,
+    "report": "reports/missing-runtime-export.json"
+  },
+  {
+    "id": "untrusted-effects",
+    "embedded_script_sentinel_exists": false,
+    "preserve_sentinel_unchanged": true
+  }
+]

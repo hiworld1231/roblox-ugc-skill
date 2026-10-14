@@ -1,0 +1,17 @@
+{
+  "name": "roblox-ugc",
+  "version": "0.1.0",
+  "description": "Source-backed Roblox Marketplace UGC creation, validation and publishing.",
+  "author": {"name": "hiworld1231"},
+  "repository": "https://github.com/hiworld1231/roblox-ugc-skill",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Roblox UGC",
+    "shortDescription": "Create and validate Roblox UGC",
+    "longDescription": "Official Roblox avatar documentation, practical authoring workflows, Blender preflight and Studio validation.",
+    "developerName": "hiworld1231",
+    "category": "Developer Tools",
+    "defaultPrompt": "Help me create a Roblox UGC item and validate it against its current requirements."
+  }
+}

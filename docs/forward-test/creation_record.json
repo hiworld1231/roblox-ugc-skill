@@ -1,0 +1,30 @@
+{
+  "name": "Compass Brooch",
+  "kind": "rigid",
+  "category": "Front",
+  "body_scale": "Classic",
+  "triangles": 192,
+  "vertices": 98,
+  "dimensions_blender": [
+    0.8256,
+    0.0774,
+    0.8256
+  ],
+  "claimed_studs_per_unit": 1.0,
+  "geometry": "Single continuous sealed 16-sided shell",
+  "albedo": [
+    512,
+    512
+  ],
+  "metalness": [
+    128,
+    128
+  ],
+  "roughness": [
+    128,
+    128
+  ],
+  "source_project": "CompassBrooch.blend",
+  "reference": "Official ClassicMannequin.fbx used only in DCC fit preview",
+  "DCC_fit": "Visual preview only; actual Studio fitting/validation NOT_CHECKED"
+}

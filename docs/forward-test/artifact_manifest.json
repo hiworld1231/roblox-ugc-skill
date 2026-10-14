@@ -1,0 +1,140 @@
+{
+  "root": "/tmp/roblox-ugc-forward-test",
+  "files": [
+    {
+      "path": "CompassBrooch.blend",
+      "bytes": 186451,
+      "sha256": "d7bad31bad22121ce6a14feaecf47e5e32089ef69d99907f22574c9e48aa038d"
+    },
+    {
+      "path": "DELIVERY.md",
+      "bytes": 4622,
+      "sha256": "a6f18b023a573f578f287f87fb9128990c04b78a093d04582749e499427ecdc7"
+    },
+    {
+      "path": "EVALUATION.md",
+      "bytes": 3443,
+      "sha256": "97dd6d4896b15e5f2b387a9c526979bf93bb9436231f962dd8343890a72d415f"
+    },
+    {
+      "path": "create_compass.py",
+      "bytes": 6408,
+      "sha256": "5dc1a3b5df050edaa4adb001cad7889cd43a318df466a9905a4818a4a06e0cff"
+    },
+    {
+      "path": "creation.log",
+      "bytes": 1569,
+      "sha256": "5201843e67ba9c66b6356fc353aa924fcc931b4d3a755159c23583bce25b711d"
+    },
+    {
+      "path": "creation_record.json",
+      "bytes": 609,
+      "sha256": "80628c585f8f2fa01f49790609eefdba3eafc733c0801c8fda10e187d61f7203"
+    },
+    {
+      "path": "export.log",
+      "bytes": 5303,
+      "sha256": "73c6cd9e6937b27411bd217726a73c9325f96db74373653f71cb398d3f7b8188"
+    },
+    {
+      "path": "export_report.json",
+      "bytes": 5303,
+      "sha256": "73c6cd9e6937b27411bd217726a73c9325f96db74373653f71cb398d3f7b8188"
+    },
+    {
+      "path": "exports/CompassBrooch.fbx",
+      "bytes": 116924,
+      "sha256": "ea51937c3d65ff11a5eadd50a6f08aede32ceff2dc9e3c847f3469bf2e235fbf"
+    },
+    {
+      "path": "fbx_preflight.json",
+      "bytes": 5070,
+      "sha256": "0dd6a740f30c12758ad714586283b4693daa6670ed3d8a225347616254f56ba7"
+    },
+    {
+      "path": "fbx_preflight.log",
+      "bytes": 5070,
+      "sha256": "0dd6a740f30c12758ad714586283b4693daa6670ed3d8a225347616254f56ba7"
+    },
+    {
+      "path": "file_integrity_validation.json",
+      "bytes": 1113,
+      "sha256": "18b0ef67b24a699997c99ecffd231e27dc8098a995504b65a24607d4ac096ed4"
+    },
+    {
+      "path": "inspect_reference.py",
+      "bytes": 550,
+      "sha256": "f4faae61611da6f8b60fee75349fa93fc4f2b2d3a756caf38919aa1f8b1cd9ea"
+    },
+    {
+      "path": "offline_preflight.json",
+      "bytes": 5064,
+      "sha256": "527eb3092b93a26c785296a00a3930b52c14ff040bb44ae44e2af8a647a641dc"
+    },
+    {
+      "path": "paint_texture.py",
+      "bytes": 2249,
+      "sha256": "22cb39b408d813d24690dfe0c92f9d0df123577f0cb52bc0555dd902d019060b"
+    },
+    {
+      "path": "previews/classic_fit_DCC_only.png",
+      "bytes": 1355208,
+      "sha256": "4dba1359a6608cfb56a1dd7a3d5966cac25abe777564afd68b843f7c02ba6434"
+    },
+    {
+      "path": "previews/fbx_roundtrip.png",
+      "bytes": 457840,
+      "sha256": "1b4c72c6c9f55dd07d69c82d010e56d8ce8033adf505c64eaa2a12a0be65fa9c"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 1386193,
+      "sha256": "e84d14fe927028a0fd808e0cb43119698d929abfbfff249b9f17cbe64d07f752"
+    },
+    {
+      "path": "previews/hero.png",
+      "bytes": 1338301,
+      "sha256": "b9defff206960a29453c04624c6f638a482263014fe5813caf3632900b632b02"
+    },
+    {
+      "path": "reference/ClassicMannequin.fbx",
+      "bytes": 573324,
+      "sha256": "970edb3a94e2863655044bef3391557eb2971dc24f74aea3f35d877879154b08"
+    },
+    {
+      "path": "reference/provenance.json",
+      "bytes": 350,
+      "sha256": "c57975439c392ef4fb65ecd8b7d690b36d1338c45a97ce98337bcc6d98932f4a"
+    },
+    {
+      "path": "roundtrip.log",
+      "bytes": 2041,
+      "sha256": "5fd0464ddc70ddbc26dc357664eab2193830876700d64c28b63af7eeea29719e"
+    },
+    {
+      "path": "roundtrip_validation.json",
+      "bytes": 1668,
+      "sha256": "87476fd519da4f7c2eb99bd88e7b77b6ae34b05f318b62fa7a2bd013bbfdbf2e"
+    },
+    {
+      "path": "textures/CompassBrooch_ALB.png",
+      "bytes": 86909,
+      "sha256": "b77193be6cedc7ac509a666b51d3068636be7f4b2a9927bb9fd378c5613d7b80"
+    },
+    {
+      "path": "textures/CompassBrooch_MTL.png",
+      "bytes": 1836,
+      "sha256": "afa08ab48da6c53fa2fe37b529601b535d74ee0640695a10f278af7a57be62ab"
+    },
+    {
+      "path": "textures/CompassBrooch_RGH.png",
+      "bytes": 1739,
+      "sha256": "736ca45c89a1da2dddcffc5375bc7e24ba79afff0ac59ad0ce2c875b9d17b1a8"
+    },
+    {
+      "path": "verify_roundtrip.py",
+      "bytes": 3790,
+      "sha256": "b3b4e66b65f8ed2ad84b6366d691c790c6416477f45e58ca157f125f0c2be80b"
+    }
+  ]
+}

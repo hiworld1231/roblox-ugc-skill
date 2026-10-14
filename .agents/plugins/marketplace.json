@@ -1,0 +1,10 @@
+{
+  "name": "roblox-ugc-skill",
+  "interface": {"displayName": "Roblox UGC"},
+  "plugins": [{
+    "name": "roblox-ugc",
+    "source": {"source": "local", "path": "./plugins/roblox-ugc"},
+    "policy": {"installation": "AVAILABLE", "authentication": "ON_USE"},
+    "category": "Developer Tools"
+  }]
+}

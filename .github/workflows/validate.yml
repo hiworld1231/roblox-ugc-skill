@@ -1,0 +1,23 @@
+name: Validate packages
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install jsonschema
+      - run: python tools/validate_package.py --schema
+      - run: python -m unittest discover -s tests -p test_tools.py -v
+      - run: npm exec --yes --package=@anthropic-ai/claude-code -- claude plugin validate .
+      - run: npm exec --yes --package=@anthropic-ai/claude-code -- claude plugin validate ./plugins/roblox-ugc
+      - run: python tools/build_release.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: roblox-ugc-packages
+          path: dist/

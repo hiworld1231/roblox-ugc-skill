@@ -1,0 +1,27 @@
+test_audio_excluded (test_tools.CorpusTests.test_audio_excluded) ... ok
+test_avatar_outside_root_included (test_tools.CorpusTests.test_avatar_outside_root_included) ... ok
+test_creator_store_excluded (test_tools.CorpusTests.test_creator_store_excluded) ... ok
+test_duplicate_source_rejected (test_tools.CorpusTests.test_duplicate_source_rejected) ... ok
+test_index_alias_normalization (test_tools.CorpusTests.test_index_alias_normalization) ... ok
+test_missing_document_rejected (test_tools.CorpusTests.test_missing_document_rejected) ... ok
+test_mutated_document_rejected (test_tools.CorpusTests.test_mutated_document_rejected) ... ok
+test_path_escape_rejected (test_tools.CorpusTests.test_path_escape_rejected) ... ok
+test_real_snapshot_integrity (test_tools.CorpusTests.test_real_snapshot_integrity) ... ok
+test_search_retrieves_actual_category (test_tools.CorpusTests.test_search_retrieves_actual_category) ... ok
+test_corrupt_crc (test_tools.ImageTests.test_corrupt_crc) ... ok
+test_image_cannot_be_rigid_asset (test_tools.ImageTests.test_image_cannot_be_rigid_asset) ... ok
+test_makeup_over_budget (test_tools.ImageTests.test_makeup_over_budget) ... ok
+test_makeup_valid_budget (test_tools.ImageTests.test_makeup_valid_budget) ... ok
+test_missing_asset_is_failure (test_tools.ImageTests.test_missing_asset_is_failure) ... ok
+test_missing_blender_is_not_pass (test_tools.ImageTests.test_missing_blender_is_not_pass) ... ok
+test_prepare_refuses_existing_destination (test_tools.ImageTests.test_prepare_refuses_existing_destination) ... ok
+test_shirt_valid_dimensions (test_tools.ImageTests.test_shirt_valid_dimensions) ... ok
+test_shirt_wrong_dimensions (test_tools.ImageTests.test_shirt_wrong_dimensions) ... ok
+test_truncated_image (test_tools.ImageTests.test_truncated_image) ... ok
+test_tshirt_not_square (test_tools.ImageTests.test_tshirt_not_square) ... ok
+test_unknown_format_is_not_pass (test_tools.ImageTests.test_unknown_format_is_not_pass) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.746s
+
+OK

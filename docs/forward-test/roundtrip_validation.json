@@ -1,0 +1,76 @@
+{
+  "stage": "FBX reimported into Blender; NOT Studio validation",
+  "mesh_count": 1,
+  "vertices": 98,
+  "triangles": 192,
+  "connected_components": 1,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "signed_volume": 0.033152100748255316,
+  "dimensions_blender": [
+    0.8256000280380249,
+    0.07739999890327454,
+    0.8256000280380249
+  ],
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "uv_layers": 1,
+  "materials": 1,
+  "skinning_present": false,
+  "vertex_color_attributes": 0,
+  "material_links": [
+    {
+      "socket": "Normal",
+      "source_node": "NORMAL_MAP",
+      "image": null
+    },
+    {
+      "socket": "Base Color",
+      "source_node": "TEX_IMAGE",
+      "image": "CompassBrooch_ALB.png"
+    },
+    {
+      "socket": "Roughness",
+      "source_node": "TEX_IMAGE",
+      "image": "CompassBrooch_RGH.png"
+    },
+    {
+      "socket": "Metallic",
+      "source_node": "TEX_IMAGE",
+      "image": "CompassBrooch_MTL.png"
+    }
+  ],
+  "images": [
+    {
+      "name": "CompassBrooch_ALB.png",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true,
+      "filepath": "/tmp/roblox-ugc-forward-test/exports/CompassBrooch.fbm/CompassBrooch_ALB.png"
+    },
+    {
+      "name": "CompassBrooch_MTL.png",
+      "size": [
+        128,
+        128
+      ],
+      "packed": true,
+      "filepath": "/tmp/roblox-ugc-forward-test/exports/CompassBrooch.fbm/CompassBrooch_MTL.png"
+    },
+    {
+      "name": "CompassBrooch_RGH.png",
+      "size": [
+        128,
+        128
+      ],
+      "packed": true,
+      "filepath": "/tmp/roblox-ugc-forward-test/exports/CompassBrooch.fbm/CompassBrooch_RGH.png"
+    }
+  ],
+  "all_assertions_passed": true
+}

@@ -1,0 +1,2529 @@
+[
+  {
+    "url": "https://en.help.roblox.com/hc/articles/203313410",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/capture",
+      "parts/textures-decals",
+      "production/monetization/18-plus-devex-rate",
+      "production/monetization/developer-exchange",
+      "projects/assets"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/articles/115004647846",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/capture",
+      "parts/textures-decals",
+      "production/monetization/18-plus-devex-rate",
+      "production/monetization/developer-exchange",
+      "projects/assets"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Quaternion",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/curve-editor"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Euler_angles",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/curve-editor"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Gimbal_lock",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/curve-editor"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Matrix_multiplication",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/curve-editor"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/116845448376632",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/graph-editor-state-machine"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/VgMUCph3bOI",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/graph-editor"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/92493993350916/Animation-Graph-Editor-Simple-Demo",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/graph-editor"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Inverse_kinematics",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/inverse-kinematics"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog/658830056/Ninja-Run",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog/658832070/Ninja-Jump",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/34/Astronaut-Animation-Pack",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/39/Bubbly-Animation-Package",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/56/Cartoony-Animation-Package",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/48/Elder-Animation-Package",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/68/Knight-Animation-Package",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/79/Levitation-Animation-Pack",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/63/Mage-Animation-Package",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/75/Ninja-Animation-Package",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/55/Pirate-Animation-Package",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/82/Robot-Animation-Pack",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/356/Rthro-Animation-Package",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/83/Stylish-Animation-Pack",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/81/Superhero-Animation-Pack",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/43/Toy-Animation-Pack",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/33/Vampire-Animation-Pack",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/32/Werewolf-Animation-Pack",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/80/Zombie-Animation-Pack",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/using"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/Eed29gV0hLA",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/creating-rigid",
+      "avatar/rigid-accessories"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/creating-rigid",
+      "art/accessories/creating",
+      "avatar-setup",
+      "avatar/classic-clothing",
+      "avatar/dynamic-heads",
+      "avatar",
+      "avatar/layered-accessories/specifications",
+      "avatar/makeup",
+      "avatar/makeup/specifications",
+      "avatar/rigid-accessories",
+      "characters/emotes",
+      "marketplace/custom-thumbnails",
+      "marketplace",
+      "marketplace/marketplace-fees-and-commissions",
+      "marketplace/marketplace-policy",
+      "marketplace/sponsor-items",
+      "players/avatar-editor",
+      "monetize-avatar"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/modeling-101-in-blender-box-modeling/2963814",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/creating-rigid/modeling-setup"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/creating-rigid/publishing",
+      "avatar/classic-clothing",
+      "cloud/auth/api-keys",
+      "cloud/auth/oauth2-registration",
+      "cloud/guides/usage-assets",
+      "marketplace/marketplace-fees-and-commissions",
+      "marketplace/publish-to-marketplace",
+      "production/analytics/analytics-dashboard",
+      "production/monetization/avatar-creation-token",
+      "production/monetization/avatar-items",
+      "production/monetization/regional-pricing",
+      "projects/assets/packages",
+      "projects/assets/privacy",
+      "projects/groups",
+      "studio/testing-modes",
+      "tutorials/use-case-tutorials/animation/create-an-animation",
+      "reference/engine/classes/EditableImage",
+      "reference/engine/classes/EditableMesh",
+      "reference/engine/classes/Players"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/swQW2VS9ZMA",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/creating-rigid/publishing",
+      "art/accessories/from-existing",
+      "marketplace/publish-to-marketplace"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/2.79/editors/uv_image/uv/editing/unwrapping/mapping_types.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/creating-rigid/texturing"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/C-DwGRBHvmE",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/creating",
+      "art/modeling/cage-meshes/apply-deformation",
+      "avatar/layered-accessories",
+      "avatar/layered-accessories/specifications"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/physics/cloth/examples.html#using-simulation-to-shape-sculpt-a-mesh",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/creating/watertight"
+    ]
+  },
+  {
+    "url": "https://www.blender.org",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models",
+      "art/characters/facial-animation/create-basic-heads",
+      "art/characters/facial-animation/create-face-accessories",
+      "art/modeling/cage-meshes/create-cages",
+      "art/modeling/cage-meshes",
+      "art/modeling",
+      "art/modeling/rig-a-humanoid-model",
+      "art/modeling/rig-a-simple-mesh",
+      "art/modeling/rigging",
+      "art/modeling/skin-a-humanoid-model",
+      "art/modeling/skin-a-simple-mesh",
+      "art/modeling/specifications",
+      "avatar/dynamic-heads/facs-poses-reference",
+      "avatar/layered-accessories/specifications",
+      "avatar/makeup"
+    ]
+  },
+  {
+    "url": "https://www.autodesk.com/products/maya/overview",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models",
+      "art/accessories/validation-tool",
+      "art/characters/export-avatar-animations-from-maya",
+      "art/characters/facial-animation/create-basic-heads",
+      "art/characters/facial-animation/create-face-accessories",
+      "art/modeling/cage-meshes/create-cages",
+      "art/modeling/cage-meshes",
+      "art/modeling",
+      "art/modeling/rig-a-humanoid-model",
+      "art/modeling/rig-a-simple-mesh",
+      "art/modeling/rigging",
+      "art/modeling/skin-a-humanoid-model",
+      "art/modeling/skin-a-simple-mesh",
+      "art/modeling/specifications",
+      "art/overview-dcc",
+      "avatar/character-bodies",
+      "avatar/create",
+      "avatar/dynamic-heads/facs-poses-reference",
+      "avatar/dynamic-heads",
+      "avatar/layered-accessories",
+      "avatar/layered-accessories/specifications",
+      "avatar/makeup",
+      "avatar/rigid-accessories",
+      "avatar/rigid-accessories/specifications",
+      "monetize-avatar"
+    ]
+  },
+  {
+    "url": "https://www.blender.org/download/releases/3-0/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models",
+      "art/accessories/validation-tool",
+      "art/modeling/rig-a-humanoid-model",
+      "art/modeling/rig-a-simple-mesh",
+      "art/modeling/skin-a-humanoid-model",
+      "art/modeling/skin-a-simple-mesh"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/animation/armatures/skinning/parenting.html#with-automatic-weights",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models",
+      "art/characters/facial-animation/create-face-accessories",
+      "avatar/layered-accessories/specifications"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/3.5/grease_pencil/modes/weight_paint/introduction.html#weight-paint",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/shading.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models"
+    ]
+  },
+  {
+    "url": "https://www.python.org/downloads/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/validation-tool"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/outliner/interface.html?highlight=orphan",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/validation-tool"
+    ]
+  },
+  {
+    "url": "https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2022/ENU/Maya-Basics/files/GUID-503E227B-EF49-4A78-B3CA-7EAC588017C9-htm.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/validation-tool"
+    ]
+  },
+  {
+    "url": "https://www.blender.org/download/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender",
+      "art/modeling/calisthenics-tool"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/2.81/interface/window_system/workspaces.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/introduction.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/outliner/introduction.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/properties_editor.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/timeline.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/uv/introduction.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/introduction.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/image/introduction.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/texture_paint/introduction.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/modes.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/toolbar/index.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/3d_cursor.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/move.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/controls/snapping.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/inset_faces.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/extrude.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/vertex/extrude_vertices.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/extrude_edges.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/extrude_faces.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/subdivide.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/bridge_edge_loops.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/fill.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/vertex/make_face_edge.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/delete.html#dissolve",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/delete.html#delete",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/introduction.html#getting-started",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/seams.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html#Unwrap",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html#follow-active-quads",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html#cube-projection",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html#sphere-projection",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html#cylinder-projection",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html#project-from-view",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html#smart-uv-project",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/vertex_paint/index.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/blender"
+    ]
+  },
+  {
+    "url": "https://www.blender.org/download/releases/3-4/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/creating"
+    ]
+  },
+  {
+    "url": "https://www.adobe.com/products/substance3d-painter",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/creating/texturing-pbr",
+      "art/overview-dcc"
+    ]
+  },
+  {
+    "url": "https://www.maxon.net/en/zbrush",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/creating/texturing-pbr"
+    ]
+  },
+  {
+    "url": "https://www.blender.org/download/releases/5-2/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/facial-animation/create-basic-heads",
+      "art/characters/facial-animation/create-face-accessories"
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=-gIL6VZ-bkE",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/facial-animation/create-basic-heads"
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=fx33sPEAZEk",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/facial-animation/create-basic-heads"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/library/7715145252/moods-11-FaceAnimation",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/facial-animation/moods"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog/10725833199/Chiseled-Good-Looks-Mood",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/facial-animation/moods"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/completing-the-dynamic-head-migration/4301387",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/head-comparison"
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=OwhkWzSBnf0",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/manually-update-catalog-heads"
+    ]
+  },
+  {
+    "url": "https://github.com/Roblox/avatar/tree/main/Tools/ClothingValidationTool",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/validation-tool"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/EUDSIUmLjxA",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art",
+      "avatar/classic-clothing"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/nwShvDmFHWc",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/tzPn6QvU8Bo",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art",
+      "avatar/rigid-accessories"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/3158922185/Toyokawa-Inari-Shrine-Showcase",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/6519709626/Hotel-Resort",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/5415692770/Lab",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/creating-buttes-in-roblox-studio-using-materialvariant-and-terraindetails/2840180",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/V-SDTfxcIF8",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/custom-skyboxes-101/2849003",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/using-alpha-masks-in-color-maps-to-customizetint-base-colors/2883381",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/creating-perfect-audio-loops/2849057",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/how-to-use-radial-symmetry-using-zbrush/2925165",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/c/resources/roblox-staff/278",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ]
+  },
+  {
+    "url": "https://www.blender.org/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/calisthenics-tool",
+      "art/overview-dcc",
+      "avatar/character-bodies",
+      "avatar/create",
+      "avatar/dynamic-heads",
+      "avatar/layered-accessories",
+      "avatar/layered-accessories/specifications",
+      "avatar/rigid-accessories",
+      "avatar/rigid-accessories/specifications",
+      "avatar/tutorials",
+      "monetize-avatar",
+      "reference/engine/classes/MeshPart"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/weight_paint/introduction.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/calisthenics-tool"
+    ]
+  },
+  {
+    "url": "https://github.com/Roblox/avatar/tree/main/Tools/CalisthenicsTool",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/calisthenics-tool"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/GlTF",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/gltf-export"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/7208091524/Beyond-the-Dark-Vistech-Showcase",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/project-files",
+      "art/overview-studio"
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=QwZaA9Gc-WQ",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/project-files",
+      "avatar/layered-accessories/project-files",
+      "avatar/resources"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/HVUO3Dl7qT0",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/reimport"
+    ]
+  },
+  {
+    "url": "https://github.com/Roblox/roblox-blender-plugin",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/roblox-blender-plugin"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/weight_paint/tool_settings/options.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/skin-a-humanoid-model",
+      "art/modeling/skin-a-simple-mesh"
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=f2pTkW-1JkE",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/skin-a-humanoid-model"
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=dKZrzG5r13g",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/skin-a-humanoid-model"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/weight_paint/introduction.html#the-weighting-color-code",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/skin-a-simple-mesh"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/weight_paint/tools.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/skin-a-simple-mesh"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/tags/c/resources/roblox-staff/278/art",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-dcc"
+    ]
+  },
+  {
+    "url": "https://www.maxon.net/en/cinema-4d",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-dcc"
+    ]
+  },
+  {
+    "url": "https://www.adobe.com/products/photoshop",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-dcc"
+    ]
+  },
+  {
+    "url": "https://www.audacityteam.org/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-dcc"
+    ]
+  },
+  {
+    "url": "https://www.reaper.fm/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-dcc"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations?activeTab=Model",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-studio"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/store/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-studio"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/store/models?creatorName=Roblox",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-studio"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/7902470429/The-Mystery-of-Duvall-Drive",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-studio"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/store/models?creatorName=Roblox&includeOnlyVerifiedCreators=true&keyword=duvall+drive&pageNumber=1&querySource=0",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-studio"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/store/models?creatorName=Roblox&includeOnlyVerifiedCreators=true&keyword=beyond+the+dark&pageNumber=1&querySource=0",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-studio"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/5326950832/Roblox-Realistic-Forest-Demo",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-studio"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/using-alpha-masks-in-color-maps-to-customizetint-base-colors",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-studio"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203313410-Roblox-Community-Standards",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar-setup/auto-setup-requirements",
+      "avatar/character-bodies",
+      "avatar/dynamic-heads",
+      "avatar/emotes",
+      "avatar/emotes/specifications",
+      "creator-programs/todays-picks-marketplace",
+      "marketplace/frequently-asked-questions",
+      "marketplace/marketplace-policy",
+      "avatar/avatar-lab-disclaimer"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/Hp9pr2FpZa8",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar-setup"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/fwbuhzq1D0k",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar-setup"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/early-preview-alpha-release-of-photo-to-avatar-apis/3931624",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/avatar-generation"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/2My8jE47clI",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/character-bodies"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203313410#safety",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/character-bodies"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/95623161111019/Avatar-Test-Place",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/character-bodies/test-studio"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/r_unfGZT5Ps",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/classic-clothing"
+    ]
+  },
+  {
+    "url": "https://www.gimp.org/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/create",
+      "monetize-avatar"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Facial_Action_Coding_System",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/dynamic-heads/facs-poses-reference"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/c/bug-reports/10",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/dynamic-heads/specifications",
+      "avatar/dynamic-heads/validate",
+      "marketplace/categories"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/OwhkWzSBnf0",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/dynamic-heads/validate"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/store/asset/4725618216/Moon-Animator-2",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/emotes"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/upload-and-publish-for-emotes-with-additional-joints-is-now-open/4710932",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/emotes/specifications"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/124012682058672/Roblox-Avatar-Creator",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/in-experience-creation"
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=r_unfGZT5Ps",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/QwZaA9Gc-WQ",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/layered-accessories/caging-best-practices"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/gXXukd6yOSs",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/layered-accessories"
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=C-DwGRBHvmE&t=512s",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/layered-accessories/specifications"
+    ]
+  },
+  {
+    "url": "https://github.com/Roblox/avatar/tree/main/Makeup",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/makeup/import",
+      "avatar/makeup/specifications"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/BezI4tL4E5k",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/makeup/import"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/0se12PNhVCI",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/makeup"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/g79GBh0AcXA",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/makeup"
+    ]
+  },
+  {
+    "url": "https://www.adobe.com/products/substance3d/apps/painter.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/makeup"
+    ]
+  },
+  {
+    "url": "http://boundingboxsoftware.com/materialize/index.php",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/makeup"
+    ]
+  },
+  {
+    "url": "https://extensions.blender.org/add-ons/ucupaint/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/makeup"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/B0y5fLlwkF0",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/makeup/reassign-textures"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/JaX5rcsStvQ",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/makeup/reassign-textures"
+    ]
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/tutorials"
+    ]
+  },
+  {
+    "url": "https://studio.blender.org/characters/snow/v4/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "characters/adaptive-animation"
+    ]
+  },
+  {
+    "url": "https://www.blender.org/download/demo-files/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "characters/adaptive-animation"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/credentials?activeTab=ApiKeysTab",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "cloud/auth/api-keys"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/credentials",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "cloud/auth/api-keys"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "cloud/auth/api-keys"
+    ]
+  },
+  {
+    "url": "https://www.rfc-editor.org/rfc/rfc7636",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "cloud/auth/oauth2-overview"
+    ]
+  },
+  {
+    "url": "https://openid.net/connect/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "cloud/auth/oauth2-overview"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/credentials?activeTab=OAuthTab",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "cloud/auth/oauth2-registration"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/37924211313044-Creator-Third-Party-App-Policy",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "cloud/auth/oauth2-registration"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/home",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "cloud/guides/usage-assets",
+      "production/publishing/account-verification"
+    ]
+  },
+  {
+    "url": "https://survey.roblox.com/jfe/form/SV_8cZb94oj9OvQm9g",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "creator-programs/todays-picks-marketplace"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/explore/licenses",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "ip-licensing/creators"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "ip-licensing/creators",
+      "production/monetization/developer-exchange",
+      "avatar/avatar-lab-disclaimer"
+    ]
+  },
+  {
+    "url": "https://about.roblox.com/community-standards",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "ip-licensing/creators",
+      "production/monetization/developer-exchange",
+      "production/publishing/ip-guidelines"
+    ]
+  },
+  {
+    "url": "https://copyright.gov/fair-use/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "ip-licensing/creators",
+      "production/publishing/ip-guidelines"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/info/terms",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "ip-licensing/get-started"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/info/privacy",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "ip-licensing/get-started"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/42542704086548-License-Manager-Terms",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "ip-licensing/get-started"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/21416271342868-Content-Moderation-on-Roblox",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "ip-licensing/get-started"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/library/11628621048/UGC-Custom-Thumbnail-Tool",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/custom-thumbnails"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/4407282410644-Age-ID-Verification",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/premium/membership",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions",
+      "marketplace/marketplace-fees-and-commissions",
+      "reference/engine/classes/AvatarCreationService",
+      "reference/engine/classes/MarketplaceService"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/updates-and-changes-to-the-ugc-catalog-application/1974990",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/report-appeals#/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/illegal-content-reporting",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/support",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions",
+      "marketplace/publish-to-marketplace",
+      "production/monetization/developer-exchange"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/6MPWLQmIKLk",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/homestore"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog/10546552/Trojan-Infantry-Helmet",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/intellectual-property"
+    ]
+  },
+  {
+    "url": "https://www.copyright.gov/dmca/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/intellectual-property"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog/1082932/Traffic-Cone",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/intellectual-property"
+    ]
+  },
+  {
+    "url": "https://about.roblox.com/parental-controls",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-fees-and-commissions",
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/transactions",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-fees-and-commissions",
+      "production/analytics/analytics-dashboard"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203314100-Developer-Exchange-DevEx-FAQs#h_01FTN4PJV8AS4JHD2YHS363TDE",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-fees-and-commissions"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations/pricing",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-fees-and-commissions"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/360024256251-Roblox-Premium-Membership",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/115001708126",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203313410-Roblox-Community-Rules",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/2836/GigaChad",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/808/Cybernetic-Superhero",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/3968/Scarlett",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/1178/Greaser-Chicken",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/128/Claire",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/370/The-Great-Bear-War-Grizzly-Warrior",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/473/Octavia-The-Ivory-Spider-Girl",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/6506/Scarecrow",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/7735/Custom-Dragon-Colour",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/8734/Living-Pumpkin",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/210/Telamons-Business-Casual",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/195/Polar-Bear",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/2094/Teddy-Bear",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/115561/Bungling",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/671/Gang-O-Fries",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/591/Mr-Toilet",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/295/Skeleton",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/593/Clawed-Companion",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog/125369932/Hipster-Glasses",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog/42847660/Epic-Sunglasses",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog/13209067084/Whiskers",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/2485/Demon3",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/bundles/6699/Samy-The-Cobra",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/360000245263-Appeal-Your-Content-or-Account-Moderation",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/moderation"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations?activeTab=HairAccessory&filterIndex=0",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/publish-to-marketplace"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/sponsorships/list",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/sponsor-items"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/9376329300/Simple-Avatar-Editor-Demo",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "players/avatar-editor"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/my/account#!/info",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/analytics/analytics-dashboard",
+      "production/publishing/account-verification"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/my/account#!/security",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/analytics/analytics-dashboard"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/groups",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/analytics/analytics-dashboard"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203314100-Developer-Exchange-DevEx-Overview-How-to-Submit-Requirements",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/analytics/analytics-dashboard"
+    ]
+  },
+  {
+    "url": "https://about.roblox.com/age-estimation",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/18-plus-devex-rate",
+      "production/monetization/developer-exchange"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/115005718246-Developer-Exchange-Terms-of-Use",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ]
+  },
+  {
+    "url": "https://suppliers.tipalti.com/Roblox/Account/Login",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/27985018895124-Tax-and-DevEx-Portal-Tipalti-Information",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/devex",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/27984775142292-ID-Verification",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/47967913158164-Roblox-Plus",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/roblox-plus"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/5HcH-9E7USc?si=IDla-YBxiO_E-O0q",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/promotion/ads-manager"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/advertise",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/promotion/ads-manager"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/articles/15494846263060",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/promotion/ads-manager"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/group/roles",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/promotion/ads-manager"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/13722260778260-Advertising-Standards",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/promotion/ads-manager"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/4407276151188",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/account-verification"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/account-verification"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/4412863575316-Roblox-Facial-Media-Capture-Privacy-Notice",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/account-verification"
+    ]
+  },
+  {
+    "url": "https://www.copyright.gov/help/faq/faq-general.html",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/ip-guidelines"
+    ]
+  },
+  {
+    "url": "https://www.uspto.gov/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/ip-guidelines"
+    ]
+  },
+  {
+    "url": "https://www.copyright.gov/title17/92chap5.html#512",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/ip-guidelines"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203313380-Keep-Your-Account-Safe",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/ip-guidelines"
+    ]
+  },
+  {
+    "url": "https://about.roblox.com/reporting-and-blocking",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/ip-guidelines"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog?Category=17",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "projects/assets"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog?Category=4&Subcategory=66",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "projects/assets"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog?Category=3&Subcategory=64",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "projects/assets"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/360020870412-Understanding-Moderation-Messages",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "projects/assets"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/AzKZy2BqIh8",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "projects/assets/packages"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/beta-updates-to-revamped-asset-manager/4548832/1",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "projects/assets/privacy"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203313580-How-to-Make-Friends",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "projects/assets/privacy"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/communities",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "projects/groups"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/ikYZloBgqtE",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "studio/importer"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/RCsYZe3LoDM",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "studio/importer"
+    ]
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/UEHEsmCslBU",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "studio/importer"
+    ]
+  },
+  {
+    "url": "https://www.khronos.org/openxr/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "studio/testing-modes"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations?activeTab=Image",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "studio/texture-generator"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/games/134383324873456/Walking-Character-Animation",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "tutorials/use-case-tutorials/animation/create-an-animation"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations?activeTab=Animation",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/Animation"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/avatar-joint-upgrade-for-physically-simulated-character-movement-is-now-live/4298561",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/AnimationConstraint",
+      "reference/engine/classes/Motor6D"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/avatar-joint-upgrade-aju-phase-2-rollout-updated-migration-recommendations/4656414",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/AnimationConstraint"
+    ]
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use#creators-restrictions-on-use",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/EditableImage",
+      "reference/engine/classes/EditableMesh"
+    ]
+  },
+  {
+    "url": "https://json.org",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Server-sent_events",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Chunked_transfer_encoding",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/WebSocket",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Universally_unique_identifier",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://uuid7.com/",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://github.com/ulid/spec",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/GET",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/HEAD",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/POST",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/PUT",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/DELETE",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/OPTIONS",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/TRACE",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/PATCH",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Percent-encoding",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog?Category=0&Subcategory=39",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/HumanoidDescription"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/sunsetting-sets/189402",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/InsertService"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/library/257489726/Doge",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/InsertService"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/implementing-player-data-and-purchasing-systems/2839941",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/MarketplaceService"
+    ]
+  },
+  {
+    "url": "https://luau.org/syntax#number-literals",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/NumberValue"
+    ]
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Double-precision_floating-point_format",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/NumberValue"
+    ]
+  },
+  {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSfGTRQwATB2wUg0P4HUSTtyXrhptFahJifo1ew84SyqtfSBfg/viewform",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/PolicyService"
+    ]
+  },
+  {
+    "url": "https://devforum.roblox.com/t/new-programs-available-roblox-china-licensed-to-operate/1023361",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/PolicyService"
+    ]
+  },
+  {
+    "url": "https://luau.org/syntax#string-literals",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/StringValue"
+    ]
+  },
+  {
+    "url": "https://learn.microsoft.com/typography/opentype/spec/featuretags",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/TextButton"
+    ]
+  },
+  {
+    "url": "https://www.roblox.com/catalog/5911063681/Yi-the-Art-Teacher-Hair",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/enums/AccessoryType"
+    ]
+  },
+  {
+    "url": "https://create.roblox.com/store/asset/15507769146/ForceFieldMesh",
+    "status": "linked",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/enums/Material"
+    ]
+  }
+]

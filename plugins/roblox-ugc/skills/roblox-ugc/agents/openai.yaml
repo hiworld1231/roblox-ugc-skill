@@ -1,0 +1,4 @@
+interface:
+  display_name: "Roblox UGC"
+  short_description: "Create and validate Roblox Marketplace avatar items"
+  default_prompt: "Use $roblox-ugc to create a Roblox avatar item and check its requirements."

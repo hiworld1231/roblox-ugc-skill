@@ -1,0 +1,154 @@
+[
+  {
+    "scenario": "classic-shirt",
+    "query": "classic shirt template dimensions 585 559",
+    "search_exit_code": 0,
+    "search_report": "retrieval/classic-shirt-search.txt",
+    "sources": [
+      {
+        "source_id": "avatar/classic-clothing",
+        "exit_code": 0,
+        "output": "retrieval/avatar__classic-clothing.txt"
+      }
+    ]
+  },
+  {
+    "scenario": "auto-skinning",
+    "query": "Automatic Skinning Transfer layered accessories no skinning",
+    "search_exit_code": 0,
+    "search_report": "retrieval/auto-skinning-search.txt",
+    "sources": [
+      {
+        "source_id": "avatar/automatic-skinning-transfer",
+        "exit_code": 0,
+        "output": "retrieval/avatar__automatic-skinning-transfer.txt"
+      },
+      {
+        "source_id": "avatar/layered-accessories/specifications",
+        "exit_code": 0,
+        "output": "retrieval/avatar__layered-accessories__specifications.txt"
+      }
+    ]
+  },
+  {
+    "scenario": "setup-body",
+    "query": "Avatar Setup input front -Z rig cage",
+    "search_exit_code": 0,
+    "search_report": "retrieval/setup-body-search.txt",
+    "sources": [
+      {
+        "source_id": "avatar-setup/auto-setup-requirements",
+        "exit_code": 0,
+        "output": "retrieval/avatar-setup__auto-setup-requirements.txt"
+      },
+      {
+        "source_id": "avatar/character-bodies/specifications",
+        "exit_code": 0,
+        "output": "retrieval/avatar__character-bodies__specifications.txt"
+      }
+    ]
+  },
+  {
+    "scenario": "facs-static",
+    "query": "dynamic head FACS poses required validate facial animation",
+    "search_exit_code": 0,
+    "search_report": "retrieval/facs-static-search.txt",
+    "sources": [
+      {
+        "source_id": "avatar/dynamic-heads/specifications",
+        "exit_code": 0,
+        "output": "retrieval/avatar__dynamic-heads__specifications.txt"
+      },
+      {
+        "source_id": "avatar/dynamic-heads/validate",
+        "exit_code": 0,
+        "output": "retrieval/avatar__dynamic-heads__validate.txt"
+      }
+    ]
+  },
+  {
+    "scenario": "makeup-resolution",
+    "query": "makeup Marketplace 1024 in experience 4096",
+    "search_exit_code": 0,
+    "search_report": "retrieval/makeup-resolution-search.txt",
+    "sources": [
+      {
+        "source_id": "avatar/makeup/specifications",
+        "exit_code": 0,
+        "output": "retrieval/avatar__makeup__specifications.txt"
+      },
+      {
+        "source_id": "avatar/in-experience-creation",
+        "exit_code": 0,
+        "output": "retrieval/avatar__in-experience-creation.txt"
+      }
+    ]
+  },
+  {
+    "scenario": "emote-marker",
+    "query": "emote CurveAnimation Animation object marker",
+    "search_exit_code": 0,
+    "search_report": "retrieval/emote-marker-search.txt",
+    "sources": [
+      {
+        "source_id": "avatar/emotes/specifications",
+        "exit_code": 0,
+        "output": "retrieval/avatar__emotes__specifications.txt"
+      },
+      {
+        "source_id": "avatar/emotes/import",
+        "exit_code": 0,
+        "output": "retrieval/avatar__emotes__import.txt"
+      }
+    ]
+  },
+  {
+    "scenario": "animation-pack",
+    "query": "animation packs Parent model name Sub animation Idle loop",
+    "search_exit_code": 0,
+    "search_report": "retrieval/animation-pack-search.txt",
+    "sources": [
+      {
+        "source_id": "avatar/animation-packs",
+        "exit_code": 0,
+        "output": "retrieval/avatar__animation-packs.txt"
+      }
+    ]
+  },
+  {
+    "scenario": "fees-offline",
+    "query": "Marketplace fees commissions publishing advance current",
+    "search_exit_code": 0,
+    "search_report": "retrieval/fees-offline-search.txt",
+    "sources": [
+      {
+        "source_id": "marketplace/marketplace-fees-and-commissions",
+        "exit_code": 0,
+        "output": "retrieval/marketplace__marketplace-fees-and-commissions.txt"
+      },
+      {
+        "source_id": "marketplace/publish-to-marketplace",
+        "exit_code": 0,
+        "output": "retrieval/marketplace__publish-to-marketplace.txt"
+      }
+    ]
+  },
+  {
+    "scenario": "model-upload",
+    "query": "Open Cloud Assets API Model upload asset types",
+    "search_exit_code": 0,
+    "search_report": "retrieval/model-upload-search.txt",
+    "sources": [
+      {
+        "source_id": "cloud/guides/usage-assets",
+        "exit_code": 0,
+        "output": "retrieval/cloud__guides__usage-assets.txt"
+      },
+      {
+        "source_id": "marketplace/publish-to-marketplace",
+        "exit_code": 0,
+        "output": "retrieval/marketplace__publish-to-marketplace.txt"
+      }
+    ]
+  }
+]

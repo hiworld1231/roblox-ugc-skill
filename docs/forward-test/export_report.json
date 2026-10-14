@@ -1,0 +1,169 @@
+{
+  "asset_kind": "rigid",
+  "stage": "export-with-offline-preflight",
+  "checks": [
+    {
+      "check": "render-geometry-present",
+      "status": "PASS",
+      "evidence": [
+        "CompassBrooch"
+      ],
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "render-mesh-count",
+      "status": "PASS",
+      "evidence": {
+        "actual": 1,
+        "required": 1
+      },
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "render-triangles",
+      "status": "PASS",
+      "evidence": {
+        "actual": 192,
+        "max": 4000,
+        "cages_excluded": true
+      },
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "CompassBrooch:nonempty-mesh",
+      "status": "PASS",
+      "evidence": 192,
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "CompassBrooch:degenerate-faces",
+      "status": "PASS",
+      "evidence": 0,
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "CompassBrooch:watertight",
+      "status": "PASS",
+      "evidence": 0,
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "CompassBrooch:uv-present",
+      "status": "PASS",
+      "evidence": 1,
+      "source": "https://create.roblox.com/docs/art/modeling/texture-specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "rigid-no-skinning",
+      "status": "PASS",
+      "evidence": [],
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "texture:CompassBrooch_RGH.png",
+      "status": "WARN",
+      "evidence": {
+        "dimensions": [
+          128,
+          128
+        ],
+        "action": "Verify per-map restrictions: general texture and category specifications differ; 2048 is not approval for every map."
+      },
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "texture:CompassBrooch_ALB.png",
+      "status": "WARN",
+      "evidence": {
+        "dimensions": [
+          512,
+          512
+        ],
+        "action": "Verify per-map restrictions: general texture and category specifications differ; 2048 is not approval for every map."
+      },
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "texture:CompassBrooch_MTL.png",
+      "status": "WARN",
+      "evidence": {
+        "dimensions": [
+          128,
+          128
+        ],
+        "action": "Verify per-map restrictions: general texture and category specifications differ; 2048 is not approval for every map."
+      },
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "attachment-relative-bounds",
+      "status": "NOT_CHECKED",
+      "evidence": {
+        "studs_per_unit": 1.0,
+        "dimensions": {
+          "CompassBrooch": [
+            0.8256000280380249,
+            0.07739999890327454,
+            0.8256000280380249
+          ]
+        },
+        "action": "Select body scale and accessory type; measure in the attachment frame in Studio."
+      },
+      "source": "https://create.roblox.com/docs/avatar/rigid-accessories/specifications",
+      "rule_snapshot": "2026-10-13"
+    },
+    {
+      "check": "normal-map-convention",
+      "status": "NOT_CHECKED",
+      "evidence": "Verify OpenGL tangent-space normal export; pixels alone do not establish the convention.",
+      "source": "https://create.roblox.com/docs/art/modeling/texture-specifications",
+      "rule_snapshot": "2026-10-13"
+    }
+  ],
+  "blocking_failures": 0,
+  "requires_studio_validation": true,
+  "marketplace_approved": false,
+  "workflow": "traditional",
+  "metrics": [
+    {
+      "name": "CompassBrooch",
+      "vertices": 98,
+      "triangles": 192,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "uv_layers": 1,
+      "materials": 1,
+      "dimensions_blender_units": [
+        0.8256000280380249,
+        0.07739999890327454,
+        0.8256000280380249
+      ],
+      "armature_modifier": false,
+      "uv_outside_0_1": 0
+    }
+  ],
+  "selected_objects": [
+    "CompassBrooch"
+  ],
+  "tool_versions": {
+    "blender": "5.2.2 LTS"
+  },
+  "source_unchanged": true,
+  "exported": true,
+  "export_path": "/tmp/roblox-ugc-forward-test/exports/CompassBrooch.fbx",
+  "export_notice": "Import using the matching Studio workflow and run official validation; exporting is not Marketplace approval.",
+  "blender_exit_code": 0,
+  "input": "/tmp/roblox-ugc-forward-test/CompassBrooch.blend",
+  "input_sha256": "d7bad31bad22121ce6a14feaecf47e5e32089ef69d99907f22574c9e48aa038d"
+}

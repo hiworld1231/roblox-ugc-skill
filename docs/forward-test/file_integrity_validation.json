@@ -1,0 +1,38 @@
+{
+  "existing_export_refused": true,
+  "refusal_exit_code": 2,
+  "refusal_message": "{\"error\": \"Export destination exists or matches the source; choose a new output\", \"status\": \"FAIL\"}",
+  "existing_export_unchanged": true,
+  "original_blend_unchanged_after_helpers": true,
+  "blend_sha256": "d7bad31bad22121ce6a14feaecf47e5e32089ef69d99907f22574c9e48aa038d",
+  "fbx_sha256": "ea51937c3d65ff11a5eadd50a6f08aede32ceff2dc9e3c847f3469bf2e235fbf",
+  "textures": [
+    {
+      "path": "textures/CompassBrooch_ALB.png",
+      "mode": "RGB",
+      "size": [
+        512,
+        512
+      ],
+      "sha256": "b77193be6cedc7ac509a666b51d3068636be7f4b2a9927bb9fd378c5613d7b80"
+    },
+    {
+      "path": "textures/CompassBrooch_MTL.png",
+      "mode": "L",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "afa08ab48da6c53fa2fe37b529601b535d74ee0640695a10f278af7a57be62ab"
+    },
+    {
+      "path": "textures/CompassBrooch_RGH.png",
+      "mode": "L",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "736ca45c89a1da2dddcffc5375bc7e24ba79afff0ac59ad0ce2c875b9d17b1a8"
+    }
+  ]
+}

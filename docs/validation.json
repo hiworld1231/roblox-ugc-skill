@@ -1,0 +1,90 @@
+{
+  "version": "0.1.0",
+  "tested_at": "2026-10-14 Europe/Minsk",
+  "source_revision": "784c5e217446c65958d5d84f5c5f1d127951a8d7",
+  "unit_and_integration": {
+    "status": "PASS",
+    "count": 33,
+    "image_corpus_tests": 22,
+    "blender_tests": 11,
+    "blender_version": "5.2.2 LTS",
+    "notes": "Offline geometry, rig/cage/FACS defects, malformed PNG, missing tools, real FBX roundtrip, source integrity and overwrite protection. Corpus integrity was rerun after maintenance completed."
+  },
+  "portable_plugin_schema": {
+    "status": "PASS",
+    "schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
+  },
+  "skill_frontmatter": {
+    "status": "PASS"
+  },
+  "codex_cli": {
+    "version": "0.156.1",
+    "marketplace_add": "PASS",
+    "plugin_install": "PASS",
+    "discovered_plugin": {
+      "id": "roblox-ugc@roblox-ugc-skill",
+      "installed": true,
+      "enabled": true,
+      "version": "0.1.0"
+    },
+    "helper_smoke": "PASS: installed corpus audit and helper discovery"
+  },
+  "claude_code": {
+    "version": "2.1.296",
+    "marketplace_validation": "PASS",
+    "plugin_validation": "PASS",
+    "installation": "PASS",
+    "isolation": "Temporary CLAUDE_CONFIG_DIR; removed after testing"
+  },
+  "studio_harness": {
+    "syntax_compile": "PASS",
+    "invalid_input_failure": "PASS",
+    "asset_validation": "NOT_CHECKED",
+    "note": "Function compiled and called with absent input; no instances created or game state changed. Actual sample UGC validation requires an isolated Studio asset session."
+  },
+  "independent_forward_test": {
+    "status": "PASS",
+    "kind": "Original rigid Front compass brooch",
+    "editable_project": true,
+    "textures": true,
+    "fbx_export": true,
+    "previews_inspected": true,
+    "independent_fbx_roundtrip": true,
+    "triangles": 192,
+    "vertices": 98,
+    "blocking_preflight_failures": 0,
+    "evidence": "forward-test/EVALUATION.md"
+  },
+  "desktop_ui": {
+    "codex": "Skill advertised in current Codex tool/skill catalog; full UI workflow NOT_CHECKED",
+    "claude_chat_cowork": "NOT_CHECKED"
+  },
+  "roblox_acceptance": {
+    "import_fit_visuals": "NOT_CHECKED",
+    "official_asset_validation": "NOT_CHECKED",
+    "moderation": "NOT_CHECKED",
+    "publication": "NOT_CHECKED"
+  },
+  "video_review": {
+    "indexed": 32,
+    "transcripts_reviewed": 0,
+    "visuals_reviewed": 0,
+    "known_blocker": "YouTube rigid tutorial required sign-in; transcript export unavailable."
+  },
+  "remaining_limitations": [
+    "Corpus snapshot and inventory coverage do not establish all internet/video tutorial analysis.",
+    "Most binary references are linked and fetched on demand.",
+    "All avatar categories have source-backed workflows, but only the sample rigid asset has authoring/export end-to-end evidence."
+  ],
+  "scenario_evaluation": {
+    "status": "PARTIAL_REPORT",
+    "tool_probes_completed": true,
+    "artifact": "scenario-test/tool_results.json",
+    "retrieval": "scenario-test/retrieval_manifest.json",
+    "notes": "Independent tester completed source/helper probes; its turn ended at account usage limit before final narrative report. Raw probe artifacts preserved and inspected by primary agent. These are not end-to-end category authoring tests."
+  },
+  "release_archive": {
+    "standalone_extract_audit": "PASS",
+    "standalone_helper_templates": "PASS"
+  }
+}

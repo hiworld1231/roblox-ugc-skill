@@ -1,0 +1,65 @@
+[
+  {
+    "id": "classic-clothing",
+    "url": "https://prod.docsiteassets.roblox.com/assets/accessories/classic-clothing/Classic-Clothing-Templates.zip",
+    "sha256": "678ddad004667f74dce223c7d1259e9dd437153c763639d7e668f3b532487c5d",
+    "size": 124778,
+    "kinds": [
+      "classic-shirt",
+      "classic-pants"
+    ],
+    "source": "https://create.roblox.com/docs/avatar/classic-clothing",
+    "license_notice": "Roblox reference asset. Consult the linked source and Roblox terms before redistribution; downloaded on demand, not bundled."
+  },
+  {
+    "id": "r15-rig",
+    "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Rig_and_Attachments_Templates.zip",
+    "sha256": "e96e8483143716b49369e8692f2c2c2c7ae0d3a3d936b58cf3b5dae73148ff7b",
+    "size": 5373974,
+    "kinds": [
+      "body",
+      "head",
+      "layered",
+      "emote",
+      "animation-pack"
+    ],
+    "source": "https://create.roblox.com/docs/avatar/resources",
+    "license_notice": "Roblox reference asset. Consult the linked source and Roblox terms before redistribution; downloaded on demand, not bundled."
+  },
+  {
+    "id": "clothing-cages",
+    "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Clothing_Cage_Templates.zip",
+    "sha256": "7a23dc3dbbfa4a2fe72383a4f59a6abd1f701aabcecad0072e91809ac6742e4b",
+    "size": 5770539,
+    "kinds": [
+      "layered"
+    ],
+    "source": "https://create.roblox.com/docs/avatar/resources",
+    "license_notice": "Roblox reference asset. Consult the linked source and Roblox terms before redistribution; downloaded on demand, not bundled."
+  },
+  {
+    "id": "body-cages",
+    "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Body_Cage_Templates.zip",
+    "sha256": "220e3ef25af770b97f46f4b4efbe11d88607e3a2883fa8e11b3db9f065c2a749",
+    "size": 5835588,
+    "kinds": [
+      "body",
+      "head"
+    ],
+    "source": "https://create.roblox.com/docs/avatar/resources",
+    "license_notice": "Roblox reference asset. Consult the linked source and Roblox terms before redistribution; downloaded on demand, not bundled."
+  },
+  {
+    "id": "combined-r15",
+    "url": "https://prod.docsiteassets.roblox.com/assets/modeling/meshes/reference-files/Combined_Templates.zip",
+    "sha256": "14bb469916d34cb68abc75b4c08eed54f826e4ba8af6e4bc4808fbeb3250d3bc",
+    "size": 6084730,
+    "kinds": [
+      "body",
+      "head",
+      "layered"
+    ],
+    "source": "https://create.roblox.com/docs/avatar/resources",
+    "license_notice": "Roblox reference asset. Consult the linked source and Roblox terms before redistribution; downloaded on demand, not bundled."
+  }
+]

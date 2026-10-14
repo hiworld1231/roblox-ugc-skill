@@ -1,0 +1,3602 @@
+[
+  {
+    "url": "https://en.help.roblox.com/hc/articles/203313410",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/capture",
+      "parts/textures-decals",
+      "production/monetization/18-plus-devex-rate",
+      "production/monetization/developer-exchange",
+      "projects/assets"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:09.384914+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/articles/115004647846",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "animation/capture",
+      "parts/textures-decals",
+      "production/monetization/18-plus-devex-rate",
+      "production/monetization/developer-exchange",
+      "projects/assets"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:09.388902+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use",
+    "http_status": 200,
+    "sha256": "082b7843a224ab29a7de1bf09685b1b8e5e5a298a26a923cf5cca4ad23dc92a6",
+    "title": "Roblox Terms of Use – Roblox Support",
+    "headings": [
+      "Roblox Terms of Use",
+      "Welcome to the Roblox universe, where imagination and creativity rule!",
+      "<Section 3c of User Terms>",
+      "<Section 4 of User Terms>",
+      "<Section 4 of Creator Terms>",
+      "CSEA Content",
+      "Terrorism Content",
+      "Other Priority Illegal Content",
+      "Primary priority content (suicide, self-harm, eating disorder and pornography)",
+      "Priority content (abuse and hate, bullying, violent, harmful substances, dangerous stunts and challenges)",
+      "Non-designated content (depression, body stigma)",
+      "How to make a relevant complaint",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Quaternion",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/curve-editor"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Euler_angles",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/curve-editor"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Gimbal_lock",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/curve-editor"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Matrix_multiplication",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/curve-editor"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/games/116845448376632",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/graph-editor-state-machine"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/VgMUCph3bOI",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/graph-editor"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/games/92493993350916/Animation-Graph-Editor-Simple-Demo",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/graph-editor"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Inverse_kinematics",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/inverse-kinematics"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog/658830056/Ninja-Run",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog/658832070/Ninja-Jump",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/34/Astronaut-Animation-Pack",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/39/Bubbly-Animation-Package",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/56/Cartoony-Animation-Package",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/48/Elder-Animation-Package",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/68/Knight-Animation-Package",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/79/Levitation-Animation-Pack",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/63/Mage-Animation-Package",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/75/Ninja-Animation-Package",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/55/Pirate-Animation-Package",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/82/Robot-Animation-Pack",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/356/Rthro-Animation-Package",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/83/Stylish-Animation-Pack",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/81/Superhero-Animation-Pack",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/43/Toy-Animation-Pack",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/33/Vampire-Animation-Pack",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/32/Werewolf-Animation-Pack",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/80/Zombie-Animation-Pack",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "animation/using"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/Eed29gV0hLA",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/creating-rigid",
+      "avatar/rigid-accessories"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/creating-rigid",
+      "art/accessories/creating",
+      "avatar-setup",
+      "avatar/classic-clothing",
+      "avatar/dynamic-heads",
+      "avatar",
+      "avatar/layered-accessories/specifications",
+      "avatar/makeup",
+      "avatar/makeup/specifications",
+      "avatar/rigid-accessories",
+      "characters/emotes",
+      "marketplace/custom-thumbnails",
+      "marketplace",
+      "marketplace/marketplace-fees-and-commissions",
+      "marketplace/marketplace-policy",
+      "marketplace/sponsor-items",
+      "players/avatar-editor",
+      "monetize-avatar"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/modeling-101-in-blender-box-modeling/2963814",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/accessories/creating-rigid/modeling-setup"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:09.409466+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/modeling-101-in-blender-box-modeling/2963814",
+    "http_status": 200,
+    "sha256": "73369005644feee58d3009906447855aa7d66d8b95526a033f2a374a2ff35e54",
+    "title": "Modeling 101 in Blender (Box Modeling) - Roblox Staff - Developer Forum | Roblox",
+    "headings": [
+      "Modeling 101 in Blender (Box Modeling)",
+      "Table of Contents",
+      "Core Concepts Introduction to Blender",
+      "Workspaces and Areas",
+      "3D Viewport Header",
+      "Using Hotkeys in Blender",
+      "Startup Files",
+      "Basic Navigation and Interface Concepts",
+      "Camera Movement / Navigation",
+      "Selection",
+      "Manipulation",
+      "3D Cursor",
+      "Make a Treasure Chest using Box Modeling Method",
+      "1. Create a Cube (box)",
+      "2. Select the Cube and Enter ‘Edit Mode’",
+      "3. Resize [Scale]",
+      "4. Extrude Top",
+      "5. Bevel Edges and Weld Vertices",
+      "6. Add Edge Loop",
+      "7.  Inset Faces and Extrude Along Normals",
+      "8. Add More Loops then Extrude Inward Along Normals",
+      "Select and Extrude Inward Along Normals",
+      "9. Create New Face from Selection",
+      "10. Mirror Modifier",
+      "Hotkey Appendix",
+      "Continued Demonstration",
+      "Conclusion",
+      "PBR Textures | Documentation - Roblox Creator Hub"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/creating-rigid/publishing",
+      "avatar/classic-clothing",
+      "cloud/auth/api-keys",
+      "cloud/auth/oauth2-registration",
+      "cloud/guides/usage-assets",
+      "marketplace/marketplace-fees-and-commissions",
+      "marketplace/publish-to-marketplace",
+      "production/analytics/analytics-dashboard",
+      "production/monetization/avatar-creation-token",
+      "production/monetization/avatar-items",
+      "production/monetization/regional-pricing",
+      "projects/assets/packages",
+      "projects/assets/privacy",
+      "projects/groups",
+      "studio/testing-modes",
+      "tutorials/use-case-tutorials/animation/create-an-animation",
+      "reference/engine/classes/EditableImage",
+      "reference/engine/classes/EditableMesh",
+      "reference/engine/classes/Players"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/swQW2VS9ZMA",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/creating-rigid/publishing",
+      "art/accessories/from-existing",
+      "marketplace/publish-to-marketplace"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/2.79/editors/uv_image/uv/editing/unwrapping/mapping_types.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/creating-rigid/texturing"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/C-DwGRBHvmE",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/creating",
+      "art/modeling/cage-meshes/apply-deformation",
+      "avatar/layered-accessories",
+      "avatar/layered-accessories/specifications"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/physics/cloth/examples.html#using-simulation-to-shape-sculpt-a-mesh",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/creating/watertight"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.blender.org",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models",
+      "art/characters/facial-animation/create-basic-heads",
+      "art/characters/facial-animation/create-face-accessories",
+      "art/modeling/cage-meshes/create-cages",
+      "art/modeling/cage-meshes",
+      "art/modeling",
+      "art/modeling/rig-a-humanoid-model",
+      "art/modeling/rig-a-simple-mesh",
+      "art/modeling/rigging",
+      "art/modeling/skin-a-humanoid-model",
+      "art/modeling/skin-a-simple-mesh",
+      "art/modeling/specifications",
+      "avatar/dynamic-heads/facs-poses-reference",
+      "avatar/layered-accessories/specifications",
+      "avatar/makeup"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.autodesk.com/products/maya/overview",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models",
+      "art/accessories/validation-tool",
+      "art/characters/export-avatar-animations-from-maya",
+      "art/characters/facial-animation/create-basic-heads",
+      "art/characters/facial-animation/create-face-accessories",
+      "art/modeling/cage-meshes/create-cages",
+      "art/modeling/cage-meshes",
+      "art/modeling",
+      "art/modeling/rig-a-humanoid-model",
+      "art/modeling/rig-a-simple-mesh",
+      "art/modeling/rigging",
+      "art/modeling/skin-a-humanoid-model",
+      "art/modeling/skin-a-simple-mesh",
+      "art/modeling/specifications",
+      "art/overview-dcc",
+      "avatar/character-bodies",
+      "avatar/create",
+      "avatar/dynamic-heads/facs-poses-reference",
+      "avatar/dynamic-heads",
+      "avatar/layered-accessories",
+      "avatar/layered-accessories/specifications",
+      "avatar/makeup",
+      "avatar/rigid-accessories",
+      "avatar/rigid-accessories/specifications",
+      "monetize-avatar"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.blender.org/download/releases/3-0/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models",
+      "art/accessories/validation-tool",
+      "art/modeling/rig-a-humanoid-model",
+      "art/modeling/rig-a-simple-mesh",
+      "art/modeling/skin-a-humanoid-model",
+      "art/modeling/skin-a-simple-mesh"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/animation/armatures/skinning/parenting.html#with-automatic-weights",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models",
+      "art/characters/facial-animation/create-face-accessories",
+      "avatar/layered-accessories/specifications"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/3.5/grease_pencil/modes/weight_paint/introduction.html#weight-paint",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/shading.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/rig-and-cage-existing-models"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.python.org/downloads/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/validation-tool"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/outliner/interface.html?highlight=orphan",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/validation-tool"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2022/ENU/Maya-Basics/files/GUID-503E227B-EF49-4A78-B3CA-7EAC588017C9-htm.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/accessories/validation-tool"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.blender.org/download/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender",
+      "art/modeling/calisthenics-tool"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/2.81/interface/window_system/workspaces.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/introduction.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/outliner/introduction.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/properties_editor.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/timeline.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/uv/introduction.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/introduction.html#getting-started",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/image/introduction.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/texture_paint/introduction.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/modes.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/toolbar/index.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/3d_cursor.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/move.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/editors/3dview/controls/snapping.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/inset_faces.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/extrude.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/vertex/extrude_vertices.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/extrude_edges.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/extrude_faces.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/subdivide.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/bridge_edge_loops.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/fill.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/vertex/make_face_edge.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/delete.html#delete",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/seams.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html#smart-uv-project",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/vertex_paint/index.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/blender"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.blender.org/download/releases/3-4/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/characters/creating"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.adobe.com/products/substance3d-painter",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/characters/creating/texturing-pbr",
+      "art/overview-dcc"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.maxon.net/en/zbrush",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/characters/creating/texturing-pbr"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.blender.org/download/releases/5-2/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/characters/facial-animation/create-basic-heads",
+      "art/characters/facial-animation/create-face-accessories"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=-gIL6VZ-bkE",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/characters/facial-animation/create-basic-heads"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=fx33sPEAZEk",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/characters/facial-animation/create-basic-heads"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/library/7715145252/moods-11-FaceAnimation",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/characters/facial-animation/moods"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog/10725833199/Chiseled-Good-Looks-Mood",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/characters/facial-animation/moods"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/completing-the-dynamic-head-migration/4301387",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/head-comparison"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:09.410941+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/completing-the-dynamic-head-migration/4301387",
+    "http_status": 200,
+    "sha256": "c043e693e731105a7b07bc99f7f4216df8dc7e52f4d8c1c10aacf58f4205a885",
+    "title": "Completing the Dynamic Head Migration - Announcements - Developer Forum | Roblox",
+    "headings": [
+      "Completing the Dynamic Head Migration",
+      "Key Takeaways",
+      "[Update] March 23, 2026",
+      "Key Changes",
+      "Classic Head & Face API Changes",
+      "Recommended Implementation Steps",
+      "Ongoing Updates",
+      "[Update] March 5, 2026",
+      "Quality",
+      "Working with our Community",
+      "Details on Toggle for Facial Animation",
+      "[Update] February 4th, 2026",
+      "[Update] January 29th, 2026",
+      "Sharing our motivation and more details on Classic Heads and Faces",
+      "Our Philosophy",
+      "Visuals and User Toggle",
+      "Head Shape Swapping Functionality",
+      "Rarity of Limiteds",
+      "Key Takeaways",
+      "Bringing Roblox Classic Heads & Faces into Compliance",
+      "What We Learned and What We Fixed",
+      "FAQs",
+      "This will be Roblox in 2028",
+      "Hey guys, just wanted to update this because I’ve realized something that Roblox has clearly forgotten.",
+      "Toy code faces will likely be removed completely, OR if not, unredeemed codes will be worthless as they will award NOTHING! Guess they didn’t think this one through!",
+      "JUST DO THIS."
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=OwhkWzSBnf0",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/characters/manually-update-catalog-heads"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://github.com/Roblox/avatar/tree/main/Tools/ClothingValidationTool",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/characters/validation-tool"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:09.412840+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://github.com/Roblox/avatar/tree/main/Tools/ClothingValidationTool",
+    "http_status": 200,
+    "sha256": "9919d7ec3079b1d1002ff1360126d2d6bbbfb03cf16f7523be43861c38deb03d",
+    "title": "avatar/Tools/ClothingValidationTool at main · Roblox/avatar · GitHub",
+    "headings": [
+      "Navigation Menu",
+      "Repository navigation",
+      "FilesExpand file tree",
+      "Breadcrumbs",
+      "ClothingValidationTool",
+      "Directory actions",
+      "More options",
+      "Directory actions",
+      "More options",
+      "Latest commit",
+      "History",
+      "Breadcrumbs",
+      "ClothingValidationTool",
+      "Folders and files",
+      "parent directory",
+      "README.md",
+      "Third-party Tools",
+      "Footer",
+      "Footer navigation"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/EUDSIUmLjxA",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art",
+      "avatar/classic-clothing"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/nwShvDmFHWc",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/tzPn6QvU8Bo",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art",
+      "avatar/rigid-accessories"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/games/3158922185/Toyokawa-Inari-Shrine-Showcase",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/games/6519709626/Hotel-Resort",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/games/5415692770/Lab",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/creating-buttes-in-roblox-studio-using-materialvariant-and-terraindetails/2840180",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/V-SDTfxcIF8",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/custom-skyboxes-101/2849003",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/using-alpha-masks-in-color-maps-to-customizetint-base-colors/2883381",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:09.413684+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/using-alpha-masks-in-color-maps-to-customizetint-base-colors/2883381",
+    "http_status": 200,
+    "sha256": "2b7cd1c3ba53297d352aef0c455769c5fd6869c7dc8c04828837848b802aeaa1",
+    "title": "Using Alpha Masks in Color Maps to Customize/Tint Base Colors - Roblox Staff - Developer Forum | Roblox",
+    "headings": [
+      "Using Alpha Masks in Color Maps to Customize/Tint Base Colors",
+      "Why consider this technique?",
+      "Let’s Get Started",
+      "Resources:",
+      "Creating the Texture in Photoshop",
+      "Importing Into Studio and Setting the SurfaceAppearance"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/creating-perfect-audio-loops/2849057",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/how-to-use-radial-symmetry-using-zbrush/2925165",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:09.414384+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/how-to-use-radial-symmetry-using-zbrush/2925165",
+    "http_status": 200,
+    "sha256": "78ee80e6199585adcd32f9b3b7bdf17d0417212bfa9d3620e4fd64541c3d7832",
+    "title": "How to use Radial Symmetry using Zbrush - Roblox Staff - Developer Forum | Roblox",
+    "headings": [
+      "How to use Radial Symmetry using Zbrush",
+      "What is Radial Symmetry",
+      "Benefits of Using Radial Symmetry",
+      "Activating Radial Symmetry",
+      "Enabling Radial Symmetry and Setting Radial Count",
+      "Sculpting with Radial Symmetry",
+      "Brushing and Tool Effects with Radial Mirroring",
+      "Conclusion"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://devforum.roblox.com/c/resources/roblox-staff/278",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:09.416002+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/c/resources/roblox-staff/278",
+    "http_status": 200,
+    "sha256": "93f2ca424527cb7517be0e4e4bb64d37b4f87a2b11ac9547ec9fb05fb38c030f",
+    "title": "Latest Roblox Staff topics - Developer Forum | Roblox",
+    "headings": [
+      "Resources\n       \n\n    \n      Roblox Staff"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.blender.org/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/modeling/calisthenics-tool",
+      "art/overview-dcc",
+      "avatar/character-bodies",
+      "avatar/create",
+      "avatar/dynamic-heads",
+      "avatar/layered-accessories",
+      "avatar/layered-accessories/specifications",
+      "avatar/rigid-accessories",
+      "avatar/rigid-accessories/specifications",
+      "avatar/tutorials",
+      "monetize-avatar",
+      "reference/engine/classes/MeshPart"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/weight_paint/introduction.html#the-weighting-color-code",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/modeling/skin-a-simple-mesh"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://github.com/Roblox/avatar/tree/main/Tools/CalisthenicsTool",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/calisthenics-tool"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:10.485914+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://github.com/Roblox/avatar/tree/main/Tools/CalisthenicsTool",
+    "http_status": 200,
+    "sha256": "d4a715c705d38f053186f2a1db6c43e6dc8257bce9e595a770eadaa8a0f19bf2",
+    "title": "avatar/Tools/CalisthenicsTool at main · Roblox/avatar · GitHub",
+    "headings": [
+      "Navigation Menu",
+      "Repository navigation",
+      "FilesExpand file tree",
+      "Breadcrumbs",
+      "CalisthenicsTool",
+      "Directory actions",
+      "More options",
+      "Directory actions",
+      "More options",
+      "Latest commit",
+      "History",
+      "Breadcrumbs",
+      "CalisthenicsTool",
+      "Folders and files",
+      "parent directory",
+      "README.md",
+      "Calisthenics tool",
+      "Footer",
+      "Footer navigation"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/GlTF",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/modeling/gltf-export"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/games/7208091524/Beyond-the-Dark-Vistech-Showcase",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/modeling/project-files",
+      "art/overview-studio"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=QwZaA9Gc-WQ",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/modeling/project-files",
+      "avatar/layered-accessories/project-files",
+      "avatar/resources"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/HVUO3Dl7qT0",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/modeling/reimport"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://github.com/Roblox/roblox-blender-plugin",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/modeling/roblox-blender-plugin"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:10.555860+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://github.com/Roblox/roblox-blender-plugin",
+    "http_status": 200,
+    "sha256": "fe88540c3b9b42eaf13b7d87ebaa39022aa249d907d10039f3bf6e8a6cf87700",
+    "title": "GitHub - Roblox/roblox-blender-plugin: A Blender plugin to upload selected assets in Blender to Roblox using Roblox's Open Cloud API. · GitHub",
+    "headings": [
+      "Navigation Menu",
+      "Repository navigation",
+      "About",
+      "Resources",
+      "Stars",
+      "Watchers",
+      "Forks",
+      "Latest commit",
+      "History",
+      "Folders and files",
+      "Repository files navigation",
+      "ROBLOX BLENDER PLUGIN",
+      "INSTALLATION",
+      "UNINSTALL OLD VERSION",
+      "INSTALL NEW VERSION",
+      "USAGE GUIDE",
+      "LOG IN",
+      "UPLOAD",
+      "ASSET VERSIONING & AUTO-UPDATING CHANGES",
+      "CONTRIBUTING",
+      "RUNNING FROM SOURCE CODE",
+      "OPTION 1: RECOMMENDED VS CODE DEVELOPMENT WORKFLOW",
+      "OPTION 2: INSTALL MANUALLY",
+      "PULL REQUESTS",
+      "CONTINUOUS INTEGRATION CHECKS",
+      "CREATING A RELEASE",
+      "PLUGIN VERSIONING",
+      "About",
+      "Resources",
+      "Stars",
+      "Watchers",
+      "Forks",
+      "Releases",
+      "Packages",
+      "Used by",
+      "Contributors",
+      "Languages",
+      "Footer",
+      "Footer navigation"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/weight_paint/tool_settings/options.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/modeling/skin-a-humanoid-model",
+      "art/modeling/skin-a-simple-mesh"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=f2pTkW-1JkE",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/modeling/skin-a-humanoid-model"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=dKZrzG5r13g",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/modeling/skin-a-humanoid-model"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/weight_paint/tools.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/modeling/skin-a-simple-mesh"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/tags/c/resources/roblox-staff/278/art",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-dcc"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:10.637268+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/tags/c/resources/roblox-staff/278/art",
+    "http_status": 200,
+    "sha256": "27301f15c64efb43af7878baae15e2536e1c9627849f9ad1a50b85c1427b1444",
+    "title": "Topics tagged art",
+    "headings": [
+      "art"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.maxon.net/en/cinema-4d",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-dcc"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.adobe.com/products/photoshop",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-dcc"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.audacityteam.org/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-dcc"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.reaper.fm/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-dcc"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations?activeTab=Model",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-studio"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/store/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-studio"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/store/models?creatorName=Roblox",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-studio"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/games/7902470429/The-Mystery-of-Duvall-Drive",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-studio"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/store/models?creatorName=Roblox&includeOnlyVerifiedCreators=true&keyword=duvall+drive&pageNumber=1&querySource=0",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-studio"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/store/models?creatorName=Roblox&includeOnlyVerifiedCreators=true&keyword=beyond+the+dark&pageNumber=1&querySource=0",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-studio"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/games/5326950832/Roblox-Realistic-Forest-Demo",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "art/overview-studio"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/using-alpha-masks-in-color-maps-to-customizetint-base-colors",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "art/overview-studio"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:10.714117+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/using-alpha-masks-in-color-maps-to-customizetint-base-colors/2883381",
+    "http_status": 200,
+    "sha256": "e3e6b52206d278e64d99caf155a7828c250527dc580b5007f61c887e329ea088",
+    "title": "Using Alpha Masks in Color Maps to Customize/Tint Base Colors - Roblox Staff - Developer Forum | Roblox",
+    "headings": [
+      "Using Alpha Masks in Color Maps to Customize/Tint Base Colors",
+      "Why consider this technique?",
+      "Let’s Get Started",
+      "Resources:",
+      "Creating the Texture in Photoshop",
+      "Importing Into Studio and Setting the SurfaceAppearance"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203313410-Roblox-Community-Standards",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar-setup/auto-setup-requirements",
+      "avatar/character-bodies",
+      "avatar/dynamic-heads",
+      "avatar/emotes",
+      "avatar/emotes/specifications",
+      "creator-programs/todays-picks-marketplace",
+      "marketplace/frequently-asked-questions",
+      "marketplace/marketplace-policy",
+      "avatar/avatar-lab-disclaimer"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:10.721774+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/203313410-Roblox-Community-Standards",
+    "http_status": 200,
+    "sha256": "7e2b7cfc1754e2d5331a1dfbeb671771fed766bc4f3e4e9c6815845dfe6d072d",
+    "title": "Roblox Community Standards – Roblox Support",
+    "headings": [
+      "Roblox Community Standards",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/Hp9pr2FpZa8",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar-setup"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/fwbuhzq1D0k",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar-setup"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/early-preview-alpha-release-of-photo-to-avatar-apis/3931624",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/avatar-generation"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:10.869025+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/early-preview-alpha-release-of-photo-to-avatar-apis/3931624",
+    "http_status": 200,
+    "sha256": "a77d8c055103804289132e51116f8c63a626a41db22e1dc43d4bbe35f4d4c757",
+    "title": "Early Preview: Alpha Release of Photo-to-Avatar APIs - Announcements - Developer Forum | Roblox",
+    "headings": [
+      "Early Preview: Alpha Release of Photo-to-Avatar APIs",
+      "[Update] September 25, 2025",
+      "How it Works",
+      "Safety and Civility",
+      "Current Limitations",
+      "Frequently Asked Questions [updated 09/17/25]"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/2My8jE47clI",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/character-bodies"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203313410#safety",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/character-bodies"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:10.880254+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/203313410-Roblox-Community-Standards",
+    "http_status": 200,
+    "sha256": "7e2b7cfc1754e2d5331a1dfbeb671771fed766bc4f3e4e9c6815845dfe6d072d",
+    "title": "Roblox Community Standards – Roblox Support",
+    "headings": [
+      "Roblox Community Standards",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.roblox.com/games/95623161111019/Avatar-Test-Place",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/character-bodies/test-studio"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/r_unfGZT5Ps",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/classic-clothing"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.gimp.org/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/create",
+      "monetize-avatar"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Facial_Action_Coding_System",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/dynamic-heads/facs-poses-reference"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/c/bug-reports/10",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/dynamic-heads/specifications",
+      "avatar/dynamic-heads/validate",
+      "marketplace/categories"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:11.034817+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/c/bug-reports/10",
+    "http_status": 200,
+    "sha256": "aae8ec0692cd951bdc391aa1e64d78f24c7a99975c88bad15ccd82d6a059368f",
+    "title": "Latest Bug Reports topics - Developer Forum | Roblox",
+    "headings": [
+      "Bug Reports"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/OwhkWzSBnf0",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/dynamic-heads/validate"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/store/asset/4725618216/Moon-Animator-2",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/emotes"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/upload-and-publish-for-emotes-with-additional-joints-is-now-open/4710932",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/emotes/specifications"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:11.450397+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://www.roblox.com/games/124012682058672/Roblox-Avatar-Creator",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/in-experience-creation"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=r_unfGZT5Ps",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/QwZaA9Gc-WQ",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/layered-accessories/caging-best-practices"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/gXXukd6yOSs",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/layered-accessories"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=C-DwGRBHvmE&t=512s",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/layered-accessories/specifications"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://github.com/Roblox/avatar/tree/main/Makeup",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "avatar/makeup/import",
+      "avatar/makeup/specifications"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:11.558616+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://github.com/Roblox/avatar/tree/main/Makeup",
+    "http_status": 200,
+    "sha256": "a664a59f250635807183744adaa7c470ed07d1a41779785eecde9406494ed368",
+    "title": "avatar/Makeup at main · Roblox/avatar · GitHub",
+    "headings": [
+      "Navigation Menu",
+      "Repository navigation",
+      "FilesExpand file tree",
+      "Breadcrumbs",
+      "Makeup",
+      "Directory actions",
+      "More options",
+      "Directory actions",
+      "More options",
+      "Latest commit",
+      "History",
+      "Breadcrumbs",
+      "Makeup",
+      "Folders and files",
+      "parent directory",
+      "README.md",
+      "Avatar Makeup Beta",
+      "Testing Makeup",
+      "Importing Makeup",
+      "Footer",
+      "Footer navigation"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/BezI4tL4E5k",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/makeup/import"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/0se12PNhVCI",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/makeup"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/g79GBh0AcXA",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/makeup"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.adobe.com/products/substance3d/apps/painter.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/makeup"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "http://boundingboxsoftware.com/materialize/index.php",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/makeup"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://extensions.blender.org/add-ons/ucupaint/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/makeup"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/B0y5fLlwkF0",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/makeup/reassign-textures"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/JaX5rcsStvQ",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/makeup/reassign-textures"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.blender.org/manual/en/latest/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "avatar/tutorials"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://studio.blender.org/characters/snow/v4/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "characters/adaptive-animation"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.blender.org/download/demo-files/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "characters/adaptive-animation"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/credentials?activeTab=ApiKeysTab",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "cloud/auth/api-keys"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/credentials",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "cloud/auth/api-keys"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "cloud/auth/api-keys"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.rfc-editor.org/rfc/rfc7636",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "cloud/auth/oauth2-overview"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://openid.net/connect/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "cloud/auth/oauth2-overview"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/credentials?activeTab=OAuthTab",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "cloud/auth/oauth2-registration"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/37924211313044-Creator-Third-Party-App-Policy",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "cloud/auth/oauth2-registration"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:11.574602+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/37924211313044-Creator-Third-Party-App-Policy",
+    "http_status": 200,
+    "sha256": "da4e643831964f38456939e24ed451f2f2dd7606a8defdec69a071a49ed35763",
+    "title": "Creator Third Party App Policy – Roblox Support",
+    "headings": [
+      "Creator Third Party App Policy",
+      "Scope Access",
+      "Scope Requests",
+      "Roblox Review and Enforcement",
+      "Prohibited app actions and functionalities",
+      "Communication and Social",
+      "",
+      "Experience interactions",
+      "",
+      "Economy",
+      "",
+      "Platform abuse",
+      "",
+      "Prohibited Practices",
+      "",
+      "Data use policy",
+      "App Categories and Scope Details",
+      "Change Log",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.roblox.com/home",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "cloud/guides/usage-assets",
+      "production/publishing/account-verification"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://survey.roblox.com/jfe/form/SV_8cZb94oj9OvQm9g",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "creator-programs/todays-picks-marketplace"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/explore/licenses",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "ip-licensing/creators"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use#creators-restrictions-on-use",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/EditableImage",
+      "reference/engine/classes/EditableMesh"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:11.674534+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use",
+    "http_status": 200,
+    "sha256": "082b7843a224ab29a7de1bf09685b1b8e5e5a298a26a923cf5cca4ad23dc92a6",
+    "title": "Roblox Terms of Use – Roblox Support",
+    "headings": [
+      "Roblox Terms of Use",
+      "Welcome to the Roblox universe, where imagination and creativity rule!",
+      "<Section 3c of User Terms>",
+      "<Section 4 of User Terms>",
+      "<Section 4 of Creator Terms>",
+      "CSEA Content",
+      "Terrorism Content",
+      "Other Priority Illegal Content",
+      "Primary priority content (suicide, self-harm, eating disorder and pornography)",
+      "Priority content (abuse and hate, bullying, violent, harmful substances, dangerous stunts and challenges)",
+      "Non-designated content (depression, body stigma)",
+      "How to make a relevant complaint",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://about.roblox.com/community-standards",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "ip-licensing/creators",
+      "production/monetization/developer-exchange",
+      "production/publishing/ip-guidelines"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://copyright.gov/fair-use/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "ip-licensing/creators",
+      "production/publishing/ip-guidelines"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/info/terms",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "ip-licensing/get-started"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/info/privacy",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "ip-licensing/get-started"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/42542704086548-License-Manager-Terms",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "ip-licensing/get-started"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:11.774533+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/42542704086548-License-Manager-Terms",
+    "http_status": 200,
+    "sha256": "4e4081684142d00ecf84d2a964f759bd071457377d4938f5f6c964ad436d6851",
+    "title": "License Manager Terms – Roblox Support",
+    "headings": [
+      "License Manager Terms",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/21416271342868-Content-Moderation-on-Roblox",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "ip-licensing/get-started"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:11.870063+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://www.roblox.com/library/11628621048/UGC-Custom-Thumbnail-Tool",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/custom-thumbnails"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/4407282410644-Age-ID-Verification",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:11.998461+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://www.roblox.com/premium/membership",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions",
+      "marketplace/marketplace-fees-and-commissions",
+      "reference/engine/classes/AvatarCreationService",
+      "reference/engine/classes/MarketplaceService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/updates-and-changes-to-the-ugc-catalog-application/1974990",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:12.011947+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/updates-and-changes-to-the-ugc-catalog-application/1974990",
+    "http_status": 200,
+    "sha256": "c1aae373012a8c657d865d144ae7fcbf4f0cd4b2f9ce2bb78efe5b0bc0bc5316",
+    "title": "Updates and Changes to the UGC Catalog Application - Announcements - Developer Forum | Roblox",
+    "headings": [
+      "Updates and Changes to the UGC Catalog Application",
+      "UGC Applications are now open - permanently!",
+      "Application Guidelines",
+      "Be a Good Community Member",
+      "Show Your Passion",
+      "Follow Basic UGC Catalog Program Guidelines",
+      "Application Process",
+      "Ready to apply?"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.roblox.com/report-appeals#/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/illegal-content-reporting",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/support",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/frequently-asked-questions",
+      "marketplace/publish-to-marketplace",
+      "production/monetization/developer-exchange"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/6MPWLQmIKLk",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/homestore"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog/10546552/Trojan-Infantry-Helmet",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/intellectual-property"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.copyright.gov/dmca/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/intellectual-property"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog/1082932/Traffic-Cone",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/intellectual-property"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://about.roblox.com/parental-controls",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-fees-and-commissions",
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/transactions",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-fees-and-commissions",
+      "production/analytics/analytics-dashboard"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203314100-Developer-Exchange-DevEx-FAQs#h_01FTN4PJV8AS4JHD2YHS363TDE",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-fees-and-commissions"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:12.125992+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/203314100-Developer-Exchange-DevEx-Overview-How-to-Submit-Requirements",
+    "http_status": 200,
+    "sha256": "a388375c12841e56c06c44ead8ea02159b360e425e902e1805e4bd35552a4fea",
+    "title": "Developer Exchange (DevEx) Overview, How to Submit, Requirements – Roblox Support",
+    "headings": [
+      "Developer Exchange (DevEx) Overview, How to Submit, Requirements",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations/pricing",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-fees-and-commissions"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/360024256251-Roblox-Premium-Membership",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:12.129242+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/360024256251-Roblox-Premium-Membership",
+    "http_status": 200,
+    "sha256": "da04b93dae7f6b4543610ea0694e99bd154c2097f060172eff1de77748230cc3",
+    "title": "Roblox Premium Membership – Roblox Support",
+    "headings": [
+      "Roblox Premium Membership",
+      "Notice: Roblox Premium Benefit Changes",
+      "Managing Your Membership",
+      "Is my Roblox Premium membership recurring?",
+      "Can I transfer my membership to another account?",
+      "What happens if my renewal fails?",
+      "My membership is renewed but I do not see my Premium Stipend in my account.",
+      "Canceling Your Premium Membership",
+      "How to Cancel Your Premium Membership",
+      "Why don't I see a Cancel button?",
+      "I can’t log in to cancel!",
+      "I forgot to cancel! Are Premium Membership renewals refundable?",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/115001708126",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:12.259522+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/115001708126-Roblox-Name-and-Logo-Community-Usage-Guidelines",
+    "http_status": 200,
+    "sha256": "2fc62b14d587f72c92f67db281d14032b4fa6ac7d4e86a17886d2da318928c14",
+    "title": "Roblox Name and Logo - Community Usage Guidelines – Roblox Support",
+    "headings": [
+      "Roblox Name and Logo - Community Usage Guidelines",
+      "Brand Guidelines and Assets",
+      "Marks that are prohibited for use",
+      "Helpful Do’s and Don’ts",
+      "Helpful Resources:",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203313410-Roblox-Community-Rules",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:12.277073+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/2836/GigaChad",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/808/Cybernetic-Superhero",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/3968/Scarlett",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/1178/Greaser-Chicken",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/128/Claire",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/370/The-Great-Bear-War-Grizzly-Warrior",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/473/Octavia-The-Ivory-Spider-Girl",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/6506/Scarecrow",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/7735/Custom-Dragon-Colour",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/8734/Living-Pumpkin",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/210/Telamons-Business-Casual",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/195/Polar-Bear",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/2094/Teddy-Bear",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/115561/Bungling",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/671/Gang-O-Fries",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/591/Mr-Toilet",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/295/Skeleton",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/593/Clawed-Companion",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog/125369932/Hipster-Glasses",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog/42847660/Epic-Sunglasses",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog/13209067084/Whiskers",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/2485/Demon3",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/bundles/6699/Samy-The-Cobra",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/marketplace-policy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/360000245263-Appeal-Your-Content-or-Account-Moderation",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "marketplace/moderation"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:12.407700+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/360000245263-Appeal-Your-Content-or-Account-Moderation",
+    "http_status": 200,
+    "sha256": "f3914b74cad64360881c158669a2494ea77fc1cb267fad4084a0f0cf25225955",
+    "title": "Appeal Your Content or Account Moderation – Roblox Support",
+    "headings": [
+      "Appeal Your Content or Account Moderation",
+      "For Appeals via Violations & Appeals",
+      "For Appeals via Support Form",
+      "For account appeals:",
+      "For content appeals:",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations?activeTab=HairAccessory&filterIndex=0",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/publish-to-marketplace"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/sponsorships/list",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "marketplace/sponsor-items"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/games/9376329300/Simple-Avatar-Editor-Demo",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "players/avatar-editor"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/my/account#!/security",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/analytics/analytics-dashboard"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/groups",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/analytics/analytics-dashboard"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203314100-Developer-Exchange-DevEx-Overview-How-to-Submit-Requirements",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/analytics/analytics-dashboard"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:12.614936+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/203314100-Developer-Exchange-DevEx-Overview-How-to-Submit-Requirements",
+    "http_status": 200,
+    "sha256": "a388375c12841e56c06c44ead8ea02159b360e425e902e1805e4bd35552a4fea",
+    "title": "Developer Exchange (DevEx) Overview, How to Submit, Requirements – Roblox Support",
+    "headings": [
+      "Developer Exchange (DevEx) Overview, How to Submit, Requirements",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://about.roblox.com/age-estimation",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/monetization/18-plus-devex-rate",
+      "production/monetization/developer-exchange"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/115005718246-Developer-Exchange-Terms-of-Use",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:12.684241+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://en.help.roblox.com/hc/en-us/articles/115005718246-Developer-Exchange-Terms-of-Use",
+    "http_status": 200,
+    "sha256": "41eeaec7861301373c148211021d33145c331da3fcfa5ae66238c4c3ce881a19",
+    "title": "Developer Exchange Terms of Use – Roblox Support",
+    "headings": [
+      "Developer Exchange Terms of Use",
+      "Related articles"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://create.roblox.com/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://suppliers.tipalti.com/Roblox/Account/Login",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/27985018895124-Tax-and-DevEx-Portal-Tipalti-Information",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:12.884679+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/devex",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/27984775142292-ID-Verification",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/developer-exchange"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.026663+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/47967913158164-Roblox-Plus",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/monetization/roblox-plus"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.109920+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/5HcH-9E7USc?si=IDla-YBxiO_E-O0q",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/promotion/ads-manager"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/advertise",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/promotion/ads-manager"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/articles/15494846263060",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/promotion/ads-manager"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.180518+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/group/roles",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/promotion/ads-manager"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/13722260778260-Advertising-Standards",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/promotion/ads-manager"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.187220+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/4407276151188",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/account-verification"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.204750+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/account-verification"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.490566+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/4412863575316-Roblox-Facial-Media-Capture-Privacy-Notice",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/account-verification"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.502742+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://www.copyright.gov/help/faq/faq-general.html",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/publishing/ip-guidelines"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.uspto.gov/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/publishing/ip-guidelines"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.copyright.gov/title17/92chap5.html#512",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/publishing/ip-guidelines"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203313380-Keep-Your-Account-Safe",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "production/publishing/ip-guidelines"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.505201+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://about.roblox.com/reporting-and-blocking",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "production/publishing/ip-guidelines"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog?Category=17",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "projects/assets"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog?Category=4&Subcategory=66",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "projects/assets"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog?Category=3&Subcategory=64",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "projects/assets"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/360020870412-Understanding-Moderation-Messages",
+    "status": "unavailable",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "projects/assets"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.727657+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "error": "HTTP Error 403: Forbidden",
+    "analysis_status": "not_reviewed"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/AzKZy2BqIh8",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "projects/assets/packages"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/beta-updates-to-revamped-asset-manager/4548832/1",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "projects/assets/privacy"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.735471+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/beta-updates-to-revamped-asset-manager/4548832/1",
+    "http_status": 200,
+    "sha256": "1755f61ba0765e9a9c6a55aa16ce35d59fef38f6622d0cec18b977861fd7ca0d",
+    "title": "[Beta] Updates to revamped Asset Manager - Announcements - Developer Forum | Roblox",
+    "headings": [
+      "[Beta] Updates to revamped Asset Manager",
+      "Key Takeaways",
+      "Where can I find the new Asset Manager?",
+      "Finding assets is now even easier",
+      "Bulk asset sharing",
+      "Workflow efficiency improvements",
+      "Improved navigation",
+      "What’s coming in the future?",
+      "Your feedback is essential!",
+      "Known issues",
+      "Acknowledgements"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://en.help.roblox.com/hc/en-us/articles/203313580-How-to-Make-Friends",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "projects/assets/privacy"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/communities",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "projects/groups"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/ikYZloBgqtE",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "studio/importer"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/RCsYZe3LoDM",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "studio/importer"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.youtube-nocookie.com/embed/UEHEsmCslBU",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "studio/importer"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.khronos.org/openxr/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "studio/testing-modes"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations?activeTab=Image",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "studio/texture-generator"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/games/134383324873456/Walking-Character-Animation",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "tutorials/use-case-tutorials/animation/create-an-animation"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/dashboard/creations?activeTab=Animation",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/Animation"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/avatar-joint-upgrade-for-physically-simulated-character-movement-is-now-live/4298561",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/AnimationConstraint",
+      "reference/engine/classes/Motor6D"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.737359+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/avatar-joint-upgrade-for-physically-simulated-character-movement-is-now-live/4298561",
+    "http_status": 200,
+    "sha256": "8d532a02f244cfc93e2b684da6ec6c3b0820f29bd1a78ad77868c68709ee6cc0",
+    "title": "Avatar Joint Upgrade for Physically-Simulated Character Movement is Now Live! - Announcements - Developer Forum | Roblox",
+    "headings": [
+      "Avatar Joint Upgrade for Physically-Simulated Character Movement is Now Live!",
+      "Key Takeaways",
+      "Use Cases",
+      "How to Enable the Upgrade",
+      "Phased Rollout Plan for Avatar Joint Upgrade",
+      "Known Issues / Limitations",
+      "Next Steps",
+      "[Updated January 26th, 2026] FAQ",
+      "Update"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/avatar-joint-upgrade-aju-phase-2-rollout-updated-migration-recommendations/4656414",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/AnimationConstraint"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:13.739496+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/avatar-joint-upgrade-aju-phase-2-rollout-updated-migration-recommendations/4656414",
+    "http_status": 200,
+    "sha256": "fdb654e81cbe5fe3839eb2afa446e3b279e6b7e7f90b6cab3b34773021da2960",
+    "title": "Avatar Joint Upgrade (AJU) Phase 2 Rollout & Updated Migration Recommendations - Announcements - Developer Forum | Roblox",
+    "headings": [
+      "Avatar Joint Upgrade (AJU) Phase 2 Rollout & Updated Migration Recommendations",
+      "Key Takeaways",
+      "Updated Migration Recommendations",
+      "Core Reminders from the Studio Beta"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://json.org",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Server-sent_events",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Chunked_transfer_encoding",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/WebSocket",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Universally_unique_identifier",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://uuid7.com/",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://github.com/ulid/spec",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/GET",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/HEAD",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/POST",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/PUT",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/DELETE",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/OPTIONS",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/TRACE",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://developer.mozilla.org/docs/Web/HTTP/Methods/PATCH",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Percent-encoding",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HttpService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog?Category=0&Subcategory=39",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/HumanoidDescription"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/sunsetting-sets/189402",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/InsertService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/library/257489726/Doge",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/InsertService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/implementing-player-data-and-purchasing-systems/2839941",
+    "status": "metadata_retrieved",
+    "reason": "Reference resource; download/review is separate from prose coverage.",
+    "backlinks": [
+      "reference/engine/classes/MarketplaceService"
+    ],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:14.011117+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/implementing-player-data-and-purchasing-systems/2839941",
+    "http_status": 200,
+    "sha256": "dbbf4168210f6095c24ebbc76dce6b30ea21dbae53a1bb72336bb057f7399253",
+    "title": "Implementing Player Data and Purchasing Systems - Roblox Staff - Developer Forum | Roblox",
+    "headings": [
+      "Implementing Player Data and Purchasing Systems",
+      "Implementing Player Data and Purchasing Systems",
+      "Background",
+      "Common Problems",
+      "Sample Code",
+      "Architecture",
+      "Retries",
+      "Background",
+      "Approach",
+      "Caveats",
+      "Session Locking",
+      "Background",
+      "Approach",
+      "Caveats",
+      "Developer Product Processing",
+      "Background",
+      "Approach",
+      "Player Data",
+      "Background",
+      "Approach"
+    ],
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://luau.org/syntax#string-literals",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/StringValue"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Double-precision_floating-point_format",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/NumberValue"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSfGTRQwATB2wUg0P4HUSTtyXrhptFahJifo1ew84SyqtfSBfg/viewform",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/PolicyService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/new-programs-available-roblox-china-licensed-to-operate/1023361",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/PolicyService"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://learn.microsoft.com/typography/opentype/spec/featuretags",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/classes/TextButton"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://www.roblox.com/catalog/5911063681/Yi-the-Art-Teacher-Hair",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/enums/AccessoryType"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://create.roblox.com/store/asset/15507769146/ForceFieldMesh",
+    "status": "linked",
+    "reason": "External non-UGC/general-reference link; retained for inventory traceability.",
+    "backlinks": [
+      "reference/engine/enums/Material"
+    ],
+    "disposition": "excluded"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/ugc-hat-tutorial-cartoony-top-hat/1078816",
+    "topic": "rigid",
+    "type": "community",
+    "review_note": "Modeling/UV technique; admission and Blender UI are old; current official publishing rules take precedence.",
+    "backlinks": [],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:14.015596+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/ugc-hat-tutorial-cartoony-top-hat/1078816",
+    "http_status": 200,
+    "sha256": "0b69f1e2cf8cd894c7623cb9a92c6e60fff76db15c2151adc31e3dc2179f8563",
+    "title": "UGC Hat Tutorial - Cartoony Top Hat - Community Tutorials - Developer Forum | Roblox",
+    "headings": [
+      "UGC Hat Tutorial - Cartoony Top Hat",
+      "Intro",
+      "Resources",
+      "Basic Instructions:",
+      "Intermediate Expansion",
+      "If you are not going to complete the advanced tutorial, complete the intermediate texturing steps below. Otherwise, skip the following steps and move on to the advanced expansion section.",
+      "Advanced Expansion",
+      "Final Changes and Exporting",
+      "Feedback",
+      "Featured Hats"
+    ],
+    "status": "metadata_retrieved",
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/how-to-make-ugc-hair-in-blender-28-pt-2/612848",
+    "topic": "rigid",
+    "type": "community",
+    "review_note": "Hair curve/texture techniques; old Blender and admission context require current-spec review.",
+    "backlinks": [],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:14.017154+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/how-to-make-ugc-hair-in-blender-28-pt-2/612848",
+    "http_status": 200,
+    "sha256": "3a4e2592f5858b302df0697c81180ce667d984689d53220e3c633903600256ce",
+    "title": "How to make UGC hair in blender 2.8 (PT 2) - Community Tutorials - Developer Forum | Roblox",
+    "headings": [
+      "How to make UGC hair in blender 2.8 (PT 2)",
+      "Welcome!",
+      "Requirements",
+      "Part one",
+      "Part 2",
+      "Part 3: Hair texture",
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4",
+      "Step 5",
+      "Step 5",
+      "Conclusion"
+    ],
+    "status": "metadata_retrieved",
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/3d-art-a-visual-representation-of-the-3d-pipeline/2659618",
+    "topic": "pipeline",
+    "type": "community",
+    "review_note": "Sculpt/retopology/UV/baking workflow; general techniques, not Marketplace acceptance evidence.",
+    "backlinks": [],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:14.253179+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/3d-art-a-visual-representation-of-the-3d-pipeline/2659618",
+    "http_status": 200,
+    "sha256": "658eb9a4dca074fb43509da17c75e4d068d68eb3e9daac6e83c3e7d53ff2b0c7",
+    "title": "3D ART | A Visual Representation of the 3D Pipeline - Community Tutorials - Developer Forum | Roblox",
+    "headings": [
+      "3D ART | A Visual Representation of the 3D Pipeline",
+      "STEP ONE: Creating the low-poly mesh",
+      "STEP TWO: UV map the low-poly mesh.",
+      "STEP THREE: Sculpt a high-poly model using MultiRes.",
+      "STEP FOUR: Bake the high-poly onto the low-poly.",
+      "STEP FIVE: Texture the new model.",
+      "STEP SIX: Export the model and rig it."
+    ],
+    "status": "metadata_retrieved",
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/how-to-properly-configure-and-import-ugc-bundles/3094203",
+    "topic": "body",
+    "type": "community",
+    "review_note": "Body assembly/import guidance; verify policy and face-accessory details against live specs.",
+    "backlinks": [],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:14.659061+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/how-to-properly-configure-and-import-ugc-bundles/3094203",
+    "http_status": 200,
+    "sha256": "75d8ca78d9255a71b2a6ab6b0eeb6835d72bd34ca1b85ad234aee072b1f8fdd0",
+    "title": "How to properly configure and import UGC bundles! - Community Tutorials - Developer Forum | Roblox",
+    "headings": [
+      "How to properly configure and import UGC bundles!",
+      "Note!",
+      "Tips for separating the body parts",
+      "Configuring body cages in Blender",
+      "Attachments",
+      "UV Mapping Body Parts for 2D Clothing",
+      "Modesty layers",
+      "Importing to studio"
+    ],
+    "status": "metadata_retrieved",
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/guide-layered-clothing-in-roblox-without-cages-or-rig-blender-avatar-setup/3793130",
+    "topic": "layered",
+    "type": "community",
+    "review_note": "Avatar Setup can generate components; the finished Marketplace item still needs cages/rig data and validation.",
+    "backlinks": [],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:14.752090+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/guide-layered-clothing-in-roblox-without-cages-or-rig-blender-avatar-setup/3793130",
+    "http_status": 200,
+    "sha256": "e4f46412f8023b281663aaa74ce9090ec278e836af02cb6ff1ad5d094ab54e37",
+    "title": "[Guide] Layered Clothing in Roblox without Cages or Rig (Blender + Avatar Setup) - Community Tutorials - Developer Forum | Roblox",
+    "headings": [
+      "[Guide] Layered Clothing in Roblox without Cages or Rig (Blender + Avatar Setup)"
+    ],
+    "status": "metadata_retrieved",
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/marvelous-designer-layered-clothing-cages/4140561",
+    "topic": "layered",
+    "type": "community",
+    "review_note": "MD/CLO-to-Blender techniques; custom cage topology/UV and output need independent validation.",
+    "backlinks": [],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:14.755657+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/marvelous-designer-layered-clothing-cages/4140561",
+    "http_status": 200,
+    "sha256": "8e19f251ae7dd08939adef192fd382fce32ba2e0a9783b4618be88a701a05640",
+    "title": "Marvelous Designer Layered Clothing Cages - Community Resources - Developer Forum | Roblox",
+    "headings": [
+      "Marvelous Designer Layered Clothing Cages"
+    ],
+    "status": "metadata_retrieved",
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://devforum.roblox.com/t/modeling-an-outer-cage-for-avatar-accessories/2734001",
+    "topic": "layered",
+    "type": "community",
+    "review_note": "Partial/risky discussion; do not accept cage deletion or inferred upload success as normative guidance.",
+    "backlinks": [],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:14.768722+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://devforum.roblox.com/t/modeling-an-outer-cage-for-avatar-accessories/2734001",
+    "http_status": 200,
+    "sha256": "baafad4aec951745c0cab9cd81196e9696f02ad5f4a2bcde2199b9a3afb29f5f",
+    "title": "Modeling an outer cage for avatar accessories - Community Tutorials - Developer Forum | Roblox",
+    "headings": [
+      "Modeling an outer cage for avatar accessories"
+    ],
+    "status": "metadata_retrieved",
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://vimeo.com/1030106632",
+    "topic": "head",
+    "type": "community",
+    "review_note": "Dynamic-head tutorial candidate; metadata does not prove its video was reviewed.",
+    "backlinks": [],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:14.781336+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://vimeo.com/1030106632",
+    "http_status": 200,
+    "sha256": "76d180202713b0ef5d8b620ba51561f38cfb9cd8111397d24b8c6d31f04d6504",
+    "title": "Setting Up a Dynamic Head for Roblox",
+    "headings": [
+      "Verify to continue",
+      "Checking if the site connection is secure"
+    ],
+    "status": "metadata_retrieved",
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=apZsJqsKdw4",
+    "topic": "head",
+    "type": "community",
+    "review_note": "Dynamic-head tutorial candidate; confirm FACS and caging against current official specs.",
+    "backlinks": [],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:15.059681+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://www.youtube.com/watch?v=apZsJqsKdw4",
+    "http_status": 200,
+    "sha256": "64ec0b5db3c82a7569dad54bae6eb0ab6a6c31ceec90f89c0939156666b06716",
+    "title": "FULL ROBLOX Dynamic Head Guide Tutorial | Blender + Roblox Studio - YouTube",
+    "headings": [],
+    "status": "metadata_retrieved",
+    "analysis_status": "metadata and source role reviewed; full tutorial technique verification is task-specific"
+  },
+  {
+    "url": "https://www.nocapmocap.com/blog/how-to-publish-a-roblox-emote",
+    "topic": "animation",
+    "type": "community",
+    "review_note": "Publishing walkthrough; its Studio marker correction must be corroborated by official guidance/current UI.",
+    "backlinks": [],
+    "disposition": "included",
+    "retrieved_at": "2026-10-13T21:10:15.184367+00:00",
+    "license": "External rights retained; full text not redistributed.",
+    "resolved_url": "https://www.nocapmocap.com/blog/how-to-publish-a-roblox-emote",
+    "http_status": 200,
+    "sha256": "f1e02c878f8c764086679d8562a52dd7ab3af6111694934d294e9ddded7ba05e",
+    "title": "How to Publish a Roblox Emote to the Marketplace | NoCapMocap",
+    "headings": [
+      "How to Publish a Roblox Emote to the Marketplace (the Step Everyone Misses)",
+      "Why your animation gets stuck in Development Items",
+      "Before you start",
+      "Step 1: Convert your animation to a curve animation",
+      "Step 2: Publish to Roblox as an Emote",
+      "Step 3: Find the Animation object Studio made",
+      "Step 4: Publish the Animation object as an Avatar Item",
+      "Don't get rejected on a technicality",
+      "Watch it end to end",
+      "The short version",
+      "See what's worth publishing",
+      "FAQ",
+      "Related Articles",
+      "How to Create Custom Emotes for Roblox with AI",
+      "The Easiest Way to Make Roblox Animations: AI Animator & Generator",
+      "How to Import Roblox Animations Without Blender (You Probably Don't Need It)",
+      "Product",
+      "Resources",
+      "Legal"
+    ],
+    "status": "metadata_retrieved",
+    "analysis_status": "Public article text reviewed; brief publishing-marker conflict summarized, normative rules rechecked against official docs."
+  }
+]

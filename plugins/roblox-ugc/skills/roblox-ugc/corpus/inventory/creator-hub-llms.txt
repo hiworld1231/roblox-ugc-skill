@@ -1,0 +1,3172 @@
+<!-- Last updated: 2026-10-13T18:42:48Z -->
+
+# Roblox Creator Documentation
+
+> Documentation for building experiences, avatars, and cloud integrations on the Roblox platform using Roblox Studio and the Luau programming language.
+
+## For Code Agents: Start Here
+
+| I want to... | Go to |
+|---|---|
+| Find the page that answers a question | `/docs/api/search/your%20question%20here` |
+| Browse guides, tutorials, and concept pages | The sections at the end of this file |
+| Write Luau scripts **inside** a Roblox experience | [Engine API index](/docs/reference/engine/llms.txt) |
+| Call Roblox REST APIs from an **external server or tool** | [Open Cloud API index](/docs/cloud/llms.txt) |
+| Check whether an API was removed or replaced | [Deprecated API inventory](/docs/reference/engine/deprecated.md) |
+
+**Never guess a URL.** The sections at the end of this file list 2297 documentation pages, each with its full path. A path that appears in no index does not exist. A guess that looks plausible returns a 404 whose body is a page of HTML markup that tells you nothing, so each one spends a request and a slice of your context to learn nothing. Never extrapolate a path from a pattern you noticed in another one.
+
+**Search for the page you need.** Put a plain-language question straight into the path: `/docs/api/search/how%20do%20I%20publish%20an%20avatar%20look`. The answer is JSON listing the pages that match, each with a title, a summary, and a `url` that already points at the Markdown and can be fetched exactly as given. Percent-encode the spaces as shown, or split the question into path segments (`/docs/api/search/how/do/I/publish`) -- both work, but a raw space is not a legal URL and some tools refuse to send it. **Write a space instead of a period.** A period anywhere in the path makes the request look like a file, and it is answered with a 404 before the search ever runs. For example, ask about `Vector3 new` rather than `Vector3.new`, and don't include the period that ends a sentence. This is the same index behind the search box on the site, and it matches on meaning rather than on words, so a whole question works better than a keyword. It is the shortest path from a question to the right page.
+
+**An `error` field in a search response means your request was malformed, not that nothing matched.** A bad call and a search with no matches both answer 200 with an empty `results` array, so check for `error` before concluding a topic is undocumented. The `usage` field beside it shows the form that works.
+
+**A 404 means your path is wrong, not that the topic is undocumented.** Search for the page rather than trying another variation of the path that just failed.
+
+**Add `.md` to any documentation URL to read it as Markdown.** Every page is served twice: as HTML at its normal URL, and as plain Markdown at that same URL with `.md` on the end. The Markdown is a fraction of the size and carries no navigation or page furniture. Every link below already ends in `.md`, so keep the extension when you follow one.
+
+**This file is a couple hundred kilobytes, which is more than some fetch tools return in one call.** If you cannot see the `##` section listings further down, you have only the beginning of it. Search, or fetch a sub-index below, rather than guessing at what the rest of the file contained.
+
+Do not fetch [/docs/llms-full.txt](/docs/llms-full.txt) unless you can stream it. It inlines the full text of all 2297 pages into a single file of tens of megabytes, which will exhaust or truncate your context long before it answers anything. Read the individual `.md` pages you need instead.
+
+> **Common mistake**: The Engine API and Open Cloud API are completely separate systems.
+> Engine APIs are Luau objects accessed via `game:GetService()` inside a running experience.
+> Open Cloud APIs are HTTP endpoints called with `x-api-key` from outside Roblox entirely.
+> Using the wrong sub-index will produce non-functional code.
+
+---
+
+Roblox is a platform where millions of people create and share 3D experiences. Creators use Roblox Studio (the IDE) and Luau (the scripting language) to build games, experiences, and avatar items. The platform provides Engine APIs for in-experience scripting and Open Cloud APIs for server-side integrations.
+
+---
+
+## Overview
+
+- [Get started with experiences on Roblox](/docs/en-us/experiences.md)
+- [AI on Roblox](/docs/en-us/ai/accelerated-workflows.md)
+- [Avatar, a system of expression](/docs/en-us/avatar.md)
+- [Resources](/docs/en-us/avatar/resources.md)
+- [Create and access millions of assets](/docs/en-us/assets.md)
+- [Assets](/docs/en-us/projects/assets.md)
+- [Asset Manager](/docs/en-us/projects/assets/manager.md)
+- [Importer](/docs/en-us/studio/importer.md)
+- [Packages](/docs/en-us/projects/assets/packages.md)
+- [Asset privacy](/docs/en-us/projects/assets/privacy.md)
+- [Creator Store](/docs/en-us/production/creator-store.md)
+- [Cloud API reference](/docs/en-us/cloud.md)
+- [Open Cloud guides](/docs/en-us/cloud/guides.md)
+- [Patterns](/docs/en-us/cloud/reference/patterns.md)
+
+## AI accelerated workflows
+
+- [Create games with Build](/docs/en-us/ai/build.md)
+- [Build your first game with Assistant](/docs/en-us/ai/build-with-assistant.md)
+- [Build with a coding harness](/docs/en-us/ai/coding-harness.md)
+
+## Create
+
+- [Creation overview](/docs/en-us/creation.md)
+- [Projects](/docs/en-us/projects.md)
+- [3D workspace](/docs/en-us/workspace.md)
+- [Scripting](/docs/en-us/scripting.md)
+- [Lighting and effects](/docs/en-us/environment.md)
+- [Users and players](/docs/en-us/players.md)
+- [Characters](/docs/en-us/characters.md)
+- [Input](/docs/en-us/input.md)
+- [Audio](/docs/en-us/audio.md)
+- [User interface](/docs/en-us/ui.md)
+- [Animation in Roblox](/docs/en-us/animation.md)
+- [Matchmaking](/docs/en-us/matchmaking.md)
+- [Performance optimization](/docs/en-us/performance-optimization.md)
+- [Choose between cloud services](/docs/en-us/cloud-services/data-stores-vs-memory-stores.md)
+- [Roblox for Unity developers](/docs/en-us/unity.md)
+- [Roblox for Unreal developers](/docs/en-us/unreal.md)
+
+## Projects
+
+- [Create and publish games and places](/docs/en-us/production/publishing/publish-games-and-places.md)
+- [Cross-platform development](/docs/en-us/projects/cross-platform.md)
+- [Data model](/docs/en-us/projects/data-model.md)
+- [Groups (teams)](/docs/en-us/projects/groups.md)
+- [Script Sync](/docs/en-us/scripting/sync.md)
+
+## Games and places
+
+- [Configure games and places](/docs/en-us/projects/configure-games.md)
+- [Release game updates](/docs/en-us/projects/update-games.md)
+- [Game ownership transfer](/docs/en-us/projects/game-ownership-transfer.md)
+- [Place files](/docs/en-us/projects/place-files.md)
+
+## Architecture
+
+- [Client-server runtime](/docs/en-us/projects/client-server.md)
+- [Instance streaming](/docs/en-us/workspace/streaming.md)
+- [Server authority model](/docs/en-us/projects/server-authority.md)
+
+## Instance streaming
+
+- [Techniques and conversion](/docs/en-us/workspace/streaming/techniques.md)
+- [SLIM](/docs/en-us/workspace/streaming/slim.md)
+- [Frustum Streaming](/docs/en-us/workspace/streaming/frustum.md)
+
+## Server authority
+
+- [Server authority techniques](/docs/en-us/projects/server-authority/techniques.md)
+
+## Work in teams
+
+- [Collaboration](/docs/en-us/projects/collaboration.md)
+- [Activity History](/docs/en-us/projects/activity-history.md)
+- [Version History](/docs/en-us/projects/version-history.md)
+
+## File-based workflows
+
+- [Third-party tools](/docs/en-us/projects/external-tools.md)
+
+## 3D workspace
+
+- [Parts](/docs/en-us/parts.md)
+- [Meshes](/docs/en-us/parts/meshes.md)
+- [Models](/docs/en-us/parts/models.md)
+- [Procedural models](/docs/en-us/parts/procedural-models.md)
+- [Materials](/docs/en-us/parts/materials.md)
+- [Environmental terrain](/docs/en-us/parts/terrain.md)
+- [Physics](/docs/en-us/physics.md)
+- [Effects](/docs/en-us/effects.md)
+- [Customize the camera](/docs/en-us/workspace/camera.md)
+- [Model generation](/docs/en-us/parts/model-generation.md)
+
+## Parts
+
+- [Solid modeling](/docs/en-us/parts/solid-modeling.md)
+- [Textures and decals](/docs/en-us/parts/textures-decals.md)
+
+## Physics
+
+- [Assemblies](/docs/en-us/physics/assemblies.md)
+- [Network ownership](/docs/en-us/physics/network-ownership.md)
+- [Mechanical constraints](/docs/en-us/physics/mechanical-constraints.md)
+- [Mover constraints](/docs/en-us/physics/mover-constraints.md)
+- [Sleep system](/docs/en-us/physics/sleep-system.md)
+- [Adaptive timestepping](/docs/en-us/physics/adaptive-timestepping.md)
+- [Roblox units](/docs/en-us/physics/units.md)
+- [Create moving objects](/docs/en-us/tutorials/use-case-tutorials/physics/create-moving-objects.md)
+- [Create spinning objects](/docs/en-us/tutorials/use-case-tutorials/physics/create-spinning-objects.md)
+
+## Mechanical constraints
+
+- [BallSocket](/docs/en-us/physics/constraints/ball-socket.md)
+- [Hinge](/docs/en-us/physics/constraints/hinge.md)
+- [Prismatic](/docs/en-us/physics/constraints/prismatic.md)
+- [Cylindrical](/docs/en-us/physics/constraints/cylindrical.md)
+- [Spring](/docs/en-us/physics/constraints/spring.md)
+- [TorsionSpring](/docs/en-us/physics/constraints/torsion-spring.md)
+- [Universal](/docs/en-us/physics/constraints/universal.md)
+- [Rope](/docs/en-us/physics/constraints/rope.md)
+- [Rod](/docs/en-us/physics/constraints/rod.md)
+- [Plane](/docs/en-us/physics/constraints/plane.md)
+- [Weld](/docs/en-us/physics/constraints/weld.md)
+- [Rigid](/docs/en-us/physics/constraints/rigid.md)
+- [NoCollision](/docs/en-us/physics/constraints/no-collision.md)
+
+## Mover constraints
+
+- [LinearVelocity](/docs/en-us/physics/constraints/linear-velocity.md)
+- [AngularVelocity](/docs/en-us/physics/constraints/angular-velocity.md)
+- [AlignPosition](/docs/en-us/physics/constraints/align-position.md)
+- [AlignOrientation](/docs/en-us/physics/constraints/align-orientation.md)
+- [VectorForce](/docs/en-us/physics/constraints/vector-force.md)
+- [Torque](/docs/en-us/physics/constraints/torque.md)
+- [LineForce](/docs/en-us/physics/constraints/line-force.md)
+- [AnimationConstraint](/docs/en-us/physics/constraints/animation.md)
+
+## Effects
+
+- [Light sources](/docs/en-us/effects/light-sources.md)
+- [Particle emitters](/docs/en-us/effects/particle-emitters.md)
+- [Beams](/docs/en-us/effects/beams.md)
+- [Trails](/docs/en-us/effects/trails.md)
+- [Highlighting objects](/docs/en-us/effects/highlighting.md)
+
+## Camera
+
+- [Free camera mode](/docs/en-us/workspace/camera/free-camera.md)
+
+## Spatial data
+
+- [CFrames](/docs/en-us/workspace/cframes.md)
+- [Collisions](/docs/en-us/workspace/collisions.md)
+- [Raycasting](/docs/en-us/workspace/raycasting.md)
+
+## Scripting
+
+- [Script types and locations](/docs/en-us/scripting/locations.md)
+- [Reuse code](/docs/en-us/scripting/module.md)
+- [Services](/docs/en-us/scripting/services.md)
+- [Properties and attributes](/docs/en-us/scripting/attributes.md)
+- [Events](/docs/en-us/scripting/events.md)
+- [Luau](/docs/en-us/luau.md)
+
+## Events
+
+- [Deferred engine events](/docs/en-us/scripting/events/deferred.md)
+- [Bindable events and callbacks](/docs/en-us/scripting/events/bindable.md)
+- [Remote events and callbacks](/docs/en-us/scripting/events/remote.md)
+
+## Advanced
+
+- [Schedule code](/docs/en-us/scripting/scheduler.md)
+- [Parallel Luau](/docs/en-us/scripting/multithreading.md)
+- [Transparent batching](/docs/en-us/scripting/transparent-batching.md)
+- [Native code generation](/docs/en-us/luau/native-code-gen.md)
+- [Script capabilities](/docs/en-us/scripting/capabilities.md)
+
+## Security
+
+- [Security and cheat mitigation tactics](/docs/en-us/scripting/security/security-tactics.md)
+- [Defensive design tactics](/docs/en-us/scripting/security/defensive-design.md)
+- [Securing the client-server boundary](/docs/en-us/scripting/security/client-server-boundary.md)
+- [Network ownership, movement validation, and physics](/docs/en-us/scripting/security/network-ownership.md)
+- [Access control and confidentiality](/docs/en-us/scripting/security/access-control.md)
+- [Vulnerabilities from third-party assets](/docs/en-us/scripting/security/third-party-vulnerabilities.md)
+- [Server-side detection and consequencing](/docs/en-us/scripting/security/server-side-detection.md)
+
+## Types
+
+- [Nil](/docs/en-us/luau/nil.md)
+- [Booleans](/docs/en-us/luau/booleans.md)
+- [Numbers](/docs/en-us/luau/numbers.md)
+- [Strings](/docs/en-us/luau/strings.md)
+- [Tables](/docs/en-us/luau/tables.md)
+- [Enums](/docs/en-us/luau/enums.md)
+- [Tuples](/docs/en-us/luau/tuples.md)
+- [Userdata](/docs/en-us/luau/userdata.md)
+
+## Data structures
+
+- [Queues](/docs/en-us/luau/queues.md)
+- [Stacks](/docs/en-us/luau/stacks.md)
+- [Metatables](/docs/en-us/luau/metatables.md)
+
+## Features
+
+- [Luau comments](/docs/en-us/luau/comments.md)
+- [Variables](/docs/en-us/luau/variables.md)
+- [Scope](/docs/en-us/luau/scope.md)
+- [Operators](/docs/en-us/luau/operators.md)
+- [Control structures](/docs/en-us/luau/control-structures.md)
+- [Functions](/docs/en-us/luau/functions.md)
+- [Type coercion](/docs/en-us/luau/type-coercion.md)
+- [Type checking](/docs/en-us/luau/type-checking.md)
+
+## Environment
+
+- [Global lighting](/docs/en-us/environment/lighting.md)
+- [Atmospheric effects](/docs/en-us/environment/atmosphere.md)
+- [Dynamic clouds](/docs/en-us/environment/clouds.md)
+- [Global wind](/docs/en-us/environment/global-wind.md)
+- [Post-processing effects](/docs/en-us/environment/post-processing-effects.md)
+- [Skyboxes](/docs/en-us/environment/skybox.md)
+
+## Players
+
+- [Users and domain-scoped user IDs](/docs/en-us/players/users.md)
+- [Teleport between places](/docs/en-us/projects/teleport.md)
+- [Implement teams](/docs/en-us/players/teams.md)
+- [In-game tools](/docs/en-us/players/tools.md)
+- [Leaderboards](/docs/en-us/players/leaderboards.md)
+- [Loading screens](/docs/en-us/players/loading-screens.md)
+
+## Player UI
+
+- [Avatar Editor Service](/docs/en-us/players/avatar-editor.md)
+- [Avatar Inspect Menu](/docs/en-us/players/avatar-inspect-menu.md)
+- [Avatar Context Menu](/docs/en-us/players/avatar-context-menu.md)
+- [Disable default UI](/docs/en-us/players/disable-ui.md)
+
+## Characters
+
+- [Character appearance](/docs/en-us/characters/appearance.md)
+- [Character Controller Library](/docs/en-us/characters/character-controller-library.md)
+- [Character name/health display](/docs/en-us/characters/name-health-display.md)
+- [Adaptive Animation](/docs/en-us/characters/adaptive-animation.md)
+- [Emotes](/docs/en-us/characters/emotes.md)
+- [Moods](/docs/en-us/art/characters/facial-animation/moods.md)
+- [Pathfinding](/docs/en-us/characters/pathfinding.md)
+- [R6 to R15 Adapter](/docs/en-us/characters/r6-to-r15-adapter.md)
+
+## Character Controller Library
+
+- [CCL quick start](/docs/en-us/characters/character-controller-library/quick-start.md)
+- [Custom abilities](/docs/en-us/characters/character-controller-library/custom-abilities.md)
+
+## Input
+
+- [Input Action System](/docs/en-us/input/input-action-system.md)
+- [Mouse and keyboard input](/docs/en-us/input/mouse-and-keyboard.md)
+- [Mobile input](/docs/en-us/input/mobile.md)
+- [Gamepad input](/docs/en-us/input/gamepad.md)
+- [Micro gamepad input](/docs/en-us/input/micro-gamepad.md)
+
+## Audio
+
+- [Audio assets](/docs/en-us/audio/assets.md)
+- [Audio objects](/docs/en-us/audio/objects.md)
+- [Audio effects](/docs/en-us/audio/effects.md)
+- [Add 2D audio](/docs/en-us/tutorials/use-case-tutorials/audio/add-2D-audio.md)
+- [Add 3D audio](/docs/en-us/tutorials/use-case-tutorials/audio/add-3D-audio.md)
+- [Add voice chat](/docs/en-us/tutorials/use-case-tutorials/audio/add-voice-chat.md)
+- [Add text-to-speech](/docs/en-us/tutorials/use-case-tutorials/audio/add-text-to-speech.md)
+- [Add speech-to-text](/docs/en-us/tutorials/use-case-tutorials/audio/speech-to-text.md)
+
+## Legacy
+
+- [Sound objects](/docs/en-us/sound/objects.md)
+- [Sound groups](/docs/en-us/sound/groups.md)
+- [Dynamic effects](/docs/en-us/sound/dynamic-effects.md)
+
+## User interface
+
+- [On-screen UI containers](/docs/en-us/ui/on-screen-containers.md)
+- [In-game UI containers](/docs/en-us/ui/in-experience-containers.md)
+- [Position and size UI objects](/docs/en-us/ui/position-and-size.md)
+- [UI appearance modifiers](/docs/en-us/ui/appearance-modifiers.md)
+- [Size modifiers and constraints](/docs/en-us/ui/size-modifiers.md)
+- [UI animation/tweens](/docs/en-us/ui/animation.md)
+- [UI 9-slice design](/docs/en-us/ui/9-slice.md)
+- [Rich text markup](/docs/en-us/ui/rich-text.md)
+- [Text filtering](/docs/en-us/ui/text-filtering.md)
+
+## UI objects
+
+- [Text & image labels](/docs/en-us/ui/labels.md)
+- [Text & image buttons](/docs/en-us/ui/buttons.md)
+- [Frames](/docs/en-us/ui/frames.md)
+- [Scrolling frames](/docs/en-us/ui/scrolling-frames.md)
+- [Viewport frames](/docs/en-us/ui/viewport-frames.md)
+- [Video frames](/docs/en-us/ui/video-frames.md)
+- [Text input fields](/docs/en-us/ui/text-input.md)
+- [2D paths](/docs/en-us/ui/2D-paths.md)
+- [Proximity prompts](/docs/en-us/ui/proximity-prompts.md)
+- [UI drag detectors](/docs/en-us/ui/ui-drag-detectors.md)
+- [3D drag detectors](/docs/en-us/ui/3D-drag-detectors.md)
+
+## Layout structures
+
+- [List and flex layouts](/docs/en-us/ui/list-flex-layouts.md)
+- [Grid and table layouts](/docs/en-us/ui/grid-table-layouts.md)
+- [Page layouts](/docs/en-us/ui/page-layouts.md)
+
+## UI styling
+
+- [UI styling](/docs/en-us/ui/styling.md)
+- [Style Editor](/docs/en-us/ui/styling/editor.md)
+- [UI styling compatibility](/docs/en-us/ui/styling/compatibility.md)
+- [CSS Comparisons](/docs/en-us/ui/styling/css-comparisons.md)
+
+## Create animations
+
+- [Animation Editor](/docs/en-us/animation/editor.md)
+- [Animation Graph Editor](/docs/en-us/animation/graph-editor.md)
+- [Inverse Kinematics](/docs/en-us/animation/inverse-kinematics.md)
+
+## Animation Editor
+
+- [Curve Editor](/docs/en-us/animation/curve-editor.md)
+- [Animation events](/docs/en-us/animation/events.md)
+- [Animation capture](/docs/en-us/animation/capture.md)
+
+## Graph Editor
+
+- [Graph Editor state machines](/docs/en-us/animation/graph-editor-state-machine.md)
+
+## Animation
+
+- [Use animations](/docs/en-us/animation/using.md)
+- [Export avatar animations from Maya](/docs/en-us/art/characters/export-avatar-animations-from-maya.md)
+- [Animate heads](/docs/en-us/art/characters/facial-animation/animate-heads.md)
+- [Graph Editor expressions](/docs/en-us/animation/expressions.md)
+
+## Chat
+
+- [Voice Chat](/docs/en-us/chat/voice-chat.md)
+- [Text chat overview](/docs/en-us/chat/in-experience-text-chat.md)
+
+## Text chat
+
+- [Chat system guidelines](/docs/en-us/chat/guidelines.md)
+- [Preset system guidelines](/docs/en-us/chat/preset-system-guidelines.md)
+- [Quick Words](/docs/en-us/chat/quick-words.md)
+- [Customize the chat window](/docs/en-us/chat/chat-window.md)
+- [Cross-server chat](/docs/en-us/chat/cross-server-chat.md)
+- [Customize bubble chat](/docs/en-us/chat/bubble-chat.md)
+- [Custom text chat UI](/docs/en-us/chat/examples/simple-custom-frontend-ui.md)
+
+## Examples
+
+- [Assign chat tags](/docs/en-us/chat/examples/group-chat-tags.md)
+- [Proximity-based chat](/docs/en-us/chat/examples/proximity-chat.md)
+- [Custom text chat commands](/docs/en-us/chat/examples/custom-text-chat-commands.md)
+- [Rate-limited text inputs](/docs/en-us/chat/examples/rate-limit-public-text-inputs.md)
+
+## Matchmaking
+
+- [Server scoring](/docs/en-us/matchmaking/scoring.md)
+- [Attributes and signals](/docs/en-us/matchmaking/attributes-and-signals.md)
+- [Customize your matchmaking configuration](/docs/en-us/matchmaking/customize-matchmaking.md)
+- [Matchmaking analytics](/docs/en-us/matchmaking/analytics.md)
+- [Matchmaking glossary](/docs/en-us/matchmaking/glossary.md)
+
+## Performance optimization
+
+- [Design for performance](/docs/en-us/performance-optimization/design.md)
+- [Test on hardware](/docs/en-us/performance-optimization/test-on-hardware.md)
+- [Identify performance issues](/docs/en-us/performance-optimization/identify.md)
+- [MicroProfiler](/docs/en-us/performance-optimization/microprofiler.md)
+- [Scene Analysis](/docs/en-us/performance-optimization/scene-analysis.md)
+- [Improve performance](/docs/en-us/performance-optimization/improve.md)
+- [Monitor performance](/docs/en-us/performance-optimization/monitor.md)
+
+## MicroProfiler
+
+- [MicroProfiler modes](/docs/en-us/performance-optimization/microprofiler/modes.md)
+- [Task scheduler](/docs/en-us/performance-optimization/microprofiler/task-scheduler.md)
+- [Tag reference](/docs/en-us/performance-optimization/microprofiler/tag-table.md)
+- [Network usage](/docs/en-us/performance-optimization/microprofiler/network.md)
+- [MicroProfiler walkthrough](/docs/en-us/performance-optimization/microprofiler/use-microprofiler.md)
+
+## Cloud services
+
+- [Data stores](/docs/en-us/cloud-services/data-stores.md)
+- [Memory stores](/docs/en-us/cloud-services/memory-stores.md)
+- [Secrets stores](/docs/en-us/cloud-services/secrets.md)
+- [In-game HTTP requests](/docs/en-us/cloud-services/http-service.md)
+- [Extended Services](/docs/en-us/cloud-services/extended-services.md)
+- [Video playback](/docs/en-us/cloud-services/video-service.md)
+- [Cross-server messaging](/docs/en-us/cloud-services/cross-server-messaging.md)
+
+## Data stores
+
+- [Data Stores Manager](/docs/en-us/cloud-services/data-stores/data-stores-manager.md)
+- [Data store versioning, listing, and caching](/docs/en-us/cloud-services/data-stores/versioning-listing-and-caching.md)
+- [Data store error codes and limits](/docs/en-us/cloud-services/data-stores/error-codes-and-limits.md)
+- [Data store observability](/docs/en-us/cloud-services/data-stores/observability.md)
+- [Best practices for data stores](/docs/en-us/cloud-services/data-stores/best-practices.md)
+- [Data store right to be forgotten (RTBF)](/docs/en-us/cloud-services/data-stores/right-to-be-forgotten.md)
+- [Implement player data and purchasing systems](/docs/en-us/cloud-services/data-stores/player-data-purchasing.md)
+- [Handle Open Cloud data store requests](/docs/en-us/cloud/guides/data-stores/request-handling.md)
+- [Rate limits and throttling](/docs/en-us/cloud/guides/data-stores/throttling.md)
+
+## Memory stores
+
+- [Memory store sorted map](/docs/en-us/cloud-services/memory-stores/sorted-map.md)
+- [Memory store queue](/docs/en-us/cloud-services/memory-stores/queue.md)
+- [Memory store hash map](/docs/en-us/cloud-services/memory-stores/hash-map.md)
+- [Memory store observability](/docs/en-us/cloud-services/memory-stores/observability.md)
+- [Partitions and data distribution](/docs/en-us/cloud-services/memory-stores/per-partition-limits.md)
+- [Best practices for memory stores](/docs/en-us/cloud-services/memory-stores/best-practices.md)
+
+## Scale
+
+- [Discovery](/docs/en-us/discovery.md)
+- [Design games on Roblox](/docs/en-us/production/game-design.md)
+
+## Charts page
+
+- [Genres](/docs/en-us/production/publishing/experience-genres.md)
+- [Icons](/docs/en-us/production/publishing/experience-icons.md)
+- [Thumbnails](/docs/en-us/production/publishing/thumbnails.md)
+- [Badges](/docs/en-us/production/publishing/badges.md)
+
+## Discovery
+
+- [Experience events and updates](/docs/en-us/production/promotion/experience-events.md)
+- [Recommendation systems](/docs/en-us/production/recommendation.md)
+- [Player invite prompts](/docs/en-us/production/promotion/invite-prompts.md)
+- [Friend referral system](/docs/en-us/production/promotion/referral-system.md)
+- [Experience notifications](/docs/en-us/production/promotion/experience-notifications.md)
+- [Social media links](/docs/en-us/production/promotion/social-media-links.md)
+- [Share links](/docs/en-us/production/promotion/share-links.md)
+- [Discovery FAQ](/docs/en-us/discovery-faq.md)
+
+## Localization
+
+- [Localization](/docs/en-us/production/localization.md)
+- [Localize with scripting](/docs/en-us/production/localization/localize-with-scripting.md)
+- [Work with translators](/docs/en-us/production/localization/work-with-translators.md)
+- [Language codes](/docs/en-us/production/localization/language-codes.md)
+
+## Automatic translation
+
+- [Automatic translation](/docs/en-us/production/localization/automatic-translations.md)
+- [Automatically translate dynamic content](/docs/en-us/production/localization/auto-translate-dynamic-content.md)
+
+## Manual translations
+
+- [Manual translations](/docs/en-us/production/localization/manual-translations.md)
+- [Add source content](/docs/en-us/production/localization/add-source-content.md)
+- [Remove content](/docs/en-us/production/localization/remove-content.md)
+- [Add translations](/docs/en-us/production/localization/add-translations.md)
+- [Translate dynamic content](/docs/en-us/production/localization/translate-dynamic-content.md)
+
+## Design your experience
+
+- [Design for Roblox](/docs/en-us/production/game-design/design-for-roblox.md)
+- [The Roblox user base](/docs/en-us/production/roblox-user-base.md)
+- [Core loops](/docs/en-us/production/game-design/core-loops.md)
+- [Prototyping](/docs/en-us/production/game-design/prototyping.md)
+
+## Build your experience
+
+- [Onboarding](/docs/en-us/production/game-design/onboarding.md)
+- [Onboarding techniques](/docs/en-us/production/game-design/onboarding-techniques.md)
+- [Introduction to quest design](/docs/en-us/production/game-design/introduction-to-quest-design.md)
+- [UI and UX design](/docs/en-us/production/game-design/ui-ux-design.md)
+- [Accessibility guidelines](/docs/en-us/production/publishing/accessibility.md)
+- [Adaptive design guidelines](/docs/en-us/production/publishing/adaptive-design.md)
+
+## Adaptive design guidelines
+
+- [Console development guidelines](/docs/en-us/production/publishing/console-guidelines.md)
+- [VR guidelines](/docs/en-us/production/publishing/vr-guidelines.md)
+
+## Monetize your experience
+
+- [Monetization foundations](/docs/en-us/production/game-design/monetization-foundations.md)
+- [Season pass design](/docs/en-us/production/game-design/season-pass-design.md)
+- [Subscription design](/docs/en-us/production/game-design/subscription-design.md)
+- [Contextual purchases](/docs/en-us/production/game-design/contextual-purchases.md)
+- [Balance virtual economies](/docs/en-us/production/game-design/balance-virtual-economies.md)
+
+## Support your experience
+
+- [LiveOps essentials](/docs/en-us/production/game-design/liveops-essentials.md)
+- [LiveOps planning](/docs/en-us/production/game-design/liveops-planning.md)
+- [Analyze and experiment](/docs/en-us/production/game-design/analytics-essentials.md)
+- [Content updates](/docs/en-us/production/game-design/content-updates.md)
+
+## Monetize
+
+- [Monetize your games](/docs/en-us/monetize-experiences.md)
+- [Monetization](/docs/en-us/production/monetization.md)
+- [Use Iconic IP on Roblox](/docs/en-us/ip-licensing.md)
+- [Advertising for creators](/docs/en-us/production/promotion/advertise.md)
+- [Monetize avatar assets](/docs/en-us/monetize-avatar.md)
+- [Discover ad placements](/docs/en-us/production/ad-placements.md)
+- [Rewarded video genre guides](/docs/en-us/production/rewarded-video-guides.md)
+
+## Earn
+
+- [Roblox Developer Exchange Program](/docs/en-us/production/monetization/developer-exchange.md)
+- [Creator Rewards](/docs/en-us/creator-rewards.md)
+- [Roblox Plus](/docs/en-us/production/monetization/roblox-plus.md)
+- [Robux transfers](/docs/en-us/production/monetization/robux-transfers.md)
+- [Private servers](/docs/en-us/production/monetization/private-servers.md)
+- [Subscriptions](/docs/en-us/production/monetization/subscriptions.md)
+- [Passes](/docs/en-us/production/monetization/passes.md)
+- [Developer Products](/docs/en-us/production/monetization/developer-products.md)
+- [Commerce products](/docs/en-us/production/monetization/commerce-products.md)
+- [Shop](/docs/en-us/production/monetization/shop.md)
+- [Paid access in Robux](/docs/en-us/production/monetization/paid-access-robux.md)
+- [Paid access in local currency](/docs/en-us/production/monetization/paid-access-local-currency.md)
+- [Managed pricing](/docs/en-us/production/monetization/managed-pricing.md)
+
+## Developer Exchange Program
+
+- [U.S. 18+ exchange rate](/docs/en-us/production/monetization/18-plus-devex-rate.md)
+- [DevEx Portal](/docs/en-us/production/monetization/devex-portal.md)
+- [DevEx tax information](/docs/en-us/production/monetization/tax-information.md)
+
+## Managed pricing
+
+- [Price optimization](/docs/en-us/production/monetization/price-optimization.md)
+- [Regional pricing](/docs/en-us/production/monetization/regional-pricing.md)
+
+## License
+
+- [Get started as a rights holder](/docs/en-us/ip-licensing/get-started.md)
+- [IP licensing for creators](/docs/en-us/ip-licensing/creators.md)
+- [FAQ and guidelines](/docs/en-us/ip-licensing/faq.md)
+- [Glossary](/docs/en-us/ip-licensing/glossary.md)
+
+## Tools for rights holders
+
+- [License Manager](/docs/en-us/ip-licensing/license-manager.md)
+- [Rights Manager](/docs/en-us/production/publishing/rights-manager.md)
+
+## Advertise
+
+- [Ads Manager](/docs/en-us/production/promotion/ads-manager.md)
+- [Ad integrations](/docs/en-us/production/promotion/ad-integrations.md)
+- [Immersive ads](/docs/en-us/production/monetization/immersive-ads.md)
+- [Rewarded video ads](/docs/en-us/production/promotion/rewarded-video-ads.md)
+
+## Bodies
+
+- [Character bodies](/docs/en-us/avatar/character-bodies.md)
+- [Character body specifications](/docs/en-us/avatar/character-bodies/specifications.md)
+- [Character body reference files](/docs/en-us/avatar/character-bodies/project-files.md)
+- [Export character bodies](/docs/en-us/avatar/character-bodies/export.md)
+- [Import character bodies](/docs/en-us/avatar/character-bodies/import.md)
+
+## Test bodies
+
+- [Test character bodies](/docs/en-us/avatar/character-bodies/test.md)
+- [Blender tests for character bodies](/docs/en-us/avatar/character-bodies/test-blender.md)
+- [Studio tests for character bodies](/docs/en-us/avatar/character-bodies/test-studio.md)
+
+## Makeup
+
+- [Makeup](/docs/en-us/avatar/makeup.md)
+- [Makeup specifications](/docs/en-us/avatar/makeup/specifications.md)
+- [Reassign textures](/docs/en-us/avatar/makeup/reassign-textures.md)
+- [Import into Studio](/docs/en-us/avatar/makeup/import.md)
+
+## Rigid accessories
+
+- [Rigid accessories](/docs/en-us/avatar/rigid-accessories.md)
+- [Rigid accessory specifications](/docs/en-us/avatar/rigid-accessories/specifications.md)
+- [Export rigid accessories](/docs/en-us/avatar/rigid-accessories/export.md)
+- [Import rigid accessories](/docs/en-us/avatar/rigid-accessories/import.md)
+
+## Layered accessories
+
+- [Layered accessories](/docs/en-us/avatar/layered-accessories.md)
+- [Layered accessory specifications](/docs/en-us/avatar/layered-accessories/specifications.md)
+- [Layered accessory reference files](/docs/en-us/avatar/layered-accessories/project-files.md)
+- [Layered accessory caging best practices](/docs/en-us/avatar/layered-accessories/caging-best-practices.md)
+- [Export layered accessories](/docs/en-us/avatar/layered-accessories/export.md)
+- [Import layered accessories](/docs/en-us/avatar/layered-accessories/import.md)
+
+## Accessories and clothing
+
+- [Classic clothing](/docs/en-us/avatar/classic-clothing.md)
+
+## Animations
+
+- [Create and publish animation packs](/docs/en-us/avatar/animation-packs.md)
+
+## Emotes
+
+- [Emotes](/docs/en-us/avatar/emotes.md)
+- [Emote specifications](/docs/en-us/avatar/emotes/specifications.md)
+- [Export emotes](/docs/en-us/avatar/emotes/export.md)
+- [Import emotes](/docs/en-us/avatar/emotes/import.md)
+
+## Dynamic heads
+
+- [Dynamic heads](/docs/en-us/avatar/dynamic-heads.md)
+- [Dynamic head specifications](/docs/en-us/avatar/dynamic-heads/specifications.md)
+- [Dynamic head caging best practices](/docs/en-us/avatar/dynamic-heads/caging-best-practices.md)
+- [Dynamic head validation](/docs/en-us/avatar/dynamic-heads/validate.md)
+- [Test dynamic heads in Studio](/docs/en-us/avatar/dynamic-heads/test.md)
+- [FACS poses reference](/docs/en-us/avatar/dynamic-heads/facs-poses-reference.md)
+
+## Avatar Setup
+
+- [Avatar Setup](/docs/en-us/avatar-setup.md)
+- [Avatar Setup specifications](/docs/en-us/avatar-setup/auto-setup-requirements.md)
+
+## Accelerate
+
+- [Automatic Skinning Transfer](/docs/en-us/avatar/automatic-skinning-transfer.md)
+- [Accessory Fitting Tool](/docs/en-us/avatar/accessory-fitting-tool.md)
+- [Photo-to-avatar generation](/docs/en-us/avatar/avatar-generation.md)
+- [Roblox Blender plugin](/docs/en-us/art/modeling/roblox-blender-plugin.md)
+
+## Marketplace
+
+- [Marketplace overview](/docs/en-us/marketplace.md)
+- [Marketplace fees and commissions](/docs/en-us/marketplace/marketplace-fees-and-commissions.md)
+- [UGC validation system](/docs/en-us/marketplace/validation-system.md)
+- [Publish to Marketplace](/docs/en-us/marketplace/publish-to-marketplace.md)
+- [Custom thumbnails](/docs/en-us/marketplace/custom-thumbnails.md)
+- [Sponsored items](/docs/en-us/marketplace/sponsor-items.md)
+- [Marketplace policy](/docs/en-us/marketplace/marketplace-policy.md)
+- [Marketplace asset categories](/docs/en-us/marketplace/categories.md)
+
+## In-game sales
+
+- [Avatar items](/docs/en-us/production/monetization/avatar-items.md)
+- [UGC Homestore](/docs/en-us/marketplace/homestore.md)
+
+## In-game creation
+
+- [Avatar in-experience creation](/docs/en-us/avatar/in-experience-creation.md)
+- [Avatar creation token](/docs/en-us/production/monetization/avatar-creation-token.md)
+
+## Policies and Guidelines
+
+- [Intellectual property for avatar items](/docs/en-us/marketplace/intellectual-property.md)
+- [Moderation](/docs/en-us/marketplace/moderation.md)
+- [Frequently asked questions](/docs/en-us/marketplace/frequently-asked-questions.md)
+
+## Manage
+
+- [Toolbox](/docs/en-us/projects/assets/toolbox.md)
+- [Creator Store queries](/docs/en-us/projects/assets/api.md)
+
+## Creation tools
+
+- [3D art and Studio](/docs/en-us/art/overview-studio.md)
+- [In-game asset creation](/docs/en-us/projects/assets/in-experience-asset-creation.md)
+
+## Third-party software
+
+- [Work with third-party software](/docs/en-us/art/overview-dcc.md)
+- [Blender](/docs/en-us/art/blender.md)
+- [Reaper](/docs/en-us/art/reaper.md)
+
+## 3D Art
+
+- [3D art in Roblox](/docs/en-us/art.md)
+- [Reimport](/docs/en-us/art/modeling/reimport.md)
+- [3D Export](/docs/en-us/art/modeling/gltf-export.md)
+
+## Modeling
+
+- [Custom 3D assets](/docs/en-us/art/modeling.md)
+- [General specifications](/docs/en-us/art/modeling/specifications.md)
+- [Modeling project files and references](/docs/en-us/art/modeling/project-files.md)
+- [Rigging and skinning](/docs/en-us/art/modeling/rigging.md)
+- [Export settings](/docs/en-us/art/modeling/export-requirements.md)
+- [Create neon signs](/docs/en-us/tutorials/use-case-tutorials/modeling/create-neon-signs.md)
+- [Assemble modular environments](/docs/en-us/tutorials/use-case-tutorials/modeling/assemble-modular-environments.md)
+- [Modeling best practices](/docs/en-us/art/characters/creating/modeling-best-practices.md)
+- [Modeling tips](/docs/en-us/art/characters/creating/modeling-tips.md)
+- [Sculpt the head](/docs/en-us/art/characters/creating/sculpting.md)
+- [Modeling setup](/docs/en-us/art/accessories/creating/modeling-setup.md)
+- [Trim clothing shape](/docs/en-us/art/accessories/creating/trimming.md)
+- [Sculpt detail](/docs/en-us/art/accessories/creating/sculpting.md)
+- [Make mesh watertight](/docs/en-us/art/accessories/creating/watertight.md)
+
+## Cage meshes
+
+- [Cage meshes](/docs/en-us/art/modeling/cage-meshes.md)
+- [Create cages in Blender](/docs/en-us/art/modeling/cage-meshes/create-cages.md)
+- [Apply deformation](/docs/en-us/art/modeling/cage-meshes/apply-deformation.md)
+
+## Texturing
+
+- [Texture specifications](/docs/en-us/art/modeling/texture-specifications.md)
+- [Blender and Maya texture settings](/docs/en-us/art/modeling/assign-textures.md)
+- [PBR textures](/docs/en-us/art/modeling/surface-appearance.md)
+- [Material references](/docs/en-us/art/modeling/material-reference.md)
+- [Texturing setup](/docs/en-us/art/characters/creating/texturing-setup.md)
+- [Texturing eyes](/docs/en-us/art/characters/creating/texturing-eyes.md)
+- [Texturing face](/docs/en-us/art/characters/creating/texturing-face.md)
+- [PBR textures (optional)](/docs/en-us/art/characters/creating/texturing-pbr.md)
+- [Create seams and unwrap](/docs/en-us/art/accessories/creating/unwrapping.md)
+- [Create texture map](/docs/en-us/art/accessories/creating/texture-map.md)
+- [Texture painting](/docs/en-us/art/accessories/creating/texture-painting.md)
+
+## Code samples
+
+- [Code samples](/docs/en-us/samples.md)
+
+## Feature packages
+
+- [Feature packages](/docs/en-us/resources/feature-packages.md)
+- [Bundles package](/docs/en-us/resources/feature-packages/bundles.md)
+- [Missions package](/docs/en-us/resources/feature-packages/missions.md)
+- [Season passes package](/docs/en-us/resources/feature-packages/season-passes.md)
+- [Engagement rewards](/docs/en-us/resources/feature-packages/engagement-rewards.md)
+- [Changelog](/docs/en-us/resources/feature-packages/changelog.md)
+
+## Developer modules
+
+- [Developer modules](/docs/en-us/resources/modules.md)
+- [Selfie Mode](/docs/en-us/resources/modules/selfie-mode.md)
+- [Merch Booth](/docs/en-us/resources/modules/merch-booth.md)
+- [Friends Locator](/docs/en-us/resources/modules/friends-locator.md)
+- [Profile Card](/docs/en-us/resources/modules/profile-card.md)
+- [Emote Bar](/docs/en-us/resources/modules/emote-bar.md)
+- [Spawn With Friends](/docs/en-us/resources/modules/spawn-with-friends.md)
+- [Photo Booth](/docs/en-us/resources/modules/photo-booth.md)
+- [Surface Art](/docs/en-us/resources/modules/surface-art.md)
+- [Scavenger Hunt](/docs/en-us/resources/modules/scavenger-hunt.md)
+- [Social Interactions](/docs/en-us/resources/modules/social-interactions.md)
+- [Event Sequencer](/docs/en-us/resources/modules/event-sequencer.md)
+
+## Scripting libraries
+
+- [Scripting libraries](/docs/en-us/resources/scripting-libraries.md)
+
+## Projects and kits
+
+- [Templates](/docs/en-us/resources/templates.md)
+- [Plant reference project](/docs/en-us/resources/plant-reference-project.md)
+
+## Resources
+
+- [The Mystery of Duvall Drive](/docs/en-us/resources/the-mystery-of-duvall-drive.md)
+- [Beyond the Dark](/docs/en-us/resources/beyond-the-dark.md)
+- [Battle Royale](/docs/en-us/resources/battle-royale.md)
+- [Weapons kit](/docs/en-us/resources/weapons-kit.md)
+- [NPC kit](/docs/en-us/resources/npc-kit.md)
+- [Roblox educators](/docs/en-us/education/resources/roblox-educators.md)
+- [Marketing materials](/docs/en-us/education/resources/marketing-materials.md)
+- [Roblox for the AP CSP Create Performance Task](/docs/en-us/education/resources/roblox-for-the-ap-csp-create-performance-task.md)
+- [Create bundled installers](/docs/en-us/education/support/creating-bundled-installers.md)
+
+## The Mystery of Duvall Drive
+
+- [Construct the house](/docs/en-us/resources/the-mystery-of-duvall-drive/construct-the-house.md)
+- [Materialize the world](/docs/en-us/resources/the-mystery-of-duvall-drive/materialize-the-world.md)
+- [Immersive narrative](/docs/en-us/resources/the-mystery-of-duvall-drive/immersive-narrative.md)
+- [Stream in immersion](/docs/en-us/resources/the-mystery-of-duvall-drive/stream-in-immersion.md)
+- [Develop a moving world](/docs/en-us/resources/the-mystery-of-duvall-drive/develop-a-moving-world.md)
+- [Design dark soundscapes](/docs/en-us/resources/the-mystery-of-duvall-drive/design-dark-soundscapes.md)
+- [Technical overview](/docs/en-us/resources/the-mystery-of-duvall-drive/technical-overview.md)
+
+## Technical overview
+
+- [Main design requirements](/docs/en-us/resources/the-mystery-of-duvall-drive/main-design-requirements.md)
+- [Foundational gameplay systems](/docs/en-us/resources/the-mystery-of-duvall-drive/foundational-gameplay-systems.md)
+- [Supporting systems](/docs/en-us/resources/the-mystery-of-duvall-drive/supporting-systems.md)
+
+## Beyond the Dark
+
+- [Building architecture](/docs/en-us/resources/beyond-the-dark/building-architecture.md)
+- [Custom characters](/docs/en-us/resources/beyond-the-dark/custom-characters.md)
+- [Layered clothing example](/docs/en-us/resources/beyond-the-dark/layered-clothing.md)
+- [Sound design](/docs/en-us/resources/beyond-the-dark/sound-design.md)
+- [User interface](/docs/en-us/resources/beyond-the-dark/user-interface.md)
+
+## Battle Royale
+
+- [Installation and setup](/docs/en-us/resources/battle-royale/installation-and-setup.md)
+- [Run the game](/docs/en-us/resources/battle-royale/run-the-game.md)
+- [Core scripts](/docs/en-us/resources/battle-royale/core-scripts.md)
+- [Pickup system](/docs/en-us/resources/battle-royale/pickup-system.md)
+- [Building system](/docs/en-us/resources/battle-royale/building-system.md)
+- [Minimap system](/docs/en-us/resources/battle-royale/minimap-system.md)
+- [The storm](/docs/en-us/resources/battle-royale/the-storm.md)
+
+## Engine API
+
+- [Roblox Engine classes](/docs/en-us/reference/engine/classes.md)
+- [Roblox Engine data types](/docs/en-us/reference/engine/datatypes.md)
+- [Roblox Engine enums](/docs/en-us/reference/engine/enums.md)
+- [Roblox Engine globals](/docs/en-us/reference/engine/globals.md)
+- [Roblox Engine libraries](/docs/en-us/reference/engine/libraries.md)
+
+## Classes
+
+- [Object](/docs/en-us/reference/engine/classes/Object.md)
+
+## Object
+
+- [Capture](/docs/en-us/reference/engine/classes/Capture.md)
+- [ConfigSnapshot](/docs/en-us/reference/engine/classes/ConfigSnapshot.md)
+- [EditableImage](/docs/en-us/reference/engine/classes/EditableImage.md)
+- [EditableMesh](/docs/en-us/reference/engine/classes/EditableMesh.md)
+- [Instance](/docs/en-us/reference/engine/classes/Instance.md)
+- [MLSession](/docs/en-us/reference/engine/classes/MLSession.md)
+- [PluginConnection](/docs/en-us/reference/engine/classes/PluginConnection.md)
+- [VideoSampler](/docs/en-us/reference/engine/classes/VideoSampler.md)
+- [VirtualInput](/docs/en-us/reference/engine/classes/VirtualInput.md)
+- [WebStreamClient](/docs/en-us/reference/engine/classes/WebStreamClient.md)
+
+## Capture
+
+- [ScreenshotCapture](/docs/en-us/reference/engine/classes/ScreenshotCapture.md)
+- [VideoCapture](/docs/en-us/reference/engine/classes/VideoCapture.md)
+
+## Instance
+
+- [AccessoryDescription](/docs/en-us/reference/engine/classes/AccessoryDescription.md)
+- [Accoutrement](/docs/en-us/reference/engine/classes/Accoutrement.md)
+- [AdPortal](/docs/en-us/reference/engine/classes/AdPortal.md)
+- [AdService](/docs/en-us/reference/engine/classes/AdService.md)
+- [AdvancedDragger](/docs/en-us/reference/engine/classes/AdvancedDragger.md)
+- [AnalyticsService](/docs/en-us/reference/engine/classes/AnalyticsService.md)
+- [Animation](/docs/en-us/reference/engine/classes/Animation.md)
+- [AnimationClip](/docs/en-us/reference/engine/classes/AnimationClip.md)
+- [AnimationClipProvider](/docs/en-us/reference/engine/classes/AnimationClipProvider.md)
+- [AnimationController](/docs/en-us/reference/engine/classes/AnimationController.md)
+- [AnimationNodeDefinition](/docs/en-us/reference/engine/classes/AnimationNodeDefinition.md)
+- [AnimationRigData](/docs/en-us/reference/engine/classes/AnimationRigData.md)
+- [AnimationTrack](/docs/en-us/reference/engine/classes/AnimationTrack.md)
+- [Animator](/docs/en-us/reference/engine/classes/Animator.md)
+- [AssetDeliveryProxy](/docs/en-us/reference/engine/classes/AssetDeliveryProxy.md)
+- [AssetPatchSettings](/docs/en-us/reference/engine/classes/AssetPatchSettings.md)
+- [AssetService](/docs/en-us/reference/engine/classes/AssetService.md)
+- [Atmosphere](/docs/en-us/reference/engine/classes/Atmosphere.md)
+- [Attachment](/docs/en-us/reference/engine/classes/Attachment.md)
+- [AudioAnalyzer](/docs/en-us/reference/engine/classes/AudioAnalyzer.md)
+- [AudioChannelMixer](/docs/en-us/reference/engine/classes/AudioChannelMixer.md)
+- [AudioChannelSplitter](/docs/en-us/reference/engine/classes/AudioChannelSplitter.md)
+- [AudioChorus](/docs/en-us/reference/engine/classes/AudioChorus.md)
+- [AudioCompressor](/docs/en-us/reference/engine/classes/AudioCompressor.md)
+- [AudioDeviceInput](/docs/en-us/reference/engine/classes/AudioDeviceInput.md)
+- [AudioDeviceOutput](/docs/en-us/reference/engine/classes/AudioDeviceOutput.md)
+- [AudioDistortion](/docs/en-us/reference/engine/classes/AudioDistortion.md)
+- [AudioEcho](/docs/en-us/reference/engine/classes/AudioEcho.md)
+- [AudioEmitter](/docs/en-us/reference/engine/classes/AudioEmitter.md)
+- [AudioEqualizer](/docs/en-us/reference/engine/classes/AudioEqualizer.md)
+- [AudioFader](/docs/en-us/reference/engine/classes/AudioFader.md)
+- [AudioFilter](/docs/en-us/reference/engine/classes/AudioFilter.md)
+- [AudioFlanger](/docs/en-us/reference/engine/classes/AudioFlanger.md)
+- [AudioGate](/docs/en-us/reference/engine/classes/AudioGate.md)
+- [AudioLimiter](/docs/en-us/reference/engine/classes/AudioLimiter.md)
+- [AudioListener](/docs/en-us/reference/engine/classes/AudioListener.md)
+- [AudioPitchShifter](/docs/en-us/reference/engine/classes/AudioPitchShifter.md)
+- [AudioPlayer](/docs/en-us/reference/engine/classes/AudioPlayer.md)
+- [AudioRecorder](/docs/en-us/reference/engine/classes/AudioRecorder.md)
+- [AudioReverb](/docs/en-us/reference/engine/classes/AudioReverb.md)
+- [AudioSearchParams](/docs/en-us/reference/engine/classes/AudioSearchParams.md)
+- [AudioSpeechToText](/docs/en-us/reference/engine/classes/AudioSpeechToText.md)
+- [AudioTextToSpeech](/docs/en-us/reference/engine/classes/AudioTextToSpeech.md)
+- [AudioTremolo](/docs/en-us/reference/engine/classes/AudioTremolo.md)
+- [AvatarCreationService](/docs/en-us/reference/engine/classes/AvatarCreationService.md)
+- [AvatarEditorService](/docs/en-us/reference/engine/classes/AvatarEditorService.md)
+- [Backpack](/docs/en-us/reference/engine/classes/Backpack.md)
+- [BadgeService](/docs/en-us/reference/engine/classes/BadgeService.md)
+- [BaseCoreGuiConfiguration](/docs/en-us/reference/engine/classes/BaseCoreGuiConfiguration.md)
+- [BasePlayerGui](/docs/en-us/reference/engine/classes/BasePlayerGui.md)
+- [BaseRemoteEvent](/docs/en-us/reference/engine/classes/BaseRemoteEvent.md)
+- [BaseWrap](/docs/en-us/reference/engine/classes/BaseWrap.md)
+- [Beam](/docs/en-us/reference/engine/classes/Beam.md)
+- [BindableEvent](/docs/en-us/reference/engine/classes/BindableEvent.md)
+- [BindableFunction](/docs/en-us/reference/engine/classes/BindableFunction.md)
+- [BodyMover](/docs/en-us/reference/engine/classes/BodyMover.md)
+- [BodyPartDescription](/docs/en-us/reference/engine/classes/BodyPartDescription.md)
+- [BrowserService](/docs/en-us/reference/engine/classes/BrowserService.md)
+- [CacheableContentProvider](/docs/en-us/reference/engine/classes/CacheableContentProvider.md)
+- [CaptureService](/docs/en-us/reference/engine/classes/CaptureService.md)
+- [ChangeHistoryService](/docs/en-us/reference/engine/classes/ChangeHistoryService.md)
+- [CharacterAppearance](/docs/en-us/reference/engine/classes/CharacterAppearance.md)
+- [Chat](/docs/en-us/reference/engine/classes/Chat.md)
+- [ClickDetector](/docs/en-us/reference/engine/classes/ClickDetector.md)
+- [Clouds](/docs/en-us/reference/engine/classes/Clouds.md)
+- [ClusterPacketCache](/docs/en-us/reference/engine/classes/ClusterPacketCache.md)
+- [CollectionService](/docs/en-us/reference/engine/classes/CollectionService.md)
+- [CommerceService](/docs/en-us/reference/engine/classes/CommerceService.md)
+- [CompositeValueCurve](/docs/en-us/reference/engine/classes/CompositeValueCurve.md)
+- [ConfigService](/docs/en-us/reference/engine/classes/ConfigService.md)
+- [Configuration](/docs/en-us/reference/engine/classes/Configuration.md)
+- [ConfigureServerService](/docs/en-us/reference/engine/classes/ConfigureServerService.md)
+- [Constraint](/docs/en-us/reference/engine/classes/Constraint.md)
+- [ContentProvider](/docs/en-us/reference/engine/classes/ContentProvider.md)
+- [ContextActionService](/docs/en-us/reference/engine/classes/ContextActionService.md)
+- [Controller](/docs/en-us/reference/engine/classes/Controller.md)
+- [ControllerBase](/docs/en-us/reference/engine/classes/ControllerBase.md)
+- [ControllerManager](/docs/en-us/reference/engine/classes/ControllerManager.md)
+- [ControllerService](/docs/en-us/reference/engine/classes/ControllerService.md)
+- [CookiesService](/docs/en-us/reference/engine/classes/CookiesService.md)
+- [CoreGuiConfiguration](/docs/en-us/reference/engine/classes/CoreGuiConfiguration.md)
+- [CreatorStoreService](/docs/en-us/reference/engine/classes/CreatorStoreService.md)
+- [CustomEvent](/docs/en-us/reference/engine/classes/CustomEvent.md)
+- [CustomEventReceiver](/docs/en-us/reference/engine/classes/CustomEventReceiver.md)
+- [CustomLog](/docs/en-us/reference/engine/classes/CustomLog.md)
+- [DataModelMesh](/docs/en-us/reference/engine/classes/DataModelMesh.md)
+- [DataStoreGetOptions](/docs/en-us/reference/engine/classes/DataStoreGetOptions.md)
+- [DataStoreIncrementOptions](/docs/en-us/reference/engine/classes/DataStoreIncrementOptions.md)
+- [DataStoreInfo](/docs/en-us/reference/engine/classes/DataStoreInfo.md)
+- [DataStoreKey](/docs/en-us/reference/engine/classes/DataStoreKey.md)
+- [DataStoreKeyInfo](/docs/en-us/reference/engine/classes/DataStoreKeyInfo.md)
+- [DataStoreObjectVersionInfo](/docs/en-us/reference/engine/classes/DataStoreObjectVersionInfo.md)
+- [DataStoreOptions](/docs/en-us/reference/engine/classes/DataStoreOptions.md)
+- [DataStoreService](/docs/en-us/reference/engine/classes/DataStoreService.md)
+- [DataStoreSetOptions](/docs/en-us/reference/engine/classes/DataStoreSetOptions.md)
+- [Debris](/docs/en-us/reference/engine/classes/Debris.md)
+- [DebugSettings](/docs/en-us/reference/engine/classes/DebugSettings.md)
+- [Dialog](/docs/en-us/reference/engine/classes/Dialog.md)
+- [DialogChoice](/docs/en-us/reference/engine/classes/DialogChoice.md)
+- [DigitsRigDescription](/docs/en-us/reference/engine/classes/DigitsRigDescription.md)
+- [DraftsService](/docs/en-us/reference/engine/classes/DraftsService.md)
+- [Dragger](/docs/en-us/reference/engine/classes/Dragger.md)
+- [DraggerService](/docs/en-us/reference/engine/classes/DraggerService.md)
+- [EncodingService](/docs/en-us/reference/engine/classes/EncodingService.md)
+- [EulerRotationCurve](/docs/en-us/reference/engine/classes/EulerRotationCurve.md)
+- [ExperienceInviteOptions](/docs/en-us/reference/engine/classes/ExperienceInviteOptions.md)
+- [ExperienceNotificationService](/docs/en-us/reference/engine/classes/ExperienceNotificationService.md)
+- [Explosion](/docs/en-us/reference/engine/classes/Explosion.md)
+- [FaceControls](/docs/en-us/reference/engine/classes/FaceControls.md)
+- [FaceInstance](/docs/en-us/reference/engine/classes/FaceInstance.md)
+- [Feature](/docs/en-us/reference/engine/classes/Feature.md)
+- [File](/docs/en-us/reference/engine/classes/File.md)
+- [Fire](/docs/en-us/reference/engine/classes/Fire.md)
+- [FlagStandService](/docs/en-us/reference/engine/classes/FlagStandService.md)
+- [FloatCurve](/docs/en-us/reference/engine/classes/FloatCurve.md)
+- [Folder](/docs/en-us/reference/engine/classes/Folder.md)
+- [ForceField](/docs/en-us/reference/engine/classes/ForceField.md)
+- [FriendService](/docs/en-us/reference/engine/classes/FriendService.md)
+- [FunctionalTest](/docs/en-us/reference/engine/classes/FunctionalTest.md)
+- [GamePassService](/docs/en-us/reference/engine/classes/GamePassService.md)
+- [GameSettings](/docs/en-us/reference/engine/classes/GameSettings.md)
+- [GamepadService](/docs/en-us/reference/engine/classes/GamepadService.md)
+- [GenerationService](/docs/en-us/reference/engine/classes/GenerationService.md)
+- [Geometry](/docs/en-us/reference/engine/classes/Geometry.md)
+- [GeometryService](/docs/en-us/reference/engine/classes/GeometryService.md)
+- [GetTextBoundsParams](/docs/en-us/reference/engine/classes/GetTextBoundsParams.md)
+- [GlobalDataStore](/docs/en-us/reference/engine/classes/GlobalDataStore.md)
+- [GroupService](/docs/en-us/reference/engine/classes/GroupService.md)
+- [GuiBase](/docs/en-us/reference/engine/classes/GuiBase.md)
+- [GuiService](/docs/en-us/reference/engine/classes/GuiService.md)
+- [GuidRegistryService](/docs/en-us/reference/engine/classes/GuidRegistryService.md)
+- [HapticEffect](/docs/en-us/reference/engine/classes/HapticEffect.md)
+- [HapticService](/docs/en-us/reference/engine/classes/HapticService.md)
+- [HeapProfilerService](/docs/en-us/reference/engine/classes/HeapProfilerService.md)
+- [HeightmapImporterService](/docs/en-us/reference/engine/classes/HeightmapImporterService.md)
+- [HiddenSurfaceRemovalAsset](/docs/en-us/reference/engine/classes/HiddenSurfaceRemovalAsset.md)
+- [Highlight](/docs/en-us/reference/engine/classes/Highlight.md)
+- [Hopper](/docs/en-us/reference/engine/classes/Hopper.md)
+- [HttpService](/docs/en-us/reference/engine/classes/HttpService.md)
+- [Humanoid](/docs/en-us/reference/engine/classes/Humanoid.md)
+- [HumanoidDescription](/docs/en-us/reference/engine/classes/HumanoidDescription.md)
+- [HumanoidRigDescription](/docs/en-us/reference/engine/classes/HumanoidRigDescription.md)
+- [IKControl](/docs/en-us/reference/engine/classes/IKControl.md)
+- [ILegacyStudioBridge](/docs/en-us/reference/engine/classes/ILegacyStudioBridge.md)
+- [IncrementalPatchBuilder](/docs/en-us/reference/engine/classes/IncrementalPatchBuilder.md)
+- [InputAction](/docs/en-us/reference/engine/classes/InputAction.md)
+- [InputBinding](/docs/en-us/reference/engine/classes/InputBinding.md)
+- [InputContext](/docs/en-us/reference/engine/classes/InputContext.md)
+- [InputObject](/docs/en-us/reference/engine/classes/InputObject.md)
+- [InsertService](/docs/en-us/reference/engine/classes/InsertService.md)
+- [InstanceFileSyncService](/docs/en-us/reference/engine/classes/InstanceFileSyncService.md)
+- [JointInstance](/docs/en-us/reference/engine/classes/JointInstance.md)
+- [JointsService](/docs/en-us/reference/engine/classes/JointsService.md)
+- [KeyboardService](/docs/en-us/reference/engine/classes/KeyboardService.md)
+- [Keyframe](/docs/en-us/reference/engine/classes/Keyframe.md)
+- [KeyframeMarker](/docs/en-us/reference/engine/classes/KeyframeMarker.md)
+- [KeyframeSequenceProvider](/docs/en-us/reference/engine/classes/KeyframeSequenceProvider.md)
+- [Light](/docs/en-us/reference/engine/classes/Light.md)
+- [Lighting](/docs/en-us/reference/engine/classes/Lighting.md)
+- [LocalizationService](/docs/en-us/reference/engine/classes/LocalizationService.md)
+- [LocalizationTable](/docs/en-us/reference/engine/classes/LocalizationTable.md)
+- [LogService](/docs/en-us/reference/engine/classes/LogService.md)
+- [LoginService](/docs/en-us/reference/engine/classes/LoginService.md)
+- [LuaSettings](/docs/en-us/reference/engine/classes/LuaSettings.md)
+- [LuaSourceContainer](/docs/en-us/reference/engine/classes/LuaSourceContainer.md)
+- [LuaWebService](/docs/en-us/reference/engine/classes/LuaWebService.md)
+- [MLService](/docs/en-us/reference/engine/classes/MLService.md)
+- [MakeupDescription](/docs/en-us/reference/engine/classes/MakeupDescription.md)
+- [MarkerCurve](/docs/en-us/reference/engine/classes/MarkerCurve.md)
+- [MarketplaceService](/docs/en-us/reference/engine/classes/MarketplaceService.md)
+- [MatchmakingService](/docs/en-us/reference/engine/classes/MatchmakingService.md)
+- [MaterialService](/docs/en-us/reference/engine/classes/MaterialService.md)
+- [MaterialVariant](/docs/en-us/reference/engine/classes/MaterialVariant.md)
+- [MemStorageConnection](/docs/en-us/reference/engine/classes/MemStorageConnection.md)
+- [MemoryStoreHashMap](/docs/en-us/reference/engine/classes/MemoryStoreHashMap.md)
+- [MemoryStoreQueue](/docs/en-us/reference/engine/classes/MemoryStoreQueue.md)
+- [MemoryStoreService](/docs/en-us/reference/engine/classes/MemoryStoreService.md)
+- [MemoryStoreSortedMap](/docs/en-us/reference/engine/classes/MemoryStoreSortedMap.md)
+- [Message](/docs/en-us/reference/engine/classes/Message.md)
+- [MessagingService](/docs/en-us/reference/engine/classes/MessagingService.md)
+- [ModerationService](/docs/en-us/reference/engine/classes/ModerationService.md)
+- [Mouse](/docs/en-us/reference/engine/classes/Mouse.md)
+- [MouseService](/docs/en-us/reference/engine/classes/MouseService.md)
+- [NetworkMarker](/docs/en-us/reference/engine/classes/NetworkMarker.md)
+- [NetworkPeer](/docs/en-us/reference/engine/classes/NetworkPeer.md)
+- [NetworkReplicator](/docs/en-us/reference/engine/classes/NetworkReplicator.md)
+- [NetworkSettings](/docs/en-us/reference/engine/classes/NetworkSettings.md)
+- [NoCollisionConstraint](/docs/en-us/reference/engine/classes/NoCollisionConstraint.md)
+- [OpenCloudApiV1](/docs/en-us/reference/engine/classes/OpenCloudApiV1.md)
+- [OpenCloudService](/docs/en-us/reference/engine/classes/OpenCloudService.md)
+- [PVInstance](/docs/en-us/reference/engine/classes/PVInstance.md)
+- [PackageLink](/docs/en-us/reference/engine/classes/PackageLink.md)
+- [PackageService](/docs/en-us/reference/engine/classes/PackageService.md)
+- [Pages](/docs/en-us/reference/engine/classes/Pages.md)
+- [PartOperationAsset](/docs/en-us/reference/engine/classes/PartOperationAsset.md)
+- [ParticleEmitter](/docs/en-us/reference/engine/classes/ParticleEmitter.md)
+- [Path](/docs/en-us/reference/engine/classes/Path.md)
+- [PathfindingLink](/docs/en-us/reference/engine/classes/PathfindingLink.md)
+- [PathfindingModifier](/docs/en-us/reference/engine/classes/PathfindingModifier.md)
+- [PathfindingService](/docs/en-us/reference/engine/classes/PathfindingService.md)
+- [PhysicsService](/docs/en-us/reference/engine/classes/PhysicsService.md)
+- [PhysicsSettings](/docs/en-us/reference/engine/classes/PhysicsSettings.md)
+- [Player](/docs/en-us/reference/engine/classes/Player.md)
+- [PlayerScripts](/docs/en-us/reference/engine/classes/PlayerScripts.md)
+- [PlayerViewService](/docs/en-us/reference/engine/classes/PlayerViewService.md)
+- [Players](/docs/en-us/reference/engine/classes/Players.md)
+- [Plugin](/docs/en-us/reference/engine/classes/Plugin.md)
+- [PluginAction](/docs/en-us/reference/engine/classes/PluginAction.md)
+- [PluginCapabilities](/docs/en-us/reference/engine/classes/PluginCapabilities.md)
+- [PluginConnectionService](/docs/en-us/reference/engine/classes/PluginConnectionService.md)
+- [PluginDebugService](/docs/en-us/reference/engine/classes/PluginDebugService.md)
+- [PluginDragEvent](/docs/en-us/reference/engine/classes/PluginDragEvent.md)
+- [PluginGuiService](/docs/en-us/reference/engine/classes/PluginGuiService.md)
+- [PluginManagementService](/docs/en-us/reference/engine/classes/PluginManagementService.md)
+- [PluginManager](/docs/en-us/reference/engine/classes/PluginManager.md)
+- [PluginManagerInterface](/docs/en-us/reference/engine/classes/PluginManagerInterface.md)
+- [PluginMenu](/docs/en-us/reference/engine/classes/PluginMenu.md)
+- [PluginToolbar](/docs/en-us/reference/engine/classes/PluginToolbar.md)
+- [PluginToolbarButton](/docs/en-us/reference/engine/classes/PluginToolbarButton.md)
+- [PointsService](/docs/en-us/reference/engine/classes/PointsService.md)
+- [PolicyService](/docs/en-us/reference/engine/classes/PolicyService.md)
+- [PoseBase](/docs/en-us/reference/engine/classes/PoseBase.md)
+- [PostEffect](/docs/en-us/reference/engine/classes/PostEffect.md)
+- [ProcessInstancePhysicsService](/docs/en-us/reference/engine/classes/ProcessInstancePhysicsService.md)
+- [ProximityPrompt](/docs/en-us/reference/engine/classes/ProximityPrompt.md)
+- [ProximityPromptService](/docs/en-us/reference/engine/classes/ProximityPromptService.md)
+- [PublishService](/docs/en-us/reference/engine/classes/PublishService.md)
+- [RecommendationService](/docs/en-us/reference/engine/classes/RecommendationService.md)
+- [ReflectionMetadata](/docs/en-us/reference/engine/classes/ReflectionMetadata.md)
+- [ReflectionMetadataCallbacks](/docs/en-us/reference/engine/classes/ReflectionMetadataCallbacks.md)
+- [ReflectionMetadataClasses](/docs/en-us/reference/engine/classes/ReflectionMetadataClasses.md)
+- [ReflectionMetadataEnums](/docs/en-us/reference/engine/classes/ReflectionMetadataEnums.md)
+- [ReflectionMetadataEvents](/docs/en-us/reference/engine/classes/ReflectionMetadataEvents.md)
+- [ReflectionMetadataFunctions](/docs/en-us/reference/engine/classes/ReflectionMetadataFunctions.md)
+- [ReflectionMetadataItem](/docs/en-us/reference/engine/classes/ReflectionMetadataItem.md)
+- [ReflectionMetadataProperties](/docs/en-us/reference/engine/classes/ReflectionMetadataProperties.md)
+- [ReflectionMetadataYieldFunctions](/docs/en-us/reference/engine/classes/ReflectionMetadataYieldFunctions.md)
+- [ReflectionService](/docs/en-us/reference/engine/classes/ReflectionService.md)
+- [RemoteCommandService](/docs/en-us/reference/engine/classes/RemoteCommandService.md)
+- [RemoteDebuggerServer](/docs/en-us/reference/engine/classes/RemoteDebuggerServer.md)
+- [RemoteFunction](/docs/en-us/reference/engine/classes/RemoteFunction.md)
+- [RenderSettings](/docs/en-us/reference/engine/classes/RenderSettings.md)
+- [ReplicatedFirst](/docs/en-us/reference/engine/classes/ReplicatedFirst.md)
+- [ReplicatedStorage](/docs/en-us/reference/engine/classes/ReplicatedStorage.md)
+- [RotationCurve](/docs/en-us/reference/engine/classes/RotationCurve.md)
+- [RunService](/docs/en-us/reference/engine/classes/RunService.md)
+- [SceneAnalysisService](/docs/en-us/reference/engine/classes/SceneAnalysisService.md)
+- [ScreenshotHud](/docs/en-us/reference/engine/classes/ScreenshotHud.md)
+- [ScriptContext](/docs/en-us/reference/engine/classes/ScriptContext.md)
+- [ScriptDebuggerService](/docs/en-us/reference/engine/classes/ScriptDebuggerService.md)
+- [ScriptDocument](/docs/en-us/reference/engine/classes/ScriptDocument.md)
+- [ScriptEditorService](/docs/en-us/reference/engine/classes/ScriptEditorService.md)
+- [ScriptProfilerService](/docs/en-us/reference/engine/classes/ScriptProfilerService.md)
+- [ScriptService](/docs/en-us/reference/engine/classes/ScriptService.md)
+- [Selection](/docs/en-us/reference/engine/classes/Selection.md)
+- [SelectionHighlightManager](/docs/en-us/reference/engine/classes/SelectionHighlightManager.md)
+- [SensorBase](/docs/en-us/reference/engine/classes/SensorBase.md)
+- [SerializationService](/docs/en-us/reference/engine/classes/SerializationService.md)
+- [ServerScriptService](/docs/en-us/reference/engine/classes/ServerScriptService.md)
+- [ServerStorage](/docs/en-us/reference/engine/classes/ServerStorage.md)
+- [ServiceProvider](/docs/en-us/reference/engine/classes/ServiceProvider.md)
+- [SharedTableRegistry](/docs/en-us/reference/engine/classes/SharedTableRegistry.md)
+- [Sky](/docs/en-us/reference/engine/classes/Sky.md)
+- [Smoke](/docs/en-us/reference/engine/classes/Smoke.md)
+- [SocialService](/docs/en-us/reference/engine/classes/SocialService.md)
+- [Sound](/docs/en-us/reference/engine/classes/Sound.md)
+- [SoundEffect](/docs/en-us/reference/engine/classes/SoundEffect.md)
+- [SoundGroup](/docs/en-us/reference/engine/classes/SoundGroup.md)
+- [SoundService](/docs/en-us/reference/engine/classes/SoundService.md)
+- [Sparkles](/docs/en-us/reference/engine/classes/Sparkles.md)
+- [SpawnerService](/docs/en-us/reference/engine/classes/SpawnerService.md)
+- [StandalonePluginScripts](/docs/en-us/reference/engine/classes/StandalonePluginScripts.md)
+- [StarterGear](/docs/en-us/reference/engine/classes/StarterGear.md)
+- [StarterPack](/docs/en-us/reference/engine/classes/StarterPack.md)
+- [StarterPlayer](/docs/en-us/reference/engine/classes/StarterPlayer.md)
+- [StarterPlayerScripts](/docs/en-us/reference/engine/classes/StarterPlayerScripts.md)
+- [Stats](/docs/en-us/reference/engine/classes/Stats.md)
+- [StatsItem](/docs/en-us/reference/engine/classes/StatsItem.md)
+- [StopWatchReporter](/docs/en-us/reference/engine/classes/StopWatchReporter.md)
+- [Studio](/docs/en-us/reference/engine/classes/Studio.md)
+- [StudioCaptureService](/docs/en-us/reference/engine/classes/StudioCaptureService.md)
+- [StudioDeviceSimulatorService](/docs/en-us/reference/engine/classes/StudioDeviceSimulatorService.md)
+- [StudioScreenshotCapture](/docs/en-us/reference/engine/classes/StudioScreenshotCapture.md)
+- [StudioService](/docs/en-us/reference/engine/classes/StudioService.md)
+- [StudioTestService](/docs/en-us/reference/engine/classes/StudioTestService.md)
+- [StudioTheme](/docs/en-us/reference/engine/classes/StudioTheme.md)
+- [StyleBase](/docs/en-us/reference/engine/classes/StyleBase.md)
+- [StyleDerive](/docs/en-us/reference/engine/classes/StyleDerive.md)
+- [StyleLink](/docs/en-us/reference/engine/classes/StyleLink.md)
+- [StyleQuery](/docs/en-us/reference/engine/classes/StyleQuery.md)
+- [SurfaceAppearance](/docs/en-us/reference/engine/classes/SurfaceAppearance.md)
+- [TaskScheduler](/docs/en-us/reference/engine/classes/TaskScheduler.md)
+- [Team](/docs/en-us/reference/engine/classes/Team.md)
+- [Teams](/docs/en-us/reference/engine/classes/Teams.md)
+- [TeleportAsyncResult](/docs/en-us/reference/engine/classes/TeleportAsyncResult.md)
+- [TeleportOptions](/docs/en-us/reference/engine/classes/TeleportOptions.md)
+- [TeleportService](/docs/en-us/reference/engine/classes/TeleportService.md)
+- [TerrainDetail](/docs/en-us/reference/engine/classes/TerrainDetail.md)
+- [TerrainRegion](/docs/en-us/reference/engine/classes/TerrainRegion.md)
+- [TestService](/docs/en-us/reference/engine/classes/TestService.md)
+- [TextBoxService](/docs/en-us/reference/engine/classes/TextBoxService.md)
+- [TextChannel](/docs/en-us/reference/engine/classes/TextChannel.md)
+- [TextChatCommand](/docs/en-us/reference/engine/classes/TextChatCommand.md)
+- [TextChatConfigurations](/docs/en-us/reference/engine/classes/TextChatConfigurations.md)
+- [TextChatMessage](/docs/en-us/reference/engine/classes/TextChatMessage.md)
+- [TextChatMessageProperties](/docs/en-us/reference/engine/classes/TextChatMessageProperties.md)
+- [TextChatService](/docs/en-us/reference/engine/classes/TextChatService.md)
+- [TextFilterResult](/docs/en-us/reference/engine/classes/TextFilterResult.md)
+- [TextFilterTranslatedResult](/docs/en-us/reference/engine/classes/TextFilterTranslatedResult.md)
+- [TextGenerator](/docs/en-us/reference/engine/classes/TextGenerator.md)
+- [TextService](/docs/en-us/reference/engine/classes/TextService.md)
+- [TextSource](/docs/en-us/reference/engine/classes/TextSource.md)
+- [TimerService](/docs/en-us/reference/engine/classes/TimerService.md)
+- [TouchInputService](/docs/en-us/reference/engine/classes/TouchInputService.md)
+- [TouchTransmitter](/docs/en-us/reference/engine/classes/TouchTransmitter.md)
+- [Trail](/docs/en-us/reference/engine/classes/Trail.md)
+- [Translator](/docs/en-us/reference/engine/classes/Translator.md)
+- [TweenBase](/docs/en-us/reference/engine/classes/TweenBase.md)
+- [TweenService](/docs/en-us/reference/engine/classes/TweenService.md)
+- [UIBase](/docs/en-us/reference/engine/classes/UIBase.md)
+- [UniqueIdLookupService](/docs/en-us/reference/engine/classes/UniqueIdLookupService.md)
+- [UserGameSettings](/docs/en-us/reference/engine/classes/UserGameSettings.md)
+- [UserInputService](/docs/en-us/reference/engine/classes/UserInputService.md)
+- [UserService](/docs/en-us/reference/engine/classes/UserService.md)
+- [VRService](/docs/en-us/reference/engine/classes/VRService.md)
+- [ValueBase](/docs/en-us/reference/engine/classes/ValueBase.md)
+- [ValueCurve](/docs/en-us/reference/engine/classes/ValueCurve.md)
+- [Vector3Curve](/docs/en-us/reference/engine/classes/Vector3Curve.md)
+- [VideoCaptureService](/docs/en-us/reference/engine/classes/VideoCaptureService.md)
+- [VideoPlayer](/docs/en-us/reference/engine/classes/VideoPlayer.md)
+- [VideoService](/docs/en-us/reference/engine/classes/VideoService.md)
+- [VirtualInputManager](/docs/en-us/reference/engine/classes/VirtualInputManager.md)
+- [VirtualUser](/docs/en-us/reference/engine/classes/VirtualUser.md)
+- [VisibilityCheckDispatcher](/docs/en-us/reference/engine/classes/VisibilityCheckDispatcher.md)
+- [Visit](/docs/en-us/reference/engine/classes/Visit.md)
+- [VoiceChatService](/docs/en-us/reference/engine/classes/VoiceChatService.md)
+- [WeldConstraint](/docs/en-us/reference/engine/classes/WeldConstraint.md)
+- [Wire](/docs/en-us/reference/engine/classes/Wire.md)
+- [WrapTextureTransfer](/docs/en-us/reference/engine/classes/WrapTextureTransfer.md)
+
+## Accoutrement
+
+- [Accessory](/docs/en-us/reference/engine/classes/Accessory.md)
+- [Hat](/docs/en-us/reference/engine/classes/Hat.md)
+
+## AnimationClip
+
+- [CurveAnimation](/docs/en-us/reference/engine/classes/CurveAnimation.md)
+- [KeyframeSequence](/docs/en-us/reference/engine/classes/KeyframeSequence.md)
+
+## Attachment
+
+- [Bone](/docs/en-us/reference/engine/classes/Bone.md)
+
+## BaseCoreGuiConfiguration
+
+- [CapturesViewConfiguration](/docs/en-us/reference/engine/classes/CapturesViewConfiguration.md)
+- [PlayerListConfiguration](/docs/en-us/reference/engine/classes/PlayerListConfiguration.md)
+- [SelfViewConfiguration](/docs/en-us/reference/engine/classes/SelfViewConfiguration.md)
+
+## BasePlayerGui
+
+- [CoreGui](/docs/en-us/reference/engine/classes/CoreGui.md)
+- [PlayerGui](/docs/en-us/reference/engine/classes/PlayerGui.md)
+- [StarterGui](/docs/en-us/reference/engine/classes/StarterGui.md)
+
+## BaseRemoteEvent
+
+- [RemoteEvent](/docs/en-us/reference/engine/classes/RemoteEvent.md)
+- [UnreliableRemoteEvent](/docs/en-us/reference/engine/classes/UnreliableRemoteEvent.md)
+
+## BaseWrap
+
+- [WrapDeformer](/docs/en-us/reference/engine/classes/WrapDeformer.md)
+- [WrapLayer](/docs/en-us/reference/engine/classes/WrapLayer.md)
+- [WrapTarget](/docs/en-us/reference/engine/classes/WrapTarget.md)
+
+## BodyMover
+
+- [BodyAngularVelocity](/docs/en-us/reference/engine/classes/BodyAngularVelocity.md)
+- [BodyForce](/docs/en-us/reference/engine/classes/BodyForce.md)
+- [BodyGyro](/docs/en-us/reference/engine/classes/BodyGyro.md)
+- [BodyPosition](/docs/en-us/reference/engine/classes/BodyPosition.md)
+- [BodyThrust](/docs/en-us/reference/engine/classes/BodyThrust.md)
+- [BodyVelocity](/docs/en-us/reference/engine/classes/BodyVelocity.md)
+- [RocketPropulsion](/docs/en-us/reference/engine/classes/RocketPropulsion.md)
+
+## CacheableContentProvider
+
+- [HSRDataContentProvider](/docs/en-us/reference/engine/classes/HSRDataContentProvider.md)
+- [MeshContentProvider](/docs/en-us/reference/engine/classes/MeshContentProvider.md)
+- [SlimContentProvider](/docs/en-us/reference/engine/classes/SlimContentProvider.md)
+- [SolidModelContentProvider](/docs/en-us/reference/engine/classes/SolidModelContentProvider.md)
+
+## CharacterAppearance
+
+- [BodyColors](/docs/en-us/reference/engine/classes/BodyColors.md)
+- [CharacterMesh](/docs/en-us/reference/engine/classes/CharacterMesh.md)
+- [Clothing](/docs/en-us/reference/engine/classes/Clothing.md)
+- [ShirtGraphic](/docs/en-us/reference/engine/classes/ShirtGraphic.md)
+- [Skin](/docs/en-us/reference/engine/classes/Skin.md)
+
+## Clothing
+
+- [Pants](/docs/en-us/reference/engine/classes/Pants.md)
+- [Shirt](/docs/en-us/reference/engine/classes/Shirt.md)
+
+## ClickDetector
+
+- [DragDetector](/docs/en-us/reference/engine/classes/DragDetector.md)
+
+## Constraint
+
+- [AlignOrientation](/docs/en-us/reference/engine/classes/AlignOrientation.md)
+- [AlignPosition](/docs/en-us/reference/engine/classes/AlignPosition.md)
+- [AngularVelocity](/docs/en-us/reference/engine/classes/AngularVelocity.md)
+- [AnimationConstraint](/docs/en-us/reference/engine/classes/AnimationConstraint.md)
+- [BallSocketConstraint](/docs/en-us/reference/engine/classes/BallSocketConstraint.md)
+- [HingeConstraint](/docs/en-us/reference/engine/classes/HingeConstraint.md)
+- [LineForce](/docs/en-us/reference/engine/classes/LineForce.md)
+- [LinearVelocity](/docs/en-us/reference/engine/classes/LinearVelocity.md)
+- [PlaneConstraint](/docs/en-us/reference/engine/classes/PlaneConstraint.md)
+- [RigidConstraint](/docs/en-us/reference/engine/classes/RigidConstraint.md)
+- [RodConstraint](/docs/en-us/reference/engine/classes/RodConstraint.md)
+- [RopeConstraint](/docs/en-us/reference/engine/classes/RopeConstraint.md)
+- [SlidingBallConstraint](/docs/en-us/reference/engine/classes/SlidingBallConstraint.md)
+- [SpringConstraint](/docs/en-us/reference/engine/classes/SpringConstraint.md)
+- [Torque](/docs/en-us/reference/engine/classes/Torque.md)
+- [TorsionSpringConstraint](/docs/en-us/reference/engine/classes/TorsionSpringConstraint.md)
+- [UniversalConstraint](/docs/en-us/reference/engine/classes/UniversalConstraint.md)
+- [VectorForce](/docs/en-us/reference/engine/classes/VectorForce.md)
+
+## PlaneConstraint
+
+- [Plane](/docs/en-us/reference/engine/classes/Plane.md)
+
+## SlidingBallConstraint
+
+- [CylindricalConstraint](/docs/en-us/reference/engine/classes/CylindricalConstraint.md)
+- [PrismaticConstraint](/docs/en-us/reference/engine/classes/PrismaticConstraint.md)
+
+## Controller
+
+- [HumanoidController](/docs/en-us/reference/engine/classes/HumanoidController.md)
+- [SkateboardController](/docs/en-us/reference/engine/classes/SkateboardController.md)
+- [VehicleController](/docs/en-us/reference/engine/classes/VehicleController.md)
+
+## ControllerBase
+
+- [AirController](/docs/en-us/reference/engine/classes/AirController.md)
+- [ClimbController](/docs/en-us/reference/engine/classes/ClimbController.md)
+- [GroundController](/docs/en-us/reference/engine/classes/GroundController.md)
+- [SwimController](/docs/en-us/reference/engine/classes/SwimController.md)
+
+## DataModelMesh
+
+- [BevelMesh](/docs/en-us/reference/engine/classes/BevelMesh.md)
+- [FileMesh](/docs/en-us/reference/engine/classes/FileMesh.md)
+
+## BevelMesh
+
+- [BlockMesh](/docs/en-us/reference/engine/classes/BlockMesh.md)
+- [CylinderMesh](/docs/en-us/reference/engine/classes/CylinderMesh.md)
+
+## FileMesh
+
+- [SpecialMesh](/docs/en-us/reference/engine/classes/SpecialMesh.md)
+
+## FaceInstance
+
+- [Decal](/docs/en-us/reference/engine/classes/Decal.md)
+
+## Decal
+
+- [Texture](/docs/en-us/reference/engine/classes/Texture.md)
+
+## Feature
+
+- [Hole](/docs/en-us/reference/engine/classes/Hole.md)
+- [MotorFeature](/docs/en-us/reference/engine/classes/MotorFeature.md)
+
+## Folder
+
+- [GeneratedFolder](/docs/en-us/reference/engine/classes/GeneratedFolder.md)
+
+## GlobalDataStore
+
+- [DataStore](/docs/en-us/reference/engine/classes/DataStore.md)
+- [OrderedDataStore](/docs/en-us/reference/engine/classes/OrderedDataStore.md)
+
+## GuiBase
+
+- [GuiBase2d](/docs/en-us/reference/engine/classes/GuiBase2d.md)
+- [GuiBase3d](/docs/en-us/reference/engine/classes/GuiBase3d.md)
+- [Path2D](/docs/en-us/reference/engine/classes/Path2D.md)
+
+## GuiBase2d
+
+- [GuiObject](/docs/en-us/reference/engine/classes/GuiObject.md)
+- [LayerCollector](/docs/en-us/reference/engine/classes/LayerCollector.md)
+
+## GuiObject
+
+- [CanvasGroup](/docs/en-us/reference/engine/classes/CanvasGroup.md)
+- [Frame](/docs/en-us/reference/engine/classes/Frame.md)
+- [GuiButton](/docs/en-us/reference/engine/classes/GuiButton.md)
+- [GuiLabel](/docs/en-us/reference/engine/classes/GuiLabel.md)
+- [InputActionLabel](/docs/en-us/reference/engine/classes/InputActionLabel.md)
+- [ScrollingFrame](/docs/en-us/reference/engine/classes/ScrollingFrame.md)
+- [TextBox](/docs/en-us/reference/engine/classes/TextBox.md)
+- [TextChannelWindow](/docs/en-us/reference/engine/classes/TextChannelWindow.md)
+- [VideoDisplay](/docs/en-us/reference/engine/classes/VideoDisplay.md)
+- [VideoFrame](/docs/en-us/reference/engine/classes/VideoFrame.md)
+- [ViewportFrame](/docs/en-us/reference/engine/classes/ViewportFrame.md)
+
+## GuiButton
+
+- [ImageButton](/docs/en-us/reference/engine/classes/ImageButton.md)
+- [TextButton](/docs/en-us/reference/engine/classes/TextButton.md)
+
+## GuiLabel
+
+- [ImageLabel](/docs/en-us/reference/engine/classes/ImageLabel.md)
+- [TextLabel](/docs/en-us/reference/engine/classes/TextLabel.md)
+
+## LayerCollector
+
+- [BillboardGui](/docs/en-us/reference/engine/classes/BillboardGui.md)
+- [PluginGui](/docs/en-us/reference/engine/classes/PluginGui.md)
+- [ScreenGui](/docs/en-us/reference/engine/classes/ScreenGui.md)
+- [SurfaceGuiBase](/docs/en-us/reference/engine/classes/SurfaceGuiBase.md)
+
+## PluginGui
+
+- [DockWidgetPluginGui](/docs/en-us/reference/engine/classes/DockWidgetPluginGui.md)
+
+## ScreenGui
+
+- [GuiMain](/docs/en-us/reference/engine/classes/GuiMain.md)
+
+## SurfaceGuiBase
+
+- [AdGui](/docs/en-us/reference/engine/classes/AdGui.md)
+- [SurfaceGui](/docs/en-us/reference/engine/classes/SurfaceGui.md)
+
+## GuiBase3d
+
+- [FloorWire](/docs/en-us/reference/engine/classes/FloorWire.md)
+- [InstanceAdornment](/docs/en-us/reference/engine/classes/InstanceAdornment.md)
+- [PVAdornment](/docs/en-us/reference/engine/classes/PVAdornment.md)
+- [PartAdornment](/docs/en-us/reference/engine/classes/PartAdornment.md)
+- [SelectionLasso](/docs/en-us/reference/engine/classes/SelectionLasso.md)
+
+## InstanceAdornment
+
+- [SelectionBox](/docs/en-us/reference/engine/classes/SelectionBox.md)
+
+## PVAdornment
+
+- [HandleAdornment](/docs/en-us/reference/engine/classes/HandleAdornment.md)
+- [SelectionSphere](/docs/en-us/reference/engine/classes/SelectionSphere.md)
+
+## HandleAdornment
+
+- [BoxHandleAdornment](/docs/en-us/reference/engine/classes/BoxHandleAdornment.md)
+- [ConeHandleAdornment](/docs/en-us/reference/engine/classes/ConeHandleAdornment.md)
+- [CylinderHandleAdornment](/docs/en-us/reference/engine/classes/CylinderHandleAdornment.md)
+- [ImageHandleAdornment](/docs/en-us/reference/engine/classes/ImageHandleAdornment.md)
+- [LineHandleAdornment](/docs/en-us/reference/engine/classes/LineHandleAdornment.md)
+- [PyramidHandleAdornment](/docs/en-us/reference/engine/classes/PyramidHandleAdornment.md)
+- [SphereHandleAdornment](/docs/en-us/reference/engine/classes/SphereHandleAdornment.md)
+- [WireframeHandleAdornment](/docs/en-us/reference/engine/classes/WireframeHandleAdornment.md)
+
+## PartAdornment
+
+- [HandlesBase](/docs/en-us/reference/engine/classes/HandlesBase.md)
+- [SurfaceSelection](/docs/en-us/reference/engine/classes/SurfaceSelection.md)
+
+## HandlesBase
+
+- [ArcHandles](/docs/en-us/reference/engine/classes/ArcHandles.md)
+- [Handles](/docs/en-us/reference/engine/classes/Handles.md)
+
+## SelectionLasso
+
+- [SelectionPartLasso](/docs/en-us/reference/engine/classes/SelectionPartLasso.md)
+- [SelectionPointLasso](/docs/en-us/reference/engine/classes/SelectionPointLasso.md)
+
+## JointInstance
+
+- [DynamicRotate](/docs/en-us/reference/engine/classes/DynamicRotate.md)
+- [Glue](/docs/en-us/reference/engine/classes/Glue.md)
+- [ManualSurfaceJointInstance](/docs/en-us/reference/engine/classes/ManualSurfaceJointInstance.md)
+- [Motor](/docs/en-us/reference/engine/classes/Motor.md)
+- [Rotate](/docs/en-us/reference/engine/classes/Rotate.md)
+- [Snap](/docs/en-us/reference/engine/classes/Snap.md)
+- [VelocityMotor](/docs/en-us/reference/engine/classes/VelocityMotor.md)
+- [Weld](/docs/en-us/reference/engine/classes/Weld.md)
+
+## DynamicRotate
+
+- [RotateP](/docs/en-us/reference/engine/classes/RotateP.md)
+- [RotateV](/docs/en-us/reference/engine/classes/RotateV.md)
+
+## ManualSurfaceJointInstance
+
+- [ManualGlue](/docs/en-us/reference/engine/classes/ManualGlue.md)
+- [ManualWeld](/docs/en-us/reference/engine/classes/ManualWeld.md)
+
+## Motor
+
+- [Motor6D](/docs/en-us/reference/engine/classes/Motor6D.md)
+
+## Light
+
+- [PointLight](/docs/en-us/reference/engine/classes/PointLight.md)
+- [SpotLight](/docs/en-us/reference/engine/classes/SpotLight.md)
+- [SurfaceLight](/docs/en-us/reference/engine/classes/SurfaceLight.md)
+
+## LuaSourceContainer
+
+- [BaseScript](/docs/en-us/reference/engine/classes/BaseScript.md)
+- [ModuleScript](/docs/en-us/reference/engine/classes/ModuleScript.md)
+
+## BaseScript
+
+- [Script](/docs/en-us/reference/engine/classes/Script.md)
+
+## Script
+
+- [LocalScript](/docs/en-us/reference/engine/classes/LocalScript.md)
+- [Create a coin collection mechanic](/docs/en-us/tutorials/curriculums/core/scripting/script-game-behavior.md)
+- [Record and display player data](/docs/en-us/tutorials/curriculums/core/scripting/record-and-display-player-data.md)
+- [Create player hazards](/docs/en-us/tutorials/curriculums/core/scripting/create-player-hazards.md)
+- [Script an upgrade button](/docs/en-us/tutorials/curriculums/core/scripting/script-an-upgrade-button.md)
+
+## Message
+
+- [Hint](/docs/en-us/reference/engine/classes/Hint.md)
+
+## Mouse
+
+- [PlayerMouse](/docs/en-us/reference/engine/classes/PlayerMouse.md)
+- [PluginMouse](/docs/en-us/reference/engine/classes/PluginMouse.md)
+
+## NetworkPeer
+
+- [NetworkClient](/docs/en-us/reference/engine/classes/NetworkClient.md)
+- [NetworkServer](/docs/en-us/reference/engine/classes/NetworkServer.md)
+
+## NetworkReplicator
+
+- [ClientReplicator](/docs/en-us/reference/engine/classes/ClientReplicator.md)
+- [ServerReplicator](/docs/en-us/reference/engine/classes/ServerReplicator.md)
+
+## PVInstance
+
+- [BasePart](/docs/en-us/reference/engine/classes/BasePart.md)
+- [Camera](/docs/en-us/reference/engine/classes/Camera.md)
+- [Model](/docs/en-us/reference/engine/classes/Model.md)
+
+## BasePart
+
+- [CornerWedgePart](/docs/en-us/reference/engine/classes/CornerWedgePart.md)
+- [FormFactorPart](/docs/en-us/reference/engine/classes/FormFactorPart.md)
+- [Terrain](/docs/en-us/reference/engine/classes/Terrain.md)
+- [TriangleMeshPart](/docs/en-us/reference/engine/classes/TriangleMeshPart.md)
+- [TrussPart](/docs/en-us/reference/engine/classes/TrussPart.md)
+- [VehicleSeat](/docs/en-us/reference/engine/classes/VehicleSeat.md)
+
+## FormFactorPart
+
+- [Part](/docs/en-us/reference/engine/classes/Part.md)
+- [WedgePart](/docs/en-us/reference/engine/classes/WedgePart.md)
+
+## Part
+
+- [FlagStand](/docs/en-us/reference/engine/classes/FlagStand.md)
+- [Platform](/docs/en-us/reference/engine/classes/Platform.md)
+- [Seat](/docs/en-us/reference/engine/classes/Seat.md)
+- [SkateboardPlatform](/docs/en-us/reference/engine/classes/SkateboardPlatform.md)
+- [SpawnLocation](/docs/en-us/reference/engine/classes/SpawnLocation.md)
+
+## TriangleMeshPart
+
+- [MeshPart](/docs/en-us/reference/engine/classes/MeshPart.md)
+- [PartOperation](/docs/en-us/reference/engine/classes/PartOperation.md)
+
+## PartOperation
+
+- [IntersectOperation](/docs/en-us/reference/engine/classes/IntersectOperation.md)
+- [NegateOperation](/docs/en-us/reference/engine/classes/NegateOperation.md)
+- [UnionOperation](/docs/en-us/reference/engine/classes/UnionOperation.md)
+
+## Model
+
+- [Actor](/docs/en-us/reference/engine/classes/Actor.md)
+- [BackpackItem](/docs/en-us/reference/engine/classes/BackpackItem.md)
+- [ProceduralModel](/docs/en-us/reference/engine/classes/ProceduralModel.md)
+- [Status](/docs/en-us/reference/engine/classes/Status.md)
+- [WorldRoot](/docs/en-us/reference/engine/classes/WorldRoot.md)
+- [Box modeling](/docs/en-us/art/accessories/creating-rigid/modeling-setup.md)
+
+## BackpackItem
+
+- [HopperBin](/docs/en-us/reference/engine/classes/HopperBin.md)
+- [Tool](/docs/en-us/reference/engine/classes/Tool.md)
+
+## Tool
+
+- [Flag](/docs/en-us/reference/engine/classes/Flag.md)
+
+## WorldRoot
+
+- [Workspace](/docs/en-us/reference/engine/classes/Workspace.md)
+- [WorldModel](/docs/en-us/reference/engine/classes/WorldModel.md)
+
+## Pages
+
+- [AudioPages](/docs/en-us/reference/engine/classes/AudioPages.md)
+- [BanHistoryPages](/docs/en-us/reference/engine/classes/BanHistoryPages.md)
+- [CapturesPages](/docs/en-us/reference/engine/classes/CapturesPages.md)
+- [CatalogPages](/docs/en-us/reference/engine/classes/CatalogPages.md)
+- [DataStoreKeyPages](/docs/en-us/reference/engine/classes/DataStoreKeyPages.md)
+- [DataStoreListingPages](/docs/en-us/reference/engine/classes/DataStoreListingPages.md)
+- [DataStorePages](/docs/en-us/reference/engine/classes/DataStorePages.md)
+- [DataStoreVersionPages](/docs/en-us/reference/engine/classes/DataStoreVersionPages.md)
+- [FriendPages](/docs/en-us/reference/engine/classes/FriendPages.md)
+- [InventoryPages](/docs/en-us/reference/engine/classes/InventoryPages.md)
+- [MemoryStoreHashMapPages](/docs/en-us/reference/engine/classes/MemoryStoreHashMapPages.md)
+- [OutfitPages](/docs/en-us/reference/engine/classes/OutfitPages.md)
+- [RecommendationPages](/docs/en-us/reference/engine/classes/RecommendationPages.md)
+- [StandardPages](/docs/en-us/reference/engine/classes/StandardPages.md)
+
+## PoseBase
+
+- [NumberPose](/docs/en-us/reference/engine/classes/NumberPose.md)
+- [Pose](/docs/en-us/reference/engine/classes/Pose.md)
+
+## PostEffect
+
+- [BloomEffect](/docs/en-us/reference/engine/classes/BloomEffect.md)
+- [BlurEffect](/docs/en-us/reference/engine/classes/BlurEffect.md)
+- [ColorCorrectionEffect](/docs/en-us/reference/engine/classes/ColorCorrectionEffect.md)
+- [ColorGradingEffect](/docs/en-us/reference/engine/classes/ColorGradingEffect.md)
+- [DepthOfFieldEffect](/docs/en-us/reference/engine/classes/DepthOfFieldEffect.md)
+- [SunRaysEffect](/docs/en-us/reference/engine/classes/SunRaysEffect.md)
+
+## ReflectionMetadataItem
+
+- [ReflectionMetadataClass](/docs/en-us/reference/engine/classes/ReflectionMetadataClass.md)
+- [ReflectionMetadataEnum](/docs/en-us/reference/engine/classes/ReflectionMetadataEnum.md)
+- [ReflectionMetadataEnumItem](/docs/en-us/reference/engine/classes/ReflectionMetadataEnumItem.md)
+- [ReflectionMetadataMember](/docs/en-us/reference/engine/classes/ReflectionMetadataMember.md)
+
+## SensorBase
+
+- [AtmosphereSensor](/docs/en-us/reference/engine/classes/AtmosphereSensor.md)
+- [BuoyancySensor](/docs/en-us/reference/engine/classes/BuoyancySensor.md)
+- [ControllerSensor](/docs/en-us/reference/engine/classes/ControllerSensor.md)
+- [FluidForceSensor](/docs/en-us/reference/engine/classes/FluidForceSensor.md)
+
+## ControllerSensor
+
+- [ControllerPartSensor](/docs/en-us/reference/engine/classes/ControllerPartSensor.md)
+
+## ServiceProvider
+
+- [DataModel](/docs/en-us/reference/engine/classes/DataModel.md)
+- [GenericSettings](/docs/en-us/reference/engine/classes/GenericSettings.md)
+
+## GenericSettings
+
+- [GlobalSettings](/docs/en-us/reference/engine/classes/GlobalSettings.md)
+- [UserSettings](/docs/en-us/reference/engine/classes/UserSettings.md)
+
+## SoundEffect
+
+- [ChorusSoundEffect](/docs/en-us/reference/engine/classes/ChorusSoundEffect.md)
+- [CompressorSoundEffect](/docs/en-us/reference/engine/classes/CompressorSoundEffect.md)
+- [DistortionSoundEffect](/docs/en-us/reference/engine/classes/DistortionSoundEffect.md)
+- [EchoSoundEffect](/docs/en-us/reference/engine/classes/EchoSoundEffect.md)
+- [EqualizerSoundEffect](/docs/en-us/reference/engine/classes/EqualizerSoundEffect.md)
+- [FlangeSoundEffect](/docs/en-us/reference/engine/classes/FlangeSoundEffect.md)
+- [PitchShiftSoundEffect](/docs/en-us/reference/engine/classes/PitchShiftSoundEffect.md)
+- [ReverbSoundEffect](/docs/en-us/reference/engine/classes/ReverbSoundEffect.md)
+- [TremoloSoundEffect](/docs/en-us/reference/engine/classes/TremoloSoundEffect.md)
+
+## StarterPlayerScripts
+
+- [StarterCharacterScripts](/docs/en-us/reference/engine/classes/StarterCharacterScripts.md)
+
+## StatsItem
+
+- [RunningAverageItemDouble](/docs/en-us/reference/engine/classes/RunningAverageItemDouble.md)
+- [RunningAverageItemInt](/docs/en-us/reference/engine/classes/RunningAverageItemInt.md)
+- [RunningAverageTimeIntervalItem](/docs/en-us/reference/engine/classes/RunningAverageTimeIntervalItem.md)
+- [TotalCountTimeIntervalItem](/docs/en-us/reference/engine/classes/TotalCountTimeIntervalItem.md)
+
+## StyleBase
+
+- [StyleRule](/docs/en-us/reference/engine/classes/StyleRule.md)
+- [StyleSheet](/docs/en-us/reference/engine/classes/StyleSheet.md)
+
+## TextChatConfigurations
+
+- [BubbleChatConfiguration](/docs/en-us/reference/engine/classes/BubbleChatConfiguration.md)
+- [ChannelTabsConfiguration](/docs/en-us/reference/engine/classes/ChannelTabsConfiguration.md)
+- [ChatInputBarConfiguration](/docs/en-us/reference/engine/classes/ChatInputBarConfiguration.md)
+- [ChatWindowConfiguration](/docs/en-us/reference/engine/classes/ChatWindowConfiguration.md)
+
+## TextChatMessageProperties
+
+- [BubbleChatMessageProperties](/docs/en-us/reference/engine/classes/BubbleChatMessageProperties.md)
+- [ChatWindowMessageProperties](/docs/en-us/reference/engine/classes/ChatWindowMessageProperties.md)
+
+## TweenBase
+
+- [Tween](/docs/en-us/reference/engine/classes/Tween.md)
+
+## UIBase
+
+- [UIComponent](/docs/en-us/reference/engine/classes/UIComponent.md)
+
+## UIComponent
+
+- [UIConstraint](/docs/en-us/reference/engine/classes/UIConstraint.md)
+- [UICorner](/docs/en-us/reference/engine/classes/UICorner.md)
+- [UIDragDetector](/docs/en-us/reference/engine/classes/UIDragDetector.md)
+- [UIFlexItem](/docs/en-us/reference/engine/classes/UIFlexItem.md)
+- [UIGradient](/docs/en-us/reference/engine/classes/UIGradient.md)
+- [UILayout](/docs/en-us/reference/engine/classes/UILayout.md)
+- [UIPadding](/docs/en-us/reference/engine/classes/UIPadding.md)
+- [UIScale](/docs/en-us/reference/engine/classes/UIScale.md)
+- [UIShadow](/docs/en-us/reference/engine/classes/UIShadow.md)
+- [UIStroke](/docs/en-us/reference/engine/classes/UIStroke.md)
+
+## UIConstraint
+
+- [UIAspectRatioConstraint](/docs/en-us/reference/engine/classes/UIAspectRatioConstraint.md)
+- [UISizeConstraint](/docs/en-us/reference/engine/classes/UISizeConstraint.md)
+- [UITextSizeConstraint](/docs/en-us/reference/engine/classes/UITextSizeConstraint.md)
+
+## UILayout
+
+- [UIGridStyleLayout](/docs/en-us/reference/engine/classes/UIGridStyleLayout.md)
+
+## UIGridStyleLayout
+
+- [UIGridLayout](/docs/en-us/reference/engine/classes/UIGridLayout.md)
+- [UIListLayout](/docs/en-us/reference/engine/classes/UIListLayout.md)
+- [UIPageLayout](/docs/en-us/reference/engine/classes/UIPageLayout.md)
+- [UITableLayout](/docs/en-us/reference/engine/classes/UITableLayout.md)
+
+## ValueBase
+
+- [BinaryStringValue](/docs/en-us/reference/engine/classes/BinaryStringValue.md)
+- [BoolValue](/docs/en-us/reference/engine/classes/BoolValue.md)
+- [BrickColorValue](/docs/en-us/reference/engine/classes/BrickColorValue.md)
+- [CFrameValue](/docs/en-us/reference/engine/classes/CFrameValue.md)
+- [Color3Value](/docs/en-us/reference/engine/classes/Color3Value.md)
+- [DoubleConstrainedValue](/docs/en-us/reference/engine/classes/DoubleConstrainedValue.md)
+- [IntConstrainedValue](/docs/en-us/reference/engine/classes/IntConstrainedValue.md)
+- [IntValue](/docs/en-us/reference/engine/classes/IntValue.md)
+- [NumberValue](/docs/en-us/reference/engine/classes/NumberValue.md)
+- [ObjectValue](/docs/en-us/reference/engine/classes/ObjectValue.md)
+- [RayValue](/docs/en-us/reference/engine/classes/RayValue.md)
+- [StringValue](/docs/en-us/reference/engine/classes/StringValue.md)
+- [Vector3Value](/docs/en-us/reference/engine/classes/Vector3Value.md)
+
+## Data types
+
+- [AdReward](/docs/en-us/reference/engine/datatypes/AdReward.md)
+- [Axes](/docs/en-us/reference/engine/datatypes/Axes.md)
+- [BrickColor](/docs/en-us/reference/engine/datatypes/BrickColor.md)
+- [CatalogSearchParams](/docs/en-us/reference/engine/datatypes/CatalogSearchParams.md)
+- [CFrame](/docs/en-us/reference/engine/datatypes/CFrame.md)
+- [Collection](/docs/en-us/reference/engine/datatypes/Collection.md)
+- [Color3](/docs/en-us/reference/engine/datatypes/Color3.md)
+- [ColorSequence](/docs/en-us/reference/engine/datatypes/ColorSequence.md)
+- [ColorSequenceKeypoint](/docs/en-us/reference/engine/datatypes/ColorSequenceKeypoint.md)
+- [Content](/docs/en-us/reference/engine/datatypes/Content.md)
+- [DateTime](/docs/en-us/reference/engine/datatypes/DateTime.md)
+- [DockWidgetPluginGuiInfo](/docs/en-us/reference/engine/datatypes/DockWidgetPluginGuiInfo.md)
+- [Enum](/docs/en-us/reference/engine/datatypes/Enum.md)
+- [EnumItem](/docs/en-us/reference/engine/datatypes/EnumItem.md)
+- [Enums](/docs/en-us/reference/engine/datatypes/Enums.md)
+- [Faces](/docs/en-us/reference/engine/datatypes/Faces.md)
+- [FloatCurveKey](/docs/en-us/reference/engine/datatypes/FloatCurveKey.md)
+- [Font](/docs/en-us/reference/engine/datatypes/Font.md)
+- [Instance](/docs/en-us/reference/engine/datatypes/Instance.md)
+- [InstanceHandle](/docs/en-us/reference/engine/datatypes/InstanceHandle.md)
+- [NumberRange](/docs/en-us/reference/engine/datatypes/NumberRange.md)
+- [NumberSequence](/docs/en-us/reference/engine/datatypes/NumberSequence.md)
+- [NumberSequenceKeypoint](/docs/en-us/reference/engine/datatypes/NumberSequenceKeypoint.md)
+- [OverlapParams](/docs/en-us/reference/engine/datatypes/OverlapParams.md)
+- [Path2DControlPoint](/docs/en-us/reference/engine/datatypes/Path2DControlPoint.md)
+- [PathWaypoint](/docs/en-us/reference/engine/datatypes/PathWaypoint.md)
+- [PhysicalProperties](/docs/en-us/reference/engine/datatypes/PhysicalProperties.md)
+- [Random](/docs/en-us/reference/engine/datatypes/Random.md)
+- [Ray](/docs/en-us/reference/engine/datatypes/Ray.md)
+- [RaycastParams](/docs/en-us/reference/engine/datatypes/RaycastParams.md)
+- [RaycastResult](/docs/en-us/reference/engine/datatypes/RaycastResult.md)
+- [RBXScriptConnection](/docs/en-us/reference/engine/datatypes/RBXScriptConnection.md)
+- [RBXScriptSignal](/docs/en-us/reference/engine/datatypes/RBXScriptSignal.md)
+- [Rect](/docs/en-us/reference/engine/datatypes/Rect.md)
+- [Region3](/docs/en-us/reference/engine/datatypes/Region3.md)
+- [Region3int16](/docs/en-us/reference/engine/datatypes/Region3int16.md)
+- [RotationCurveKey](/docs/en-us/reference/engine/datatypes/RotationCurveKey.md)
+- [Secret](/docs/en-us/reference/engine/datatypes/Secret.md)
+- [SecurityCapabilities](/docs/en-us/reference/engine/datatypes/SecurityCapabilities.md)
+- [SharedTable](/docs/en-us/reference/engine/datatypes/SharedTable.md)
+- [TweenInfo](/docs/en-us/reference/engine/datatypes/TweenInfo.md)
+- [UDim](/docs/en-us/reference/engine/datatypes/UDim.md)
+- [UDim2](/docs/en-us/reference/engine/datatypes/UDim2.md)
+- [User](/docs/en-us/reference/engine/datatypes/User.md)
+- [ValueCurveKey](/docs/en-us/reference/engine/datatypes/ValueCurveKey.md)
+- [Vector2](/docs/en-us/reference/engine/datatypes/Vector2.md)
+- [Vector2int16](/docs/en-us/reference/engine/datatypes/Vector2int16.md)
+- [Vector3](/docs/en-us/reference/engine/datatypes/Vector3.md)
+- [Vector3int16](/docs/en-us/reference/engine/datatypes/Vector3int16.md)
+
+## Enums
+
+- [AccessModifierType](/docs/en-us/reference/engine/enums/AccessModifierType.md)
+- [AccessoryType](/docs/en-us/reference/engine/enums/AccessoryType.md)
+- [ActionOnStopSync](/docs/en-us/reference/engine/enums/ActionOnStopSync.md)
+- [ActionType](/docs/en-us/reference/engine/enums/ActionType.md)
+- [ActivePayerStatus](/docs/en-us/reference/engine/enums/ActivePayerStatus.md)
+- [ActuatorRelativeTo](/docs/en-us/reference/engine/enums/ActuatorRelativeTo.md)
+- [ActuatorType](/docs/en-us/reference/engine/enums/ActuatorType.md)
+- [AdAvailabilityResult](/docs/en-us/reference/engine/enums/AdAvailabilityResult.md)
+- [AdFormat](/docs/en-us/reference/engine/enums/AdFormat.md)
+- [AdornCullingMode](/docs/en-us/reference/engine/enums/AdornCullingMode.md)
+- [AdornShading](/docs/en-us/reference/engine/enums/AdornShading.md)
+- [AdShape](/docs/en-us/reference/engine/enums/AdShape.md)
+- [AdTeleportMethod](/docs/en-us/reference/engine/enums/AdTeleportMethod.md)
+- [AdUIEventType](/docs/en-us/reference/engine/enums/AdUIEventType.md)
+- [AdUIType](/docs/en-us/reference/engine/enums/AdUIType.md)
+- [AdUnitStatus](/docs/en-us/reference/engine/enums/AdUnitStatus.md)
+- [AgeCheckStatus](/docs/en-us/reference/engine/enums/AgeCheckStatus.md)
+- [AlignType](/docs/en-us/reference/engine/enums/AlignType.md)
+- [AlphaMode](/docs/en-us/reference/engine/enums/AlphaMode.md)
+- [AnalyticsCustomFieldKeys](/docs/en-us/reference/engine/enums/AnalyticsCustomFieldKeys.md)
+- [AnalyticsEconomyAction](/docs/en-us/reference/engine/enums/AnalyticsEconomyAction.md)
+- [AnalyticsEconomyFlowType](/docs/en-us/reference/engine/enums/AnalyticsEconomyFlowType.md)
+- [AnalyticsEconomyTransactionType](/docs/en-us/reference/engine/enums/AnalyticsEconomyTransactionType.md)
+- [AnalyticsLogLevel](/docs/en-us/reference/engine/enums/AnalyticsLogLevel.md)
+- [AnalyticsProgressionStatus](/docs/en-us/reference/engine/enums/AnalyticsProgressionStatus.md)
+- [AnalyticsProgressionType](/docs/en-us/reference/engine/enums/AnalyticsProgressionType.md)
+- [AnimationClipFromVideoStatus](/docs/en-us/reference/engine/enums/AnimationClipFromVideoStatus.md)
+- [AnimationNodeBlendMode](/docs/en-us/reference/engine/enums/AnimationNodeBlendMode.md)
+- [AnimationNodeType](/docs/en-us/reference/engine/enums/AnimationNodeType.md)
+- [AnimationPriority](/docs/en-us/reference/engine/enums/AnimationPriority.md)
+- [AnimatorRetargetingMode](/docs/en-us/reference/engine/enums/AnimatorRetargetingMode.md)
+- [AntiAliasing](/docs/en-us/reference/engine/enums/AntiAliasing.md)
+- [AppLifecycleManagerState](/docs/en-us/reference/engine/enums/AppLifecycleManagerState.md)
+- [ApplyShadowMode](/docs/en-us/reference/engine/enums/ApplyShadowMode.md)
+- [ApplyStrokeMode](/docs/en-us/reference/engine/enums/ApplyStrokeMode.md)
+- [AppUpdateStatus](/docs/en-us/reference/engine/enums/AppUpdateStatus.md)
+- [AspectType](/docs/en-us/reference/engine/enums/AspectType.md)
+- [AssetCreatorType](/docs/en-us/reference/engine/enums/AssetCreatorType.md)
+- [AssetFetchStatus](/docs/en-us/reference/engine/enums/AssetFetchStatus.md)
+- [AssetType](/docs/en-us/reference/engine/enums/AssetType.md)
+- [AssetTypeVerification](/docs/en-us/reference/engine/enums/AssetTypeVerification.md)
+- [AudioApiRollout](/docs/en-us/reference/engine/enums/AudioApiRollout.md)
+- [AudioChannelLayout](/docs/en-us/reference/engine/enums/AudioChannelLayout.md)
+- [AudioFilterType](/docs/en-us/reference/engine/enums/AudioFilterType.md)
+- [AudioSampleFormat](/docs/en-us/reference/engine/enums/AudioSampleFormat.md)
+- [AudioSimulationFidelity](/docs/en-us/reference/engine/enums/AudioSimulationFidelity.md)
+- [AudioSubType](/docs/en-us/reference/engine/enums/AudioSubType.md)
+- [AudioWindowSize](/docs/en-us/reference/engine/enums/AudioWindowSize.md)
+- [AuthorityMode](/docs/en-us/reference/engine/enums/AuthorityMode.md)
+- [AutoIndentRule](/docs/en-us/reference/engine/enums/AutoIndentRule.md)
+- [AutomaticSize](/docs/en-us/reference/engine/enums/AutomaticSize.md)
+- [AvatarAssetType](/docs/en-us/reference/engine/enums/AvatarAssetType.md)
+- [AvatarChatServiceFeature](/docs/en-us/reference/engine/enums/AvatarChatServiceFeature.md)
+- [AvatarContextMenuOption](/docs/en-us/reference/engine/enums/AvatarContextMenuOption.md)
+- [AvatarItemType](/docs/en-us/reference/engine/enums/AvatarItemType.md)
+- [AvatarPromptResult](/docs/en-us/reference/engine/enums/AvatarPromptResult.md)
+- [AvatarSettingsAccessoryLimitMethod](/docs/en-us/reference/engine/enums/AvatarSettingsAccessoryLimitMethod.md)
+- [AvatarSettingsAccessoryMode](/docs/en-us/reference/engine/enums/AvatarSettingsAccessoryMode.md)
+- [AvatarSettingsAnimationClipsMode](/docs/en-us/reference/engine/enums/AvatarSettingsAnimationClipsMode.md)
+- [AvatarSettingsAnimationPacksMode](/docs/en-us/reference/engine/enums/AvatarSettingsAnimationPacksMode.md)
+- [AvatarSettingsAppearanceMode](/docs/en-us/reference/engine/enums/AvatarSettingsAppearanceMode.md)
+- [AvatarSettingsBuildMode](/docs/en-us/reference/engine/enums/AvatarSettingsBuildMode.md)
+- [AvatarSettingsClothingMode](/docs/en-us/reference/engine/enums/AvatarSettingsClothingMode.md)
+- [AvatarSettingsCollisionMode](/docs/en-us/reference/engine/enums/AvatarSettingsCollisionMode.md)
+- [AvatarSettingsCustomAccessoryMode](/docs/en-us/reference/engine/enums/AvatarSettingsCustomAccessoryMode.md)
+- [AvatarSettingsCustomBodyType](/docs/en-us/reference/engine/enums/AvatarSettingsCustomBodyType.md)
+- [AvatarSettingsCustomClothingMode](/docs/en-us/reference/engine/enums/AvatarSettingsCustomClothingMode.md)
+- [AvatarSettingsHitAndTouchDetectionMode](/docs/en-us/reference/engine/enums/AvatarSettingsHitAndTouchDetectionMode.md)
+- [AvatarSettingsJumpMode](/docs/en-us/reference/engine/enums/AvatarSettingsJumpMode.md)
+- [AvatarSettingsLegacyCollisionMode](/docs/en-us/reference/engine/enums/AvatarSettingsLegacyCollisionMode.md)
+- [AvatarSettingsScaleMode](/docs/en-us/reference/engine/enums/AvatarSettingsScaleMode.md)
+- [AvatarUnificationMode](/docs/en-us/reference/engine/enums/AvatarUnificationMode.md)
+- [Axis](/docs/en-us/reference/engine/enums/Axis.md)
+- [BenefitType](/docs/en-us/reference/engine/enums/BenefitType.md)
+- [BinType](/docs/en-us/reference/engine/enums/BinType.md)
+- [BodyPart](/docs/en-us/reference/engine/enums/BodyPart.md)
+- [BodyPartR15](/docs/en-us/reference/engine/enums/BodyPartR15.md)
+- [BorderMode](/docs/en-us/reference/engine/enums/BorderMode.md)
+- [BorderStrokePosition](/docs/en-us/reference/engine/enums/BorderStrokePosition.md)
+- [BreakpointRemoveReason](/docs/en-us/reference/engine/enums/BreakpointRemoveReason.md)
+- [BreakReason](/docs/en-us/reference/engine/enums/BreakReason.md)
+- [BulkMoveMode](/docs/en-us/reference/engine/enums/BulkMoveMode.md)
+- [BundleType](/docs/en-us/reference/engine/enums/BundleType.md)
+- [Button](/docs/en-us/reference/engine/enums/Button.md)
+- [ButtonStyle](/docs/en-us/reference/engine/enums/ButtonStyle.md)
+- [CageType](/docs/en-us/reference/engine/enums/CageType.md)
+- [CameraMode](/docs/en-us/reference/engine/enums/CameraMode.md)
+- [CameraNavigationModel](/docs/en-us/reference/engine/enums/CameraNavigationModel.md)
+- [CameraPanMode](/docs/en-us/reference/engine/enums/CameraPanMode.md)
+- [CameraSpeedAdjustBinding](/docs/en-us/reference/engine/enums/CameraSpeedAdjustBinding.md)
+- [CameraType](/docs/en-us/reference/engine/enums/CameraType.md)
+- [CaptureGalleryPermission](/docs/en-us/reference/engine/enums/CaptureGalleryPermission.md)
+- [CaptureType](/docs/en-us/reference/engine/enums/CaptureType.md)
+- [CatalogCategoryFilter](/docs/en-us/reference/engine/enums/CatalogCategoryFilter.md)
+- [CatalogSortAggregation](/docs/en-us/reference/engine/enums/CatalogSortAggregation.md)
+- [CatalogSortType](/docs/en-us/reference/engine/enums/CatalogSortType.md)
+- [CellBlock](/docs/en-us/reference/engine/enums/CellBlock.md)
+- [CellMaterial](/docs/en-us/reference/engine/enums/CellMaterial.md)
+- [CellOrientation](/docs/en-us/reference/engine/enums/CellOrientation.md)
+- [CharacterControlMode](/docs/en-us/reference/engine/enums/CharacterControlMode.md)
+- [ChatCallbackType](/docs/en-us/reference/engine/enums/ChatCallbackType.md)
+- [ChatColor](/docs/en-us/reference/engine/enums/ChatColor.md)
+- [ChatMode](/docs/en-us/reference/engine/enums/ChatMode.md)
+- [ChatPrivacyMode](/docs/en-us/reference/engine/enums/ChatPrivacyMode.md)
+- [ChatRestrictionStatus](/docs/en-us/reference/engine/enums/ChatRestrictionStatus.md)
+- [ChatStyle](/docs/en-us/reference/engine/enums/ChatStyle.md)
+- [ChatVersion](/docs/en-us/reference/engine/enums/ChatVersion.md)
+- [ClientAnimatorThrottlingMode](/docs/en-us/reference/engine/enums/ClientAnimatorThrottlingMode.md)
+- [CloseReason](/docs/en-us/reference/engine/enums/CloseReason.md)
+- [CollaboratorStatus](/docs/en-us/reference/engine/enums/CollaboratorStatus.md)
+- [CollisionFidelity](/docs/en-us/reference/engine/enums/CollisionFidelity.md)
+- [CommandPermission](/docs/en-us/reference/engine/enums/CommandPermission.md)
+- [CompletionAcceptanceBehavior](/docs/en-us/reference/engine/enums/CompletionAcceptanceBehavior.md)
+- [CompletionItemKind](/docs/en-us/reference/engine/enums/CompletionItemKind.md)
+- [CompletionItemTag](/docs/en-us/reference/engine/enums/CompletionItemTag.md)
+- [CompositeValueCurveType](/docs/en-us/reference/engine/enums/CompositeValueCurveType.md)
+- [CompressionAlgorithm](/docs/en-us/reference/engine/enums/CompressionAlgorithm.md)
+- [ComputerCameraMovementMode](/docs/en-us/reference/engine/enums/ComputerCameraMovementMode.md)
+- [ComputerMovementMode](/docs/en-us/reference/engine/enums/ComputerMovementMode.md)
+- [ConfigSnapshotErrorState](/docs/en-us/reference/engine/enums/ConfigSnapshotErrorState.md)
+- [ConnectionState](/docs/en-us/reference/engine/enums/ConnectionState.md)
+- [ContentSourceType](/docs/en-us/reference/engine/enums/ContentSourceType.md)
+- [ContextActionPriority](/docs/en-us/reference/engine/enums/ContextActionPriority.md)
+- [ContextActionResult](/docs/en-us/reference/engine/enums/ContextActionResult.md)
+- [ControlMode](/docs/en-us/reference/engine/enums/ControlMode.md)
+- [CoreGuiType](/docs/en-us/reference/engine/enums/CoreGuiType.md)
+- [CreateAssetResult](/docs/en-us/reference/engine/enums/CreateAssetResult.md)
+- [CreateContentResult](/docs/en-us/reference/engine/enums/CreateContentResult.md)
+- [CreateOutfitFailure](/docs/en-us/reference/engine/enums/CreateOutfitFailure.md)
+- [CreatorType](/docs/en-us/reference/engine/enums/CreatorType.md)
+- [CreatorTypeFilter](/docs/en-us/reference/engine/enums/CreatorTypeFilter.md)
+- [CurrencyType](/docs/en-us/reference/engine/enums/CurrencyType.md)
+- [CustomCameraMode](/docs/en-us/reference/engine/enums/CustomCameraMode.md)
+- [DataStoreRequestType](/docs/en-us/reference/engine/enums/DataStoreRequestType.md)
+- [DebugBreakModeType](/docs/en-us/reference/engine/enums/DebugBreakModeType.md)
+- [DebuggerEndReason](/docs/en-us/reference/engine/enums/DebuggerEndReason.md)
+- [DebuggerExceptionBreakMode](/docs/en-us/reference/engine/enums/DebuggerExceptionBreakMode.md)
+- [DebuggerFrameType](/docs/en-us/reference/engine/enums/DebuggerFrameType.md)
+- [DebuggerPauseReason](/docs/en-us/reference/engine/enums/DebuggerPauseReason.md)
+- [DebuggerResumeType](/docs/en-us/reference/engine/enums/DebuggerResumeType.md)
+- [DebuggerStatus](/docs/en-us/reference/engine/enums/DebuggerStatus.md)
+- [DefaultScriptSyncFileType](/docs/en-us/reference/engine/enums/DefaultScriptSyncFileType.md)
+- [DevCameraOcclusionMode](/docs/en-us/reference/engine/enums/DevCameraOcclusionMode.md)
+- [DevComputerCameraMovementMode](/docs/en-us/reference/engine/enums/DevComputerCameraMovementMode.md)
+- [DevComputerMovementMode](/docs/en-us/reference/engine/enums/DevComputerMovementMode.md)
+- [DeveloperMemoryTag](/docs/en-us/reference/engine/enums/DeveloperMemoryTag.md)
+- [DeviceForm](/docs/en-us/reference/engine/enums/DeviceForm.md)
+- [DeviceLevel](/docs/en-us/reference/engine/enums/DeviceLevel.md)
+- [DeviceSimulatorScalingMode](/docs/en-us/reference/engine/enums/DeviceSimulatorScalingMode.md)
+- [DeviceType](/docs/en-us/reference/engine/enums/DeviceType.md)
+- [DevTouchCameraMovementMode](/docs/en-us/reference/engine/enums/DevTouchCameraMovementMode.md)
+- [DevTouchMovementMode](/docs/en-us/reference/engine/enums/DevTouchMovementMode.md)
+- [DialogBehaviorType](/docs/en-us/reference/engine/enums/DialogBehaviorType.md)
+- [DialogPurpose](/docs/en-us/reference/engine/enums/DialogPurpose.md)
+- [DialogTone](/docs/en-us/reference/engine/enums/DialogTone.md)
+- [DigitsRigDescriptionSide](/docs/en-us/reference/engine/enums/DigitsRigDescriptionSide.md)
+- [DisplaySize](/docs/en-us/reference/engine/enums/DisplaySize.md)
+- [DistanceAttenuationMode](/docs/en-us/reference/engine/enums/DistanceAttenuationMode.md)
+- [DomainType](/docs/en-us/reference/engine/enums/DomainType.md)
+- [DominantAxis](/docs/en-us/reference/engine/enums/DominantAxis.md)
+- [DraftStatusCode](/docs/en-us/reference/engine/enums/DraftStatusCode.md)
+- [DragDetectorDragStyle](/docs/en-us/reference/engine/enums/DragDetectorDragStyle.md)
+- [DragDetectorPermissionPolicy](/docs/en-us/reference/engine/enums/DragDetectorPermissionPolicy.md)
+- [DragDetectorResponseStyle](/docs/en-us/reference/engine/enums/DragDetectorResponseStyle.md)
+- [DraggerCoordinateSpace](/docs/en-us/reference/engine/enums/DraggerCoordinateSpace.md)
+- [DraggerMovementMode](/docs/en-us/reference/engine/enums/DraggerMovementMode.md)
+- [EasingDirection](/docs/en-us/reference/engine/enums/EasingDirection.md)
+- [EasingStyle](/docs/en-us/reference/engine/enums/EasingStyle.md)
+- [ElasticBehavior](/docs/en-us/reference/engine/enums/ElasticBehavior.md)
+- [EmitterPositionType](/docs/en-us/reference/engine/enums/EmitterPositionType.md)
+- [EngagementLevel](/docs/en-us/reference/engine/enums/EngagementLevel.md)
+- [EnviromentalPhysicsThrottle](/docs/en-us/reference/engine/enums/EnviromentalPhysicsThrottle.md)
+- [ExperienceActivationStatus](/docs/en-us/reference/engine/enums/ExperienceActivationStatus.md)
+- [ExperienceAuthScope](/docs/en-us/reference/engine/enums/ExperienceAuthScope.md)
+- [ExperienceEventStatus](/docs/en-us/reference/engine/enums/ExperienceEventStatus.md)
+- [ExplosionType](/docs/en-us/reference/engine/enums/ExplosionType.md)
+- [ExternalEditorMode](/docs/en-us/reference/engine/enums/ExternalEditorMode.md)
+- [FacialAgeEstimationResultType](/docs/en-us/reference/engine/enums/FacialAgeEstimationResultType.md)
+- [FacialAnimationStreamingState](/docs/en-us/reference/engine/enums/FacialAnimationStreamingState.md)
+- [FacsActionUnit](/docs/en-us/reference/engine/enums/FacsActionUnit.md)
+- [FACSDataLod](/docs/en-us/reference/engine/enums/FACSDataLod.md)
+- [FieldOfViewMode](/docs/en-us/reference/engine/enums/FieldOfViewMode.md)
+- [FileMode](/docs/en-us/reference/engine/enums/FileMode.md)
+- [FileSystemWalkMode](/docs/en-us/reference/engine/enums/FileSystemWalkMode.md)
+- [FillDirection](/docs/en-us/reference/engine/enums/FillDirection.md)
+- [FilterErrorType](/docs/en-us/reference/engine/enums/FilterErrorType.md)
+- [FilterResult](/docs/en-us/reference/engine/enums/FilterResult.md)
+- [FinishRecordingOperation](/docs/en-us/reference/engine/enums/FinishRecordingOperation.md)
+- [FluidFidelity](/docs/en-us/reference/engine/enums/FluidFidelity.md)
+- [FluidForces](/docs/en-us/reference/engine/enums/FluidForces.md)
+- [Font](/docs/en-us/reference/engine/enums/Font.md)
+- [FontSize](/docs/en-us/reference/engine/enums/FontSize.md)
+- [FontStyle](/docs/en-us/reference/engine/enums/FontStyle.md)
+- [ForceLimitMode](/docs/en-us/reference/engine/enums/ForceLimitMode.md)
+- [FormFactor](/docs/en-us/reference/engine/enums/FormFactor.md)
+- [FramerateManagerMode](/docs/en-us/reference/engine/enums/FramerateManagerMode.md)
+- [FrameStyle](/docs/en-us/reference/engine/enums/FrameStyle.md)
+- [FrustumStreamingMode](/docs/en-us/reference/engine/enums/FrustumStreamingMode.md)
+- [FunctionalTestResult](/docs/en-us/reference/engine/enums/FunctionalTestResult.md)
+- [GameAvatarType](/docs/en-us/reference/engine/enums/GameAvatarType.md)
+- [GamepadType](/docs/en-us/reference/engine/enums/GamepadType.md)
+- [GearGenreSetting](/docs/en-us/reference/engine/enums/GearGenreSetting.md)
+- [GearType](/docs/en-us/reference/engine/enums/GearType.md)
+- [Genre](/docs/en-us/reference/engine/enums/Genre.md)
+- [GradientTileMode](/docs/en-us/reference/engine/enums/GradientTileMode.md)
+- [GradientType](/docs/en-us/reference/engine/enums/GradientType.md)
+- [GraphicsMode](/docs/en-us/reference/engine/enums/GraphicsMode.md)
+- [GraphicsOptimizationMode](/docs/en-us/reference/engine/enums/GraphicsOptimizationMode.md)
+- [GroupMembershipStatus](/docs/en-us/reference/engine/enums/GroupMembershipStatus.md)
+- [GuiState](/docs/en-us/reference/engine/enums/GuiState.md)
+- [HandlesStyle](/docs/en-us/reference/engine/enums/HandlesStyle.md)
+- [HapticEffectType](/docs/en-us/reference/engine/enums/HapticEffectType.md)
+- [HashAlgorithm](/docs/en-us/reference/engine/enums/HashAlgorithm.md)
+- [HighlightDepthMode](/docs/en-us/reference/engine/enums/HighlightDepthMode.md)
+- [HorizontalAlignment](/docs/en-us/reference/engine/enums/HorizontalAlignment.md)
+- [HoverAnimateSpeed](/docs/en-us/reference/engine/enums/HoverAnimateSpeed.md)
+- [HttpCompression](/docs/en-us/reference/engine/enums/HttpCompression.md)
+- [HttpContentType](/docs/en-us/reference/engine/enums/HttpContentType.md)
+- [HttpError](/docs/en-us/reference/engine/enums/HttpError.md)
+- [HumanoidCollisionType](/docs/en-us/reference/engine/enums/HumanoidCollisionType.md)
+- [HumanoidDisplayDistanceType](/docs/en-us/reference/engine/enums/HumanoidDisplayDistanceType.md)
+- [HumanoidHealthDisplayType](/docs/en-us/reference/engine/enums/HumanoidHealthDisplayType.md)
+- [HumanoidRigType](/docs/en-us/reference/engine/enums/HumanoidRigType.md)
+- [HumanoidStateType](/docs/en-us/reference/engine/enums/HumanoidStateType.md)
+- [IKCollisionsMode](/docs/en-us/reference/engine/enums/IKCollisionsMode.md)
+- [IKControlConstraintSupport](/docs/en-us/reference/engine/enums/IKControlConstraintSupport.md)
+- [IKControlType](/docs/en-us/reference/engine/enums/IKControlType.md)
+- [ImageAlphaType](/docs/en-us/reference/engine/enums/ImageAlphaType.md)
+- [ImageCombineType](/docs/en-us/reference/engine/enums/ImageCombineType.md)
+- [InfoType](/docs/en-us/reference/engine/enums/InfoType.md)
+- [InitialDockState](/docs/en-us/reference/engine/enums/InitialDockState.md)
+- [InOut](/docs/en-us/reference/engine/enums/InOut.md)
+- [InputActionType](/docs/en-us/reference/engine/enums/InputActionType.md)
+- [InputBindingType](/docs/en-us/reference/engine/enums/InputBindingType.md)
+- [InputSink](/docs/en-us/reference/engine/enums/InputSink.md)
+- [InputType](/docs/en-us/reference/engine/enums/InputType.md)
+- [InstanceFileSyncStatus](/docs/en-us/reference/engine/enums/InstanceFileSyncStatus.md)
+- [IntermediateMeshGenerationResult](/docs/en-us/reference/engine/enums/IntermediateMeshGenerationResult.md)
+- [InterpolationThrottlingMode](/docs/en-us/reference/engine/enums/InterpolationThrottlingMode.md)
+- [InviteState](/docs/en-us/reference/engine/enums/InviteState.md)
+- [ItemLineAlignment](/docs/en-us/reference/engine/enums/ItemLineAlignment.md)
+- [IXPLoadingStatus](/docs/en-us/reference/engine/enums/IXPLoadingStatus.md)
+- [JoinSource](/docs/en-us/reference/engine/enums/JoinSource.md)
+- [JointCreationMode](/docs/en-us/reference/engine/enums/JointCreationMode.md)
+- [KeyCode](/docs/en-us/reference/engine/enums/KeyCode.md)
+- [KeyCodeStringFormat](/docs/en-us/reference/engine/enums/KeyCodeStringFormat.md)
+- [KeyInterpolationMode](/docs/en-us/reference/engine/enums/KeyInterpolationMode.md)
+- [LeftRight](/docs/en-us/reference/engine/enums/LeftRight.md)
+- [LexemeType](/docs/en-us/reference/engine/enums/LexemeType.md)
+- [LightingStyle](/docs/en-us/reference/engine/enums/LightingStyle.md)
+- [Limb](/docs/en-us/reference/engine/enums/Limb.md)
+- [LineJoinMode](/docs/en-us/reference/engine/enums/LineJoinMode.md)
+- [ListDisplayMode](/docs/en-us/reference/engine/enums/ListDisplayMode.md)
+- [ListenerLocation](/docs/en-us/reference/engine/enums/ListenerLocation.md)
+- [ListenerPositionType](/docs/en-us/reference/engine/enums/ListenerPositionType.md)
+- [ListenerType](/docs/en-us/reference/engine/enums/ListenerType.md)
+- [LoadCharacterLayeredClothing](/docs/en-us/reference/engine/enums/LoadCharacterLayeredClothing.md)
+- [LoadDynamicHeads](/docs/en-us/reference/engine/enums/LoadDynamicHeads.md)
+- [LocationType](/docs/en-us/reference/engine/enums/LocationType.md)
+- [LuauTypeCheckMode](/docs/en-us/reference/engine/enums/LuauTypeCheckMode.md)
+- [MakeupType](/docs/en-us/reference/engine/enums/MakeupType.md)
+- [MarketplaceBulkPurchasePromptStatus](/docs/en-us/reference/engine/enums/MarketplaceBulkPurchasePromptStatus.md)
+- [MarketplaceItemPurchaseStatus](/docs/en-us/reference/engine/enums/MarketplaceItemPurchaseStatus.md)
+- [MarketplaceProductType](/docs/en-us/reference/engine/enums/MarketplaceProductType.md)
+- [MatchmakingType](/docs/en-us/reference/engine/enums/MatchmakingType.md)
+- [Material](/docs/en-us/reference/engine/enums/Material.md)
+- [MaterialPattern](/docs/en-us/reference/engine/enums/MaterialPattern.md)
+- [MembershipType](/docs/en-us/reference/engine/enums/MembershipType.md)
+- [MeshAttribute](/docs/en-us/reference/engine/enums/MeshAttribute.md)
+- [MeshPartDetailLevel](/docs/en-us/reference/engine/enums/MeshPartDetailLevel.md)
+- [MeshPartHeadsAndAccessories](/docs/en-us/reference/engine/enums/MeshPartHeadsAndAccessories.md)
+- [MeshScaleUnit](/docs/en-us/reference/engine/enums/MeshScaleUnit.md)
+- [MeshType](/docs/en-us/reference/engine/enums/MeshType.md)
+- [MessageType](/docs/en-us/reference/engine/enums/MessageType.md)
+- [ModelLevelOfDetail](/docs/en-us/reference/engine/enums/ModelLevelOfDetail.md)
+- [ModelStreamingBehavior](/docs/en-us/reference/engine/enums/ModelStreamingBehavior.md)
+- [ModelStreamingMode](/docs/en-us/reference/engine/enums/ModelStreamingMode.md)
+- [ModerationStatus](/docs/en-us/reference/engine/enums/ModerationStatus.md)
+- [ModifierKey](/docs/en-us/reference/engine/enums/ModifierKey.md)
+- [MouseBehavior](/docs/en-us/reference/engine/enums/MouseBehavior.md)
+- [MoveState](/docs/en-us/reference/engine/enums/MoveState.md)
+- [MuteState](/docs/en-us/reference/engine/enums/MuteState.md)
+- [NameOcclusion](/docs/en-us/reference/engine/enums/NameOcclusion.md)
+- [NegateOperationHiddenHistory](/docs/en-us/reference/engine/enums/NegateOperationHiddenHistory.md)
+- [NetworkOwnership](/docs/en-us/reference/engine/enums/NetworkOwnership.md)
+- [NetworkStatus](/docs/en-us/reference/engine/enums/NetworkStatus.md)
+- [NoiseType](/docs/en-us/reference/engine/enums/NoiseType.md)
+- [NormalId](/docs/en-us/reference/engine/enums/NormalId.md)
+- [OrientationAlignmentMode](/docs/en-us/reference/engine/enums/OrientationAlignmentMode.md)
+- [OutfitSource](/docs/en-us/reference/engine/enums/OutfitSource.md)
+- [OutfitType](/docs/en-us/reference/engine/enums/OutfitType.md)
+- [OutputLayoutMode](/docs/en-us/reference/engine/enums/OutputLayoutMode.md)
+- [OverrideMouseIconBehavior](/docs/en-us/reference/engine/enums/OverrideMouseIconBehavior.md)
+- [PackagePermission](/docs/en-us/reference/engine/enums/PackagePermission.md)
+- [ParticleEmitterShape](/docs/en-us/reference/engine/enums/ParticleEmitterShape.md)
+- [ParticleEmitterShapeInOut](/docs/en-us/reference/engine/enums/ParticleEmitterShapeInOut.md)
+- [ParticleEmitterShapeStyle](/docs/en-us/reference/engine/enums/ParticleEmitterShapeStyle.md)
+- [ParticleFlipbookLayout](/docs/en-us/reference/engine/enums/ParticleFlipbookLayout.md)
+- [ParticleFlipbookMode](/docs/en-us/reference/engine/enums/ParticleFlipbookMode.md)
+- [ParticleFlipbookTextureCompatible](/docs/en-us/reference/engine/enums/ParticleFlipbookTextureCompatible.md)
+- [ParticleOrientation](/docs/en-us/reference/engine/enums/ParticleOrientation.md)
+- [PartType](/docs/en-us/reference/engine/enums/PartType.md)
+- [PathfindingUseImprovedSearch](/docs/en-us/reference/engine/enums/PathfindingUseImprovedSearch.md)
+- [PathStatus](/docs/en-us/reference/engine/enums/PathStatus.md)
+- [PathWaypointAction](/docs/en-us/reference/engine/enums/PathWaypointAction.md)
+- [PeoplePageLayout](/docs/en-us/reference/engine/enums/PeoplePageLayout.md)
+- [PermissionLevelShown](/docs/en-us/reference/engine/enums/PermissionLevelShown.md)
+- [PhysicalConstraintType](/docs/en-us/reference/engine/enums/PhysicalConstraintType.md)
+- [PhysicsSteppingMethod](/docs/en-us/reference/engine/enums/PhysicsSteppingMethod.md)
+- [Platform](/docs/en-us/reference/engine/enums/Platform.md)
+- [PlaybackState](/docs/en-us/reference/engine/enums/PlaybackState.md)
+- [PlayerActions](/docs/en-us/reference/engine/enums/PlayerActions.md)
+- [PlayerCharacterDestroyBehavior](/docs/en-us/reference/engine/enums/PlayerCharacterDestroyBehavior.md)
+- [PlayerChatType](/docs/en-us/reference/engine/enums/PlayerChatType.md)
+- [PlayerExitReason](/docs/en-us/reference/engine/enums/PlayerExitReason.md)
+- [PlayerPlatformActivationStatus](/docs/en-us/reference/engine/enums/PlayerPlatformActivationStatus.md)
+- [PlayerPlatformSpenderStatus](/docs/en-us/reference/engine/enums/PlayerPlatformSpenderStatus.md)
+- [PluginConnectionTargetType](/docs/en-us/reference/engine/enums/PluginConnectionTargetType.md)
+- [PoseEasingDirection](/docs/en-us/reference/engine/enums/PoseEasingDirection.md)
+- [PoseEasingStyle](/docs/en-us/reference/engine/enums/PoseEasingStyle.md)
+- [PositionAlignmentMode](/docs/en-us/reference/engine/enums/PositionAlignmentMode.md)
+- [PredictionMode](/docs/en-us/reference/engine/enums/PredictionMode.md)
+- [PredictionStatus](/docs/en-us/reference/engine/enums/PredictionStatus.md)
+- [PredictiveStreamingMode](/docs/en-us/reference/engine/enums/PredictiveStreamingMode.md)
+- [PreferredInput](/docs/en-us/reference/engine/enums/PreferredInput.md)
+- [PreferredTextSize](/docs/en-us/reference/engine/enums/PreferredTextSize.md)
+- [PrimalPhysicsSolver](/docs/en-us/reference/engine/enums/PrimalPhysicsSolver.md)
+- [PrimitiveType](/docs/en-us/reference/engine/enums/PrimitiveType.md)
+- [ProductLocationRestriction](/docs/en-us/reference/engine/enums/ProductLocationRestriction.md)
+- [ProductPurchaseChannel](/docs/en-us/reference/engine/enums/ProductPurchaseChannel.md)
+- [ProductPurchaseDecision](/docs/en-us/reference/engine/enums/ProductPurchaseDecision.md)
+- [PromptCreateAssetResult](/docs/en-us/reference/engine/enums/PromptCreateAssetResult.md)
+- [PromptCreateAvatarResult](/docs/en-us/reference/engine/enums/PromptCreateAvatarResult.md)
+- [PromptExperienceDetailsResult](/docs/en-us/reference/engine/enums/PromptExperienceDetailsResult.md)
+- [PromptPublishAssetResult](/docs/en-us/reference/engine/enums/PromptPublishAssetResult.md)
+- [PropertyStatus](/docs/en-us/reference/engine/enums/PropertyStatus.md)
+- [ProximityPromptExclusivity](/docs/en-us/reference/engine/enums/ProximityPromptExclusivity.md)
+- [ProximityPromptInputType](/docs/en-us/reference/engine/enums/ProximityPromptInputType.md)
+- [ProximityPromptStyle](/docs/en-us/reference/engine/enums/ProximityPromptStyle.md)
+- [PurchaseOption](/docs/en-us/reference/engine/enums/PurchaseOption.md)
+- [QualityLevel](/docs/en-us/reference/engine/enums/QualityLevel.md)
+- [R15CollisionType](/docs/en-us/reference/engine/enums/R15CollisionType.md)
+- [RaycastFilterType](/docs/en-us/reference/engine/enums/RaycastFilterType.md)
+- [ReadCapturesFromGalleryResult](/docs/en-us/reference/engine/enums/ReadCapturesFromGalleryResult.md)
+- [ReceiptDecision](/docs/en-us/reference/engine/enums/ReceiptDecision.md)
+- [ReceiptType](/docs/en-us/reference/engine/enums/ReceiptType.md)
+- [RecommendationActionType](/docs/en-us/reference/engine/enums/RecommendationActionType.md)
+- [RecommendationImpressionType](/docs/en-us/reference/engine/enums/RecommendationImpressionType.md)
+- [RecommendationItemContentType](/docs/en-us/reference/engine/enums/RecommendationItemContentType.md)
+- [RecommendationItemVisibility](/docs/en-us/reference/engine/enums/RecommendationItemVisibility.md)
+- [RecommendationPreferenceTargetType](/docs/en-us/reference/engine/enums/RecommendationPreferenceTargetType.md)
+- [RecommendationPreferenceType](/docs/en-us/reference/engine/enums/RecommendationPreferenceType.md)
+- [RejectCharacterDeletions](/docs/en-us/reference/engine/enums/RejectCharacterDeletions.md)
+- [RenderFidelity](/docs/en-us/reference/engine/enums/RenderFidelity.md)
+- [RenderingCacheOptimizationMode](/docs/en-us/reference/engine/enums/RenderingCacheOptimizationMode.md)
+- [RenderPriority](/docs/en-us/reference/engine/enums/RenderPriority.md)
+- [ReplicateInstanceDestroySetting](/docs/en-us/reference/engine/enums/ReplicateInstanceDestroySetting.md)
+- [ResamplerMode](/docs/en-us/reference/engine/enums/ResamplerMode.md)
+- [ReservedHighlightId](/docs/en-us/reference/engine/enums/ReservedHighlightId.md)
+- [RestPose](/docs/en-us/reference/engine/enums/RestPose.md)
+- [ReverbType](/docs/en-us/reference/engine/enums/ReverbType.md)
+- [RibbonTool](/docs/en-us/reference/engine/enums/RibbonTool.md)
+- [RollOffMode](/docs/en-us/reference/engine/enums/RollOffMode.md)
+- [RolloutState](/docs/en-us/reference/engine/enums/RolloutState.md)
+- [RotationOrder](/docs/en-us/reference/engine/enums/RotationOrder.md)
+- [RotationType](/docs/en-us/reference/engine/enums/RotationType.md)
+- [RsvpStatus](/docs/en-us/reference/engine/enums/RsvpStatus.md)
+- [RtlTextSupport](/docs/en-us/reference/engine/enums/RtlTextSupport.md)
+- [RunContext](/docs/en-us/reference/engine/enums/RunContext.md)
+- [RunState](/docs/en-us/reference/engine/enums/RunState.md)
+- [RuntimeUndoBehavior](/docs/en-us/reference/engine/enums/RuntimeUndoBehavior.md)
+- [SafeAreaCompatibility](/docs/en-us/reference/engine/enums/SafeAreaCompatibility.md)
+- [SalesTypeFilter](/docs/en-us/reference/engine/enums/SalesTypeFilter.md)
+- [SandboxedInstanceMode](/docs/en-us/reference/engine/enums/SandboxedInstanceMode.md)
+- [SavedQualitySetting](/docs/en-us/reference/engine/enums/SavedQualitySetting.md)
+- [SaveFilter](/docs/en-us/reference/engine/enums/SaveFilter.md)
+- [ScaleType](/docs/en-us/reference/engine/enums/ScaleType.md)
+- [ScopeCheckResult](/docs/en-us/reference/engine/enums/ScopeCheckResult.md)
+- [ScreenInsets](/docs/en-us/reference/engine/enums/ScreenInsets.md)
+- [ScreenOrientation](/docs/en-us/reference/engine/enums/ScreenOrientation.md)
+- [ScreenshotCaptureResult](/docs/en-us/reference/engine/enums/ScreenshotCaptureResult.md)
+- [ScriptStoppedReason](/docs/en-us/reference/engine/enums/ScriptStoppedReason.md)
+- [ScriptVariableScope](/docs/en-us/reference/engine/enums/ScriptVariableScope.md)
+- [ScrollBarInset](/docs/en-us/reference/engine/enums/ScrollBarInset.md)
+- [ScrollingDirection](/docs/en-us/reference/engine/enums/ScrollingDirection.md)
+- [SecurityCapability](/docs/en-us/reference/engine/enums/SecurityCapability.md)
+- [SelectionBehavior](/docs/en-us/reference/engine/enums/SelectionBehavior.md)
+- [SelectionRenderMode](/docs/en-us/reference/engine/enums/SelectionRenderMode.md)
+- [SelfViewPosition](/docs/en-us/reference/engine/enums/SelfViewPosition.md)
+- [SensorMode](/docs/en-us/reference/engine/enums/SensorMode.md)
+- [SensorUpdateType](/docs/en-us/reference/engine/enums/SensorUpdateType.md)
+- [ServiceVisibility](/docs/en-us/reference/engine/enums/ServiceVisibility.md)
+- [Severity](/docs/en-us/reference/engine/enums/Severity.md)
+- [ShowAdResult](/docs/en-us/reference/engine/enums/ShowAdResult.md)
+- [SignalBehavior](/docs/en-us/reference/engine/enums/SignalBehavior.md)
+- [SizeConstraint](/docs/en-us/reference/engine/enums/SizeConstraint.md)
+- [SlimTintMode](/docs/en-us/reference/engine/enums/SlimTintMode.md)
+- [SlimTranscoderStatus](/docs/en-us/reference/engine/enums/SlimTranscoderStatus.md)
+- [SolverConvergenceMetricType](/docs/en-us/reference/engine/enums/SolverConvergenceMetricType.md)
+- [SolverConvergenceVisualizationMode](/docs/en-us/reference/engine/enums/SolverConvergenceVisualizationMode.md)
+- [SortDirection](/docs/en-us/reference/engine/enums/SortDirection.md)
+- [SortOrder](/docs/en-us/reference/engine/enums/SortOrder.md)
+- [StartCorner](/docs/en-us/reference/engine/enums/StartCorner.md)
+- [StateObjectFieldType](/docs/en-us/reference/engine/enums/StateObjectFieldType.md)
+- [Status](/docs/en-us/reference/engine/enums/Status.md)
+- [StepFrequency](/docs/en-us/reference/engine/enums/StepFrequency.md)
+- [StreamingIntegrityMode](/docs/en-us/reference/engine/enums/StreamingIntegrityMode.md)
+- [StreamingPauseMode](/docs/en-us/reference/engine/enums/StreamingPauseMode.md)
+- [StreamOutBehavior](/docs/en-us/reference/engine/enums/StreamOutBehavior.md)
+- [StrokeSizingMode](/docs/en-us/reference/engine/enums/StrokeSizingMode.md)
+- [StudioCaptureBufferStatus](/docs/en-us/reference/engine/enums/StudioCaptureBufferStatus.md)
+- [StudioCaptureScreenshotFormat](/docs/en-us/reference/engine/enums/StudioCaptureScreenshotFormat.md)
+- [StudioPlaceUpdateFailureReason](/docs/en-us/reference/engine/enums/StudioPlaceUpdateFailureReason.md)
+- [StudioScriptEditorColorCategories](/docs/en-us/reference/engine/enums/StudioScriptEditorColorCategories.md)
+- [StudioScriptEditorColorPresets](/docs/en-us/reference/engine/enums/StudioScriptEditorColorPresets.md)
+- [StudioStyleGuideColor](/docs/en-us/reference/engine/enums/StudioStyleGuideColor.md)
+- [StudioStyleGuideModifier](/docs/en-us/reference/engine/enums/StudioStyleGuideModifier.md)
+- [Style](/docs/en-us/reference/engine/enums/Style.md)
+- [SubscriptionExpirationReason](/docs/en-us/reference/engine/enums/SubscriptionExpirationReason.md)
+- [SubscriptionPaymentStatus](/docs/en-us/reference/engine/enums/SubscriptionPaymentStatus.md)
+- [SubscriptionPeriod](/docs/en-us/reference/engine/enums/SubscriptionPeriod.md)
+- [SubscriptionState](/docs/en-us/reference/engine/enums/SubscriptionState.md)
+- [SurfaceConstraint](/docs/en-us/reference/engine/enums/SurfaceConstraint.md)
+- [SurfaceGuiSizingMode](/docs/en-us/reference/engine/enums/SurfaceGuiSizingMode.md)
+- [SurfaceType](/docs/en-us/reference/engine/enums/SurfaceType.md)
+- [SwipeDirection](/docs/en-us/reference/engine/enums/SwipeDirection.md)
+- [TableMajorAxis](/docs/en-us/reference/engine/enums/TableMajorAxis.md)
+- [TeamCreateErrorState](/docs/en-us/reference/engine/enums/TeamCreateErrorState.md)
+- [Technology](/docs/en-us/reference/engine/enums/Technology.md)
+- [TeleportMethod](/docs/en-us/reference/engine/enums/TeleportMethod.md)
+- [TeleportResult](/docs/en-us/reference/engine/enums/TeleportResult.md)
+- [TeleportState](/docs/en-us/reference/engine/enums/TeleportState.md)
+- [TeleportType](/docs/en-us/reference/engine/enums/TeleportType.md)
+- [TerrainAcquisitionMethod](/docs/en-us/reference/engine/enums/TerrainAcquisitionMethod.md)
+- [TerrainFace](/docs/en-us/reference/engine/enums/TerrainFace.md)
+- [TextChatMessageStatus](/docs/en-us/reference/engine/enums/TextChatMessageStatus.md)
+- [TextDirection](/docs/en-us/reference/engine/enums/TextDirection.md)
+- [TextFilterContext](/docs/en-us/reference/engine/enums/TextFilterContext.md)
+- [TextTruncate](/docs/en-us/reference/engine/enums/TextTruncate.md)
+- [TextureMode](/docs/en-us/reference/engine/enums/TextureMode.md)
+- [TextureQueryType](/docs/en-us/reference/engine/enums/TextureQueryType.md)
+- [TextXAlignment](/docs/en-us/reference/engine/enums/TextXAlignment.md)
+- [TextYAlignment](/docs/en-us/reference/engine/enums/TextYAlignment.md)
+- [ThreadPoolConfig](/docs/en-us/reference/engine/enums/ThreadPoolConfig.md)
+- [ThrottlingPriority](/docs/en-us/reference/engine/enums/ThrottlingPriority.md)
+- [ThumbnailSize](/docs/en-us/reference/engine/enums/ThumbnailSize.md)
+- [ThumbnailType](/docs/en-us/reference/engine/enums/ThumbnailType.md)
+- [TickCountSampleMethod](/docs/en-us/reference/engine/enums/TickCountSampleMethod.md)
+- [TonemapperPreset](/docs/en-us/reference/engine/enums/TonemapperPreset.md)
+- [TopBottom](/docs/en-us/reference/engine/enums/TopBottom.md)
+- [TouchCameraMovementMode](/docs/en-us/reference/engine/enums/TouchCameraMovementMode.md)
+- [TouchMovementMode](/docs/en-us/reference/engine/enums/TouchMovementMode.md)
+- [TrackerError](/docs/en-us/reference/engine/enums/TrackerError.md)
+- [TrackerExtrapolationFlagMode](/docs/en-us/reference/engine/enums/TrackerExtrapolationFlagMode.md)
+- [TrackerFaceTrackingStatus](/docs/en-us/reference/engine/enums/TrackerFaceTrackingStatus.md)
+- [TrackerLodFlagMode](/docs/en-us/reference/engine/enums/TrackerLodFlagMode.md)
+- [TrackerLodValueMode](/docs/en-us/reference/engine/enums/TrackerLodValueMode.md)
+- [TrackerMode](/docs/en-us/reference/engine/enums/TrackerMode.md)
+- [TrackerPromptEvent](/docs/en-us/reference/engine/enums/TrackerPromptEvent.md)
+- [TrackerType](/docs/en-us/reference/engine/enums/TrackerType.md)
+- [TriStateBoolean](/docs/en-us/reference/engine/enums/TriStateBoolean.md)
+- [TweenStatus](/docs/en-us/reference/engine/enums/TweenStatus.md)
+- [UICaptureMode](/docs/en-us/reference/engine/enums/UICaptureMode.md)
+- [UIDragDetectorBoundingBehavior](/docs/en-us/reference/engine/enums/UIDragDetectorBoundingBehavior.md)
+- [UIDragDetectorDragRelativity](/docs/en-us/reference/engine/enums/UIDragDetectorDragRelativity.md)
+- [UIDragDetectorDragSpace](/docs/en-us/reference/engine/enums/UIDragDetectorDragSpace.md)
+- [UIDragDetectorDragStyle](/docs/en-us/reference/engine/enums/UIDragDetectorDragStyle.md)
+- [UIDragDetectorResponseStyle](/docs/en-us/reference/engine/enums/UIDragDetectorResponseStyle.md)
+- [UIDragSpeedAxisMapping](/docs/en-us/reference/engine/enums/UIDragSpeedAxisMapping.md)
+- [UIFlexAlignment](/docs/en-us/reference/engine/enums/UIFlexAlignment.md)
+- [UIFlexMode](/docs/en-us/reference/engine/enums/UIFlexMode.md)
+- [UITheme](/docs/en-us/reference/engine/enums/UITheme.md)
+- [UploadCaptureResult](/docs/en-us/reference/engine/enums/UploadCaptureResult.md)
+- [UserAcquisitionSource](/docs/en-us/reference/engine/enums/UserAcquisitionSource.md)
+- [UserCFrame](/docs/en-us/reference/engine/enums/UserCFrame.md)
+- [UserInputState](/docs/en-us/reference/engine/enums/UserInputState.md)
+- [UserInputType](/docs/en-us/reference/engine/enums/UserInputType.md)
+- [UserNewReturningStatus](/docs/en-us/reference/engine/enums/UserNewReturningStatus.md)
+- [VelocityConstraintMode](/docs/en-us/reference/engine/enums/VelocityConstraintMode.md)
+- [VerifiedLevel](/docs/en-us/reference/engine/enums/VerifiedLevel.md)
+- [VerticalAlignment](/docs/en-us/reference/engine/enums/VerticalAlignment.md)
+- [VerticalScrollBarPosition](/docs/en-us/reference/engine/enums/VerticalScrollBarPosition.md)
+- [VibrationMotor](/docs/en-us/reference/engine/enums/VibrationMotor.md)
+- [VideoCaptureResult](/docs/en-us/reference/engine/enums/VideoCaptureResult.md)
+- [VideoCaptureStartedResult](/docs/en-us/reference/engine/enums/VideoCaptureStartedResult.md)
+- [VideoDeviceCaptureQuality](/docs/en-us/reference/engine/enums/VideoDeviceCaptureQuality.md)
+- [VideoError](/docs/en-us/reference/engine/enums/VideoError.md)
+- [VideoSampleSize](/docs/en-us/reference/engine/enums/VideoSampleSize.md)
+- [ViewMode](/docs/en-us/reference/engine/enums/ViewMode.md)
+- [VirtualCursorMode](/docs/en-us/reference/engine/enums/VirtualCursorMode.md)
+- [VirtualInputMode](/docs/en-us/reference/engine/enums/VirtualInputMode.md)
+- [VoiceChatDistanceAttenuationType](/docs/en-us/reference/engine/enums/VoiceChatDistanceAttenuationType.md)
+- [VoiceChatState](/docs/en-us/reference/engine/enums/VoiceChatState.md)
+- [VoiceControlPath](/docs/en-us/reference/engine/enums/VoiceControlPath.md)
+- [VolumetricAudio](/docs/en-us/reference/engine/enums/VolumetricAudio.md)
+- [VRComfortSetting](/docs/en-us/reference/engine/enums/VRComfortSetting.md)
+- [VRControllerModelMode](/docs/en-us/reference/engine/enums/VRControllerModelMode.md)
+- [VRLaserPointerMode](/docs/en-us/reference/engine/enums/VRLaserPointerMode.md)
+- [VRScaling](/docs/en-us/reference/engine/enums/VRScaling.md)
+- [VRSessionState](/docs/en-us/reference/engine/enums/VRSessionState.md)
+- [VRTouchpad](/docs/en-us/reference/engine/enums/VRTouchpad.md)
+- [VRTouchpadMode](/docs/en-us/reference/engine/enums/VRTouchpadMode.md)
+- [WaterDirection](/docs/en-us/reference/engine/enums/WaterDirection.md)
+- [WaterForce](/docs/en-us/reference/engine/enums/WaterForce.md)
+- [WebStreamClientState](/docs/en-us/reference/engine/enums/WebStreamClientState.md)
+- [WebStreamClientType](/docs/en-us/reference/engine/enums/WebStreamClientType.md)
+- [WeldConstraintPreserve](/docs/en-us/reference/engine/enums/WeldConstraintPreserve.md)
+- [WhenUserFirstPlayed](/docs/en-us/reference/engine/enums/WhenUserFirstPlayed.md)
+- [WhisperChatPrivacyMode](/docs/en-us/reference/engine/enums/WhisperChatPrivacyMode.md)
+- [WrapLayerAutoSkin](/docs/en-us/reference/engine/enums/WrapLayerAutoSkin.md)
+- [WrapLayerDebugMode](/docs/en-us/reference/engine/enums/WrapLayerDebugMode.md)
+- [WrapTargetDebugMode](/docs/en-us/reference/engine/enums/WrapTargetDebugMode.md)
+- [ZIndexBehavior](/docs/en-us/reference/engine/enums/ZIndexBehavior.md)
+
+## Globals
+
+- [Luau globals](/docs/en-us/reference/engine/globals/LuaGlobals.md)
+- [Roblox globals](/docs/en-us/reference/engine/globals/RobloxGlobals.md)
+
+## Libraries
+
+- [bit32](/docs/en-us/reference/engine/libraries/bit32.md)
+- [buffer](/docs/en-us/reference/engine/libraries/buffer.md)
+- [coroutine](/docs/en-us/reference/engine/libraries/coroutine.md)
+- [debug](/docs/en-us/reference/engine/libraries/debug.md)
+- [math](/docs/en-us/reference/engine/libraries/math.md)
+- [os](/docs/en-us/reference/engine/libraries/os.md)
+- [string](/docs/en-us/reference/engine/libraries/string.md)
+- [table](/docs/en-us/reference/engine/libraries/table.md)
+- [task](/docs/en-us/reference/engine/libraries/task.md)
+- [utf8](/docs/en-us/reference/engine/libraries/utf8.md)
+- [vector](/docs/en-us/reference/engine/libraries/vector.md)
+
+## Release notes
+
+- [Release notes overview](/docs/en-us/releases.md)
+- [Week of October 5, 2026](/docs/en-us/updates/2026-10-05.md)
+
+## Recent updates
+
+- [Week of September 28, 2026](/docs/en-us/updates/2026-09-28.md)
+- [Week of September 21, 2026](/docs/en-us/updates/2026-09-21.md)
+- [Week of September 14, 2026](/docs/en-us/updates/2026-09-14.md)
+- [Week of September 7, 2026](/docs/en-us/updates/2026-09-07.md)
+- [Week of August 31, 2026](/docs/en-us/updates/2026-08-31.md)
+- [Week of August 24, 2026](/docs/en-us/updates/2026-08-24.md)
+- [Week of August 17, 2026](/docs/en-us/updates/2026-08-17.md)
+- [Week of August 10, 2026](/docs/en-us/updates/2026-08-10.md)
+- [Week of August 3, 2026](/docs/en-us/updates/2026-08-03.md)
+
+## Guides
+
+- [Open Cloud data stores](/docs/en-us/cloud/guides/data-stores.md)
+- [Usage guide for assets](/docs/en-us/cloud/guides/usage-assets.md)
+- [Experience configs](/docs/en-us/cloud/guides/configs.md)
+- [Experiments](/docs/en-us/cloud/guides/experiments.md)
+- [Secrets stores](/docs/en-us/cloud/guides/secrets-store.md)
+- [Analytics](/docs/en-us/cloud/guides/analytics.md)
+- [Analytics alerts](/docs/en-us/cloud/guides/alerts.md)
+- [Error reporting](/docs/en-us/cloud/guides/error-reporting.md)
+- [User inventories](/docs/en-us/cloud/guides/inventory.md)
+- [Engine instances](/docs/en-us/cloud/guides/instance.md)
+- [User notifications](/docs/en-us/cloud/guides/experience-notifications.md)
+- [Messaging usage guide](/docs/en-us/cloud/guides/usage-messaging.md)
+- [Usage guide for place publishing](/docs/en-us/cloud/guides/usage-place-publishing.md)
+- [Advertising](/docs/en-us/cloud/guides/advertising.md)
+
+## Analytics
+
+- [Supported metrics and dimensions](/docs/en-us/cloud/guides/analytics/metrics.md)
+- [Analytics](/docs/en-us/production/analytics.md)
+- [Get started with analytics](/docs/en-us/production/analytics/get-started.md)
+
+## Analytics alerts
+
+- [Supported alert metrics and dimensions](/docs/en-us/cloud/guides/alerts/metrics.md)
+
+## Webhooks
+
+- [Webhook notifications](/docs/en-us/cloud/webhooks/webhook-notifications.md)
+- [Automate right to erasure using webhooks](/docs/en-us/cloud/webhooks/automate-right-to-erasure.md)
+
+## Common components
+
+- [Types](/docs/en-us/cloud/reference/types.md)
+- [Errors](/docs/en-us/cloud/reference/errors.md)
+- [Rate limits](/docs/en-us/cloud/reference/rate-limits.md)
+- [OpenAPI document](/docs/en-us/cloud/reference/openapi.md)
+- [Scopes](/docs/en-us/cloud/reference/scopes.md)
+- [Risk levels](/docs/en-us/cloud/reference/risk-levels.md)
+
+## Authentication
+
+- [Manage API keys](/docs/en-us/cloud/auth/api-keys.md)
+- [OAuth 2.0 overview](/docs/en-us/cloud/auth/oauth2-overview.md)
+
+## OAuth 2.0
+
+- [OAuth 2.0 app registration](/docs/en-us/cloud/auth/oauth2-registration.md)
+- [OAuth 2.0 app implementation](/docs/en-us/cloud/auth/oauth2-develop.md)
+- [OAuth 2.0 sample app](/docs/en-us/cloud/auth/oauth2-sample.md)
+- [OAuth 2.0 authentication](/docs/en-us/cloud/auth/oauth2-reference.md)
+
+## Roblox Studio
+
+- [Roblox Studio](/docs/en-us/studio.md)
+- [Roblox Studio setup](/docs/en-us/studio/setup.md)
+- [Studio interface](/docs/en-us/studio/ui-overview.md)
+- [Assistant for Studio](/docs/en-us/assistant/guide.md)
+- [Connect to the Roblox Studio MCP server](/docs/en-us/studio/mcp.md)
+
+## Assistant
+
+- [Skills](/docs/en-us/assistant/skills.md)
+- [Assistant prompt guide and examples](/docs/en-us/assistant/prompt-engineering.md)
+
+## Building tools
+
+- [Align tool](/docs/en-us/studio/align-tool.md)
+- [Pivot tools](/docs/en-us/studio/pivot-tools.md)
+- [Terrain Editor](/docs/en-us/studio/terrain-editor.md)
+- [Material Generator](/docs/en-us/studio/material-generator.md)
+- [Texture Generator](/docs/en-us/studio/texture-generator.md)
+- [Rig Generator](/docs/en-us/studio/rig-builder.md)
+
+## Scripting tools
+
+- [Script Editor](/docs/en-us/studio/script-editor.md)
+- [Debugging](/docs/en-us/studio/debugging.md)
+
+## Testing tools
+
+- [Studio testing modes](/docs/en-us/studio/testing-modes.md)
+- [Device Simulator](/docs/en-us/studio/device-simulator.md)
+- [Output](/docs/en-us/studio/output.md)
+- [Developer Console](/docs/en-us/studio/developer-console.md)
+
+## Device Simulator
+
+- [Network Simulator](/docs/en-us/studio/network-simulator.md)
+- [Controller Emulator](/docs/en-us/studio/controller-emulator.md)
+
+## Developer Console
+
+- [Script Profiler](/docs/en-us/studio/optimization/scriptprofiler.md)
+- [Memory usage](/docs/en-us/studio/optimization/memory-usage.md)
+
+## UI reference
+
+- [Explorer window](/docs/en-us/studio/explorer.md)
+- [Properties window](/docs/en-us/studio/properties.md)
+- [Avatar Settings](/docs/en-us/studio/avatar-settings.md)
+- [Studio command-line interface](/docs/en-us/studio/command-line-interface.md)
+
+## Plugins
+
+- [Studio plugins](/docs/en-us/studio/plugins.md)
+- [Studio widgets](/docs/en-us/studio/build-studio-widgets.md)
+
+## Monitor
+
+- [Analytics insights](/docs/en-us/production/analytics/insights.md)
+- [Error Report](/docs/en-us/production/analytics/error-report.md)
+- [Server crashes chart](/docs/en-us/production/analytics/crashes.md)
+- [Alerts](/docs/en-us/production/analytics/alerts.md)
+
+## Adjust and experiment
+
+- [Experience configs](/docs/en-us/production/configs.md)
+- [Experiments](/docs/en-us/production/experiments.md)
+
+## Dashboards
+
+- [Analytics dashboard](/docs/en-us/production/analytics/analytics-dashboard.md)
+- [Custom dashboards](/docs/en-us/production/analytics/custom-dashboards.md)
+- [Performance](/docs/en-us/production/analytics/performance.md)
+- [Retention](/docs/en-us/production/analytics/retention.md)
+- [Engagement](/docs/en-us/production/analytics/engagement.md)
+- [Acquisition](/docs/en-us/production/analytics/acquisition.md)
+- [Demographics](/docs/en-us/production/analytics/demographics.md)
+- [Feedback](/docs/en-us/production/analytics/feedback.md)
+- [Monetization](/docs/en-us/production/analytics/monetization.md)
+- [Bans](/docs/en-us/production/bans.md)
+
+## Event types
+
+- [Event types](/docs/en-us/production/analytics/event-types.md)
+- [Economy events](/docs/en-us/production/analytics/economy-events.md)
+- [Funnel events](/docs/en-us/production/analytics/funnel-events.md)
+- [Custom events](/docs/en-us/production/analytics/custom-events.md)
+- [Custom fields](/docs/en-us/production/analytics/custom-fields.md)
+
+## Platform
+
+- [Get Started](/docs/en-us/get-started.md)
+- [The social 3D creation platform](/docs/en-us/platform.md)
+- [Reach a massive global audience](/docs/en-us/scale.md)
+- [Turn your creativity into income on Roblox](/docs/en-us/monetize.md)
+
+## Get Started
+
+- [Why should I develop on Roblox?](/docs/en-us/get-started/why-build-on-roblox.md)
+- [How is Roblox different from other platforms?](/docs/en-us/get-started/how-is-roblox-different.md)
+- [What tools does Roblox provide?](/docs/en-us/get-started/tools.md)
+- [How do I make money?](/docs/en-us/get-started/monetization.md)
+- [Recommended strategies](/docs/en-us/get-started/strategies.md)
+- [Get started creating on Roblox](/docs/en-us/get-started/creating.md)
+- [Resources](/docs/en-us/get-started/resources.md)
+
+## Guidelines and policies
+
+- [How you can help us make Roblox safer](/docs/en-us/safety.md)
+- [Content maturity and compliance](/docs/en-us/production/promotion/content-maturity.md)
+- [Roblox Kids and Select](/docs/en-us/production/publishing/kids-and-select.md)
+- [Regional Content Availability](/docs/en-us/production/promotion/regional-content-availability.md)
+- [RTBF and creators](/docs/en-us/production/publishing/RTBF-and-creators.md)
+- [Intellectual Property Guidelines](/docs/en-us/production/publishing/ip-guidelines.md)
+- [EU DSA IP infringement reporting](/docs/en-us/production/publishing/dsa-ip-reporting.md)
+- [Games with Generative AI](/docs/en-us/generative-AI.md)
+- [AI data sharing](/docs/en-us/ai-data-sharing.md)
+- [Account verification](/docs/en-us/production/publishing/account-verification.md)
+- [Group guidelines](/docs/en-us/projects/group-guidelines.md)
+- [Paid random items policy guidelines](/docs/en-us/production/monetization/paid-random-items.md)
+
+## Get started
+
+- [Start learning with tutorials](/docs/en-us/tutorials.md)
+- [Core curriculum](/docs/en-us/tutorials/curriculums/core.md)
+- [Coding fundamentals](/docs/en-us/tutorials/fundamentals/coding-1/coding-fundamentals.md)
+
+## Brand new to Studio?
+
+- [Learn about Studio](/docs/en-us/tutorials/curriculums/studio.md)
+- [Intro to building](/docs/en-us/tutorials/curriculums/building.md)
+- [Intro to coding](/docs/en-us/tutorials/curriculums/coding.md)
+- [Intro to VFX art](/docs/en-us/tutorials/curriculums/artist.md)
+- [Intro to animation](/docs/en-us/tutorials/curriculums/animator.md)
+
+## Learn about Studio
+
+- [Create Roblox account](/docs/en-us/tutorials/curriculums/studio/create-account.md)
+- [Install Roblox Studio](/docs/en-us/tutorials/curriculums/studio/install-studio.md)
+- [Explore Studio UI](/docs/en-us/tutorials/curriculums/studio/explore-ui.md)
+- [Next steps](/docs/en-us/tutorials/curriculums/studio/next-steps.md)
+
+## Learn to build an obby
+
+- [Get started](/docs/en-us/tutorials/curriculums/building/get-started.md)
+- [Work with parts](/docs/en-us/tutorials/curriculums/building/work-with-parts.md)
+- [AI Assistant](/docs/en-us/tutorials/curriculums/building/code-with-assistant.md)
+- [Test and save](/docs/en-us/tutorials/curriculums/building/test-and-save.md)
+- [Next steps](/docs/en-us/tutorials/curriculums/building/next-steps.md)
+
+## Learn to code
+
+- [Get started](/docs/en-us/tutorials/curriculums/coding/get-started.md)
+- [Work with variables](/docs/en-us/tutorials/curriculums/coding/work-with-variables.md)
+- [Test and save](/docs/en-us/tutorials/curriculums/coding/test-and-save.md)
+- [Customize strings](/docs/en-us/tutorials/curriculums/coding/customize-strings.md)
+- [Next steps](/docs/en-us/tutorials/curriculums/coding/next-steps.md)
+
+## Learn to create VFX art
+
+- [Get started](/docs/en-us/tutorials/curriculums/artist/get-started.md)
+- [Work with particle emitters](/docs/en-us/tutorials/curriculums/artist/work-with-particle-emitters.md)
+- [Test and save](/docs/en-us/tutorials/curriculums/artist/test-and-save.md)
+- [Next steps](/docs/en-us/tutorials/curriculums/artist/next-steps.md)
+
+## Learn to animate
+
+- [Get started](/docs/en-us/tutorials/curriculums/animator/get-started.md)
+- [Work with the Animation Editor](/docs/en-us/tutorials/curriculums/animator/work-with-the-animation-editor.md)
+- [Play your animation](/docs/en-us/tutorials/curriculums/animator/play-your-animation.md)
+- [Test and save](/docs/en-us/tutorials/curriculums/animator/test-and-save.md)
+- [Next steps](/docs/en-us/tutorials/curriculums/animator/next-steps.md)
+
+## Build
+
+- [Create a project](/docs/en-us/tutorials/curriculums/core/building/create-a-project.md)
+- [Create an environment with terrain](/docs/en-us/tutorials/curriculums/core/building/create-an-environment-with-terrain.md)
+- [Greybox a playable area](/docs/en-us/tutorials/curriculums/core/building/greybox-a-playable-area.md)
+
+## Polish
+
+- [Create basic visual effects](/docs/en-us/tutorials/curriculums/core/building/create-basic-visual-effects.md)
+- [Customize global lighting](/docs/en-us/tutorials/curriculums/core/building/customize-global-lighting.md)
+- [Apply polished assets](/docs/en-us/tutorials/curriculums/core/building/apply-polished-assets.md)
+
+## Coding fundamentals
+
+- [Variables and objects](/docs/en-us/tutorials/fundamentals/coding-1/landing.md)
+- [Functions and events](/docs/en-us/tutorials/fundamentals/coding-2/functions-and-events.md)
+- [Conditionals](/docs/en-us/tutorials/fundamentals/coding-3/landing.md)
+- [Loops](/docs/en-us/tutorials/fundamentals/coding-4/landing.md)
+- [Arrays and dictionaries](/docs/en-us/tutorials/fundamentals/coding-5/landing.md)
+- [Organizing code](/docs/en-us/tutorials/fundamentals/coding-6/landing.md)
+
+## Variables & objects
+
+- [Create a script](/docs/en-us/tutorials/fundamentals/coding-1/create-a-script.md)
+- [Object properties](/docs/en-us/tutorials/fundamentals/coding-1/object-properties.md)
+- [Parents and children](/docs/en-us/tutorials/fundamentals/coding-1/parents-and-children.md)
+
+## Functions and events
+
+- [Code a function](/docs/en-us/tutorials/fundamentals/coding-2/code-a-function.md)
+- [Use parameters and events](/docs/en-us/tutorials/fundamentals/coding-2/use-parameters-and-events.md)
+- [Parameters practice - buttons](/docs/en-us/tutorials/fundamentals/coding-2/parameters-practice-buttons.md)
+- [Multiple parameters and arguments](/docs/en-us/tutorials/fundamentals/coding-2/multiple-parameters-and-arguments.md)
+
+## Conditionals
+
+- [Intro to if statements](/docs/en-us/tutorials/fundamentals/coding-3/intro-to-if-statements.md)
+- [If/then practice with traps](/docs/en-us/tutorials/fundamentals/coding-3/traps-with-if-statements.md)
+- [Evaluate multiple statements](/docs/en-us/tutorials/fundamentals/coding-3/powerups-with-if-statements.md)
+- [Multiple conditions](/docs/en-us/tutorials/fundamentals/coding-3/multiple-conditions.md)
+- [Else/if practice with giving points](/docs/en-us/tutorials/fundamentals/coding-3/give-points.md)
+
+## Loops
+
+- [Repeat code with while loops](/docs/en-us/tutorials/fundamentals/coding-4/repeat-code-with-while-loops.md)
+- [Intro to for loops](/docs/en-us/tutorials/fundamentals/coding-4/intro-to-for-loops.md)
+- [Glow lights with for loops](/docs/en-us/tutorials/fundamentals/coding-4/glow-lights-with-for-loops.md)
+- [Loops practice - create a timed bridge](/docs/en-us/tutorials/fundamentals/coding-4/create-a-timed-bridge.md)
+- [Nested loops](/docs/en-us/tutorials/fundamentals/coding-4/nested-loops.md)
+
+## Dictionaries and arrays
+
+- [Intro to arrays](/docs/en-us/tutorials/fundamentals/coding-5/intro-to-arrays.md)
+- [Loops and arrays](/docs/en-us/tutorials/fundamentals/coding-5/loops-and-arrays.md)
+- [Make changes to arrays](/docs/en-us/tutorials/fundamentals/coding-5/make-changes-to-arrays.md)
+- [Intro to dictionaries](/docs/en-us/tutorials/fundamentals/coding-5/intro-to-dictionaries.md)
+- [pairs and ipairs](/docs/en-us/tutorials/fundamentals/coding-5/pairs-and-ipairs.md)
+- [Return values from tables](/docs/en-us/tutorials/fundamentals/coding-5/return-values-from-tables.md)
+
+## Organize code
+
+- [Intro to module scripts](/docs/en-us/tutorials/fundamentals/coding-6/intro-to-module-scripts.md)
+- [Create with module scripts](/docs/en-us/tutorials/fundamentals/coding-6/create-with-module-scripts.md)
+- [Coding concept - abstraction](/docs/en-us/tutorials/fundamentals/coding-6/coding-concept-abstraction.md)
+- [Coding concept - algorithms](/docs/en-us/tutorials/fundamentals/coding-6/coding-concept-algorithms.md)
+
+## Intermediate tutorials
+
+- [Use case tutorials](/docs/en-us/tutorials/use-case-tutorials/use-case-tutorial-overview.md)
+
+## User interfaces
+
+- [Create HUD meters](/docs/en-us/tutorials/use-case-tutorials/ui/create-hud-meters.md)
+- [Create interactive UI](/docs/en-us/tutorials/use-case-tutorials/ui/interactive-ui.md)
+- [Proximity prompts](/docs/en-us/tutorials/use-case-tutorials/ui/proximity-prompts.md)
+- [Create score bars](/docs/en-us/tutorials/use-case-tutorials/ui/create-a-score-bar.md)
+
+## Lighting
+
+- [Enhance indoor environments with realistic lighting](/docs/en-us/tutorials/use-case-tutorials/lighting/enhance-indoor-environments.md)
+- [Enhance outdoor environments with realistic lighting](/docs/en-us/tutorials/use-case-tutorials/lighting/enhance-outdoor-environments.md)
+
+## VFX
+
+- [Create laser beams with VFX](/docs/en-us/tutorials/use-case-tutorials/vfx/laser-traps-with-beams.md)
+- [Create waterfalls with VFX](/docs/en-us/tutorials/use-case-tutorials/vfx/create-waterfalls.md)
+- [Create volcanic eruptions with VFX](/docs/en-us/tutorials/use-case-tutorials/vfx/create-volcanoes.md)
+- [Create explosions with VFX](/docs/en-us/tutorials/use-case-tutorials/vfx/use-particles-for-explosions.md)
+
+## In Studio
+
+- [Create character animations](/docs/en-us/tutorials/use-case-tutorials/animation/create-an-animation.md)
+- [Play character animations](/docs/en-us/tutorials/use-case-tutorials/animation/play-character-animations.md)
+
+## In Blender
+
+- [Rig a simple mesh](/docs/en-us/art/modeling/rig-a-simple-mesh.md)
+- [Skin a simple mesh](/docs/en-us/art/modeling/skin-a-simple-mesh.md)
+- [Rig a humanoid model](/docs/en-us/art/modeling/rig-a-humanoid-model.md)
+- [Skin a humanoid model](/docs/en-us/art/modeling/skin-a-humanoid-model.md)
+
+## Basic gameplay
+
+- [Introduction to scripting](/docs/en-us/tutorials/use-case-tutorials/scripting/basic-scripting/intro-to-scripting.md)
+- [Deadly lava](/docs/en-us/tutorials/use-case-tutorials/scripting/basic-scripting/deadly-lava.md)
+- [Fading trap](/docs/en-us/tutorials/use-case-tutorials/scripting/basic-scripting/fading-trap.md)
+- [Score points](/docs/en-us/tutorials/use-case-tutorials/scripting/basic-scripting/score-points.md)
+
+## Intermediate gameplay
+
+- [Create a health pickup](/docs/en-us/tutorials/use-case-tutorials/scripting/intermediate-scripting/create-a-health-pickup.md)
+- [Create player tools](/docs/en-us/tutorials/use-case-tutorials/scripting/intermediate-scripting/create-player-tools.md)
+- [Hit detection with lasers](/docs/en-us/tutorials/use-case-tutorials/scripting/intermediate-scripting/hit-detection-with-lasers.md)
+
+## Input and camera
+
+- [Control the user's camera](/docs/en-us/tutorials/use-case-tutorials/input-and-camera/control-the-users-camera.md)
+- [Detect user input](/docs/en-us/tutorials/use-case-tutorials/input-and-camera/detect-user-input.md)
+
+## Data storage
+
+- [Save player data with standard data stores](/docs/en-us/tutorials/use-case-tutorials/data-storage/save-player-data.md)
+- [Create a custom leaderboard with ordered data stores](/docs/en-us/tutorials/use-case-tutorials/data-storage/create-leaderboard.md)
+
+## Avatar items
+
+- [Accessories from an existing model](/docs/en-us/art/accessories/from-existing.md)
+- [Rigging and caging models (Blender)](/docs/en-us/art/accessories/rig-and-cage-existing-models.md)
+- [Create basic dynamic heads](/docs/en-us/art/characters/facial-animation/create-basic-heads.md)
+- [Create face accessories](/docs/en-us/art/characters/facial-animation/create-face-accessories.md)
+- [Publish bodies with eyelashes and eyebrows](/docs/en-us/art/accessories/publish-eyebrows-eyelashes.md)
+
+## Advanced paths
+
+- [Advanced curriculum paths](/docs/en-us/tutorials/curriculums/curriculum-overview.md)
+- [Environmental art curriculum](/docs/en-us/tutorials/curriculums/environmental-art.md)
+- [Gameplay scripting curriculum](/docs/en-us/tutorials/curriculums/gameplay-scripting.md)
+- [User interface design curriculum](/docs/en-us/tutorials/curriculums/user-interface-design.md)
+- [Create with templates](/docs/en-us/art/characters/creating.md)
+- [Create your first rigid accessory](/docs/en-us/art/accessories/creating-rigid.md)
+- [Create your first layered accessory](/docs/en-us/art/accessories/creating.md)
+
+## Environmental art curriculum
+
+- [Greybox your environment](/docs/en-us/tutorials/curriculums/environmental-art/greybox-your-environment.md)
+- [Develop polished assets](/docs/en-us/tutorials/curriculums/environmental-art/develop-polished-assets.md)
+- [Assemble an asset library](/docs/en-us/tutorials/curriculums/environmental-art/assemble-an-asset-library.md)
+- [Construct your world](/docs/en-us/tutorials/curriculums/environmental-art/construct-your-world.md)
+- [Optimize your game](/docs/en-us/tutorials/curriculums/environmental-art/optimize-your-experience.md)
+
+## Gameplay scripting curriculum
+
+- [Create teams](/docs/en-us/tutorials/curriculums/gameplay-scripting/create-teams.md)
+- [Spawn and respawn](/docs/en-us/tutorials/curriculums/gameplay-scripting/spawn-respawn.md)
+- [Add rounds](/docs/en-us/tutorials/curriculums/gameplay-scripting/add-rounds.md)
+- [Implement blaster behavior](/docs/en-us/tutorials/curriculums/gameplay-scripting/implement-blasters.md)
+- [Detect hits](/docs/en-us/tutorials/curriculums/gameplay-scripting/detect-hits.md)
+
+## UI design curriculum
+
+- [Choose an art style](/docs/en-us/tutorials/curriculums/user-interface-design/choose-an-art-style.md)
+- [Wireframe your layouts](/docs/en-us/tutorials/curriculums/user-interface-design/wireframe-your-layouts.md)
+- [Implement designs in Studio](/docs/en-us/tutorials/curriculums/user-interface-design/implement-designs-in-studio.md)
+
+## Project setup
+
+- [Template files](/docs/en-us/art/characters/creating/template-files.md)
+- [Template head structure](/docs/en-us/art/characters/creating/head-objects.md)
+- [Blender configuration](/docs/en-us/art/characters/creating/blender-configurations.md)
+
+## Caging
+
+- [Caging character head](/docs/en-us/art/characters/creating/caging.md)
+- [Caging setup](/docs/en-us/art/accessories/creating/caging-setup.md)
+- [Modify outer cage](/docs/en-us/art/accessories/creating/modify-cage.md)
+
+## Cleanup
+
+- [Combine head geometry](/docs/en-us/art/characters/creating/combine-head-geometry.md)
+- [Remove extra bones](/docs/en-us/art/characters/creating/remove-extra-bones.md)
+- [Verify attachment placement](/docs/en-us/art/characters/creating/verify-attachments.md)
+- [Final checks](/docs/en-us/art/characters/creating/final-checks.md)
+
+## Export
+
+- [Export textures](/docs/en-us/art/characters/creating/export-textures.md)
+- [Export character model](/docs/en-us/art/characters/creating/export-character.md)
+- [Export from Blender](/docs/en-us/art/accessories/creating-rigid/exporting.md)
+- [Export](/docs/en-us/art/accessories/creating/exporting.md)
+
+## Texture
+
+- [Texture painting](/docs/en-us/art/accessories/creating-rigid/texturing.md)
+
+## Import
+
+- [Use Studio's Importer](/docs/en-us/art/accessories/creating-rigid/importing.md)
+- [Use the Accessory Fitting Tool](/docs/en-us/art/accessories/creating-rigid/converting.md)
+
+## Publish
+
+- [Upload and publish](/docs/en-us/art/accessories/creating-rigid/publishing.md)
+
+## Rigging
+
+- [Armature setup](/docs/en-us/art/accessories/creating/armature-setup.md)
+- [Test poses](/docs/en-us/art/accessories/creating/test-poses.md)
+
+## Import and convert
+
+- [Import](/docs/en-us/art/accessories/creating/importing.md)
+- [Convert](/docs/en-us/art/accessories/creating/converting.md)
+
+## Creator Programs
+
+- [Creator programs](/docs/en-us/creator-programs.md)
+- [Android TV Pilot Program](/docs/en-us/creator-programs/android-tv-pilot.md)
+- [Brand Developer Directory and Roblox Partner Program](/docs/en-us/creator-programs/brand-developer-directory.md)
+- [Community Feedback Program](/docs/en-us/creator-programs/feedback.md)
+- [Community Safety Council](/docs/en-us/creator-programs/safety-council.md)
+- [Creator Events](/docs/en-us/creator-programs/creator-events.md)
+- [Creator Spotlights](/docs/en-us/creator-programs/spotlights.md)
+- [Developer Awards](/docs/en-us/creator-programs/developer-awards.md)
+- [Early Access Programs](/docs/en-us/early-access-programs.md)
+- [Roblox Inspire](/docs/en-us/creator-programs/inspire.md)
+- [Learn & Explore Sort](/docs/en-us/creator-programs/learn-explore-sort.md)
+- [Roblox Brand Link](/docs/en-us/creator-programs/managed-brand-integrations.md)
+- [Roblox Developers Conference (RDC)](/docs/en-us/creator-programs/rdc.md)
+- [Roblox Incubator](/docs/en-us/creator-programs/incubator.md)
+- [Roblox Innovation Awards](/docs/en-us/creator-programs/innovation-awards.md)
+- [Roblox Jumpstart](/docs/en-us/creator-programs/jumpstart.md)
+- [Roblox Research Panel](/docs/en-us/creator-programs/research-panel.md)
+- [Standout Games](/docs/en-us/creator-programs/standout-games.md)
+- [Today's Picks on Marketplace](/docs/en-us/creator-programs/todays-picks-marketplace.md)
+- [Creator Affiliate Pilot Program](/docs/en-us/creator-programs/creator-affiliate.md)
+- [Notable Translators Program](/docs/en-us/creator-programs/notable-translators.md)
+- [Today's Picks on Home](/docs/en-us/creator-programs/todays-picks-home.md)
+
+## Educator training
+
+- [Educator onboarding](/docs/en-us/education/educator-onboarding/landing.md)
+
+## Educator onboarding
+
+- [Intro to Roblox](/docs/en-us/education/educator-onboarding/1-intro-to-roblox.md)
+- [Play on Roblox](/docs/en-us/education/educator-onboarding/2-playing-on-roblox.md)
+- [Set up a classroom](/docs/en-us/education/educator-onboarding/3-setting-up-a-roblox-classroom.md)
+- [Run a classroom](/docs/en-us/education/educator-onboarding/4-running-classrooms.md)
+- [Next steps](/docs/en-us/education/educator-onboarding/5-next-steps.md)
+
+## Classroom facilitation
+
+- [Intro to digital civility](/docs/en-us/education/resources/intro-to-digital-civility.md)
+- [Intro to digital safety](/docs/en-us/education/resources/intro-to-digital-safety.md)
+- [Teach remotely with Roblox Studio](/docs/en-us/education/resources/teaching-remotely.md)
+- [Private servers for classroom use](/docs/en-us/education/support/private-servers-for-classroom-use.md)
+- [Best practices for collaboration](/docs/en-us/education/resources/collaboration-best-practices.md)
+- [Best practices for the classroom](/docs/en-us/education/resources/classroom-best-practices.md)
+
+## Unit lessons
+
+- [Intro to coding and game design](/docs/en-us/education/lesson-plans/intro-to-game-and-coding.md)
+- [Digital citizenship with Roblox](/docs/en-us/education/lesson-plans/digital-citizenship/landing.md)
+
+## Digital citizenship
+
+- [Intro to Roblox](/docs/en-us/education/lesson-plans/digital-citizenship/intro-to-roblox.md)
+- [Being a digital citizen](/docs/en-us/education/lesson-plans/digital-citizenship/being-a-digital-citizen.md)
+- [Create your first civil and safe game on Roblox](/docs/en-us/education/lesson-plans/digital-citizenship/civil-and-safe-game.md)
+- [Lights and polish](/docs/en-us/education/lesson-plans/digital-citizenship/lights-and-polish.md)
+- [Coding fundamentals](/docs/en-us/education/lesson-plans/digital-citizenship/coding-fundamentals.md)
+- [Animate characters](/docs/en-us/education/lesson-plans/digital-citizenship/animating-characters.md)
+- [Finish projects](/docs/en-us/education/lesson-plans/digital-citizenship/finishing-projects.md)
+
+## Activity lessons
+
+- [Create Your Own Game on Roblox - 1 Hour Activity Plan](/docs/en-us/education/lesson-plans/build-an-obby-lesson.md)
+- [Animate in Roblox](/docs/en-us/education/lesson-plans/animate-in-roblox-lesson.md)
+- [Code a story game](/docs/en-us/education/lesson-plans/story-games-lesson.md)
+
+## Lesson plans
+
+- [Classroom resources](/docs/en-us/education/resources/resources-landing.md)
+- [Frequently asked questions](/docs/en-us/education/resources/frequently-asked-questions-education.md)
+
+## Education developers
+
+- [Get started for developers](/docs/en-us/education/resources/getting-started-for-developers-education.md)
+- [Design educational games](/docs/en-us/education/developer/designing-educational-experiences.md)
+- [Plan for educational settings](/docs/en-us/education/developer/planning-for-educational-settings.md)
+- [Beta test games](/docs/en-us/education/developer/beta-testing-experiences.md)
+
+## Tutorials
+
+- [Create your first game](/docs/en-us/tutorials/first-experience.md)
+- [In-game sounds](/docs/en-us/tutorials/use-case-tutorials/audio/in-game-sounds.md)
+- [Play background music](/docs/en-us/tutorials/use-case-tutorials/audio/play-background-music.md)
+- [Create flickering lights](/docs/en-us/tutorials/use-case-tutorials/lighting/create-flickering-lights.md)
+- [Light with props](/docs/en-us/tutorials/use-case-tutorials/lighting/light-with-props.md)
+- [Build a ferris wheel](/docs/en-us/tutorials/use-case-tutorials/physics/build-a-ferris-wheel.md)
+- [Build a hinged door](/docs/en-us/tutorials/use-case-tutorials/physics/build-a-hinged-door.md)
+- [Create elevators](/docs/en-us/tutorials/use-case-tutorials/physics/create-elevators.md)
+- [Save data](/docs/en-us/tutorials/use-case-tutorials/scripting/intermediate-scripting/save-data.md)
+- [Basic particle effects](/docs/en-us/tutorials/use-case-tutorials/vfx/basic-particle-effects.md)
+- [Custom particle effects](/docs/en-us/tutorials/use-case-tutorials/vfx/custom-particle-effects.md)
+
+## Scripting with Luau
+
+- [Luau and C# comparison](/docs/en-us/luau/luau-csharp-comparison.md)
+- [Debounce patterns](/docs/en-us/scripting/debounce.md)
+
+## Engine API Reference
+Luau API reference for classes, enums, datatypes, and libraries available in Roblox.
+
+- [Roblox Engine API reference](/docs/en-us/reference/engine/overview.md)
+
+## Open Cloud APIs
+
+- [Asset delivery](/docs/en-us/cloud/api/asset-delivery.md)
+- [Asset permissions](/docs/en-us/cloud/api/asset-permissions.md)
+- [Badges](/docs/en-us/cloud/api/badges.md)
+- [Develop](/docs/en-us/cloud/api/develop.md)
+- [Developer products](/docs/en-us/cloud/api/developer-products.md)
+- [Followings](/docs/en-us/cloud/api/followings.md)
+- [Game internationalization](/docs/en-us/cloud/api/game-internationalization.md)
+- [Game passes](/docs/en-us/cloud/api/game-passes.md)
+- [Followings](/docs/en-us/cloud/api/groups.md)
+- [Localization tables](/docs/en-us/cloud/api/localization.md)
+- [Open eval](/docs/en-us/cloud/api/open-eval.md)
+- [Publish](/docs/en-us/cloud/api/publish.md)
+- [Secrets store service](/docs/en-us/cloud/api/secrets-store.md)
+- [Toolbox service](/docs/en-us/cloud/api/toolbox-service.md)
+- [Supported alert metrics and dimensions](/docs/en-us/cloud/guides/alert/metrics.md)
+- [Account Information Api v1](/docs/en-us/cloud/legacy/accountinformation/v1.md)
+- [AccountSettings Api v1](/docs/en-us/cloud/legacy/accountsettings/v1.md)
+- [AdConfiguration Api v2](/docs/en-us/cloud/legacy/adconfiguration/v2.md)
+- [Ads Api v1](/docs/en-us/cloud/legacy/ads/v1.md)
+- [Asset Delivery Api v1](/docs/en-us/cloud/legacy/assetdelivery/v1.md)
+- [Asset Delivery Api v2](/docs/en-us/cloud/legacy/assetdelivery/v2.md)
+- [Authentication Api v1](/docs/en-us/cloud/legacy/auth/v1.md)
+- [Authentication Api v2](/docs/en-us/cloud/legacy/auth/v2.md)
+- [Authentication Api v3](/docs/en-us/cloud/legacy/auth/v3.md)
+- [Avatar Api v1](/docs/en-us/cloud/legacy/avatar/v1.md)
+- [Avatar Api v2](/docs/en-us/cloud/legacy/avatar/v2.md)
+- [Avatar Api v3](/docs/en-us/cloud/legacy/avatar/v3.md)
+- [Avatar Api v4](/docs/en-us/cloud/legacy/avatar/v4.md)
+- [Badges Api v1](/docs/en-us/cloud/legacy/badges/v1.md)
+- [Catalog Api v1](/docs/en-us/cloud/legacy/catalog/v1.md)
+- [Catalog Api v2](/docs/en-us/cloud/legacy/catalog/v2.md)
+- [ClientSettings Api v1](/docs/en-us/cloud/legacy/clientsettings/v1.md)
+- [ClientSettings Api v2](/docs/en-us/cloud/legacy/clientsettings/v2.md)
+- [Contacts Api v1](/docs/en-us/cloud/legacy/contacts/v1.md)
+- [Develop Api v1](/docs/en-us/cloud/legacy/develop/v1.md)
+- [Develop Api v2](/docs/en-us/cloud/legacy/develop/v2.md)
+- [Economy Api v1](/docs/en-us/cloud/legacy/economy/v1.md)
+- [Roblox.EconomyCreatorStats.Api v1](/docs/en-us/cloud/legacy/economycreatorstats/v1.md)
+- [Followings Api v1](/docs/en-us/cloud/legacy/followings/v1.md)
+- [Followings Api v2](/docs/en-us/cloud/legacy/followings/v2.md)
+- [Friends Api v1](/docs/en-us/cloud/legacy/friends/v1.md)
+- [GameInternationalization Api v1](/docs/en-us/cloud/legacy/gameinternationalization/v1.md)
+- [GameInternationalization Api v2](/docs/en-us/cloud/legacy/gameinternationalization/v2.md)
+- [Games Api v1](/docs/en-us/cloud/legacy/games/v1.md)
+- [Games Api v2](/docs/en-us/cloud/legacy/games/v2.md)
+- [Groups Api v1](/docs/en-us/cloud/legacy/groups/v1.md)
+- [Groups Api v2](/docs/en-us/cloud/legacy/groups/v2.md)
+- [Inventory Api v1](/docs/en-us/cloud/legacy/inventory/v1.md)
+- [Inventory Api v2](/docs/en-us/cloud/legacy/inventory/v2.md)
+- [ItemConfiguration Api v1](/docs/en-us/cloud/legacy/itemconfiguration/v1.md)
+- [Locale Api v1](/docs/en-us/cloud/legacy/locale/v1.md)
+- [LocalizationTables Api v1](/docs/en-us/cloud/legacy/localizationtables/v1.md)
+- [Matchmaking Api v1](/docs/en-us/cloud/legacy/matchmaking/v1.md)
+- [Notifications Api v2](/docs/en-us/cloud/legacy/notifications/v2.md)
+- [PremiumFeatures Api v1](/docs/en-us/cloud/legacy/premiumfeatures/v1.md)
+- [presence-api](/docs/en-us/cloud/legacy/presence/v1.md)
+- [PrivateMessages Api v1](/docs/en-us/cloud/legacy/privatemessages/v1.md)
+- [Publish Api v1](/docs/en-us/cloud/legacy/publish/v1.md)
+- [Thumbnails Api v1](/docs/en-us/cloud/legacy/thumbnails/v1.md)
+- [ThumbnailsResizer Api v1](/docs/en-us/cloud/legacy/thumbnailsresizer/v1.md)
+- [Trades Api v1](/docs/en-us/cloud/legacy/trades/v1.md)
+- [Trades Api v2](/docs/en-us/cloud/legacy/trades/v2.md)
+- [TranslationRoles Api v1](/docs/en-us/cloud/legacy/translationroles/v1.md)
+- [TwoStepVerification Api v1](/docs/en-us/cloud/legacy/twostepverification/v1.md)
+- [Users Api v1](/docs/en-us/cloud/legacy/users/v1.md)
+
+## Avatar
+
+- [Avatar Lab Preview disclaimer](/docs/en-us/avatar/avatar-lab-disclaimer.md)
+- [Create avatar assets](/docs/en-us/avatar/create.md)
+- [Tutorials](/docs/en-us/avatar/tutorials.md)
+
+## Art & 3D Modeling
+
+- [Layered Accessory Validation Tool](/docs/en-us/art/accessories/validation-tool.md)
+- [Classic and Dynamic head comparison](/docs/en-us/art/characters/head-comparison.md)
+- [Manually Update Catalog Heads](/docs/en-us/art/characters/manually-update-catalog-heads.md)
+- [Blender validation tool](/docs/en-us/art/characters/validation-tool.md)
+- [Calisthenics Tool](/docs/en-us/art/modeling/calisthenics-tool.md)
+
+## Production & Monetization
+
+- [+1 Speed Keyboard Escape](/docs/en-us/production/ad-placements/1speed.md)
+- [Adopt Me](/docs/en-us/production/ad-placements/adoptme.md)
+- [Barry's Prison Run](/docs/en-us/production/ad-placements/barrysprisonrun.md)
+- [Blue Lock Rivals](/docs/en-us/production/ad-placements/bluelock.md)
+- [Brookhaven](/docs/en-us/production/ad-placements/brookhaven.md)
+- [Evade](/docs/en-us/production/ad-placements/evade.md)
+- [Grow a Garden](/docs/en-us/production/ad-placements/growagarden.md)
+- [RIVALS](/docs/en-us/production/ad-placements/rivals.md)
+- [Sols RNG](/docs/en-us/production/ad-placements/sols.md)
+- [Production](/docs/en-us/production.md)
+- [Engagement-based payouts](/docs/en-us/production/monetization/engagement-based-payouts.md)
+- [Advertise on Roblox](/docs/en-us/production/promotion/advertise-on-roblox.md)
+- [Advertising standards](/docs/en-us/production/promotion/comply-with-advertising-standards.md)
+- [Deep links](/docs/en-us/production/promotion/deeplinks.md)
+- [Experience guidelines](/docs/en-us/production/promotion/experience-guidelines.md)
+- [Promotion](/docs/en-us/production/promotion.md)
+- [Ads Manager reporting and billing](/docs/en-us/production/promotion/reporting-and-billing.md)
+- [Search ads](/docs/en-us/production/promotion/search-ads.md)
+- [Game descriptions](/docs/en-us/production/publishing/descriptions.md)
+
+## Sound
+
+- [Sound](/docs/en-us/sound.md)
+
+## Education
+
+- [Buy upgrades](/docs/en-us/education/adventure-game-series/buying-upgrades.md)
+- [Code the leaderboard](/docs/en-us/education/adventure-game-series/code-the-leaderboard.md)
+- [Collect items](/docs/en-us/education/adventure-game-series/collect-items.md)
+- [Create the map](/docs/en-us/education/adventure-game-series/create-the-map.md)
+- [Finish the project](/docs/en-us/education/adventure-game-series/finishing-the-project.md)
+- [Create an adventure game](/docs/en-us/education/adventure-game-series/landing.md)
+- [Sell items](/docs/en-us/education/adventure-game-series/selling-items.md)
+- [Cleanup and reset](/docs/en-us/education/battle-royale-series/cleanup-and-reset.md)
+- [Code the game loop](/docs/en-us/education/battle-royale-series/coding-the-game-loop.md)
+- [Create a GUI](/docs/en-us/education/battle-royale-series/creating-a-gui.md)
+- [End matches](/docs/en-us/education/battle-royale-series/ending-matches.md)
+- [Finish the project](/docs/en-us/education/battle-royale-series/finishing-the-project.md)
+- [Create a Battle Royale](/docs/en-us/education/battle-royale-series/landing.md)
+- [Manage players](/docs/en-us/education/battle-royale-series/managing-players.md)
+- [Battle Royale](/docs/en-us/education/battle-royale-series/project-setup.md)
+- [Timers and events](/docs/en-us/education/battle-royale-series/timers-and-events.md)
+- [Build one half](/docs/en-us/education/build-it-play-it-create-and-destroy/build-one-half.md)
+- [Build the roads](/docs/en-us/education/build-it-play-it-create-and-destroy/build-the-roads.md)
+- [Buildings and props](/docs/en-us/education/build-it-play-it-create-and-destroy/buildings-and-props.md)
+- [Take the challenge!](/docs/en-us/education/build-it-play-it-create-and-destroy/challenge-1.md)
+- [Take the challenge!](/docs/en-us/education/build-it-play-it-create-and-destroy/challenge-2.md)
+- [Take the challenge!](/docs/en-us/education/build-it-play-it-create-and-destroy/challenge-3.md)
+- [Change the script](/docs/en-us/education/build-it-play-it-create-and-destroy/change-the-script.md)
+- [Complete the city](/docs/en-us/education/build-it-play-it-create-and-destroy/complete-the-city.md)
+- [Create and destroy](/docs/en-us/education/build-it-play-it-create-and-destroy/designing-a-map.md)
+- [Finish the challenge](/docs/en-us/education/build-it-play-it-create-and-destroy/finish-the-challenge.md)
+- [Island terrain](/docs/en-us/education/build-it-play-it-create-and-destroy/island-terrain.md)
+- [Create and destroy](/docs/en-us/education/build-it-play-it-create-and-destroy/landing.md)
+- [Playtest the map](/docs/en-us/education/build-it-play-it-create-and-destroy/playtest-the-map.md)
+- [Save and publish](/docs/en-us/education/build-it-play-it-create-and-destroy/save-and-publish.md)
+- [Snap to grid](/docs/en-us/education/build-it-play-it-create-and-destroy/snap-to-grid.md)
+- [Terrain tools](/docs/en-us/education/build-it-play-it-create-and-destroy/terrain-tools.md)
+- [Add new models](/docs/en-us/education/build-it-play-it-galactic-speedway/add-new-models.md)
+- [Add to the garage](/docs/en-us/education/build-it-play-it-galactic-speedway/add-to-the-garage.md)
+- [Add wings](/docs/en-us/education/build-it-play-it-galactic-speedway/adding-wings.md)
+- [Colors and textures](/docs/en-us/education/build-it-play-it-galactic-speedway/colors-and-textures.md)
+- [Customize and share](/docs/en-us/education/build-it-play-it-galactic-speedway/customize-and-share.md)
+- [Design the world](/docs/en-us/education/build-it-play-it-galactic-speedway/design-the-world.md)
+- [Design your speeder](/docs/en-us/education/build-it-play-it-galactic-speedway/designing-your-speeder.md)
+- [Duplicate and design](/docs/en-us/education/build-it-play-it-galactic-speedway/duplicate-and-design.md)
+- [Get off the ground](/docs/en-us/education/build-it-play-it-galactic-speedway/get-off-the-ground.md)
+- [Go beyond the challenge](/docs/en-us/education/build-it-play-it-galactic-speedway/go-beyond-the-challenge.md)
+- [Going for a race](/docs/en-us/education/build-it-play-it-galactic-speedway/going-for-a-race.md)
+- [Group the parts](/docs/en-us/education/build-it-play-it-galactic-speedway/grouping-the-parts.md)
+- [Galactic Speedway](/docs/en-us/education/build-it-play-it-galactic-speedway/main-page.md)
+- [Move the body](/docs/en-us/education/build-it-play-it-galactic-speedway/moving-the-body.md)
+- [Save and publish](/docs/en-us/education/build-it-play-it-galactic-speedway/save-and-publish.md)
+- [Share your speeders](/docs/en-us/education/build-it-play-it-galactic-speedway/sharing-your-speeders.md)
+- [Take flight](/docs/en-us/education/build-it-play-it-galactic-speedway/take-flight.md)
+- [Take the challenge](/docs/en-us/education/build-it-play-it-galactic-speedway/take-the-challenge-2.md)
+- [Take the challenge](/docs/en-us/education/build-it-play-it-galactic-speedway/take-the-challenge-3.md)
+- [Take the challenge](/docs/en-us/education/build-it-play-it-galactic-speedway/take-the-challenge.md)
+- [Test the speeder](/docs/en-us/education/build-it-play-it-galactic-speedway/test-the-speeder.md)
+- [Add animations](/docs/en-us/education/build-it-play-it-island-of-move/adding-animations.md)
+- [Add new models](/docs/en-us/education/build-it-play-it-island-of-move/adding-new-models.md)
+- [Add the second pose](/docs/en-us/education/build-it-play-it-island-of-move/adding-the-second-pose.md)
+- [Animate parts](/docs/en-us/education/build-it-play-it-island-of-move/animating-parts.md)
+- [Animations and feedback](/docs/en-us/education/build-it-play-it-island-of-move/animations-and-feedback.md)
+- [Island of Move](/docs/en-us/education/build-it-play-it-island-of-move/beginner-landing-page.md)
+- [Challenge checkpoint](/docs/en-us/education/build-it-play-it-island-of-move/challenge-checkpoint-2.md)
+- [Challenge checkpoint](/docs/en-us/education/build-it-play-it-island-of-move/challenge-checkpoint-3.md)
+- [Challenge checkpoint](/docs/en-us/education/build-it-play-it-island-of-move/challenge-checkpoint.md)
+- [Change the animation](/docs/en-us/education/build-it-play-it-island-of-move/change-the-animation.md)
+- [Create the first pose](/docs/en-us/education/build-it-play-it-island-of-move/create-the-first-pose.md)
+- [Create animations](/docs/en-us/education/build-it-play-it-island-of-move/creating-animations.md)
+- [Design poses](/docs/en-us/education/build-it-play-it-island-of-move/designing-poses.md)
+- [Export animations](/docs/en-us/education/build-it-play-it-island-of-move/exporting-animations.md)
+- [Go beyond the challenge](/docs/en-us/education/build-it-play-it-island-of-move/go-beyond-the-challenge.md)
+- [Invite friends to play](/docs/en-us/education/build-it-play-it-island-of-move/invite-friends-to-play.md)
+- [Island of move](/docs/en-us/education/build-it-play-it-island-of-move/landing.md)
+- [Loop animations](/docs/en-us/education/build-it-play-it-island-of-move/looping-animations.md)
+- [Open the template](/docs/en-us/education/build-it-play-it-island-of-move/opening-the-template.md)
+- [Personalize the game](/docs/en-us/education/build-it-play-it-island-of-move/personalize-the-game.md)
+- [Save and publish](/docs/en-us/education/build-it-play-it-island-of-move/save-and-publish.md)
+- [Export and Import Animations](/docs/en-us/education/build-it-play-it-island-of-move/sharing-animations.md)
+- [Test the game](/docs/en-us/education/build-it-play-it-island-of-move/test-the-game.md)
+- [Add scripts](/docs/en-us/education/build-it-play-it-mansion-of-wonder/adding-scripts.md)
+- [Become an artist](/docs/en-us/education/build-it-play-it-mansion-of-wonder/become-an-artist.md)
+- [Welcome to Build It, Play It!](/docs/en-us/education/build-it-play-it-mansion-of-wonder/beginner-landing-page.md)
+- [Challenge checkpoint](/docs/en-us/education/build-it-play-it-mansion-of-wonder/challenge-checkpoint-2.md)
+- [Challenge checkpoint](/docs/en-us/education/build-it-play-it-mansion-of-wonder/challenge-checkpoint-3.md)
+- [Challenge checkpoint](/docs/en-us/education/build-it-play-it-mansion-of-wonder/challenge-checkpoint.md)
+- [Connect the beam](/docs/en-us/education/build-it-play-it-mansion-of-wonder/connect-the-beam.md)
+- [Create a sparkler](/docs/en-us/education/build-it-play-it-mansion-of-wonder/creating-a-sparkler.md)
+- [Create engaging experiences](/docs/en-us/education/build-it-play-it-mansion-of-wonder/creating-engaging-experiences.md)
+- [A player's first experience](/docs/en-us/education/build-it-play-it-mansion-of-wonder/experienced-landing-page.md)
+- [Finish the blast](/docs/en-us/education/build-it-play-it-mansion-of-wonder/finish-the-blast.md)
+- [Invite friends](/docs/en-us/education/build-it-play-it-mansion-of-wonder/invite-friends.md)
+- [Mansion of wonder](/docs/en-us/education/build-it-play-it-mansion-of-wonder/landing-page.md)
+- [Make final touches](/docs/en-us/education/build-it-play-it-mansion-of-wonder/make-final-touches.md)
+- [Make an explosion](/docs/en-us/education/build-it-play-it-mansion-of-wonder/making-an-explosion.md)
+- [Next steps](/docs/en-us/education/build-it-play-it-mansion-of-wonder/next-steps-advanced.md)
+- [Next steps](/docs/en-us/education/build-it-play-it-mansion-of-wonder/next-steps.md)
+- [Add particle emitters](/docs/en-us/education/build-it-play-it-mansion-of-wonder/particle-emitters.md)
+- [Save by publishing](/docs/en-us/education/build-it-play-it-mansion-of-wonder/save-by-publishing.md)
+- [Test and play](/docs/en-us/education/build-it-play-it-mansion-of-wonder/test-and-play.md)
+- [Use particles for actions](/docs/en-us/education/build-it-play-it-mansion-of-wonder/using-particles-for-actions.md)
+- [Use textures](/docs/en-us/education/build-it-play-it-mansion-of-wonder/using-textures.md)
+- [Code the story](/docs/en-us/education/build-it-play-it-story-games/code-the-story.md)
+- [Code a question](/docs/en-us/education/build-it-play-it-story-games/coding-a-question.md)
+- [Complete the challenge](/docs/en-us/education/build-it-play-it-story-games/complete-the-challenge.md)
+- [Finish and add more](/docs/en-us/education/build-it-play-it-story-games/finish-and-add.md)
+- [First challenge](/docs/en-us/education/build-it-play-it-story-games/first-challenge.md)
+- [Story Games project](/docs/en-us/education/build-it-play-it-story-games/landing.md)
+- [Open the template](/docs/en-us/education/build-it-play-it-story-games/opening-the-template.md)
+- [Second challenge](/docs/en-us/education/build-it-play-it-story-games/second-challenge.md)
+- [Start coding](/docs/en-us/education/build-it-play-it-story-games/start-coding.md)
+- [Test and save](/docs/en-us/education/build-it-play-it-story-games/test-and-save.md)
+- [Third challenge](/docs/en-us/education/build-it-play-it-story-games/third-challenge.md)
+- [Write the story](/docs/en-us/education/build-it-play-it-story-games/writing-the-story.md)
+- [Collaborating in Roblox](/docs/en-us/education/collaboration/collaborating-in-roblox-landing-page.md)
+- [Best practices for collaboration](/docs/en-us/education/collaboration/collaboration-best-practices.md)
+- [Classroom collection](/docs/en-us/education/edu-templates/classroom-collection.md)
+- [Lesson title](/docs/en-us/education/edu-templates/edu-lesson-plan-template.md)
+- [Edu styles](/docs/en-us/education/edu-templates/edu-styles.md)
+- [Series title](/docs/en-us/education/edu-templates/series-template.md)
+- [Build It, Play It challenges](/docs/en-us/education/landing-pages/build-it-play-it.md)
+- [Create and Destroy](/docs/en-us/education/lesson-plans/create-and-destroy-lesson.md)
+- [Galactic Speedway](/docs/en-us/education/lesson-plans/galactic-speedway-lesson.md)
+- [Roblox developer 101](/docs/en-us/education/lesson-plans/roblox-developer/landing.md)
+- [Roblox Studio basics](/docs/en-us/education/lesson-plans/roblox-developer/roblox-developer-1.md)
+- [Coding fundamentals](/docs/en-us/education/lesson-plans/roblox-developer/roblox-developer-2.md)
+- [Adventure game part 1](/docs/en-us/education/lesson-plans/roblox-developer/roblox-developer-3.md)
+- [Adventure game part 2](/docs/en-us/education/lesson-plans/roblox-developer/roblox-developer-4.md)
+- [Adventure game part 3](/docs/en-us/education/lesson-plans/roblox-developer/roblox-developer-5.md)
+- [Roblox developer 101](/docs/en-us/education/lesson-plans/roblox-developer-lesson.md)
+- [Coding concept - Abstraction](/docs/en-us/education/resources/coding-concept-abstraction.md)
+- [Coding concept - Algorithms](/docs/en-us/education/resources/coding-concept-algorithms.md)
+- [Design Studio templates](/docs/en-us/education/support/designing-studio-templates.md)
+- [Contact us](/docs/en-us/education/support/education-contact-form.md)
+- [Education content](/docs/en-us/education/support/education-content.md)
+- [Get started with Roblox Education](/docs/en-us/education/support/education-getting-started.md)
+- [Roblox account creation](/docs/en-us/education/support/roblox-account-creation.md)
+
+## Other Guides
+
+- [Creator Affiliate Program](/docs/en-us/affiliates.md)
+- [MCP servers](/docs/en-us/assistant/mcp.md)
+- [Assistant](/docs/en-us/assistant/overview.md)
+- [Creator Hub](/docs/en-us/creator-hub.md)
+- [Create on Roblox](/docs/en-us/index.md)
+- [Monetize your creator assets](/docs/en-us/projects/assets/monetize.md)
+- [Roblox.AssetPermissionsApi](/docs/en-us/reference/cloud/asset-permissions-api/v1.md)
+- [Assets API](/docs/en-us/reference/cloud/assets/v1.md)
+- [Cloud API](/docs/en-us/reference/cloud/cloud.docs.md)
+- [Ordered data stores (beta)](/docs/en-us/reference/cloud/datastores-api/ordered-v1.md)
+- [Standard data stores](/docs/en-us/reference/cloud/datastores-api/v1.md)
+- [developer-products-api](/docs/en-us/reference/cloud/developer-products-api/v1.md)
+- [game-passes-http-service](/docs/en-us/reference/cloud/game-passes-http-service/v1.md)
+- [Messaging Service](/docs/en-us/reference/cloud/messaging-service/v1.md)
+- [OpenEvalApi](/docs/en-us/reference/cloud/open-eval-api/v1.md)
+- [Roblox API](/docs/en-us/reference/cloud/openapi.md)
+- [SecretsStoreService](/docs/en-us/reference/cloud/secrets-store-service/v1.md)
+- [Toolbox.Service](/docs/en-us/reference/cloud/toolbox-service/v1.md)
+- [Place publishing](/docs/en-us/reference/cloud/universes-api/v1.md)
+- [Builder font license](/docs/en-us/resources/builder-font-license.md)
+- [Feedback guidelines](/docs/en-us/resources/feedback-guidelines.md)
+- [Limited use license](/docs/en-us/resources/limited-use-license.md)
+- [Build for the frame](/docs/en-us/resources/performance.md)
+- [What is Roblox?](/docs/en-us/what-is-roblox.md)
+
+## Optional: Release Notes
+
+- [Week of June 15, 2026](/docs/en-us/updates/2026-06-15.md)
+- [Week of June 22, 2026](/docs/en-us/updates/2026-06-22.md)
+- [Week of June 29, 2026](/docs/en-us/updates/2026-06-29.md)
+- [Week of July 6, 2026](/docs/en-us/updates/2026-07-06.md)
+- [Week of July 13, 2026](/docs/en-us/updates/2026-07-13.md)
+- [Week of July 20, 2026](/docs/en-us/updates/2026-07-20.md)
+- [Week of July 27, 2026](/docs/en-us/updates/2026-07-27.md)

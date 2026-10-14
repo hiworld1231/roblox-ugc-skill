@@ -1,0 +1,26 @@
+{
+  "url": "https://create.roblox.com/docs/cloud/legacy/avatar/v3",
+  "retrieved_at": "2026-10-13T21:08:36.767836+00:00",
+  "remote_sha256": "0036f157df9c99bc226261aeff64f127e710df1d5fd55ecb57e33893d7043d23",
+  "section_index": [
+    "Avatar Api v3",
+    "Endpoints",
+    "GET `/v3/outfits/{userOutfitId}/details` *(deprecated)*",
+    "POST `/v3/outfits/create` *(deprecated)*",
+    "PATCH `/v3/outfits/{userOutfitId}` *(deprecated)*",
+    "Models",
+    "Roblox.Api.Avatar.Models.AssetMetaModelV1",
+    "Roblox.Api.Avatar.Models.AssetModelV2",
+    "Roblox.Api.Avatar.Models.AssetPosition",
+    "Roblox.Api.Avatar.Models.AssetRotation",
+    "Roblox.Api.Avatar.Models.AssetScale",
+    "Roblox.Api.Avatar.Models.AssetTypeModel",
+    "Roblox.Api.Avatar.Models.AssetWearModel",
+    "Roblox.Api.Avatar.Models.BodyColors3Model",
+    "Roblox.Api.Avatar.Models.OutfitDetailsModelV2",
+    "Roblox.Api.Avatar.Models.OutfitModel",
+    "Roblox.Api.Avatar.Models.OutfitUpdateModelV3",
+    "Roblox.Web.Responses.Avatar.ScaleModel"
+  ],
+  "notice": "Live-only source: fetch the linked original when needed; full text is not redistributed."
+}

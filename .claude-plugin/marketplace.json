@@ -1,0 +1,16 @@
+{
+  "name": "roblox-ugc-skill",
+  "owner": {
+    "name": "hiworld1231"
+  },
+  "plugins": [
+    {
+      "name": "roblox-ugc",
+      "source": "./plugins/roblox-ugc",
+      "description": "Create, validate and publish Roblox Marketplace UGC with source-backed workflows."
+    }
+  ],
+  "metadata": {
+    "description": "Roblox Marketplace UGC authoring, validation and publishing skills."
+  }
+}
